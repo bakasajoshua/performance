@@ -30,7 +30,7 @@ class OtzController extends Controller
 			// ->whereRaw($date_query)
 			->whereRaw($divisions_query)
 			->where('viremia_beneficiaries', '>', 0)
-			->where('financial_year', '>', 2016)
+			->where('financial_year', '>', 2017)
 			->groupBy('financial_year')
 			->orderBy('financial_year', 'asc')
 			->get();
@@ -40,7 +40,7 @@ class OtzController extends Controller
 			->selectRaw($select_query)
 			->whereRaw($divisions_query)
 			->where('dsd_beneficiaries', '>', 0)
-			->where('financial_year', '>', 2016)
+			->where('financial_year', '>', 2017)
 			->groupBy('financial_year')
 			->orderBy('financial_year', 'asc')
 			->get();
@@ -50,7 +50,7 @@ class OtzController extends Controller
 			->selectRaw($select_query)
 			->whereRaw($divisions_query)
 			->where('otz_beneficiaries', '>', 0)
-			->where('financial_year', '>', 2016)
+			->where('financial_year', '>', 2017)
 			->groupBy('financial_year')
 			->orderBy('financial_year', 'asc')
 			->get();
@@ -60,7 +60,7 @@ class OtzController extends Controller
 			->selectRaw($select_query)
 			->whereRaw($divisions_query)
 			->where('men_clinic_beneficiaries', '>', 0)
-			->where('financial_year', '>', 2016)
+			->where('financial_year', '>', 2017)
 			->groupBy('financial_year')
 			->orderBy('financial_year', 'asc')
 			->get();
@@ -78,22 +78,22 @@ class OtzController extends Controller
 		$data['outcomes'][2]['type'] = "column";
 		$data['outcomes'][3]['type'] = "column";
 
-		$data['categories'][0] = "FY 2017";
-		$data['categories'][1] = "FY 2018";
-		$data['categories'][2] = "FY 2019";
+		$data['categories'][0] = "FY 2018";
+		$data['categories'][1] = "FY 2019";
 
-		$data["outcomes"][0]["data"] = array_fill(0, 3, 0);
-		$data["outcomes"][1]["data"] = array_fill(0, 3, 0);
-		$data["outcomes"][2]["data"] = array_fill(0, 3, 0);
-		$data["outcomes"][3]["data"] = array_fill(0, 3, 0);
+		$data["outcomes"][0]["data"] = array_fill(0, 2, 0);
+		$data["outcomes"][1]["data"] = array_fill(0, 2, 0);
+		$data["outcomes"][2]["data"] = array_fill(0, 2, 0);
+		$data["outcomes"][3]["data"] = array_fill(0, 2, 0);
 
 		foreach ($viremia as $key => $row) {
 			$data['categories'][$key] = "FY " . $row->financial_year;
 			$data["outcomes"][0]["data"][$key] = (int) $row->total;
-			$data["outcomes"][1]["data"][$key] = (int) $dsd[$key]->total;
-			$data["outcomes"][2]["data"][$key] = (int) $otz[$key]->total;
-			$data["outcomes"][3]["data"][$key] = (int) $men[$key]->total;
+			$data["outcomes"][1]["data"][$key] = $this->check_null($dsd[$key] ?? null);
+			$data["outcomes"][2]["data"][$key] = $this->check_null($otz[$key] ?? null);
+			$data["outcomes"][3]["data"][$key] = $this->check_null($men[$key] ?? null);
 		}
+		
 		return view('charts.bar_graph', $data);		
 	}
 
@@ -108,55 +108,63 @@ class OtzController extends Controller
 			->selectRaw($select_query)
 			->whereRaw($divisions_query)
 			->where('is_viremia', 1)
-			->get();
+			->first();
 
 		$dsd = DB::table('view_facilitys')
 			->selectRaw($select_query)
 			->whereRaw($divisions_query)
 			->where('is_dsd', 1)
-			->get();
+			->first();
 
 		$otz = DB::table('view_facilitys')
 			->selectRaw($select_query)
 			->whereRaw($divisions_query)
 			->where('is_otz', 1)
-			->get();
+			->first();
 
 		$men = DB::table('view_facilitys')
 			->selectRaw($select_query)
 			->whereRaw($divisions_query)
 			->where('is_men_clinic', 1)
-			->get();
+			->first();
 
 		$data['div'] = str_random(15);
 		$data['stacking_false'] = false;
 
-		$data['outcomes'][0]['name'] = "Viremia Facilities";
-		$data['outcomes'][1]['name'] = "DSD Facilities";
-		$data['outcomes'][2]['name'] = "OTZ Facilities";
-		$data['outcomes'][3]['name'] = "Men Clinics";
+		$data['categories'][0] = "Viremia Facilities";
+		$data['categories'][1] = "DSD Facilities";
+		$data['categories'][2] = "OTZ Facilities";
+		$data['categories'][3] = "Men Clinics";
 
 		$data['outcomes'][0]['type'] = "column";
-		$data['outcomes'][1]['type'] = "column";
-		$data['outcomes'][2]['type'] = "column";
-		$data['outcomes'][3]['type'] = "column";
+		$data['outcomes'][0]['name'] = "Total number of clinics";
 
-		$data['categories'][0] = "FY 2017";
-		$data['categories'][1] = "FY 2018";
-		$data['categories'][2] = "FY 2019";
+		$data["outcomes"][0]["data"][0] = (int) $viremia->total ?? 0;
+		$data["outcomes"][0]["data"][1] = (int) $dsd->total ?? 0;
+		$data["outcomes"][0]["data"][2] = (int) $otz->total ?? 0;
+		$data["outcomes"][0]["data"][3] = (int) $men->total ?? 0;
 
-		$data["outcomes"][0]["data"] = array_fill(0, 3, 0);
-		$data["outcomes"][1]["data"] = array_fill(0, 3, 0);
-		$data["outcomes"][2]["data"] = array_fill(0, 3, 0);
-		$data["outcomes"][3]["data"] = array_fill(0, 3, 0);
+		if(!str_contains($divisions_query, ['county', 'ward_id', 'view_facilitys'])){
 
-		foreach ($viremia as $key => $row) {
-			$data['categories'][$key] = "FY " . $row->financial_year;
-			$data["outcomes"][0]["data"][$key] = (int) $row->total;
-			$data["outcomes"][1]["data"][$key] = (int) $dsd[$key]->total;
-			$data["outcomes"][2]["data"][$key] = (int) $otz[$key]->total;
-			$data["outcomes"][3]["data"][$key] = (int) $men[$key]->total;
+			$financial_year = session('filter_financial_year');
+
+			$targets = DB::table('p_non_mer')
+				->leftJoin('partners', 'partners.id', '=', 'p_non_mer.partner')
+				->selectRaw("SUM(viremia) AS viremia, SUM(dsd) AS dsd, SUM(otz) AS otz, SUM(men_clinic) AS men_clinic ")
+				->whereRaw($divisions_query)
+				->where('financial_year', $financial_year)
+				->first();
+
+			$data['outcomes'][1]['type'] = "spline";
+			$data['outcomes'][1]['name'] = "Targeted number of clinics";
+
+			$data["outcomes"][1]["data"][0] = (int) $targets->viremia ?? 0;
+			$data["outcomes"][1]["data"][1] = (int) $targets->dsd ?? 0;
+			$data["outcomes"][1]["data"][2] = (int) $targets->otz ?? 0;
+			$data["outcomes"][1]["data"][3] = (int) $targets->men_clinic ?? 0;
+
 		}
+
 		return view('charts.bar_graph', $data);		
 	}
 
@@ -266,22 +274,22 @@ class OtzController extends Controller
 		$data['outcomes'][2]['name'] = "OTZ Beneficiaries";
 		$data['outcomes'][3]['name'] = "Men Clinics Beneficiaries";
 
-		$data['outcomes'][4]['name'] = "Viremia Shortfall";
-		$data['outcomes'][5]['name'] = "DSD Shortfall";
-		$data['outcomes'][6]['name'] = "OTZ Shortfall";
-		$data['outcomes'][7]['name'] = "Men Clinics Shortfall";
+		// $data['outcomes'][4]['name'] = "Viremia Shortfall";
+		// $data['outcomes'][5]['name'] = "DSD Shortfall";
+		// $data['outcomes'][6]['name'] = "OTZ Shortfall";
+		// $data['outcomes'][7]['name'] = "Men Clinics Shortfall";
 
 		$data['outcomes'][0]['stack'] = "Viremia";
 		$data['outcomes'][1]['stack'] = "DSD";
 		$data['outcomes'][2]['stack'] = "OTZ";
 		$data['outcomes'][3]['stack'] = "Men";
 
-		$data['outcomes'][4]['stack'] = "Viremia";
-		$data['outcomes'][5]['stack'] = "DSD";
-		$data['outcomes'][6]['stack'] = "OTZ";
-		$data['outcomes'][7]['stack'] = "Men";
+		// $data['outcomes'][4]['stack'] = "Viremia";
+		// $data['outcomes'][5]['stack'] = "DSD";
+		// $data['outcomes'][6]['stack'] = "OTZ";
+		// $data['outcomes'][7]['stack'] = "Men";
 
-		for ($i=0; $i < 8; $i++) { 
+		for ($i=0; $i < 4; $i++) { 
 			$data['outcomes'][$i]['type'] = "column";
 		}
 
@@ -293,10 +301,10 @@ class OtzController extends Controller
 			$data["outcomes"][3]["data"][$key] = (int) $row->men_clinic_beneficiaries;
 
 
-			$data["outcomes"][4]["data"][$key] = ($row->viremia_target > $row->viremia_beneficiaries ? ($row->viremia_target-$row->viremia_beneficiaries) : 0);
-			$data["outcomes"][5]["data"][$key] = ($row->dsd_target > $row->dsd_beneficiaries ? ($row->dsd_target-$row->dsd_beneficiaries) : 0);
-			$data["outcomes"][6]["data"][$key] = ($row->otz_target > $row->otz_beneficiaries ? ($row->otz_target-$row->otz_beneficiaries) : 0);
-			$data["outcomes"][7]["data"][$key] = ($row->men_clinic_target > $row->men_clinic_beneficiaries ? ($row->men_clinic_target-$row->men_clinic_beneficiaries) : 0);
+			// $data["outcomes"][4]["data"][$key] = ($row->viremia_target > $row->viremia_beneficiaries ? ($row->viremia_target-$row->viremia_beneficiaries) : 0);
+			// $data["outcomes"][5]["data"][$key] = ($row->dsd_target > $row->dsd_beneficiaries ? ($row->dsd_target-$row->dsd_beneficiaries) : 0);
+			// $data["outcomes"][6]["data"][$key] = ($row->otz_target > $row->otz_beneficiaries ? ($row->otz_target-$row->otz_beneficiaries) : 0);
+			// $data["outcomes"][7]["data"][$key] = ($row->men_clinic_target > $row->men_clinic_beneficiaries ? ($row->men_clinic_target-$row->men_clinic_beneficiaries) : 0);
 		}
 		return view('charts.bar_graph', $data);		
 	}
@@ -307,9 +315,13 @@ class OtzController extends Controller
 		$date_query = Lookup::date_query(true);
 		$q = Lookup::groupby_query();
 
+		$select_query = $q['select_query'];
+
+		if(session('filter_groupby') == 5) $select_query .= ", is_viremia, is_dsd, is_otz, is_men_clinic";
+
 		$data['rows'] = DB::table('t_non_mer')
 			->join('view_facilitys', 'view_facilitys.id', '=', 't_non_mer.facility')
-			->selectRaw($q['select_query'] . ",
+			->selectRaw($select_query . ",
 			 SUM(viremia_beneficiaries) AS viremia_beneficiaries, SUM(viremia_target) AS viremia_target,
 			 SUM(dsd_beneficiaries) AS dsd_beneficiaries, SUM(dsd_target) AS dsd_target, 
 			 SUM(otz_beneficiaries) AS otz_beneficiaries, SUM(otz_target) AS otz_target, 
@@ -524,16 +536,21 @@ class OtzController extends Controller
 
 	public function upload_excel(Request $request)
 	{
+		if (!$request->hasFile('upload')){
+	        session(['toast_message' => 'Please select a file before clicking the submit button.']);
+	        session(['toast_error' => 1]);
+			return back();
+		}
+
 		$file = $request->upload->path();
 		// $path = $request->upload->store('public/results/vl');
-		$financial_year = $request->input('financial_year');
+		// $financial_year = $request->input('financial_year');
 
 		$data = Excel::load($file, function($reader){
 			$reader->toArray();
 		})->get();
 
 		$partner = session('session_partner');
-
 		// print_r($data);die();
 
 		foreach ($data as $key => $value) {
@@ -551,12 +568,12 @@ class OtzController extends Controller
 			$fac->save();
 
 			DB::connection('mysql_wr')->table('t_non_mer')
-				->where(['facility' => $fac->id, 'financial_year' => $financial_year])
+				->where(['facility' => $fac->id, 'financial_year' => $value->financial_year])
 				->update([
-					'viremia_beneficiaries' => $value->viremia_beneficiaries,
-					'dsd_beneficiaries' => $value->dsd_beneficiaries,
-					'otz_beneficiaries' => $value->otz_beneficiaries,
-					'men_clinic_beneficiaries' => $value->men_clinic_beneficiaries,
+					'viremia_beneficiaries' => (int) $value->viremia_beneficiaries ?? null,
+					'dsd_beneficiaries' => (int) $value->dsd_beneficiaries ?? null,
+					'otz_beneficiaries' => (int) $value->otz_beneficiaries ?? null,
+					'men_clinic_beneficiaries' => (int) $value->men_clinic_beneficiaries ?? null,
 				]);
 		}
 

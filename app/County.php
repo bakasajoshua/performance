@@ -12,5 +12,4 @@ class County extends BaseModel
 	{
 		return $this->hasMany('App\Subcounty', 'county');
 	}
-
 }

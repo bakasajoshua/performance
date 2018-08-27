@@ -3,7 +3,9 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 use App\Lookup;
+use App\User;
 use DB;
 
 class GeneralController extends Controller
@@ -64,6 +66,16 @@ class GeneralController extends Controller
 	}
 
 
+    public function change_password(Request $request, User $user)
+    {
+        if(Auth::user()) Auth::logout();
+        Auth::login($user);
+        session(['session_partner' => $user->partner]);
+        
+        return view('forms.password_update', ['no_header' => true, 'user' => $user]);
+    }
+
+
 	public function targets()
 	{
 		$user = auth()->user();
@@ -77,5 +89,12 @@ class GeneralController extends Controller
 		$user = auth()->user();
 		$partner = session('session_partner');
 		return view('forms.upload_nonmer', ['no_header' => true, 'partner' => $partner]);
+	}
+
+	public function indicators()
+	{
+		$user = auth()->user();
+		$partner = session('session_partner');
+		return view('forms.upload_indicators', ['no_header' => true, 'partner' => $partner]);
 	}
 }

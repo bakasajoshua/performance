@@ -4,6 +4,10 @@ namespace App\Http\Controllers;
 
 use App\User;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Mail;
+use Illuminate\Support\Facades\Auth;
+
+use App\Mail\NewUser;
 
 class UserController extends Controller
 {
@@ -25,7 +29,7 @@ class UserController extends Controller
     public function create()
     {
         $partners = \App\Partner::all();
-        return view('base.register', ['partners' => $partners]);
+        return view('forms.users', ['partners' => $partners]);
     }
 
     /**
@@ -40,6 +44,13 @@ class UserController extends Controller
         $user->fill($request->except('_token'));
         $user->password = env('DEFAULT_PASSWORD');
         $user->save();
+
+        $mail_array = [$user->email];
+        Mail::to($mail_array)->cc(['jbatuka@usaid.gov', 'joelkith@gmail.com'])->send(new NewUser($user));
+        // Mail::to($mail_array)->cc(['joelkith@gmail.com'])->send(new NewUser($user));
+
+        session(['toast_message' => 'User Created.']);
+
         return back();
     }
 
@@ -63,7 +74,7 @@ class UserController extends Controller
     public function edit(User $user)
     {
         $partners = \App\Partner::all();
-        return view('base.register', ['partners' => $partners, 'user' => $user]);
+        return view('forms.users', ['partners' => $partners, 'user' => $user]);
     }
 
     /**
@@ -75,9 +86,10 @@ class UserController extends Controller
      */
     public function update(Request $request, User $user)
     {
-        $user->fill($request->except('_token'));
+        $user->fill($request->except(['_token', 'confirm_password']));
         $user->save();
-        return redirect('/user');
+        session(['toast_message' => 'The updates to your profile has been made.']);
+        return redirect('/non_mer');
     }
 
     /**
@@ -89,6 +101,15 @@ class UserController extends Controller
     public function destroy(User $user)
     {
         $user->delete();
-        return redirect('/user');
+        return redirect('/non_mer');
+    }
+
+
+    public function change_password(Request $request, User $user)
+    {
+        if(Auth::user()) Auth::logout();
+        Auth::login($user);
+
+        return view('forms.password_update', ['user' => $user]);
     }
 }

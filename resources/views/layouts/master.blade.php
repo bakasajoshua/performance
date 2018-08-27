@@ -53,16 +53,28 @@
 						<li><a href="{{ url('pmtct') }} ">PMTCT</a></li>	
 						<li><a href="{{ url('art') }} ">ART</a></li>	
 						<li><a href="{{ url('otz') }} ">Non Mer</a></li>	
+						<li><a href="{{ url('regimen') }} ">MOH 729</a></li>	
 					</ul>
 					<ul class="nav navbar-nav navbar-right">
+						<li><a href="{{ url('/guide') }} ">User Guide</a></li>
 						@guest
 							<li><a href="{{ url('/login') }} ">Login</a></li>
 						@endguest	
 						@auth
-							<li><a href="{{ url('/guide') }} ">User Guide</a></li>
 							<li class="dropdown">
 								<a href="#" data-target="#" class="dropdown-toggle" data-toggle="dropdown">
-									Download Template <b class="caret"></b>
+									Download Indicators Template <b class="caret"></b>
+								</a>
+								<ul class="dropdown-menu">
+									<li><a href="{{ url('indicators/download/2017') }} ">2017</a></li>
+									<li><a href="{{ url('indicators/download/2018') }} ">2018</a></li>
+									<li><a href="{{ url('indicators/download/2019') }} ">2019</a></li>
+								</ul>
+							</li>
+							<li><a href="{{ url('/indicators') }} ">Upload Indicators</a></li>
+							<li class="dropdown">
+								<a href="#" data-target="#" class="dropdown-toggle" data-toggle="dropdown">
+									Download Non-mer Template <b class="caret"></b>
 								</a>
 								<ul class="dropdown-menu">
 									<li><a href="{{ url('otz/download/2017') }} ">2017</a></li>
@@ -128,6 +140,7 @@
 	<script src='//cdn.datatables.net/responsive/2.1.1/js/dataTables.responsive.js' type='text/javascript'></script>
 	<script src='//cdn.datatables.net/buttons/1.4.2/js/dataTables.buttons.min.js' type='text/javascript'></script>
 	<script src='//cdn.datatables.net/buttons/1.4.2/js/buttons.html5.min.js' type='text/javascript'></script>
+	<script src='//cdn.datatables.net/buttons/1.4.2/js/buttons.colVis.min.js' type='text/javascript'></script>
 	<script src='//cdnjs.cloudflare.com/ajax/libs/jszip/3.1.3/jszip.min.js' type='text/javascript'></script>
 
 	<script src="{{ url('js/customFunctions1.3.js') }}"></script>
@@ -180,7 +193,7 @@
 		    @else
 			    $('#errorAlertDateRange').hide();
 			    $(".js-example-basic-single").select2();
-			    $("#breadcrum").html("{!! $default_breadcrumb !!}");
+			    $("#breadcrum").html("{!! $default_breadcrumb ?? '' !!}");
 		    @endif		    
 
 			$("select").change(function(){
