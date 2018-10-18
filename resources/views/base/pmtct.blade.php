@@ -32,6 +32,19 @@
 	<div class="col-md-12 col-sm-12 col-xs-12">
 		<div class="panel panel-default">
 		    <div class="panel-heading">
+			    Testing PMTCT <div class="display_date"></div>
+		    </div>
+			<div class="panel-body" id="testing">
+				<center><div class="loader"></div></center>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="row">
+	<div class="col-md-12 col-sm-12 col-xs-12">
+		<div class="panel panel-default">
+		    <div class="panel-heading">
 			    Point Of Starting ART <div class="display_date"></div>
 		    </div>
 			<div class="panel-body" id="starting_point">
@@ -90,17 +103,19 @@
 	function reload_page()
 	{
 		$("#haart").html("<center><div class='loader'></div></center>");		
+		$("#testing").html("<center><div class='loader'></div></center>");
 		$("#starting_point").html("<center><div class='loader'></div></center>");
 		$("#discovery_positivity").html("<center><div class='loader'></div></center>");
 		$("#eid").html("<center><div class='loader'></div></center>");
 		$("#male_testing").html("<center><div class='loader'></div></center>");
 
 
-		$("#haart").load("{{ secure_url('pmtct/haart') }}");
-		$("#starting_point").load("{{ secure_url('pmtct/starting_point') }}");
-		$("#discovery_positivity").load("{{ secure_url('pmtct/discovery_positivity') }}");
-		$("#eid").load("{{ secure_url('pmtct/eid') }}");
-		$("#male_testing").load("{{ secure_url('pmtct/male_testing') }}");
+		$("#haart").load("{{ url('pmtct/haart') }}");
+		$("#testing").load("{{ url('pmtct/testing') }}");
+		$("#starting_point").load("{{ url('pmtct/starting_point') }}");
+		$("#discovery_positivity").load("{{ url('pmtct/discovery_positivity') }}");
+		$("#eid").load("{{ url('pmtct/eid') }}");
+		$("#male_testing").load("{{ url('pmtct/male_testing') }}");
 	}
 
 

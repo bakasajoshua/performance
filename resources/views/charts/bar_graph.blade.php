@@ -1,5 +1,7 @@
 <div id="{{$div}}"></div>
 
+{!! $paragraph ?? '' !!}
+
 <script type="text/javascript">
 	
     $(function () {
@@ -41,7 +43,7 @@
             legend: {
                 layout: 'horizontal',
                 align: 'right',
-                x: -70,
+                x: -35,
                 verticalAlign: 'bottom',
                 y: 5,
                 floating: false,
@@ -60,7 +62,7 @@
                 '#4d79ff',
                 '#80ff00',
                 '#ff8000',
-                '#ff00f',
+                '#00ffff',
                 '#ff4000'
             ],     
             series: {!! json_encode($outcomes) !!}

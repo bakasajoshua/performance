@@ -11,6 +11,7 @@ use \App\Ward;
 use \App\Facility;
 
 use Excel;
+use Carbon\Carbon;
 use Illuminate\Support\Facades\Cache;
 use Illuminate\Support\Facades\Mail;
 
@@ -23,40 +24,40 @@ class Lookup
 	{
 		switch ($month) {
 			case 1:
-				$value = 'January';
+				$value = 'Jan';
 				break;
 			case 2:
-				$value = 'February';
+				$value = 'Feb';
 				break;
 			case 3:
-				$value = 'March';
+				$value = 'Mar';
 				break;
 			case 4:
-				$value = 'April';
+				$value = 'Apr';
 				break;
 			case 5:
 				$value = 'May';
 				break;
 			case 6:
-				$value = 'June';
+				$value = 'Jun';
 				break;
 			case 7:
-				$value = 'July';
+				$value = 'Jul';
 				break;
 			case 8:
-				$value = 'August';
+				$value = 'Aug';
 				break;
 			case 9:
-				$value = 'September';
+				$value = 'Sep';
 				break;
 			case 10:
-				$value = 'October';
+				$value = 'Oct';
 				break;
 			case 11:
-				$value = 'November';
+				$value = 'Nov';
 				break;
 			case 12:
-				$value = 'December';
+				$value = 'Dec';
 				break;
 			default:
 				$value = '';
@@ -67,7 +68,21 @@ class Lookup
 
 	}
 
-	public static function get_category($year, $month)
+	public static function get_category($row)
+	{
+		$groupby = session('filter_groupby', 1);
+		if($groupby > 9){
+			if($groupby == 10) return 'Calendar Year ' . $row->year;
+			if($groupby == 11) return 'FY ' . $row->financial_year;
+			if($groupby == 12) return self::resolve_month($row->month) . ', ' . $row->year;
+			if($groupby == 13) return "FY {$row->financial_year} Q {$row->quarter}";
+		}
+		else{
+			return $row->name;
+		}	
+	} 
+
+	public static function get_month_category($year, $month)
 	{
 		$m = self::resolve_month($month);
 		return substr($m, 0, 3) . ', ' . $year;
@@ -81,6 +96,35 @@ class Lookup
 			$val = round(($num / $den * 100), $roundby);
 		}
 		return $val;
+	}
+
+	public static function get_target_divisor()
+	{
+		$groupby = session('filter_groupby', 1);
+		if($groupby > 9){
+			if($groupby == 10 || $groupby == 11) return 1;
+			if($groupby == 12) return 12;
+			if($groupby == 13) return 4;
+		}
+		else{			
+			$financial_year = session('filter_financial_year');
+			$quarter = session('filter_quarter');
+
+			$year = session('filter_year');
+			$month = session('filter_month');
+			$to_year = session('to_year');
+			$to_month = session('to_month');
+
+			if($quarter) return 4;
+			if($to_year){
+				$first = Carbon::create($year, $month, 1);
+				$second = Carbon::create($to_year, $to_month, 1);
+				$months = $second->diffInMonths($first);
+				return (12 / $months);
+			}
+			if($month) return 12;
+			return 1;
+		}
 	}
 
 	public static function progress_status($val)
@@ -120,7 +164,7 @@ class Lookup
 		return [
 			'default_breadcrumb' => $default_breadcrumb,
 			'select_options' => $select_options,
-			'date_url' => secure_url('filter/date'),
+			'date_url' => url('filter/date'),
 		];
 	}
 
@@ -141,8 +185,83 @@ class Lookup
 			'counties' => $counties,
 			'subcounties' => $subcounties,
 			'wards' => $wards,
-			'date_url' => secure_url('filter/date'),
+			'date_url' => url('filter/date'),
 		];
+	}
+
+	public static function table_data()
+	{
+		$data['div'] = str_random(15);
+		$data['groupby'] = session('filter_groupby', 1);
+		$data['i'] = 0;
+
+		$data['calc_percentage'] = function($num, $den, $roundby=2)
+			{
+				if(!$den){
+					$val = null;
+				}else{
+					$val = round(($num / $den * 100), $roundby) . "%";
+				}
+				return $val;
+			};
+
+		$data['get_val'] = function($groupby, $row, $collection, $attribute, $number_format=false)
+		{
+			if($groupby > 9){
+				if($groupby == 10) $match = $collection->where('year', $row->year)->first();
+				if($groupby == 11) $match = $collection->where('financial_year', $row->financial_year)->first();
+				if($groupby == 12) $match = $collection->where('year', $row->year)->where('month', $row->month)->first();
+				if($groupby == 13) $match = $collection->where('financial_year', $row->financial_year)->where('quarter', $row->quarter)->first();
+			}
+			else{
+				$match = $collection->where('div_id', $row->div_id)->first();
+			}
+			if($match){
+				if(is_array($attribute)){
+					$data = [];
+					foreach ($attribute as $key => $value) {
+						$data[$value] = $match->$value ?? null;
+					}
+					return $data;
+				}
+				else{
+					$val = $match->$attribute ?? null;
+					if($number_format) return number_format($val);
+					return $val;					
+				}
+			}
+			return null;
+		};
+		return $data;
+	}
+
+	public static function get_val($row, $collection, $attribute, $number_format=false)
+	{
+		$groupby = session('filter_groupby', 1);
+		if($groupby > 9){
+			if($groupby == 10) $match = $collection->where('year', $row->year)->first();
+			if($groupby == 11) $match = $collection->where('financial_year', $row->financial_year)->first();
+			if($groupby == 12) $match = $collection->where('year', $row->year)->where('month', $row->month)->first();
+			if($groupby == 13) $match = $collection->where('financial_year', $row->financial_year)->where('quarter', $row->quarter)->first();
+		}
+		else{
+			$match = $collection->where('div_id', $row->div_id)->first();
+		}
+		if($match){
+			if(is_array($attribute)){
+				$data = [];
+				foreach ($attribute as $key => $value) {
+					$data[$value] = $match->$value ?? null;
+				}
+				return $data;
+			}
+			else{
+				$val = $match->$attribute ?? null;
+				if($number_format) return number_format($val);
+				return $val;				
+			}
+		}
+		return null;		
 	}
 
 	public static function set_crumb($name = '')
@@ -152,12 +271,71 @@ class Lookup
 
 	public static function date_query($for_target=false)
 	{
+		$financial_year = session('filter_financial_year');
+		$quarter = session('filter_quarter');
+
+		$year = session('filter_year');
+		$month = session('filter_month');
+		$to_year = session('to_year');
+		$to_month = session('to_month');
+
+		if($for_target) return " financial_year='{$financial_year}'";
+
+		if($to_year) return self::date_range_query($year, $to_year, $month, $to_month);
+
+		$query = " financial_year='{$financial_year}'";
+		if($quarter) $query .= " AND quarter='{$quarter}'";
+		if($month) $query .= " AND month='{$month}'";
+
+		return $query;
+
+		// if(session('financial') || $for_target){
+		// 	$financial_year = session('filter_financial_year');
+		// 	$quarter = session('filter_quarter');
+		// 	$query = " financial_year='{$financial_year}'";
+
+		// 	if($quarter && !$for_target) $query .= " AND quarter='{$quarter}'";
+		// }else{
+		// 	$default = date('Y');
+		// 	$year = session('filter_year', $default);
+		// 	$month = session('filter_month');
+		// 	$to_year = session('to_year');
+		// 	$to_month = session('to_month');
+
+		// 	$query = '';		
+
+		// 	if(!$to_year){
+		// 		$query .= " year='{$year}' ";
+
+		// 		if($month) $query .= " AND month='{$month}' ";
+		// 	}
+		// 	else{
+		// 		$query = self::date_range_query($year, $to_year, $month, $to_month);
+		// 	}
+		// }
+		// return $query;
+	}
+
+	public static function apidb_date_query_old($for_target=false)
+	{
 		if(session('financial') || $for_target){
 			$financial_year = session('filter_financial_year');
 			$quarter = session('filter_quarter');
-			$query = " financial_year='{$financial_year}'";
 
-			if($quarter && !$for_target) $query .= " AND quarter='{$quarter}'";
+			$prev_year = $financial_year-1;
+
+			if($quarter){
+				$month = self::min_per_quarter($quarter);
+				$to_month = self::max_per_quarter($quarter);
+				if($quarter == 1) $query = self::date_range_query($prev_year, $prev_year, $month, $to_month);				
+				else{
+					$query = self::date_range_query($financial_year, $financial_year, $month, $to_month);
+				}
+			}
+			else{
+				$query = self::date_range_query($prev_year, $financial_year, 10, 9);
+			}
+
 		}else{
 			$default = date('Y');
 			$year = session('filter_year', $default);
@@ -173,10 +351,50 @@ class Lookup
 				if($month) $query .= " AND month='{$month}' ";
 			}
 			else{
-				$query .= " ((year = '{$year}' AND month >= '{$month}') OR (year = '{$to_year}' AND month <= '{$to_month}') OR (year > '{$year}' AND year > '{$to_year}'))  ";
+				$query = self::date_range_query($year, $to_year, $month, $to_month);
 			}
 		}
 		return $query;
+	}
+
+	public static function apidb_date_query($for_target=false)
+	{
+		$financial_year = session('filter_financial_year');
+		$quarter = session('filter_quarter');
+
+		$year = session('filter_year');
+		$month = session('filter_month');
+		$to_year = session('to_year');
+		$to_month = session('to_month');
+
+		if($to_year) return self::date_range_query($year, $to_year, $month, $to_month);
+
+		$prev_year = $financial_year-1;
+
+		if($quarter){
+			$month = self::min_per_quarter($quarter);
+			$to_month = self::max_per_quarter($quarter);
+			if($quarter == 1) $query = self::date_range_query($prev_year, $prev_year, $month, $to_month);				
+			else{
+				$query = self::date_range_query($financial_year, $financial_year, $month, $to_month);
+			}
+		}
+		else if($month){
+			if($month > 9) $query = "year={$prev_year} ";
+			if($month < 10) $query = "year={$financial_year} ";
+			$query .= " and month={$month} ";
+		}
+		else{
+			$query = self::date_range_query($prev_year, $financial_year, 10, 9);
+		}
+
+		return $query;
+	}
+
+	public static function date_range_query($year, $to_year, $month, $to_month)
+	{
+		if($year == $to_year) return " year={$year} AND month between {$month} and {$to_month} ";
+		return " ((year = '{$year}' AND month >= '{$month}') OR (year = '{$to_year}' AND month <= '{$to_month}') OR (year > '{$year}' AND year < '{$to_year}')) ";
 	}
 
 	/*public static function year_month_query()
@@ -218,7 +436,7 @@ class Lookup
 		}
 	}*/
 
-	public static function year_month_query()
+	public static function year_month_query($deduction=2)
 	{
 		if(session('financial')){
 			$cfy = date('Y');
@@ -229,32 +447,45 @@ class Lookup
 			$m = session('filter_month');
 
 			if(!$quarter){
-				if($financial_year <> $cfy) return " financial_year='{$financial_year}' and month=9";
+				// if($financial_year <> $cfy) return " financial_year='{$financial_year}' and month=9";
+				if($financial_year <> $cfy){
+					$month = 9 - ($deduction-1);
+					if($m) $month = $m;
+				}
 				else{
-					$month = date('m') - 2;
+					$month = date('m') - $deduction;
 					// if(date('d') < 10) $month--;
-					if($month == 9) $financial_year--;
+					// if($month == 9) $financial_year--;
+					if($month < 10 && date('m') > 9) $financial_year--;
 					if($month < 1) $month += 12;
 					if($m) $month = $m;
-					return " financial_year='{$financial_year}' and month='{$month}'";
+					// return " financial_year='{$financial_year}' and month='{$month}'";
 				}
 			}
 			else{
 				$n = \App\Synch::get_financial_year_quarter(date('Y'), date('m'));
-				$month = self::max_per_quarter($quarter);
+				$month = self::max_per_quarter($quarter) - ($deduction-1);
 
 				if($financial_year <> $cfy || ($financial_year == $cfy && $quarter <> $n['quarter'])){					
-					return " financial_year='{$financial_year}' and month='{$month}'";
+					// return " financial_year='{$financial_year}' and month='{$month}'";
 				}
 				else{
-					$month = date('m') - 2;
+					$month = date('m') - $deduction;
 					// if(date('d') < 10) $month--;
-					if($month == 9) $financial_year--;
+					// if($month == 9) $financial_year--;
+					if($month < 10 && date('m') > 9) $financial_year--;
 					if($month < 1) $month += 12;
-					return " financial_year='{$financial_year}' and month='{$month}'";
+					// return " financial_year='{$financial_year}' and month='{$month}'";
 				}
 			}
 		}
+		session(['tx_financial_year' => $financial_year, 'tx_month' => $month]);
+		return " financial_year='{$financial_year}' and month='{$month}'";
+	}
+
+	public static function year_month_name()
+	{
+		return '(' . session('tx_financial_year') . ', ' . Lookup::resolve_month(session('tx_month')) . ')';
 	}
 
 	public static function max_per_quarter($quarter){
@@ -277,26 +508,47 @@ class Lookup
 		return $m;
 	}
 
+	public static function min_per_quarter($quarter){
+		switch ($quarter) {
+			case 1:
+				$m = 10;
+				break;
+			case 2:
+				$m = 1;
+				break;
+			case 3:
+				$m = 4;
+				break;
+			case 4:
+				$m = 7;
+				break;			
+			default:
+				break;
+		}
+		return $m;
+	}
+
 	public static function divisions_query()
 	{
-		$query = "1 ";
-		if(session('filter_county')) $query .= " AND county='" . session('filter_county') . "' ";
-		if(session('filter_subcounty')) $query .= " AND subcounty_id='" . session('filter_subcounty') . "' ";
-		if(session('filter_ward')) $query .= " AND ward_id='" . session('filter_ward') . "' ";
-		if(session('filter_facility')) $query .= " AND view_facilitys.id='" . session('filter_facility') . "' ";
-		if(session('filter_partner')) $query .= " AND partner='" . session('filter_partner') . "' ";
-		if(session('filter_agency')) $query .= " AND funding_agency_id='" . session('filter_agency') . "' ";
+		$query = " 1 ";
+		if(session('filter_county')) $query .= " AND county=" . session('filter_county') . " ";
+		if(session('filter_subcounty')) $query .= " AND subcounty_id=" . session('filter_subcounty') . " ";
+		if(session('filter_ward')) $query .= " AND ward_id=" . session('filter_ward') . " ";
+		if(session('filter_facility')) $query .= " AND view_facilitys.id=" . session('filter_facility') . " ";
+		if(session('filter_partner')) $query .= " AND partner=" . session('filter_partner') . " ";
+		if(session('filter_agency')) $query .= " AND funding_agency_id=" . session('filter_agency') . " ";
 
 		return $query;
 	}
 
-	public static function groupby_query()
+	public static function groupby_query($def=true)
 	{
 		$groupby = session('filter_groupby', 1);
 
 		switch ($groupby) {
 			case 1:
-				$select_query = "partner as div_id, partnername as name";
+				$select_query = "partner as div_id";
+				if($def) $select_query .= ", partnername as name";
 				$group_query = "partner";
 				break;
 			case 2:
@@ -316,8 +568,87 @@ class Lookup
 				$group_query = "view_facilitys.id";
 				break;
 			case 6:
-				$select_query = "funding_agency_id as div_id, funding_agency";
+				$select_query = "funding_agency_id as div_id";
+				if($def) $select_query .= ", funding_agency as name";
 				$group_query = "funding_agency_id";
+				break;
+			case 10:
+				$select_query = "year";
+				$group_query = "year";
+				break;
+			case 11:
+				$select_query = "financial_year";
+				$group_query = "financial_year";
+				break;	
+			case 12:
+				$select_query = "year, month";
+				$group_query = "year, month";
+				break;	
+			case 13:
+				$select_query = "financial_year, quarter";
+				$group_query = "financial_year, quarter";
+				break;			
+			default:
+				break;
+		}
+		return ['select_query' => $select_query, 'group_query' => $group_query];
+	}
+
+	public static function duplicate_parameters($row)
+	{
+		$groupby = session('filter_groupby', 1);
+
+		if($groupby == 12) return ['year', $row->year, 'month', $row->month];
+		else if($groupby == 13) return ['financial_year', $row->financial_year, 'quarter', $row->quarter];
+		else{
+			$d = [];
+			$q = self::groupby_query();
+			if($groupby < 10) $d = [$q['group_query'], $row->div_id];
+			else{
+				$col = $q['group_query'];
+				$d = [$col, $row->$col];
+			}
+			return array_merge($d, ['', '']);
+		}
+	}
+
+	public static function groupby_query_indicators()
+	{
+		$groupby = session('filter_groupby', 1);
+
+		switch ($groupby) {
+			case 1:
+				$select_query = "partner as div_id, partners.name";
+				$group_query = "partner";
+				break;
+			case 2:
+				$select_query = "county as div_id, countyname as name, CountyDHISCode as dhis_code, CountyMFLCode as mfl_code";
+				$group_query = "county";
+				break;
+			case 3:
+				$select_query = "subcounty_id as div_id, subcounty as name, SubCountyDHISCode as dhis_code, SubCountyMFLCode as mfl_code";
+				$group_query = "subcounty_id";
+				break;
+			case 4:
+				$select_query = "ward_id as div_id, wardname as name, WardDHISCode as dhis_code, WardMFLCode as mfl_code";
+				$group_query = "ward_id";
+				break;
+			case 5:
+				$select_query = "view_facilitys.id as div_id, name, new_name, DHIScode as dhis_code, facilitycode as mfl_code";
+				$group_query = "view_facilitys.id";
+				break;
+			case 6:
+				$select_query = "funding_agency_id as div_id";
+				if($def) $select_query .= ", funding_agency as name";
+				$group_query = "funding_agency_id";
+				break;
+			case 10:
+				$select_query = "year";
+				$group_query = "year";
+				break;
+			case 11:
+				$select_query = "financial_year";
+				$group_query = "financial_year";
 				break;			
 			default:
 				break;
@@ -365,4 +696,19 @@ class Lookup
     	// if($val == 0) return 'NO';
     	return null;
     }
+
+	public static function get_current_header()
+	{		
+    	$year = ((int) Date('Y'));
+    	$prev_year = ((int) Date('Y')) - 1;
+    	$month = ((int) Date('m')) - 1;
+    	$prev_month = ((int) Date('m'));
+
+    	if($month == 0){
+    		return "(Jan - Dec {$prev_year})";
+    	}
+    	else{
+    		return "(" . self::resolve_month($prev_month) . ", {$prev_year} - " . self::resolve_month($month) . ", {$year})";
+    	}
+	}
 }

@@ -52,6 +52,10 @@
 						<li><a href="{{ url('testing') }} ">Testing</a></li>	
 						<li><a href="{{ url('pmtct') }} ">PMTCT</a></li>	
 						<li><a href="{{ url('art') }} ">ART</a></li>	
+						<li><a href="{{ url('vmmc') }} ">VMMC</a></li>	
+						<li><a href="{{ url('tb') }} ">TB</a></li>	
+						<li><a href="{{ url('keypop') }} ">KeyPOP</a></li>	
+						<li><a href="{{ url('indicators') }} ">Indicators</a></li>	
 						<li><a href="{{ url('otz') }} ">Non Mer</a></li>	
 						<li><a href="{{ url('regimen') }} ">MOH 729</a></li>	
 					</ul>
@@ -61,6 +65,8 @@
 							<li><a href="{{ url('/login') }} ">Login</a></li>
 						@endguest	
 						@auth
+							<li><a href="{{ url('/pns/download') }} ">Download PNS Template</a></li>
+							<li><a href="{{ url('/pns/upload') }} ">PNS Upload</a></li>
 							<li class="dropdown">
 								<a href="#" data-target="#" class="dropdown-toggle" data-toggle="dropdown">
 									Download Indicators Template <b class="caret"></b>
@@ -71,7 +77,7 @@
 									<li><a href="{{ url('indicators/download/2019') }} ">2019</a></li>
 								</ul>
 							</li>
-							<li><a href="{{ url('/indicators') }} ">Upload Indicators</a></li>
+							<li><a href="{{ url('/indicators/upload') }} ">Upload Indicators</a></li>
 							<li class="dropdown">
 								<a href="#" data-target="#" class="dropdown-toggle" data-toggle="dropdown">
 									Download Non-mer Template <b class="caret"></b>
@@ -82,7 +88,7 @@
 									<li><a href="{{ url('otz/download/2019') }} ">2019</a></li>
 								</ul>
 							</li>
-							<li><a href="{{ url('/non_mer') }} ">Upload Non-Mer</a></li>
+							<li><a href="{{ url('/otz/upload') }} ">Upload Non-Mer</a></li>
 							@if(auth()->user()->user_type_id == 1)
 								<li><a href="{{ url('/user/create') }} ">Create User</a></li>
 							@endif
@@ -104,7 +110,11 @@
 			@empty($no_header)
 
 				@if(session('financial'))
-					@include('layouts.financial')
+					@if(isset($no_fac))
+						@include('layouts.no_fac')
+					@else
+						@include('layouts.financial')
+					@endif
 				@else
 					@include('layouts.year_month')
 				@endif
@@ -119,6 +129,16 @@
 		</div>
 		<!-- End of Dashboard area -->
 	</body>
+	
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-124819698-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-124819698-1');
+	</script>
 
 
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.3/jquery.min.js"></script>
@@ -157,6 +177,26 @@
 		            var year = $("#ui-datepicker-div .ui-datepicker-year :selected").val();
 		            $(this).datepicker('setDate', new Date(year, month, 1));
 		        }
+		    });
+
+		    $("button").click(function () {
+			    var first, second;
+			    first = $(".date-picker[name=startDate]").val();
+			    second = $(".date-picker[name=endDate]").val();
+		    
+			    from = format_date(first);
+			    /* from is an array
+			     	[0] => month
+			     	[1] => year*/
+			    to 	= format_date(second);
+
+			    var error_check = check_error_date_range(from, to);
+
+			    if (!error_check){
+			    	var date_range_data = {'year': from[1], 'month' : from[0], 'to_year': to[1], 'to_month' : to[0]};
+			    	date_filter('', date_range_data, "{{ $date_url ?? '' }}");
+			    }
+
 		    });
 	    	
 	        $.ajaxSetup({

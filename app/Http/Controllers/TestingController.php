@@ -12,210 +12,55 @@ class TestingController extends Controller
 	public function testing_outcomes()
 	{
 		$date_query = Lookup::date_query();
-		$divisions_query = Lookup::divisions_query();
 
-		$sql = "
-			SUM(`tested_total_(sum_hv01-01_to_hv01-10)_hv01-10`) AS tests,
-			SUM(`positive_total_(sum_hv01-18_to_hv01-27)_hv01-26`) AS pos
-		";
-
-		$rows = DB::table('d_hiv_testing_and_prevention_services')
-			->join('view_facilitys', 'view_facilitys.id', '=', 'd_hiv_testing_and_prevention_services.facility')
-			->selectRaw($sql)
-			->addSelect('year', 'month')
+		$rows = DB::table('m_testing')
+			->join('view_facilitys', 'view_facilitys.id', '=', 'm_testing.facility')
+			->selectRaw("SUM(testing_total) AS tests, SUM(positive_total) as pos")
+			->when(true, $this->get_callback('tests'))
 			->whereRaw($date_query)
-			->whereRaw($divisions_query)
-			->groupBy('year', 'month')
-			->orderBy('year', 'asc')
-			->orderBy('month', 'asc')
-			->get();
-
-		$sql = "
-			SUM(`total_tested_hiv`) AS tests,
-			SUM(`total_received_hivpos_results`) AS pos
-		";
-
-		$rows2 = DB::table('d_hiv_counselling_and_testing')
-			->join('view_facilitys', 'view_facilitys.id', '=', 'd_hiv_counselling_and_testing.facility')
-			->selectRaw($sql)
-			->addSelect('year', 'month')
-			->whereRaw($date_query)
-			->whereRaw($divisions_query)
-			->groupBy('year', 'month')
-			->orderBy('year', 'asc')
-			->orderBy('month', 'asc')
 			->get();
 
 		$sql2 = "
 			SUM(`positive_total_(sum_hv01-18_to_hv01-27)_hv01-26`) AS pos,
 			SUM(`tested_total_(sum_hv01-01_to_hv01-10)_hv01-10`) AS tests
 		";
-		
-		$date_query = Lookup::date_query(true);
 
 		$target_obj = DB::table('t_hiv_testing_and_prevention_services')
 			->join('view_facilitys', 'view_facilitys.id', '=', 't_hiv_testing_and_prevention_services.facility')
 			->selectRaw($sql2)
-			->whereRaw($date_query)
-			->whereRaw($divisions_query)
-			->first();
+			->when(true, $this->target_callback())
+			->get();
 
-		$target = round(($target_obj->tests / 12), 2);
+		$groupby = session('filter_groupby', 1);
+		$divisor = Lookup::get_target_divisor();
+
+		if($groupby > 9){
+			$t = $target_obj->first()->tests;
+			$target = round(($t / $divisor), 2);
+		}
 
 		$data['div'] = str_random(15);
 
 		$data['outcomes'][0]['name'] = "Positive Tests";
 		$data['outcomes'][1]['name'] = "Negative Tests";
-		$data['outcomes'][2]['name'] = "Monthly Target";
-		// $data['outcomes'][3]['name'] = "Positivity";
-		// $data['outcomes'][4]['name'] = "Targeted Positivity";
-
-		// $data['outcomes'][0]['yAxis'] = 1;
-		// $data['outcomes'][1]['yAxis'] = 1;
-		// $data['outcomes'][2]['yAxis'] = 1;
+		$data['outcomes'][2]['name'] = "Target";
 
 		$data['outcomes'][0]['type'] = "column";
 		$data['outcomes'][1]['type'] = "column";
 		$data['outcomes'][2]['type'] = "spline";
-		// $data['outcomes'][3]['type'] = "spline";
-		// $data['outcomes'][4]['type'] = "spline";
 
-		$data['outcomes'][0]['tooltip'] = array("valueSuffix" => ' ');
-		$data['outcomes'][1]['tooltip'] = array("valueSuffix" => ' ');
-		$data['outcomes'][2]['tooltip'] = array("valueSuffix" => ' ');
-		// $data['outcomes'][3]['tooltip'] = array("valueSuffix" => ' %');
-		// $data['outcomes'][4]['tooltip'] = array("valueSuffix" => ' %');
+		foreach ($rows as $key => $row){
+			$data['categories'][$key] = Lookup::get_category($row);
 
-		$old_table = "`d_hiv_counselling_and_testing`";
-		$new_table = "`d_hiv_testing_and_prevention_services`";
-
-		$old_column = "`total_received_hivpos_results`";
-		$new_column = "`positive_total_(sum_hv01-18_to_hv01-27)_hv01-26`";
-
-		$old_column_tests = "`total_tested_hiv`";
-		$new_column_tests = "`tested_total_(sum_hv01-01_to_hv01-10)_hv01-10`";
-
-		foreach ($rows as $key => $row) {
-			$data['categories'][$key] = Lookup::get_category($row->year, $row->month);
-
-			$duplicate_pos = DB::select(
-				DB::raw("CALL `proc_get_duplicate_total`('{$old_table}', '{$new_table}', '{$old_column}', '{$new_column}', '{$divisions_query}', {$row->year}, {$row->month});"));
-
-			$duplicate_tests = DB::select(
-				DB::raw("CALL `proc_get_duplicate_total`('{$old_table}', '{$new_table}', '{$old_column_tests}', '{$new_column_tests}', '{$divisions_query}', {$row->year}, {$row->month});"));
-
-			$tests = $row->tests + $rows2[$key]->tests - ($duplicate_tests[0]->total ?? 0);
-			$pos = $row->pos + $rows2[$key]->pos - ($duplicate_pos[0]->total ?? 0);
-			$neg = $tests - $pos;
-
-			$data["outcomes"][0]["data"][$key] = (int) $pos;
-			$data["outcomes"][1]["data"][$key] = (int) $neg;
-			$data["outcomes"][2]["data"][$key] = $target;
-
-			// $data["outcomes"][3]["data"][$key] = Lookup::get_percentage($pos, ($pos + $neg));
-			// $data["outcomes"][4]["data"][$key] = Lookup::get_percentage($target->pos, $target->tests);
-		}
-		// return view('charts.dual_axis', $data);		
-		return view('charts.bar_graph', $data);		
-	}
-
-
-	public function positivity()
-	{
-		$date_query = Lookup::date_query();
-		$divisions_query = Lookup::divisions_query();
-
-		$sql = "
-			SUM(`tested_total_(sum_hv01-01_to_hv01-10)_hv01-10`) AS tests,
-			SUM(`positive_total_(sum_hv01-18_to_hv01-27)_hv01-26`) AS pos
-		";
-
-		$rows = DB::table('d_hiv_testing_and_prevention_services')
-			->join('view_facilitys', 'view_facilitys.id', '=', 'd_hiv_testing_and_prevention_services.facility')
-			->selectRaw($sql)
-			->addSelect('year', 'month')
-			->whereRaw($date_query)
-			->whereRaw($divisions_query)
-			->groupBy('year', 'month')
-			->orderBy('year', 'asc')
-			->orderBy('month', 'asc')
-			->get();
-
-		$sql = "
-			SUM(`total_tested_hiv`) AS tests,
-			SUM(`total_received_hivpos_results`) AS pos
-		";
-
-		$rows2 = DB::table('d_hiv_counselling_and_testing')
-			->join('view_facilitys', 'view_facilitys.id', '=', 'd_hiv_counselling_and_testing.facility')
-			->selectRaw($sql)
-			->addSelect('year', 'month')
-			->whereRaw($date_query)
-			->whereRaw($divisions_query)
-			->groupBy('year', 'month')
-			->orderBy('year', 'asc')
-			->orderBy('month', 'asc')
-			->get();
-
-		$sql2 = "
-			SUM(`positive_total_(sum_hv01-18_to_hv01-27)_hv01-26`) AS pos,
-			SUM(`tested_total_(sum_hv01-01_to_hv01-10)_hv01-10`) AS tests
-		";
-
-		$date_query = Lookup::date_query(true);
-		$target = DB::table('t_hiv_testing_and_prevention_services')
-			->join('view_facilitys', 'view_facilitys.id', '=', 't_hiv_testing_and_prevention_services.facility')
-			->selectRaw($sql2)
-			->whereRaw($date_query)
-			->whereRaw($divisions_query)
-			->first();
-
-		$t = round(($target->tests / 12), 2);
-
-		$data['div'] = str_random(15);
-		$data['ytitle'] = 'Percentage';
-
-		$data['outcomes'][0]['name'] = "Positivity";
-		$data['outcomes'][1]['name'] = "Targeted Positivity";
-
-
-		foreach ($rows as $key => $row) {
-			$data['categories'][$key] = Lookup::get_category($row->year, $row->month);
-
-			$duplicate_pos = DB::table('d_hiv_counselling_and_testing')
-							->join('view_facilitys', 'view_facilitys.id', '=', 'd_hiv_counselling_and_testing.facility')
-							->selectRaw("SUM(`total_received_hivpos_results`) AS pos")
-							->where(['year' => $row->year, 'month' => $row->month])
-							->whereRaw("facility IN (
-								SELECT DISTINCT facility
-								FROM d_hiv_testing_and_prevention_services d JOIN view_facilitys f ON d.facility=f.id
-								WHERE  {$divisions_query} AND `positive_total_(sum_hv01-18_to_hv01-27)_hv01-26` > 0 AND 
-								year = {$row->year} AND month = {$row->month}
-							)")
-							->first();
-
-			$duplicate_tests = DB::table('d_hiv_counselling_and_testing')
-							->join('view_facilitys', 'view_facilitys.id', '=', 'd_hiv_counselling_and_testing.facility')
-							->selectRaw("SUM(`total_tested_hiv`) AS tests")
-							->where(['year' => $row->year, 'month' => $row->month])
-							->whereRaw("facility IN (
-								SELECT DISTINCT facility
-								FROM d_hiv_testing_and_prevention_services d JOIN view_facilitys f ON d.facility=f.id
-								WHERE  {$divisions_query} AND `tested_total_(sum_hv01-01_to_hv01-10)_hv01-10` > 0 AND 
-								year = {$row->year} AND month = {$row->month}
-							)")
-							->first();
-							
-			$tests = $row->tests + $rows2[$key]->tests;
-			if(is_object($duplicate_tests)) $tests -= $duplicate_tests->tests;
-
-			$pos = $row->pos + $rows2[$key]->pos;
-			if(is_object($duplicate_pos)) $pos -= $duplicate_pos->pos;
-
-			$data["outcomes"][0]["data"][$key] = Lookup::get_percentage($pos, $tests);
-			$data["outcomes"][1]["data"][$key] = Lookup::get_percentage($target->pos, $target->tests);
-		}
-		return view('charts.line_graph', $data);		
+			$data["outcomes"][0]["data"][$key] = (int) $row->pos;
+			$data["outcomes"][1]["data"][$key] = (int) ($row->tests - $row->pos);
+			if(isset($target)) $data["outcomes"][2]["data"][$key] = $target;
+			else{
+				$t = $target_obj->where('div_id', $row->div_id)->first()->tests ?? 0;
+				$data["outcomes"][2]["data"][$key] = round(($t / $divisor), 2);
+			}
+		}	
+		return view('charts.bar_graph', $data);
 	}
 
 	public function testing_gender()
@@ -223,26 +68,27 @@ class TestingController extends Controller
 		$date_query = Lookup::date_query();
 		$divisions_query = Lookup::divisions_query();
 
-		$row = DB::table('d_hiv_counselling_and_testing')
-			->join('view_facilitys', 'view_facilitys.id', '=', 'd_hiv_counselling_and_testing.facility')
-			->selectRaw($this->old_gender_query())
-			->whereRaw($date_query)
-			->whereRaw($divisions_query)
-			->first();
-
-		$row2 = DB::table('d_hiv_counselling_and_testing')
-			->join('view_facilitys', 'view_facilitys.id', '=', 'd_hiv_counselling_and_testing.facility')
-			->selectRaw($this->old_gender_query())
+		$row = DB::table('d_hiv_testing_and_prevention_services')
+			->join('view_facilitys', 'view_facilitys.id', '=', 'd_hiv_testing_and_prevention_services.facility')
+			->selectRaw("
+			SUM(`tested_1-9_hv01-01`) as below_10_test,
+    		(SUM(`tested_10-14_(m)_hv01-02`) + SUM(`tested_15-19_(m)_hv01-04`) + SUM(`tested_20-24(m)_hv01-06`) + SUM(`tested_25pos_(m)_hv01-08`)) AS male_test,
+    		(SUM(`tested_10-14(f)_hv01-03`) + SUM(`tested_15-19(f)_hv01-05`) + SUM(`tested_20-24(f)_hv01-07`) + SUM(`tested_25pos_(f)_hv01-09`)) AS female_test,
+			SUM(`positive_1-9_hv01-17`) as below_10_pos,
+			(SUM(`positive_10-14(m)_hv01-18`) + SUM(`positive_15-19(m)_hv01-20`) + SUM(`positive_20-24(m)_hv01-22`) + SUM(`positive_25pos(m)_hv01-24`)) as male_pos,
+			(SUM(`positive_10-14(f)_hv01-19`) + SUM(`positive_15-19(f)_hv01-21`) + SUM(`positive_20-24(f)_hv01-23`) + SUM(`positive_25pos(f)_hv01-25`)) as female_pos
+			")
 			->whereRaw($date_query)
 			->whereRaw($divisions_query)
 			->first();
 
 		$data['paragraph'] = "
 		<table class='table table-striped'>
+			<tr> <td>Below 10 : </td> <td>" . number_format($row->below_10_test) . "</td> </tr>
 			<tr> <td>Male : </td> <td>" . number_format($row->male_test) . "</td> </tr>
 			<tr> <td>Female : </td> <td>" . number_format($row->female_test) . "</td> </tr>
 			<tr>
-				<td>Total : </td> <td>" . number_format($row->male_test + $row->female_test) . "</td>
+				<td>Total : </td> <td>" . number_format($row->below_10_test + $row->male_test + $row->female_test) . "</td>
 			</tr>
 		</table>			
 		";
@@ -261,95 +107,289 @@ class TestingController extends Controller
 
 		return view('charts.pie_chart', $data);
 	}
-
-	public function summary()
+	
+	public function testing_age()
 	{
 		$date_query = Lookup::date_query();
-		$year_month_query = Lookup::year_month_query();
 		$divisions_query = Lookup::divisions_query();
-		$q = Lookup::groupby_query();
 
+		$row = DB::table('d_hiv_testing_and_prevention_services')
+			->join('view_facilitys', 'view_facilitys.id', '=', 'd_hiv_testing_and_prevention_services.facility')
+			->selectRaw( "
+    		SUM(`tested_1-9_hv01-01`) as below_10,
+			(SUM(`tested_10-14_(m)_hv01-02`) + SUM(`tested_10-14(f)_hv01-03`)) as below_15,
+			(SUM(`tested_15-19_(m)_hv01-04`) + SUM(`tested_15-19(f)_hv01-05`)) as below_20,
+			(SUM(`tested_20-24(m)_hv01-06`) + SUM(`tested_20-24(f)_hv01-07`)) as below_25,
+			(SUM(`tested_25pos_(m)_hv01-08`) + SUM(`tested_25pos_(f)_hv01-09`)) as above_25,
 
-		$sql = $q['select_query'] . ",
-			SUM(`tested_total_(sum_hv01-01_to_hv01-10)_hv01-10`) AS tests,
-			SUM(`positive_total_(sum_hv01-18_to_hv01-27)_hv01-26`) AS pos
+			SUM(`positive_1-9_hv01-17`) as below_10_pos,
+			(SUM(`positive_10-14(m)_hv01-18`) + SUM(`positive_10-14(f)_hv01-19`)) as below_15_pos,
+			(SUM(`positive_15-19(m)_hv01-20`) + SUM(`positive_15-19(f)_hv01-21`)) as below_20_pos,
+			(SUM(`positive_20-24(m)_hv01-22`) + SUM(`positive_20-24(f)_hv01-23`)) as below_25_pos,
+			(SUM(`positive_25pos(m)_hv01-24`) + SUM(`positive_25pos(f)_hv01-25`)) as above_25_pos
+	    	")
+			->whereRaw($date_query)
+			->whereRaw($divisions_query)
+			->first();
+
+		$data['paragraph'] = "
+		<table class='table table-striped'>
+			<tr> <td>&lt; 15 : </td> <td>" . number_format($row->below_10 + $row->below_15) . "</td> </tr>
+			<tr> <td>&gt; 15 & &lt; 25: </td> <td>" . number_format($row->below_20 + $row->below_25) . "</td> </tr>
+			<tr> <td>&gt; 25: </td> <td>" . number_format($row->above_25) . "</td> </tr>
+			<tr>
+				<td>Total : </td> <td>" . number_format($row->below_10 + $row->below_15 + $row->below_20 + $row->below_25 + $row->above_25) . "</td>
+			</tr>
+		</table>			
 		";
+
+		$data['div'] = str_random(15);
+
+		$data['outcomes']['name'] = "Tests";
+		$data['outcomes']['colorByPoint'] = true;
+
+
+		$data['outcomes']['data'][0]['name'] = "&lt; 15";
+		$data['outcomes']['data'][1]['name'] = "&gt; 15 & &lt; 25";
+		$data['outcomes']['data'][2]['name'] = "&gt; 25";
+
+		$data['outcomes']['data'][0]['y'] = (int) ($row->below_10 + $row->below_15);
+		$data['outcomes']['data'][1]['y'] = (int) ($row->below_20 + $row->below_25);
+		$data['outcomes']['data'][2]['y'] = (int) $row->above_25;
+
+		return view('charts.pie_chart', $data);
+	}
+
+	public function positivity()
+	{
+		$date_query = Lookup::date_query();
+
+		$rows = DB::table('m_testing')
+			->join('view_facilitys', 'view_facilitys.id', '=', 'm_testing.facility')
+			->selectRaw("SUM(testing_total) AS tests, SUM(positive_total) as pos")
+			->when(true, $this->get_callback('tests'))
+			->whereRaw($date_query)
+			->get();
+
+		$sql2 = "
+			SUM(`positive_total_(sum_hv01-18_to_hv01-27)_hv01-26`) AS pos,
+			SUM(`tested_total_(sum_hv01-01_to_hv01-10)_hv01-10`) AS tests
+		";
+
+		$target_obj = DB::table('t_hiv_testing_and_prevention_services')
+			->join('view_facilitys', 'view_facilitys.id', '=', 't_hiv_testing_and_prevention_services.facility')
+			->selectRaw($sql2)
+			->when(true, $this->target_callback())
+			->get();
+
+		$groupby = session('filter_groupby', 1);
+		$divisor = Lookup::get_target_divisor();
+
+		if($groupby > 9){
+			$t = $target_obj->first()->tests;
+			$p = $target_obj->first()->pos;
+			$target_tests = round(($t / $divisor), 2);
+			$target_pos = round(($p / $divisor), 2);
+
+			$target = Lookup::get_percentage($p, $t);
+		}
+
+		$data['div'] = str_random(15);
+		$data['ytitle'] = 'Percentage';
+
+		$data['outcomes'][0]['name'] = "Positivity";
+		$data['outcomes'][1]['name'] = "Targeted Positivity";
+
+		foreach ($rows as $key => $row){
+			$data['categories'][$key] = Lookup::get_category($row);
+
+			$data["outcomes"][0]["data"][$key] = Lookup::get_percentage($row->pos, $row->tests);
+			if(isset($target)) $data["outcomes"][1]["data"][$key] = $target;
+			else{
+				$obj = $target_obj->where('div_id', $row->div_id)->first();
+				$target_tests = round(($obj->tests / $divisor), 2);
+				$target_pos = round(($obj->pos / $divisor), 2);
+				$data["outcomes"][1]["data"][$key] = Lookup::get_percentage($target_pos, $target_tests);
+			}
+		}	
+		return view('charts.line_graph', $data);
+	}
+
+	public function pos_gender()
+	{
+		$date_query = Lookup::date_query();
+		$divisions_query = Lookup::divisions_query();
+
+		$row = DB::table('m_testing')
+			->join('view_facilitys', 'view_facilitys.id', '=', 'm_testing.facility')
+			->selectRaw("SUM(positive_below10) as below_10,
+					(SUM(positive_below15_m) + SUM(positive_below20_m) + SUM(positive_below25_m) + SUM(positive_above25_m)) AS male_pos,
+					(SUM(positive_below15_f) + SUM(positive_below20_f) + SUM(positive_below25_f) + SUM(positive_above25_f)) AS female_pos
+				")
+			->whereRaw($date_query)
+			->whereRaw($divisions_query)
+			->first();
+
+		$data['paragraph'] = "
+		<table class='table table-striped'>
+			<tr> <td>Below 10 (Not disaggregated) : </td> <td>" . number_format($row->below_10) . "</td> </tr>
+			<tr> <td>Male : </td> <td>" . number_format($row->male_pos) . "</td> </tr>
+			<tr> <td>Female : </td> <td>" . number_format($row->female_pos) . "</td> </tr>
+			<tr>
+				<td>Total : </td> <td>" . number_format($row->male_pos + $row->female_pos) . "</td>
+			</tr>
+		</table>			
+		";
+
+		$data['div'] = str_random(15);
+
+		$data['outcomes']['name'] = "Tests";
+		$data['outcomes']['colorByPoint'] = true;
+
+
+		$data['outcomes']['data'][0]['name'] = "Male";
+		$data['outcomes']['data'][1]['name'] = "Female";
+
+		$data['outcomes']['data'][0]['y'] = (int) $row->male_pos;
+		$data['outcomes']['data'][1]['y'] = (int) $row->female_pos;
+
+		return view('charts.pie_chart', $data);
+	}
+
+	public function pos_age()
+	{
+		$date_query = Lookup::date_query();
+		$divisions_query = Lookup::divisions_query();
+
+		$row = DB::table('m_testing')
+			->join('view_facilitys', 'view_facilitys.id', '=', 'm_testing.facility')
+			->selectRaw("SUM(positive_below10) as below_10,
+				(SUM(positive_below15_m) + SUM(positive_below15_f)) as below_15,
+				(SUM(positive_below20_m) + SUM(positive_below20_f)) as below_20,
+				(SUM(positive_below25_m) + SUM(positive_below25_f)) as below_25,
+				(SUM(positive_above25_m) + SUM(positive_above25_f)) as above_25
+			 ")
+			->whereRaw($date_query)
+			->whereRaw($divisions_query)
+			->first();
+
+		$data['paragraph'] = "
+		<table class='table table-striped'>
+			<tr> <td>&lt; 10 : </td> <td>" . number_format($row->below_10) . "</td> </tr>
+			<tr> <td>&lt; 15 : </td> <td>" . number_format($row->below_15) . "</td> </tr>
+			<tr> <td>&lt; 20 : </td> <td>" . number_format($row->below_20) . "</td> </tr>
+			<tr> <td>&lt; 25 : </td> <td>" . number_format($row->below_25) . "</td> </tr>
+			<tr> <td>&gt; 25 : </td> <td>" . number_format($row->above_25) . "</td> </tr>
+			<tr>
+				<td>Total : </td> <td>" . number_format($row->below_10 + $row->below_15 + $row->below_20 + $row->below_25 + $row->above_25) . "</td>
+			</tr>
+		</table>			
+		";
+
+		$data['div'] = str_random(15);
+
+		$data['outcomes']['name'] = "Tests";
+		$data['outcomes']['colorByPoint'] = true;
+
+
+		$data['outcomes']['data'][0]['name'] = "&lt; 10";
+		$data['outcomes']['data'][1]['name'] = "&lt; 15";
+		$data['outcomes']['data'][2]['name'] = "&lt; 20";
+		$data['outcomes']['data'][3]['name'] = "&lt; 25";
+		$data['outcomes']['data'][4]['name'] = "&gt; 25";
+
+		$data['outcomes']['data'][0]['y'] = (int) ($row->below_10);
+		$data['outcomes']['data'][1]['y'] = (int) ($row->below_15);
+		$data['outcomes']['data'][2]['y'] = (int) $row->below_20;
+		$data['outcomes']['data'][3]['y'] = (int) $row->below_25;
+		$data['outcomes']['data'][4]['y'] = (int) $row->above_25;
+
+		return view('charts.pie_chart', $data);
+	}
+	
+	public function discordancy()
+	{
+		$date_query = Lookup::date_query();
+
+		$rows = DB::table('m_testing')
+			->join('view_facilitys', 'view_facilitys.id', '=', 'm_testing.facility')
+			->selectRaw("SUM(tested_couples) AS tests, SUM(discordant_couples) as pos")
+			->when(true, $this->get_callback('tests'))
+			->whereRaw($date_query)
+			->get();
+
+		$data['div'] = str_random(15);
+
+		$data['outcomes'][0]['name'] = "Discordant Couples";
+		$data['outcomes'][1]['name'] = "Cocordant Couples";
+		$data['outcomes'][2]['name'] = "Discordancy";
+
+		$data['outcomes'][0]['type'] = "column";
+		$data['outcomes'][1]['type'] = "column";
+		$data['outcomes'][2]['type'] = "spline";
+
+		$data['outcomes'][0]['yAxis'] = 1;
+		$data['outcomes'][1]['yAxis'] = 1;
+
+		$data['outcomes'][0]['tooltip'] = array("valueSuffix" => ' ');
+		$data['outcomes'][1]['tooltip'] = array("valueSuffix" => ' ');
+		$data['outcomes'][2]['tooltip'] = array("valueSuffix" => ' %');
+
+		foreach ($rows as $key => $row){
+			$data['categories'][$key] = Lookup::get_category($row);
+
+			$data["outcomes"][0]["data"][$key] = (int) $row->pos;
+			$data["outcomes"][1]["data"][$key] = (int) $row->tests - $row->pos;
+
+			$data["outcomes"][2]["data"][$key] = Lookup::get_percentage($row->pos, $row->tests);
+
+		}
+		return view('charts.dual_axis', $data);
+	}
+
+	public function testing_summary()
+	{
+		$date_query = Lookup::date_query();
+		$data = Lookup::table_data();
+
+		$sql = "
+			SUM(`tested_1-9_hv01-01`) as below_10,
+			SUM(`tested_10-14_(m)_hv01-02`) as below_15_m, SUM(`tested_10-14(f)_hv01-03`) as below_15_f,
+			SUM(`tested_15-19_(m)_hv01-04`) as below_20_m, SUM(`tested_15-19(f)_hv01-05`) as below_20_f,
+			SUM(`tested_20-24(m)_hv01-06`) as below_25_m, SUM(`tested_20-24(f)_hv01-07`) as below_25_f,
+			SUM(`tested_25pos_(m)_hv01-08`) as above_25_m, SUM(`tested_25pos_(f)_hv01-09`) as above_25_f,
+			SUM(`tested_total_(sum_hv01-01_to_hv01-10)_hv01-10`) as total";
 
 		$data['rows'] = DB::table('d_hiv_testing_and_prevention_services')
 			->join('view_facilitys', 'view_facilitys.id', '=', 'd_hiv_testing_and_prevention_services.facility')
 			->selectRaw($sql)
+			->when(true, $this->get_callback('total'))
 			->whereRaw($date_query)
-			->whereRaw($divisions_query)
-			->groupBy($q['group_query'])
 			->get();
 
-		$sql = $q['select_query'] . ",
-			SUM(`total_tested_hiv`) AS tests,
-			SUM(`total_received_hivpos_results`) AS pos
-		";
+		return view('tables.testing_summary', $data);
+	}
 
-		$data['rows2'] = DB::table('d_hiv_counselling_and_testing')
-			->join('view_facilitys', 'view_facilitys.id', '=', 'd_hiv_counselling_and_testing.facility')
-			->selectRaw($sql)
+	public function summary()
+	{
+		$date_query = Lookup::date_query();
+		$data = Lookup::table_data();
+
+		$data['rows'] = DB::table('m_testing')
+			->join('view_facilitys', 'view_facilitys.id', '=', 'm_testing.facility')
+			->selectRaw("SUM(testing_total) AS tests, SUM(positive_total) as pos")
+			->when(true, $this->get_callback('tests'))
 			->whereRaw($date_query)
-			->whereRaw($divisions_query)
-			->groupBy($q['group_query'])
 			->get();
 
-		$data['duplicate_tests'] = DB::table('d_hiv_counselling_and_testing')
-			->join('view_facilitys', 'view_facilitys.id', '=', 'd_hiv_counselling_and_testing.facility')
-			->selectRaw($q['select_query'] . ", SUM(`total_tested_hiv`) AS tests")
+		$data['linked'] = DB::table('m_art')
+			->join('view_facilitys', 'view_facilitys.id', '=', 'm_art.facility')
+			->selectRaw("SUM(new_total) AS newtx")
+			->when(true, $this->get_callback('newtx'))
 			->whereRaw($date_query)
-			->whereRaw("facility IN (
-				SELECT DISTINCT facility
-				FROM d_hiv_testing_and_prevention_services d JOIN view_facilitys f ON d.facility=f.id
-				WHERE  {$divisions_query} AND {$date_query} AND `tested_total_(sum_hv01-01_to_hv01-10)_hv01-10` > 0
-			)")
-			->groupBy($q['group_query'])
 			->get();
 
-		$data['duplicate_pos'] = DB::table('d_hiv_counselling_and_testing')
-			->join('view_facilitys', 'view_facilitys.id', '=', 'd_hiv_counselling_and_testing.facility')
-			->selectRaw($q['select_query'] . ", SUM(`total_received_hivpos_results`) AS pos")
-			->whereRaw($date_query)
-			->whereRaw("facility IN (
-				SELECT DISTINCT facility
-				FROM d_hiv_testing_and_prevention_services d JOIN view_facilitys f ON d.facility=f.id
-				WHERE  {$divisions_query} AND {$date_query} AND `positive_total_(sum_hv01-18_to_hv01-27)_hv01-26` > 0
-			)")
-			->groupBy($q['group_query'])
-			->get();
-
-		$data['linked'] = DB::table('d_hiv_and_tb_treatment')
-			->join('view_facilitys', 'view_facilitys.id', '=', 'd_hiv_and_tb_treatment.facility')
-			->selectRaw($q['select_query'] . ", SUM(`start_art_total_(sum_hv03-018_to_hv03-029)_hv03-026`) as total")
-			->whereRaw($date_query)
-			->whereRaw($divisions_query)
-			->groupBy($q['group_query'])
-			->get();
-
-		$data['linked_old'] = DB::table('d_care_and_treatment')
-			->join('view_facilitys', 'view_facilitys.id', '=', 'd_care_and_treatment.facility')
-			->selectRaw($q['select_query'] . ", SUM(`total_starting_on_art`) as total")
-			->whereRaw($date_query)
-			->whereRaw($divisions_query)
-			->groupBy($q['group_query'])
-			->get();
-
-		$data['duplicate_linked'] = DB::table('d_care_and_treatment')
-			->join('view_facilitys', 'view_facilitys.id', '=', 'd_care_and_treatment.facility')
-			->selectRaw($q['select_query'] . ", SUM(`total_starting_on_art`) AS linked")
-			->whereRaw($date_query)
-			->whereRaw("facility IN (
-				SELECT DISTINCT facility
-				FROM d_hiv_and_tb_treatment d JOIN view_facilitys f ON d.facility=f.id
-				WHERE  {$divisions_query} AND {$date_query} AND `start_art_total_(sum_hv03-018_to_hv03-029)_hv03-026` > 0
-			)")
-			->groupBy($q['group_query'])
-			->get();
-
-
-		$sql2 = $q['select_query'] . ",
+		$sql2 = "
 			SUM(`positive_total_(sum_hv01-18_to_hv01-27)_hv01-26`) AS pos,
 			SUM(`tested_total_(sum_hv01-01_to_hv01-10)_hv01-10`) AS tests
 		";
@@ -358,17 +398,13 @@ class TestingController extends Controller
 		$data['targets'] = DB::table('t_hiv_testing_and_prevention_services')
 			->join('view_facilitys', 'view_facilitys.id', '=', 't_hiv_testing_and_prevention_services.facility')
 			->selectRaw($sql2)
-			->whereRaw($date_query)
-			->whereRaw($divisions_query)
-			->groupBy($q['group_query'])
+			->when(true, $this->target_callback())
 			->get();
 
-		$data['div'] = str_random(15);
+		// dd($data);
 
-		return view('combined.summary', $data);
+		return view('tables.summary', $data);
 	}
-
-
 
 
 }

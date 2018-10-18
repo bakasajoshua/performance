@@ -59,9 +59,61 @@
 	<div class="col-md-12 col-sm-12 col-xs-12">
 		<div class="panel panel-default">
 		    <div class="panel-heading">
-			    Breakdown <div class="display_date"></div>
+			    Beneficiaries Breakdown <div class="display_date"></div>
 		    </div>
 			<div class="panel-body" id="breakdown">
+				<center><div class="loader"></div></center>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="row">
+	<div class="col-md-12 col-sm-12 col-xs-12">
+		<div class="panel panel-default">
+		    <div class="panel-heading">
+			    Clinic Setup Breakdown <div class="display_date"></div>
+		    </div>
+			<div class="panel-body" id="clinic_setup">
+				<center><div class="loader"></div></center>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="row">
+	<div class="col-md-12 col-sm-12 col-xs-12">
+		<div class="panel panel-default">
+		    <div class="panel-heading">
+			    OTZ Impact <div class="display_current_range"></div>
+		    </div>
+			<div class="panel-body" id="otz_breakdown">
+				<center><div class="loader"></div></center>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="row">
+	<div class="col-md-12 col-sm-12 col-xs-12">
+		<div class="panel panel-default">
+		    <div class="panel-heading">
+			    DSD Coverage <div class="display_date"></div>
+		    </div>
+			<div class="panel-body" id="dsd_impact">
+				<center><div class="loader"></div></center>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="row">
+	<div class="col-md-12 col-sm-12 col-xs-12">
+		<div class="panel panel-default">
+		    <div class="panel-heading">
+			    Men Clinic Coverage <div class="display_date"></div>
+		    </div>
+			<div class="panel-body" id="mens_impact">
 				<center><div class="loader"></div></center>
 			</div>
 		</div>
@@ -81,12 +133,20 @@
 		$("#clinics").html("<center><div class='loader'></div></center>");
 		$("#achievement").html("<center><div class='loader'></div></center>");
 		$("#breakdown").html("<center><div class='loader'></div></center>");
+		$("#clinic_setup").html("<center><div class='loader'></div></center>");
+		$("#otz_breakdown").html("<center><div class='loader'></div></center>");
+		$("#dsd_impact").html("<center><div class='loader'></div></center>");
+		$("#mens_impact").html("<center><div class='loader'></div></center>");
 
 
-		$("#facilities_count").load("{{ secure_url('otz/facilities_count') }}");
-		$("#clinics").load("{{ secure_url('otz/clinics') }}");
-		$("#achievement").load("{{ secure_url('otz/achievement') }}");
-		$("#breakdown").load("{{ secure_url('otz/breakdown') }}");
+		$("#facilities_count").load("{{ url('otz/facilities_count') }}");
+		$("#clinics").load("{{ url('otz/clinics') }}");
+		$("#achievement").load("{{ url('otz/achievement') }}");
+		$("#breakdown").load("{{ url('otz/breakdown') }}");
+		$("#clinic_setup").load("{{ url('otz/clinic_setup') }}");
+		$("#otz_breakdown").load("{{ url('otz/otz_breakdown') }}");
+		$("#dsd_impact").load("{{ url('otz/dsd_impact') }}");
+		$("#mens_impact").load("{{ url('otz/mens_impact') }}");
 	}
 
 

@@ -31,14 +31,15 @@ class LoginController extends Controller
      *
      * @var string
      */
-    // protected $redirectTo = '/sample/create';
-    // protected $redirectTo = 'targets';
 
     protected function redirectTo()
     {
-        $partner = auth()->user()->partner;
+        $user = auth()->user();
+        $user->last_login = date('Y-m-d H:i:s');
+        $user->save();
+        $partner = $user->partner;
         session(['session_partner' => $partner]);
-        return '/non_mer';
+        return '/pns/download';
     }
 
     /**

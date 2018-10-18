@@ -447,8 +447,9 @@ class Synch
 		        }
 			}			
 			$offset += 50;
-	        echo  'Completed updates for ' . $offset . " facilities at " . date('Y-m-d H:i:s a') . " \n";
+	        // echo  'Completed updates for ' . $offset . " facilities at " . date('Y-m-d H:i:s a') . " \n";
 		}
+		echo "Completed updates at " . date('Y-m-d H:i:s a') . " \n";
 	} 
 
 	public static function populate_regimen($year=null)
@@ -457,13 +458,14 @@ class Synch
         $client = new Client(['base_uri' => self::$base]);
 
         $regimens = DB::table('view_regimen_dhis')->get();
+        $dmap_regimens = DB::table('view_dmap_regimen_dhis')->get();
         $services = DB::table('tbl_service')->get();
 
         $messy_facilities = [];
 
         echo 'Begin updates at ' . date('Y-m-d H:i:s a') . " \n";
 
-		$pe = $dx = '';
+		$pe = $dx = $dmap_dx =  '';
 		$offset=0;
 		$periods = [];
 		$my_services = [];
@@ -482,12 +484,19 @@ class Synch
 			$dx .= $regimen->dhis_code . ';';
 		}
 
+		foreach ($dmap_regimens as $regimen) {
+			$dmap_dx .= $regimen->dhis_code . ';';
+		}
+
         foreach ($services as $service) {
-        	$sub = $regimens->where('service_id', $service->id)->pluck('dhis_code')->toArray();
+        	$codes = $regimens->where('service_id', $service->id)->pluck('dhis_code')->toArray();
+        	$dmap_codes = $dmap_regimens->where('service_id', $service->id)->pluck('dhis_code')->toArray();
         	$my_services[] = [
         		'service_id' => $service->id,
         		'column_name' => $service->column_name,
-        		'codes' => $sub,	
+        		'dmap_column_name' => 'dmap_' . $service->column_name,
+        		'codes' => $codes,	
+        		'dmap_codes' => $dmap_codes,	
         	];
         }
 
@@ -516,16 +525,54 @@ class Synch
 
 		        $body = json_decode($response->getBody());
 
+		        $other_fac = DB::table('tbl_facility')
+		        	->where('mflcode', $facility->facilitycode)
+		        	->orWhere('dhiscode', $facility->DHIScode)->first();
+
+		        $dmap = false;
+		        if($other_fac && $other_fac->category == "central") $dmap = true;
+
+		        if($dmap){
+					$url = "analytics?dimension=dx:" . $dmap_dx . "&dimension=ou:" . $ou . "&dimension=pe:" . $pe;
+
+					$response = $client->request('get', $url, [
+			            'auth' => [env('DHIS_USERNAME'), env('DHIS_PASSWORD')],
+			            'http_errors' => false,
+			        ]);
+			        $dmap_body = json_decode($response->getBody());
+		        }
+
+
 		        foreach ($periods as $period) {
 		        	$data['dateupdated'] = date('Y-m-d');
 		        	foreach ($my_services as $my_service) {
 		        		$column = $my_service['column_name'];
 		        		$data[$column] = 0;
 
+		        		if(!$body->rows) continue;
+
 		        		foreach ($body->rows as $key => $value){
 		        			if($value[2] == $period['name'] && in_array($value[0], $my_service['codes'])) {
 		        				$data[$column] += $value[3];
 		        			}
+		        		}
+		        		if($dmap){
+			        		$column = $my_service['dmap_column_name'];
+			        		$data[$column] = 0;
+
+			        		if($dmap_body){
+				        		foreach ($dmap_body->rows as $key => $value){
+				        			if($value[2] == $period['name'] && in_array($value[0], $my_service['dmap_codes'])) {
+				        				$data[$column] += $value[3];
+				        			}
+				        		}	
+			        		}	        			
+		        		}
+		        		else{
+		        			if($other_fac && $other_fac->category == "standalone"){
+		        				$dmap_column = $my_service['dmap_column_name'];
+		        				$data[$dmap_column] = $data[$column];
+		        			} 
 		        		}
 		        	}
 
@@ -534,8 +581,10 @@ class Synch
 		        		->update($data);
 		        }
 			}
-			echo 'Completed updates for ' . $offset . " facilities at " . date('Y-m-d H:i:s a') . " \n";
+			// echo 'Completed updates for ' . $offset . " facilities at " . date('Y-m-d H:i:s a') . " \n";
 		}
+		echo "Completed updates at " . date('Y-m-d H:i:s a') . " \n";
+
 		// DB::connection('mysql_wr')->whereIn('id', $messy_facilities)->update(['invalid_dhis' => 1]);
 	}
 

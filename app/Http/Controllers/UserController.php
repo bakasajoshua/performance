@@ -28,7 +28,7 @@ class UserController extends Controller
      */
     public function create()
     {
-        $partners = \App\Partner::all();
+        $partners = \App\Partner::orderBy('name', 'asc')->get();
         return view('forms.users', ['partners' => $partners]);
     }
 
@@ -73,7 +73,7 @@ class UserController extends Controller
      */
     public function edit(User $user)
     {
-        $partners = \App\Partner::all();
+        $partners = \App\Partner::orderBy('name', 'asc')->get();
         return view('forms.users', ['partners' => $partners, 'user' => $user]);
     }
 
@@ -87,9 +87,10 @@ class UserController extends Controller
     public function update(Request $request, User $user)
     {
         $user->fill($request->except(['_token', 'confirm_password']));
+        $user->last_login = date('Y-m-d H:i:s');
         $user->save();
         session(['toast_message' => 'The updates to your profile has been made.']);
-        return redirect('/non_mer');
+        return redirect('/pns/download');
     }
 
     /**
@@ -101,7 +102,7 @@ class UserController extends Controller
     public function destroy(User $user)
     {
         $user->delete();
-        return redirect('/non_mer');
+        return redirect('/pns/download');
     }
 
 
@@ -109,6 +110,8 @@ class UserController extends Controller
     {
         if(Auth::user()) Auth::logout();
         Auth::login($user);
+        $partner = $user->partner;
+        session(['session_partner' => $partner]);
 
         return view('forms.password_update', ['user' => $user]);
     }

@@ -4,35 +4,56 @@ namespace App;
 
 use DB;
 use App\Synch;
+use App\User;
+use Illuminate\Support\Facades\Mail;
+
+use App\Mail\NewUser;
+use App\Mail\CustomMail;
 
 class Other
 {
 
-	public static function other_targets()
+	public static function reset_email($id)
 	{
-		$table_name = 't_non_mer';
-    	$sql = "CREATE TABLE `{$table_name}` (
-    				id int(10) UNSIGNED NOT NULL AUTO_INCREMENT,
-    				facility int(10) UNSIGNED DEFAULT 0,
-    				financial_year smallint(4) UNSIGNED DEFAULT 0,
-    				viremia_beneficiaries int(10) DEFAULT NULL,
-    				viremia_target int(10) DEFAULT NULL,
-    				dsd_beneficiaries int(10) DEFAULT NULL,
-    				dsd_target int(10) DEFAULT NULL,
-    				otz_beneficiaries int(10) DEFAULT NULL,
-    				otz_target int(10) DEFAULT NULL,
-    				men_clinic_beneficiaries int(10) DEFAULT NULL,
-    				men_clinic_target int(10) DEFAULT NULL,
+		$user = User::find($id);
+        $mail_array = [$user->email];
+        Mail::to($mail_array)->cc(['jbatuka@usaid.gov', 'joelkith@gmail.com'])->send(new NewUser($user));
+	}
 
-	        		dateupdated date DEFAULT NULL,
-					PRIMARY KEY (`id`),
-					KEY `identifier`(`facility`, `financial_year`),
-					KEY `facility` (`facility`)
-				);
+    public static function send_pns()
+    {
+        $users = User::where('user_type_id', 2)->get();
+
+        foreach ($users as $user) {
+            Mail::to($user->email)->cc(['jbatuka@usaid.gov', 'vojiambo@usaid.gov', 'joelkith@gmail.com'])->send(new CustomMail($user));
+        }
+    }
+
+    public static function other_targets()
+    {
+        $table_name = 't_non_mer';
+        $sql = "CREATE TABLE `{$table_name}` (
+                    id int(10) UNSIGNED NOT NULL AUTO_INCREMENT,
+                    facility int(10) UNSIGNED DEFAULT 0,
+                    financial_year smallint(4) UNSIGNED DEFAULT 0,
+                    viremia_beneficiaries int(10) DEFAULT NULL,
+                    viremia_target int(10) DEFAULT NULL,
+                    dsd_beneficiaries int(10) DEFAULT NULL,
+                    dsd_target int(10) DEFAULT NULL,
+                    otz_beneficiaries int(10) DEFAULT NULL,
+                    otz_target int(10) DEFAULT NULL,
+                    men_clinic_beneficiaries int(10) DEFAULT NULL,
+                    men_clinic_target int(10) DEFAULT NULL,
+
+                    dateupdated date DEFAULT NULL,
+                    PRIMARY KEY (`id`),
+                    KEY `identifier`(`facility`, `financial_year`),
+                    KEY `facility` (`facility`)
+                );
         ";
         DB::connection('mysql_wr')->statement("DROP TABLE IF EXISTS `{$table_name}`;");
         DB::connection('mysql_wr')->statement($sql);
-	}
+    }
 
 	public static function insert_others($year)
 	{
@@ -115,7 +136,7 @@ class Other
 					tested int(10) DEFAULT NULL,    				
 					positive int(10) DEFAULT NULL,    				
 					new_art int(10) DEFAULT NULL,    				
-					linkage int(10) DEFAULT NULL,  
+					linkage double(6, 4) DEFAULT NULL,  
 
 					current_tx int(10) DEFAULT NULL,    				
 					net_new_tx int(10) DEFAULT NULL,    				
@@ -180,6 +201,178 @@ class Other
 			}
 		}
 		if($data_array) DB::connection('mysql_wr')->table($table_name)->insert($data_array);
+	}
+
+	public static function pns_table()
+	{
+		$table_name = 'd_pns';
+    	$sql = "CREATE TABLE `{$table_name}` (
+    				id int(10) UNSIGNED NOT NULL AUTO_INCREMENT,
+    				facility int(10) UNSIGNED DEFAULT 0,
+
+    				year smallint(4) UNSIGNED DEFAULT 0,
+    				month tinyint(3) UNSIGNED DEFAULT 0,
+    				financial_year smallint(4) UNSIGNED DEFAULT 0,
+    				quarter tinyint(3) UNSIGNED DEFAULT 0,
+
+    				screened_unknown_m int(10) DEFAULT NULL,
+    				screened_unknown_f int(10) DEFAULT NULL,
+    				screened_below_1 int(10) DEFAULT NULL,
+    				screened_below_10 int(10) DEFAULT NULL,
+    				screened_below_15_m int(10) DEFAULT NULL,
+    				screened_below_15_f int(10) DEFAULT NULL,
+    				screened_below_20_m int(10) DEFAULT NULL,
+    				screened_below_20_f int(10) DEFAULT NULL,
+    				screened_below_25_m int(10) DEFAULT NULL,
+    				screened_below_25_f int(10) DEFAULT NULL,
+    				screened_below_30_m int(10) DEFAULT NULL,
+    				screened_below_30_f int(10) DEFAULT NULL,
+    				screened_below_50_m int(10) DEFAULT NULL,
+    				screened_below_50_f int(10) DEFAULT NULL,
+    				screened_above_50_m int(10) DEFAULT NULL,
+    				screened_above_50_f int(10) DEFAULT NULL,
+
+    				contacts_identified_unknown_m int(10) DEFAULT NULL,
+    				contacts_identified_unknown_f int(10) DEFAULT NULL,
+    				contacts_identified_below_1 int(10) DEFAULT NULL,
+    				contacts_identified_below_10 int(10) DEFAULT NULL,
+    				contacts_identified_below_15_m int(10) DEFAULT NULL,
+    				contacts_identified_below_15_f int(10) DEFAULT NULL,
+    				contacts_identified_below_20_m int(10) DEFAULT NULL,
+    				contacts_identified_below_20_f int(10) DEFAULT NULL,
+    				contacts_identified_below_25_m int(10) DEFAULT NULL,
+    				contacts_identified_below_25_f int(10) DEFAULT NULL,
+    				contacts_identified_below_30_m int(10) DEFAULT NULL,
+    				contacts_identified_below_30_f int(10) DEFAULT NULL,
+    				contacts_identified_below_50_m int(10) DEFAULT NULL,
+    				contacts_identified_below_50_f int(10) DEFAULT NULL,
+    				contacts_identified_above_50_m int(10) DEFAULT NULL,
+    				contacts_identified_above_50_f int(10) DEFAULT NULL,
+
+                    pos_contacts_unknown_m int(10) DEFAULT NULL,
+                    pos_contacts_unknown_f int(10) DEFAULT NULL,
+                    pos_contacts_below_1 int(10) DEFAULT NULL,
+                    pos_contacts_below_10 int(10) DEFAULT NULL,
+                    pos_contacts_below_15_m int(10) DEFAULT NULL,
+                    pos_contacts_below_15_f int(10) DEFAULT NULL,
+                    pos_contacts_below_20_m int(10) DEFAULT NULL,
+                    pos_contacts_below_20_f int(10) DEFAULT NULL,
+                    pos_contacts_below_25_m int(10) DEFAULT NULL,
+                    pos_contacts_below_25_f int(10) DEFAULT NULL,
+                    pos_contacts_below_30_m int(10) DEFAULT NULL,
+                    pos_contacts_below_30_f int(10) DEFAULT NULL,
+                    pos_contacts_below_50_m int(10) DEFAULT NULL,
+                    pos_contacts_below_50_f int(10) DEFAULT NULL,
+                    pos_contacts_above_50_m int(10) DEFAULT NULL,
+                    pos_contacts_above_50_f int(10) DEFAULT NULL,
+
+                    eligible_contacts_unknown_m int(10) DEFAULT NULL,
+                    eligible_contacts_unknown_f int(10) DEFAULT NULL,
+                    eligible_contacts_below_1 int(10) DEFAULT NULL,
+                    eligible_contacts_below_10 int(10) DEFAULT NULL,
+                    eligible_contacts_below_15_m int(10) DEFAULT NULL,
+                    eligible_contacts_below_15_f int(10) DEFAULT NULL,
+                    eligible_contacts_below_20_m int(10) DEFAULT NULL,
+                    eligible_contacts_below_20_f int(10) DEFAULT NULL,
+                    eligible_contacts_below_25_m int(10) DEFAULT NULL,
+                    eligible_contacts_below_25_f int(10) DEFAULT NULL,
+                    eligible_contacts_below_30_m int(10) DEFAULT NULL,
+                    eligible_contacts_below_30_f int(10) DEFAULT NULL,
+                    eligible_contacts_below_50_m int(10) DEFAULT NULL,
+                    eligible_contacts_below_50_f int(10) DEFAULT NULL,
+                    eligible_contacts_above_50_m int(10) DEFAULT NULL,
+                    eligible_contacts_above_50_f int(10) DEFAULT NULL,
+
+                    contacts_tested_unknown_m int(10) DEFAULT NULL,
+                    contacts_tested_unknown_f int(10) DEFAULT NULL,
+                    contacts_tested_below_1 int(10) DEFAULT NULL,
+                    contacts_tested_below_10 int(10) DEFAULT NULL,
+                    contacts_tested_below_15_m int(10) DEFAULT NULL,
+                    contacts_tested_below_15_f int(10) DEFAULT NULL,
+                    contacts_tested_below_20_m int(10) DEFAULT NULL,
+                    contacts_tested_below_20_f int(10) DEFAULT NULL,
+                    contacts_tested_below_25_m int(10) DEFAULT NULL,
+                    contacts_tested_below_25_f int(10) DEFAULT NULL,
+                    contacts_tested_below_30_m int(10) DEFAULT NULL,
+                    contacts_tested_below_30_f int(10) DEFAULT NULL,
+                    contacts_tested_below_50_m int(10) DEFAULT NULL,
+                    contacts_tested_below_50_f int(10) DEFAULT NULL,
+                    contacts_tested_above_50_m int(10) DEFAULT NULL,
+                    contacts_tested_above_50_f int(10) DEFAULT NULL,
+
+                    new_pos_unknown_m int(10) DEFAULT NULL,
+                    new_pos_unknown_f int(10) DEFAULT NULL,
+                    new_pos_below_1 int(10) DEFAULT NULL,
+                    new_pos_below_10 int(10) DEFAULT NULL,
+                    new_pos_below_15_m int(10) DEFAULT NULL,
+                    new_pos_below_15_f int(10) DEFAULT NULL,
+                    new_pos_below_20_m int(10) DEFAULT NULL,
+                    new_pos_below_20_f int(10) DEFAULT NULL,
+                    new_pos_below_25_m int(10) DEFAULT NULL,
+                    new_pos_below_25_f int(10) DEFAULT NULL,
+                    new_pos_below_30_m int(10) DEFAULT NULL,
+                    new_pos_below_30_f int(10) DEFAULT NULL,
+                    new_pos_below_50_m int(10) DEFAULT NULL,
+                    new_pos_below_50_f int(10) DEFAULT NULL,
+                    new_pos_above_50_m int(10) DEFAULT NULL,
+                    new_pos_above_50_f int(10) DEFAULT NULL,
+
+                    linked_haart_unknown_m int(10) DEFAULT NULL,
+                    linked_haart_unknown_f int(10) DEFAULT NULL,
+                    linked_haart_below_1 int(10) DEFAULT NULL,
+                    linked_haart_below_10 int(10) DEFAULT NULL,
+                    linked_haart_below_15_m int(10) DEFAULT NULL,
+                    linked_haart_below_15_f int(10) DEFAULT NULL,
+                    linked_haart_below_20_m int(10) DEFAULT NULL,
+                    linked_haart_below_20_f int(10) DEFAULT NULL,
+                    linked_haart_below_25_m int(10) DEFAULT NULL,
+                    linked_haart_below_25_f int(10) DEFAULT NULL,
+                    linked_haart_below_30_m int(10) DEFAULT NULL,
+                    linked_haart_below_30_f int(10) DEFAULT NULL,
+                    linked_haart_below_50_m int(10) DEFAULT NULL,
+                    linked_haart_below_50_f int(10) DEFAULT NULL,
+                    linked_haart_above_50_m int(10) DEFAULT NULL,
+                    linked_haart_above_50_f int(10) DEFAULT NULL,
+
+	        		dateupdated date DEFAULT NULL,
+					PRIMARY KEY (`id`),
+					KEY `identifier`(`facility`, `year`, `month`),
+					KEY `identifier_other`(`facility`, `financial_year`, `quarter`),
+					KEY `facility` (`facility`),
+					KEY `specific_time` (`year`, `month`),
+					KEY `specific_period` (`financial_year`, `quarter`)
+				);
+        ";
+        DB::connection('mysql_wr')->statement("DROP TABLE IF EXISTS `{$table_name}`;");
+        DB::connection('mysql_wr')->statement($sql);
+	}
+
+	public static function pns_insert($year=null)
+	{
+		if(!$year) $year = date('Y');
+		$table_name = 'd_pns';
+		$facilities = Facility::select('id')->get();
+
+		$i=0;
+		$data_array = [];
+
+		for ($month=1; $month < 13; $month++) { 
+			foreach ($facilities as $k => $val) {
+				$data = array('year' => $year, 'month' => $month, 'facility' => $val->id);
+				$data = array_merge($data, Synch::get_financial_year_quarter($year, $month) );
+				$data_array[$i] = $data;
+				$i++;
+
+				if ($i == 200) {
+					DB::connection('mysql_wr')->table($table_name)->insert($data_array);
+					$data_array=null;
+			    	$i=0;
+				}
+			}
+		}
+		if($data_array) DB::connection('mysql_wr')->table($table_name)->insert($data_array);
+
+        echo 'Completed entry for ' . $table_name . " \n";
 	}
 
 	public static function delete_data($id=55222){

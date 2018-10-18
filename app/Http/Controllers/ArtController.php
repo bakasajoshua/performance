@@ -9,74 +9,36 @@ use App\Lookup;
 class ArtController extends Controller
 {
 
-
 	public function treatment()
 	{
 		$date_query = Lookup::date_query();
-		$divisions_query = Lookup::divisions_query();
+		$divisions_query = Lookup::divisions_query();	
 
-		$data['div'] = str_random(15);
-
-		$sql = $this->current_art_query();		
-
-		$new_n = DB::table('d_hiv_and_tb_treatment')
-			->join('view_facilitys', 'view_facilitys.id', '=', 'd_hiv_and_tb_treatment.facility')
-			->selectRaw("SUM(`on_art_total_(sum_hv03-034_to_hv03-043)_hv03-038`) AS `current`,
-						SUM(`start_art_total_(sum_hv03-018_to_hv03-029)_hv03-026`) AS `new_art`
-			 ")
+		$newtx = DB::table('m_art')
+			->join('view_facilitys', 'view_facilitys.id', '=', 'm_art.facility')
+			->selectRaw(" SUM(`new_total`) AS `new_art` ")
 			->whereRaw($date_query)
 			->whereRaw($divisions_query)
 			->first();
 
-		$new_o = DB::table('d_care_and_treatment')
-			->join('view_facilitys', 'view_facilitys.id', '=', 'd_care_and_treatment.facility')
-			->selectRaw("SUM(`total_currently_on_art`) AS `current`, 
-							SUM(`total_starting_on_art`) AS `new_art`")
+		$date_query = Lookup::year_month_query(1);	
+		$data['recent_name'] = Lookup::year_month_name();	
+
+		$cutx = DB::table('m_art')
+			->join('view_facilitys', 'view_facilitys.id', '=', 'm_art.facility')
+			->selectRaw(" SUM(`current_total`) AS `current_art` ")
 			->whereRaw($date_query)
 			->whereRaw($divisions_query)
 			->first();
 
+		$date_query = Lookup::year_month_query(2);	
+		$data['current_name'] = Lookup::year_month_name();	
 
-		$dup_new = DB::table('d_care_and_treatment')
-			->join('view_facilitys', 'view_facilitys.id', '=', 'd_care_and_treatment.facility')
-			->selectRaw("SUM(`total_starting_on_art`) AS `new_art`")
-			->whereRaw($date_query)
-			->whereRaw("facility IN (
-				SELECT DISTINCT facility
-				FROM d_hiv_and_tb_treatment d JOIN view_facilitys f ON d.facility=f.id
-				WHERE  {$divisions_query} AND {$date_query} AND `start_art_total_(sum_hv03-018_to_hv03-029)_hv03-026` > 0
-			)")
-			->first();
-
-
-		$date_query = Lookup::year_month_query();		
-
-		$cu_n = DB::table('d_hiv_and_tb_treatment')
-			->join('view_facilitys', 'view_facilitys.id', '=', 'd_hiv_and_tb_treatment.facility')
-			->selectRaw("SUM(`on_art_total_(sum_hv03-034_to_hv03-043)_hv03-038`) AS `current`,
-						SUM(`start_art_total_(sum_hv03-018_to_hv03-029)_hv03-026`) AS `new_art`
-			 ")
+		$cutx_old = DB::table('m_art')
+			->join('view_facilitys', 'view_facilitys.id', '=', 'm_art.facility')
+			->selectRaw(" SUM(`current_total`) AS `current_art` ")
 			->whereRaw($date_query)
 			->whereRaw($divisions_query)
-			->first();
-
-		$cu_o = DB::table('d_care_and_treatment')
-			->join('view_facilitys', 'view_facilitys.id', '=', 'd_care_and_treatment.facility')
-			->selectRaw("SUM(`total_currently_on_art`) AS `current`, 
-							SUM(`total_starting_on_art`) AS `new_art`")
-			->whereRaw($date_query)
-			->whereRaw($divisions_query)
-			->first();
-
-		$dup_current = DB::table('d_care_and_treatment')
-			->join('view_facilitys', 'view_facilitys.id', '=', 'd_care_and_treatment.facility')
-			->selectRaw("SUM(`total_currently_on_art`) AS `current`")
-			->whereRaw($date_query)
-			->whereRaw("facility IN (
-				SELECT DISTINCT facility
-				FROM d_hiv_and_tb_treatment d JOIN view_facilitys f ON d.facility=f.id
-				WHERE  {$divisions_query} AND {$date_query} AND `on_art_total_(sum_hv03-034_to_hv03-043)_hv03-038` > 0
-			)")
 			->first();
 
 		$date_query = Lookup::date_query(true);
@@ -90,15 +52,17 @@ class ArtController extends Controller
 
 		$data['target'] = $target;
 
-		$data['current_art'] = $cu_n->current + $cu_o->current;
-		$data['new_art'] = $new_n->new_art + $new_o->new_art;
+		$data['div'] = str_random(15);
 
-		if(is_object($dup_current)) $data['current_art'] -= $dup_current->current; 
-		if(is_object($dup_new)) $data['new_art'] -= $dup_new->new_art; 
+		$data['current_art_recent'] = $cutx->current_art;
+		$data['current_art'] = $cutx_old->current_art;
+		$data['new_art'] = $newtx->new_art;
 
+		$data['current_completion_recent'] = Lookup::get_percentage($data['current_art_recent'], $target->current);
 		$data['current_completion'] = Lookup::get_percentage($data['current_art'], $target->current);
 		$data['new_completion'] = Lookup::get_percentage($data['new_art'], $target->new_art);
 
+		$data['current_status_recent'] = Lookup::progress_status($data['current_completion_recent']);
 		$data['current_status'] = Lookup::progress_status($data['current_completion']);
 		$data['new_status'] = Lookup::progress_status($data['new_completion']);
 
@@ -110,63 +74,44 @@ class ArtController extends Controller
 		$date_query = Lookup::date_query();
 		$divisions_query = Lookup::divisions_query();
 
-		$dates = DB::table('d_hiv_and_tb_treatment')
-			->select('year', 'month')
+		$rows = DB::table('d_hiv_and_tb_treatment')
+			->join('view_facilitys', 'view_facilitys.id', '=', 'd_hiv_and_tb_treatment.facility')
+			->selectRaw("COUNT(facility) as total")
+			->when(true, $this->get_callback('total'))
 			->whereRaw($date_query)
-			->groupBy('year', 'month')
-			->orderBy('year', 'asc')
-			->orderBy('month', 'asc')
 			->get();
 
 		$start_art_new = DB::table('d_hiv_and_tb_treatment')
 			->join('view_facilitys', 'view_facilitys.id', '=', 'd_hiv_and_tb_treatment.facility')
 			->selectRaw("COUNT(facility) as total")
-			->addSelect('year', 'month')
 			->whereRaw("`start_art_total_(sum_hv03-018_to_hv03-029)_hv03-026` > 0")
-			->whereRaw($divisions_query)
+			->when(true, $this->get_callback('total'))
 			->whereRaw($date_query)
-			->groupBy('year', 'month')
-			->orderBy('year', 'asc')
-			->orderBy('month', 'asc')
 			->get();
 
 		$start_art_old = DB::table('d_care_and_treatment')
 			->join('view_facilitys', 'view_facilitys.id', '=', 'd_care_and_treatment.facility')
 			->selectRaw("COUNT(facility) as total")
-			->addSelect('year', 'month')
 			->whereRaw("`total_starting_on_art` > 0")
-			->whereRaw($divisions_query)
+			->when(true, $this->get_callback('total'))
 			->whereRaw($date_query)
-			->groupBy('year', 'month')
-			->orderBy('year', 'asc')
-			->orderBy('month', 'asc')
 			->get();
 
 		$current_art_new = DB::table('d_hiv_and_tb_treatment')
 			->join('view_facilitys', 'view_facilitys.id', '=', 'd_hiv_and_tb_treatment.facility')
 			->selectRaw("COUNT(facility) as total")
-			->addSelect('year', 'month')
 			->whereRaw("`on_art_total_(sum_hv03-034_to_hv03-043)_hv03-038` > 0")
-			->whereRaw($divisions_query)
+			->when(true, $this->get_callback('total'))
 			->whereRaw($date_query)
-			->whereRaw($date_query)
-			->groupBy('year', 'month')
-			->orderBy('year', 'asc')
-			->orderBy('month', 'asc')
 			->get();
 
 		$current_art_old = DB::table('d_care_and_treatment')
 			->join('view_facilitys', 'view_facilitys.id', '=', 'd_care_and_treatment.facility')
 			->selectRaw("COUNT(facility) as total")
-			->addSelect('year', 'month')
 			->whereRaw("`total_currently_on_art` > 0")
-			->whereRaw($divisions_query)
+			->when(true, $this->get_callback('total'))
 			->whereRaw($date_query)
-			->groupBy('year', 'month')
-			->orderBy('year', 'asc')
-			->orderBy('month', 'asc')
 			->get();
-
 
 		$data['div'] = str_random(15);
 
@@ -185,50 +130,33 @@ class ArtController extends Controller
 		$data['outcomes'][4]['type'] = "spline";
 		$data['outcomes'][5]['type'] = "spline";
 
-		foreach ($dates as $key => $row) {
-			if($row->year == date('Y') && $row->month == date('m')) break;
-			$data['categories'][$key] = Lookup::get_category($row->year, $row->month);
-			// $data["outcomes"][0]["data"][$key] = (int) $row->total;
+		$old_table = "`d_care_and_treatment`";
+		$new_table = "`d_hiv_and_tb_treatment`";
 
-			$data["outcomes"][0]["data"][$key] = $this->check_null($start_art_old->where('year', $row->year)->where('month', $row->month)->first());
-			$data["outcomes"][1]["data"][$key] = $this->check_null($start_art_new->where('year', $row->year)->where('month', $row->month)->first());
-			$data["outcomes"][2]["data"][$key] = $this->check_null($current_art_old->where('year', $row->year)->where('month', $row->month)->first());
-			$data["outcomes"][3]["data"][$key] = $this->check_null($current_art_new->where('year', $row->year)->where('month', $row->month)->first());
+		$old_column = "`total_starting_on_art`";
+		$new_column = "`start_art_total_(sum_hv03-018_to_hv03-029)_hv03-026`";
 
-			// DB::enableQueryLog();
+		$old_column_cu = "`total_currently_on_art`";
+		$new_column_cu = "`on_art_total_(sum_hv03-034_to_hv03-043)_hv03-038`";
 
-			$double_starting = DB::table('d_hiv_and_tb_treatment')
-							->join('view_facilitys', 'view_facilitys.id', '=', 'd_hiv_and_tb_treatment.facility')
-							->selectRaw("COUNT(facility) as total")
-							->whereRaw("`start_art_total_(sum_hv03-018_to_hv03-029)_hv03-026` > 0")
-							->whereRaw($divisions_query)
-							->where(['year' => $row->year, 'month' => $row->month])
-							->whereRaw("facility IN (
-								SELECT DISTINCT facility
-								FROM d_care_and_treatment d JOIN view_facilitys f ON d.facility=f.id
-								WHERE {$divisions_query} AND `total_starting_on_art` > 0 AND 
-								year = {$row->year} AND month = {$row->month}
-							)")
-							->first();
+		foreach ($rows as $key => $row) {
+			$data['categories'][$key] = Lookup::get_category($row);
 
-			$double_current = DB::table('d_hiv_and_tb_treatment')
-							->join('view_facilitys', 'view_facilitys.id', '=', 'd_hiv_and_tb_treatment.facility')
-							->selectRaw("COUNT(facility) as total")
-							->whereRaw("`on_art_total_(sum_hv03-034_to_hv03-043)_hv03-038` > 0")
-							->whereRaw($divisions_query)
-							->where(['year' => $row->year, 'month' => $row->month])
-							->whereRaw("facility IN (
-								SELECT DISTINCT facility
-								FROM d_care_and_treatment d JOIN view_facilitys f ON d.facility=f.id
-								WHERE  {$divisions_query} AND `total_currently_on_art` > 0 AND 
-								year = {$row->year} AND month = {$row->month}
-							)")
-							->first();
+			$data["outcomes"][0]["data"][$key] = (int) Lookup::get_val($row, $start_art_old, 'total');
+			$data["outcomes"][1]["data"][$key] = (int) Lookup::get_val($row, $start_art_new, 'total');
+			$data["outcomes"][2]["data"][$key] = (int) Lookup::get_val($row, $current_art_old, 'total');
+			$data["outcomes"][3]["data"][$key] = (int) Lookup::get_val($row, $current_art_new, 'total');
 
-	 		// return DB::getQueryLog();
+			$params = Lookup::duplicate_parameters($row);			
 
-			$data["outcomes"][4]["data"][$key] = is_object($double_starting) ? (int) $double_starting->total : 0;
-			$data["outcomes"][5]["data"][$key] = is_object($double_current) ? (int) $double_current->total : 0;
+			$duplicate_new = DB::select(
+				DB::raw("CALL `proc_get_double_reporting`('{$old_table}', '{$new_table}', '{$old_column}', '{$new_column}', \"{$divisions_query}\", \"{$date_query}\", '{$params[0]}', '{$params[1]}', '{$params[2]}', '{$params[3]}');"));
+
+			$duplicate_cu = DB::select(
+				DB::raw("CALL `proc_get_double_reporting`('{$old_table}', '{$new_table}', '{$old_column_cu}', '{$new_column_cu}', \"{$divisions_query}\", \"{$date_query}\", '{$params[0]}', '{$params[1]}', '{$params[2]}', '{$params[3]}');"));
+
+			$data["outcomes"][4]["data"][$key] = (int) ($duplicate_new[0]->total ?? 0);
+			$data["outcomes"][5]["data"][$key] = (int) ($duplicate_cu[0]->total ?? 0);
 		}
 		return view('charts.bar_graph', $data);
 	}
@@ -236,49 +164,45 @@ class ArtController extends Controller
 	public function current_age_breakdown()
 	{
 		$date_query = Lookup::date_query();
-		$divisions_query = Lookup::divisions_query();
+		$groupby = session('filter_groupby', 1);
 
-		$rows = DB::table('d_hiv_and_tb_treatment')
-			->join('view_facilitys', 'view_facilitys.id', '=', 'd_hiv_and_tb_treatment.facility')
-			->selectRaw($this->current_art_query())
-			->addSelect('year', 'month')
+		if($groupby != 12) $date_query = Lookup::year_month_query();
+
+		$sql = "
+			SUM(current_below1) AS below1,
+			(SUM(current_below10) + SUM(current_below15_m) + SUM(current_below15_f)) AS below15,
+			(SUM(current_below20_m) + SUM(current_below20_f) + SUM(current_below25_m) + SUM(current_below25_f) + SUM(current_above25_m) + SUM(current_above25_f)) AS above15
+		";	
+
+		$rows = DB::table('m_art')
+			->join('view_facilitys', 'view_facilitys.id', '=', 'm_art.facility')
+			->selectRaw($sql)
+			->when(true, $this->get_callback('above15'))
 			->whereRaw($date_query)
-			->whereRaw($divisions_query)
-			->groupBy('year', 'month')
-			->orderBy('year', 'asc')
-			->orderBy('month', 'asc')
 			->get();
-
-		$rows2 = DB::table('d_care_and_treatment')
-			->join('view_facilitys', 'view_facilitys.id', '=', 'd_care_and_treatment.facility')
-			->selectRaw($this->former_age_current_query())
-			->addSelect('year', 'month')
-			->whereRaw($date_query)
-			->whereRaw($divisions_query)
-			->groupBy('year', 'month')
-			->orderBy('year', 'asc')
-			->orderBy('month', 'asc')
-			->get();
-
 
 		$rows3 = DB::table('d_regimen_totals')
 			->join('view_facilitys', 'view_facilitys.id', '=', 'd_regimen_totals.facility')
-			->selectRaw("SUM(d_regimen_totals.art) AS art, SUM(pmtct) AS pmtct ")
-			->addSelect('year', 'month')
+			->selectRaw("(SUM(d_regimen_totals.art) + SUM(pmtct)) AS total ")
+			->when(true, $this->get_callback())
 			->whereRaw($date_query)
-			->whereRaw($divisions_query)
-			->groupBy('year', 'month')
-			->orderBy('year', 'asc')
-			->orderBy('month', 'asc')
 			->get();
 
 		$date_query = Lookup::date_query(true);
-		$target = DB::table('t_hiv_and_tb_treatment')
+		$target_obj = DB::table('t_hiv_and_tb_treatment')
 			->join('view_facilitys', 'view_facilitys.id', '=', 't_hiv_and_tb_treatment.facility')
 			->selectRaw("SUM(`on_art_total_(sum_hv03-034_to_hv03-043)_hv03-038`) AS `total`")
-			->whereRaw($date_query)
-			->whereRaw($divisions_query)
-			->first();
+			->when(true, $this->target_callback())
+			->get();
+
+		$groupby = session('filter_groupby', 1);
+		// $divisor = Lookup::get_target_divisor();
+		$divisor = 1;
+
+		if($groupby > 9){
+			$t = $target_obj->first()->total;
+			$target = round(($t / $divisor), 2);
+		}
 
 		$data['div'] = str_random(15);
 
@@ -300,49 +224,18 @@ class ArtController extends Controller
 		$data['outcomes'][3]['stack'] = 'moh_729';
 
 		foreach ($rows as $key => $row) {
-			$data['categories'][$key] = Lookup::get_category($row->year, $row->month);
-			$data["outcomes"][0]["data"][$key] = (int) $row->below_1 + $rows2[$key]->below_1;
-			$data["outcomes"][1]["data"][$key] = (int) $row->below_10 + $row->below_15 + $rows2[$key]->below_15;
-			$data["outcomes"][2]["data"][$key] = (int) $row->below_20 + $row->below_25 + $row->above_25 + $rows2[$key]->above_15;
-			$data["outcomes"][3]["data"][$key] = (int) $rows3[$key]->art + $rows3[$key]->pmtct;
+			$data['categories'][$key] = Lookup::get_category($row);
 
-			$data["outcomes"][4]["data"][$key] = (int) $target->total;
+			$data["outcomes"][0]["data"][$key] = (int) $row->below1;
+			$data["outcomes"][1]["data"][$key] = (int) $row->below15;
+			$data["outcomes"][2]["data"][$key] = (int) $row->above15;
 
-			// $duplicate = DB::table('d_care_and_treatment')
-			// 	->join('view_facilitys', 'view_facilitys.id', '=', 'd_care_and_treatment.facility')
-			// 	->selectRaw($this->former_age_current_query())
-			// 	->where(['year' => $row->year, 'month' => $row->month])
-			// 	->whereRaw("facility IN (
-			// 		SELECT DISTINCT facility
-			// 		FROM d_hiv_and_tb_treatment d JOIN view_facilitys f ON d.facility=f.id
-			// 		WHERE  {$divisions_query} AND `on_art_total_(sum_hv03-034_to_hv03-043)_hv03-038` > 0 AND 
-			// 		year = {$row->year} AND month = {$row->month}
-			// 	)")
-			// 	->first();
+			$data["outcomes"][3]["data"][$key]  = (int) Lookup::get_val($row, $rows3, 'total');
 
-			// if(is_object($duplicate)){
-			// 	$data["outcomes"][0]["data"][$key] -= $duplicate->below_1;
-			// 	$data["outcomes"][1]["data"][$key] -= $duplicate->below_15;
-			// 	$data["outcomes"][2]["data"][$key] -= $duplicate->above_15;
-			// }
-
-			$duplicate2 = DB::table('d_hiv_and_tb_treatment')
-							->join('view_facilitys', 'view_facilitys.id', '=', 'd_hiv_and_tb_treatment.facility')
-							->selectRaw($this->current_art_query())
-							->whereRaw("`on_art_total_(sum_hv03-034_to_hv03-043)_hv03-038` > 0")
-							->where(['year' => $row->year, 'month' => $row->month])
-							->whereRaw("facility IN (
-								SELECT DISTINCT facility
-								FROM d_care_and_treatment d JOIN view_facilitys f ON d.facility=f.id
-								WHERE  {$divisions_query} AND `total_currently_on_art` > 0 AND 
-								year = {$row->year} AND month = {$row->month}
-							)")
-							->first();
-
-			if(is_object($duplicate2)){
-				$data["outcomes"][0]["data"][$key] -= $duplicate2->below_1;
-				$data["outcomes"][1]["data"][$key] -= ($duplicate2->below_10 + $duplicate2->below_15);
-				$data["outcomes"][2]["data"][$key] -= ($duplicate2->below_20 + $duplicate2->below_25 + $duplicate2->above_25);
+			if(isset($target)) $data["outcomes"][4]["data"][$key] = $target;
+			else{				
+				$t = $target_obj->where('div_id', $row->div_id)->first()->total ?? 0;
+				$data["outcomes"][4]["data"][$key] = round(($t / $divisor), 2);
 			}
 		}
 		return view('charts.bar_graph', $data);
@@ -351,72 +244,41 @@ class ArtController extends Controller
 	public function new_age_breakdown()
 	{
 		$date_query = Lookup::date_query();
-		$divisions_query = Lookup::divisions_query();
-
-		$rows = DB::table('d_hiv_and_tb_treatment')
-			->join('view_facilitys', 'view_facilitys.id', '=', 'd_hiv_and_tb_treatment.facility')
-			->selectRaw($this->new_art_query())
-			->addSelect('year', 'month')
-			->whereRaw($date_query)
-			->whereRaw($divisions_query)
-			->groupBy('year', 'month')
-			->orderBy('year', 'asc')
-			->orderBy('month', 'asc')
-			->get();
-
-		$rows2 = DB::table('d_care_and_treatment')
-			->join('view_facilitys', 'view_facilitys.id', '=', 'd_care_and_treatment.facility')
-			->selectRaw($this->former_new_art_query())
-			->addSelect('year', 'month')
-			->whereRaw($date_query)
-			->whereRaw($divisions_query)
-			->groupBy('year', 'month')
-			->orderBy('year', 'asc')
-			->orderBy('month', 'asc')
-			->get();
 
 		$sql = "
-			SUM(`tested_total_(sum_hv01-01_to_hv01-10)_hv01-10`) AS tests,
-			SUM(`positive_total_(sum_hv01-18_to_hv01-27)_hv01-26`) AS pos
-		";
+			SUM(new_below1) AS below1,
+			(SUM(new_below10) + SUM(new_below15_m) + SUM(new_below15_f)) AS below15,
+			(SUM(new_below20_m) + SUM(new_below20_f) + SUM(new_below25_m) + SUM(new_below25_f) + SUM(new_above25_m) + SUM(new_above25_f)) AS above15
+		";	
 
-		$rows3 = DB::table('d_hiv_testing_and_prevention_services')
-			->join('view_facilitys', 'view_facilitys.id', '=', 'd_hiv_testing_and_prevention_services.facility')
+		$rows = DB::table('m_art')
+			->join('view_facilitys', 'view_facilitys.id', '=', 'm_art.facility')
 			->selectRaw($sql)
-			->addSelect('year', 'month')
+			->when(true, $this->get_callback('above15'))
 			->whereRaw($date_query)
-			->whereRaw($divisions_query)
-			->groupBy('year', 'month')
-			->orderBy('year', 'asc')
-			->orderBy('month', 'asc')
 			->get();
 
-		$sql = "
-			SUM(`total_tested_hiv`) AS tests,
-			SUM(`total_received_hivpos_results`) AS pos
-		";
-
-		$rows4 = DB::table('d_hiv_counselling_and_testing')
-			->join('view_facilitys', 'view_facilitys.id', '=', 'd_hiv_counselling_and_testing.facility')
-			->selectRaw($sql)
-			->addSelect('year', 'month')
+		$rows3 = DB::table('m_testing')
+			->join('view_facilitys', 'view_facilitys.id', '=', 'm_testing.facility')
+			->selectRaw("SUM(positive_total) AS total ")
+			->when(true, $this->get_callback())
 			->whereRaw($date_query)
-			->whereRaw($divisions_query)
-			->groupBy('year', 'month')
-			->orderBy('year', 'asc')
-			->orderBy('month', 'asc')
 			->get();
-
 
 		$date_query = Lookup::date_query(true);
-		$target = DB::table('t_hiv_and_tb_treatment')
+		$target_obj = DB::table('t_hiv_and_tb_treatment')
 			->join('view_facilitys', 'view_facilitys.id', '=', 't_hiv_and_tb_treatment.facility')
 			->selectRaw("SUM(`start_art_total_(sum_hv03-018_to_hv03-029)_hv03-026`) AS `total`")
-			->whereRaw($date_query)
-			->whereRaw($divisions_query)
-			->first();
+			->when(true, $this->target_callback())
+			->get();
 
-		$t = round(($target->total / 12), 2);
+		$groupby = session('filter_groupby', 1);
+		$divisor = Lookup::get_target_divisor();
+
+		if($groupby > 9){
+			$t = $target_obj->first()->total;
+			$target = round(($t / $divisor), 2);
+		}
 
 		$data['div'] = str_random(15);
 
@@ -424,7 +286,7 @@ class ArtController extends Controller
 		$data['outcomes'][1]['name'] = "Below 15";
 		$data['outcomes'][2]['name'] = "Above 15";
 		$data['outcomes'][3]['name'] = "Positive Tests";
-		$data['outcomes'][4]['name'] = "Monthly Target";
+		$data['outcomes'][4]['name'] = "Target";
 
 		$data['outcomes'][0]['type'] = "column";
 		$data['outcomes'][1]['type'] = "column";
@@ -438,81 +300,38 @@ class ArtController extends Controller
 		$data['outcomes'][3]['stack'] = 'positives';
 
 		foreach ($rows as $key => $row) {
-			$data['categories'][$key] = Lookup::get_category($row->year, $row->month);
-			$data["outcomes"][0]["data"][$key] = (int) $row->below_1 + $rows2[$key]->below_1;
-			$data["outcomes"][1]["data"][$key] = (int) $row->below_10 + $row->below_15 + $rows2[$key]->below_15;
-			$data["outcomes"][2]["data"][$key] = (int) $row->below_20 + $row->below_25 + $row->above_25 + $rows2[$key]->above_15;
+			$data['categories'][$key] = Lookup::get_category($row);
 
-			$duplicate2 = DB::table('d_hiv_and_tb_treatment')
-							->join('view_facilitys', 'view_facilitys.id', '=', 'd_hiv_and_tb_treatment.facility')
-							->selectRaw($this->new_art_query())
-							->whereRaw("`on_art_total_(sum_hv03-034_to_hv03-043)_hv03-038` > 0")
-							->where(['year' => $row->year, 'month' => $row->month])
-							->whereRaw("facility IN (
-								SELECT DISTINCT facility
-								FROM d_care_and_treatment d JOIN view_facilitys f ON d.facility=f.id
-								WHERE  {$divisions_query} AND `total_starting_on_art` > 0 AND 
-								year = {$row->year} AND month = {$row->month}
-							)")
-							->first();
+			$data["outcomes"][0]["data"][$key] = (int) $row->below1;
+			$data["outcomes"][1]["data"][$key] = (int) $row->below15;
+			$data["outcomes"][2]["data"][$key] = (int) $row->above15;
 
-			if(is_object($duplicate2)){
-				$data["outcomes"][0]["data"][$key] -= $duplicate2->below_1;
-				$data["outcomes"][1]["data"][$key] -= ($duplicate2->below_10 + $duplicate2->below_15);
-				$data["outcomes"][2]["data"][$key] -= ($duplicate2->below_20 + $duplicate2->below_25 + $duplicate2->above_25);
+			$data["outcomes"][3]["data"][$key]  = (int) Lookup::get_val($row, $rows3, 'total');
+
+			if(isset($target)) $data["outcomes"][4]["data"][$key] = $target;
+			else{				
+				$t = $target_obj->where('div_id', $row->div_id)->first()->total ?? 0;
+				$data["outcomes"][4]["data"][$key] = round(($t / $divisor), 2);
 			}
-
-			$data["outcomes"][3]["data"][$key] = (int) $rows3[$key]->pos + $rows4[$key]->pos;
-
-			$duplicate_pos = DB::table('d_hiv_testing_and_prevention_services')
-							->join('view_facilitys', 'view_facilitys.id', '=', 'd_hiv_testing_and_prevention_services.facility')
-							->selectRaw("SUM(`positive_total_(sum_hv01-18_to_hv01-27)_hv01-26`) AS pos")
-							->whereRaw("`positive_total_(sum_hv01-18_to_hv01-27)_hv01-26` > 0")
-							->where(['year' => $row->year, 'month' => $row->month])
-							->whereRaw("facility IN (
-								SELECT DISTINCT facility
-								FROM d_hiv_counselling_and_testing d JOIN view_facilitys f ON d.facility=f.id
-								WHERE  {$divisions_query} AND `total_received_hivpos_results` > 0 AND 
-								year = {$row->year} AND month = {$row->month}
-							)")
-							->first();
-
-			if(is_object($duplicate_pos)){
-				$data["outcomes"][3]["data"][$key] -= $duplicate_pos->pos;
-			}
-
-			$data["outcomes"][4]["data"][$key] = $t;
 		}
-		return view('charts.bar_graph', $data);		
+		return view('charts.bar_graph', $data);
 	}
-
-
 
 	public function enrolled_age_breakdown()
 	{
 		$date_query = Lookup::date_query();
-		$divisions_query = Lookup::divisions_query();
 
-		$rows = DB::table('d_hiv_and_tb_treatment')
-			->join('view_facilitys', 'view_facilitys.id', '=', 'd_hiv_and_tb_treatment.facility')
-			->selectRaw($this->enrolled_art_query())
-			->addSelect('year', 'month')
-			->whereRaw($date_query)
-			->whereRaw($divisions_query)
-			->groupBy('year', 'month')
-			->orderBy('year', 'asc')
-			->orderBy('month', 'asc')
-			->get();
+		$sql = "
+			SUM(enrolled_below1) AS below1,
+			(SUM(enrolled_below10) + SUM(enrolled_below15_m) + SUM(enrolled_below15_f)) AS below15,
+			(SUM(enrolled_below20_m) + SUM(enrolled_below20_f) + SUM(enrolled_below25_m) + SUM(enrolled_below25_f) + SUM(enrolled_above25_m) + SUM(enrolled_above25_f)) AS above15
+		";	
 
-		$rows2 = DB::table('d_care_and_treatment')
-			->join('view_facilitys', 'view_facilitys.id', '=', 'd_care_and_treatment.facility')
-			->selectRaw($this->former_age_enrolled_query())
-			->addSelect('year', 'month')
+		$rows = DB::table('m_art')
+			->join('view_facilitys', 'view_facilitys.id', '=', 'm_art.facility')
+			->selectRaw($sql)
+			->when(true, $this->get_callback('above15'))
 			->whereRaw($date_query)
-			->whereRaw($divisions_query)
-			->groupBy('year', 'month')
-			->orderBy('year', 'asc')
-			->orderBy('month', 'asc')
 			->get();
 
 		$data['div'] = str_random(15);
@@ -524,127 +343,178 @@ class ArtController extends Controller
 		$data['outcomes'][0]['type'] = "column";
 		$data['outcomes'][1]['type'] = "column";
 		$data['outcomes'][2]['type'] = "column";
-
-		$data['outcomes'][0]['tooltip'] = array("valueSuffix" => ' ');
-		$data['outcomes'][1]['tooltip'] = array("valueSuffix" => ' ');
-		$data['outcomes'][2]['tooltip'] = array("valueSuffix" => ' ');
-
 		foreach ($rows as $key => $row) {
-			$data['categories'][$key] = Lookup::get_category($row->year, $row->month);
-			$data["outcomes"][0]["data"][$key] = (int) $row->below_1 + $rows2[$key]->below_1;
-			$data["outcomes"][1]["data"][$key] = (int) $row->below_10 + $row->below_15 + $rows2[$key]->below_15;
-			$data["outcomes"][2]["data"][$key] = (int) $row->below_20 + $row->below_25 + $row->above_25 + $rows2[$key]->above_15;
+			$data['categories'][$key] = Lookup::get_category($row);
+
+			$data["outcomes"][0]["data"][$key] = (int) $row->below1;
+			$data["outcomes"][1]["data"][$key] = (int) $row->below15;
+			$data["outcomes"][2]["data"][$key] = (int) $row->above15;
 		}
 		return view('charts.bar_graph', $data);
 	}
 
 	public function new_art()
-	{		
-        // ini_set("memory_limit", "-1");
-        // ini_set('max_execution_time', 300);
+	{
 		$date_query = Lookup::date_query();
-		$divisions_query = Lookup::divisions_query();
-		$q = Lookup::groupby_query();
+		$data = Lookup::table_data();
 
-		$sql = $q['select_query'] . ", " . $this->new_art_query();		
+		$sql = "
+			SUM(new_below1) AS below1,
+			(SUM(new_below10) + SUM(new_below15_m) + SUM(new_below15_f)) AS below15,
+			(SUM(new_below20_m) + SUM(new_below20_f) + SUM(new_below25_m) + SUM(new_below25_f) + SUM(new_above25_m) + SUM(new_above25_f)) AS above15,
+			SUM(new_total) AS reported_total,
+			(SUM(new_below1) + SUM(new_below10) + SUM(new_below15_m) + SUM(new_below15_f) + SUM(new_below20_m) + SUM(new_below20_f) + SUM(new_below25_m) + SUM(new_below25_f) + SUM(new_above25_m) + SUM(new_above25_f)) AS actual_total
+		";	
 
-		$data['rows'] = DB::table('d_hiv_and_tb_treatment')
-			->join('view_facilitys', 'view_facilitys.id', '=', 'd_hiv_and_tb_treatment.facility')
+		$data['rows'] = DB::table('m_art')
+			->join('view_facilitys', 'view_facilitys.id', '=', 'm_art.facility')
 			->selectRaw($sql)
+			->when(true, $this->get_callback('above15'))
 			->whereRaw($date_query)
-			->whereRaw($divisions_query)
-			->groupBy($q['group_query'])
 			->get();
 
-		$sql = $q['select_query'] . ", " . $this->former_new_art_query();	
-
-		$data['others'] = DB::table('d_care_and_treatment')
-			->join('view_facilitys', 'view_facilitys.id', '=', 'd_care_and_treatment.facility')
-			->selectRaw($sql)
-			->whereRaw($date_query)
-			->whereRaw($divisions_query)
-			->groupBy($q['group_query'])
-			->get();
-
-		$data['duplicates'] = DB::table('d_care_and_treatment')
-			->join('view_facilitys', 'view_facilitys.id', '=', 'd_care_and_treatment.facility')
-			->selectRaw($sql)
-			->whereRaw($date_query)
-			->whereRaw("facility IN (
-				SELECT DISTINCT facility
-				FROM d_hiv_and_tb_treatment d JOIN view_facilitys f ON d.facility=f.id
-				WHERE  {$divisions_query} AND {$date_query} AND `start_art_total_(sum_hv03-018_to_hv03-029)_hv03-026` > 0
-			)")
-			->groupBy($q['group_query'])
-			->get();
-
-		$data['div'] = str_random(15);
-
-		return view('combined.art_totals', $data);
+		return view('tables.art_totals', $data);
 	}
 
+
 	public function current_art()
-	{		
-        // ini_set("memory_limit", "-1");
-        // ini_set('max_execution_time', 300);
-		$date_query = Lookup::year_month_query();
-		$divisions_query = Lookup::divisions_query();
-		$q = Lookup::groupby_query();
+	{
+		$data = Lookup::table_data();
+		$date_query = Lookup::date_query();
+		$groupby = session('filter_groupby', 1);
 
-		$sql = $q['select_query'] . ", " . $this->current_art_query();	
+		if($groupby != 12) $date_query = Lookup::year_month_query();
 
-		// DB::enableQueryLog();	
+		$sql = "
+			SUM(current_below1) AS below1,
+			(SUM(current_below10) + SUM(current_below15_m) + SUM(current_below15_f)) AS below15,
+			(SUM(current_below20_m) + SUM(current_below20_f) + SUM(current_below25_m) + SUM(current_below25_f) + SUM(current_above25_m) + SUM(current_above25_f)) AS above15,
+			SUM(current_total) AS reported_total,
+			(SUM(current_below1) + SUM(current_below10) + SUM(current_below15_m) + SUM(current_below15_f) + SUM(current_below20_m) + SUM(current_below20_f) + SUM(current_below25_m) + SUM(current_below25_f) + SUM(current_above25_m) + SUM(current_above25_f)) AS actual_total			
+		";	
 
-		$data['rows'] = DB::table('d_hiv_and_tb_treatment')
-			->join('view_facilitys', 'view_facilitys.id', '=', 'd_hiv_and_tb_treatment.facility')
+		$data['rows'] = DB::table('m_art')
+			->join('view_facilitys', 'view_facilitys.id', '=', 'm_art.facility')
 			->selectRaw($sql)
+			->when(true, $this->get_callback('above15'))
 			->whereRaw($date_query)
-			->whereRaw($divisions_query)
-			->groupBy($q['group_query'])
-			->get();	
+			->get();
+		$data['period_name'] = Lookup::year_month_name();
 
-		// $data['duplicates'] = DB::table('d_hiv_and_tb_treatment')
-		// 	->join('view_facilitys', 'view_facilitys.id', '=', 'd_hiv_and_tb_treatment.facility')
-		// 	->selectRaw($sql)
-		// 	->whereRaw($date_query)
-		// 	->whereRaw("facility IN (
-		// 		SELECT DISTINCT facility
-		// 		FROM d_care_and_treatment d JOIN view_facilitys f ON d.facility=f.id
-		// 		WHERE  {$divisions_query} AND {$date_query} AND `total_currently_on_art` > 0 
-		// 	)")
-		// 	->groupBy($q['group_query'])
-		// 	->get();
 
-		$sql = $q['select_query'] . ", " . $this->former_age_current_query();	
+		return view('tables.art_totals', $data);
+	}
 
-		$data['others'] = DB::table('d_care_and_treatment')
-			->join('view_facilitys', 'view_facilitys.id', '=', 'd_care_and_treatment.facility')
+	public function current_suppression()
+	{
+		$data = Lookup::table_data();
+		$groupby = session('filter_groupby', 1);
+
+		if($groupby > 9) return null;
+
+		$sql = "
+			SUM(`below1_m_sup`) AS below1_m_sup,
+			SUM(`below1_f_sup`) AS below1_f_sup,
+			SUM(`below1_u_sup`) AS below1_u_sup,
+			SUM(`below1_m_nonsup`) AS below1_m_nonsup,
+			SUM(`below1_f_nonsup`) AS below1_f_nonsup,
+			SUM(`below1_u_nonsup`) AS below1_u_nonsup,
+
+			SUM(`below5_m_sup`) AS below5_m_sup,
+			SUM(`below5_f_sup`) AS below5_f_sup,
+			SUM(`below5_u_sup`) AS below5_u_sup,
+			SUM(`below5_m_nonsup`) AS below5_m_nonsup,
+			SUM(`below5_f_nonsup`) AS below5_f_nonsup,
+			SUM(`below5_u_nonsup`) AS below5_u_nonsup,
+
+			SUM(`below10_m_sup`) AS below10_m_sup,
+			SUM(`below10_f_sup`) AS below10_f_sup,
+			SUM(`below10_u_sup`) AS below10_u_sup,
+			SUM(`below10_m_nonsup`) AS below10_m_nonsup,
+			SUM(`below10_f_nonsup`) AS below10_f_nonsup,
+			SUM(`below10_u_nonsup`) AS below10_u_nonsup,
+
+			SUM(`below15_m_sup`) AS below15_m_sup,
+			SUM(`below15_f_sup`) AS below15_f_sup,
+			SUM(`below15_u_sup`) AS below15_u_sup,
+			SUM(`below15_m_nonsup`) AS below15_m_nonsup,
+			SUM(`below15_f_nonsup`) AS below15_f_nonsup,
+			SUM(`below15_u_nonsup`) AS below15_u_nonsup,
+
+			SUM(`below20_m_sup`) AS below20_m_sup,
+			SUM(`below20_f_sup`) AS below20_f_sup,
+			SUM(`below20_u_sup`) AS below20_u_sup,
+			SUM(`below20_m_nonsup`) AS below20_m_nonsup,
+			SUM(`below20_f_nonsup`) AS below20_f_nonsup,
+			SUM(`below20_u_nonsup`) AS below20_u_nonsup,
+
+			SUM(`below25_m_sup`) AS below25_m_sup,
+			SUM(`below25_f_sup`) AS below25_f_sup,
+			SUM(`below25_u_sup`) AS below25_u_sup,
+			SUM(`below25_m_nonsup`) AS below25_m_nonsup,
+			SUM(`below25_f_nonsup`) AS below25_f_nonsup,
+			SUM(`below25_u_nonsup`) AS below25_u_nonsup,
+
+			SUM(`below30_m_sup`) AS below30_m_sup,
+			SUM(`below30_f_sup`) AS below30_f_sup,
+			SUM(`below30_u_sup`) AS below30_u_sup,
+			SUM(`below30_m_nonsup`) AS below30_m_nonsup,
+			SUM(`below30_f_nonsup`) AS below30_f_nonsup,
+			SUM(`below30_u_nonsup`) AS below30_u_nonsup,
+
+			SUM(`below35_m_sup`) AS below35_m_sup,
+			SUM(`below35_f_sup`) AS below35_f_sup,
+			SUM(`below35_u_sup`) AS below35_u_sup,
+			SUM(`below35_m_nonsup`) AS below35_m_nonsup,
+			SUM(`below35_f_nonsup`) AS below35_f_nonsup,
+			SUM(`below35_u_nonsup`) AS below35_u_nonsup,
+
+			SUM(`below40_m_sup`) AS below40_m_sup,
+			SUM(`below40_f_sup`) AS below40_f_sup,
+			SUM(`below40_u_sup`) AS below40_u_sup,
+			SUM(`below40_m_nonsup`) AS below40_m_nonsup,
+			SUM(`below40_f_nonsup`) AS below40_f_nonsup,
+			SUM(`below40_u_nonsup`) AS below40_u_nonsup,
+
+			SUM(`below45_m_sup`) AS below45_m_sup,
+			SUM(`below45_f_sup`) AS below45_f_sup,
+			SUM(`below45_u_sup`) AS below45_u_sup,
+			SUM(`below45_m_nonsup`) AS below45_m_nonsup,
+			SUM(`below45_f_nonsup`) AS below45_f_nonsup,
+			SUM(`below45_u_nonsup`) AS below45_u_nonsup,
+
+			SUM(`below50_m_sup`) AS below50_m_sup,
+			SUM(`below50_f_sup`) AS below50_f_sup,
+			SUM(`below50_u_sup`) AS below50_u_sup,
+			SUM(`below50_m_nonsup`) AS below50_m_nonsup,
+			SUM(`below50_f_nonsup`) AS below50_f_nonsup,
+			SUM(`below50_u_nonsup`) AS below50_u_nonsup,
+
+			SUM(`above50_m_sup`) AS above50_m_sup,
+			SUM(`above50_f_sup`) AS above50_f_sup,
+			SUM(`above50_u_sup`) AS above50_u_sup,
+			SUM(`above50_m_nonsup`) AS above50_m_nonsup,
+			SUM(`above50_f_nonsup`) AS above50_f_nonsup,
+			SUM(`above50_u_nonsup`) AS above50_u_nonsup,
+
+			SUM(`total_m_sup`) AS total_m_sup,
+			SUM(`total_f_sup`) AS total_f_sup,
+			SUM(`total_u_sup`) AS total_u_sup,
+			SUM(`total_m_nonsup`) AS total_m_nonsup,
+			SUM(`total_f_nonsup`) AS total_f_nonsup,
+			SUM(`total_u_nonsup`) AS total_u_nonsup,
+
+			(SUM(`total_m_sup`) + SUM(`total_f_sup`) + SUM(`total_u_sup`) + SUM(`total_m_nonsup`) + SUM(`total_f_nonsup`) + SUM(`total_u_nonsup`)) AS total
+		";
+
+
+		$data['rows'] = DB::table('apidb.vl_site_suppression_datim')
+			->join('hcm.view_facilitys', 'view_facilitys.id', '=', 'vl_site_suppression_datim.facility')
 			->selectRaw($sql)
-			->whereRaw($date_query)
-			->whereRaw($divisions_query)
-			->groupBy($q['group_query'])
+			->when(true, $this->get_callback('total'))
 			->get();
 
-		$data['duplicates'] = DB::table('d_care_and_treatment')
-			->join('view_facilitys', 'view_facilitys.id', '=', 'd_care_and_treatment.facility')
-			->selectRaw($sql)
-			->whereRaw($date_query)
-			->whereRaw("facility IN (
-				SELECT DISTINCT facility
-				FROM d_hiv_and_tb_treatment d JOIN view_facilitys f ON d.facility=f.id
-				WHERE  {$divisions_query} AND {$date_query} AND `on_art_total_(sum_hv03-034_to_hv03-043)_hv03-038` > 0
-			)")
-			->groupBy($q['group_query'])
-			->get();
-
-		// return DB::getQueryLog();
-
-		// $data['duplicates'] = DB::select(
-		// 		DB::raw("CALL `proc_get_duplicate_total`('{$old_table}', '{$new_table}', '{$old_column_tests}', '{$new_column_tests}', '{$divisions_query}', {$row->year}, {$row->month});"));
-
-		$data['div'] = str_random(15);
-
-		return view('combined.art_totals', $data);
+		return view('tables.current_suppression', $data);
 	}
 
 
