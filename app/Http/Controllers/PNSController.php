@@ -12,6 +12,37 @@ use App\ViewFacility;
 class PNSController extends Controller
 {
 
+	public function get_table($item)
+	{		
+		$date_query = Lookup::date_query();
+		$data = Lookup::table_data();
+		$data['ages_array'] = $this->ages_array;
+
+		$data['rows'] = DB::table('d_pns')
+			->join('view_facilitys', 'view_facilitys.id', '=', 'd_pns.facility')
+			->selectRaw($this->get_query($item))
+			->when(true, $this->get_callback('total'))
+			->whereRaw($date_query)
+			->get();
+
+		return view('tables.pns', $data);
+	}
+
+	public function get_query($item)
+	{
+		$sql = '';
+		$final = '(';
+		foreach ($this->ages_array as $key => $value) {
+			$sql .= "SUM({$item}_{$key}) AS {$key}, ";
+			$final .= "IFNULL(SUM({$item}_{$key}), 0) + ";
+		}
+		$final = substr($final, 0, -2);
+		$final .= ") as total ";
+		$sql .= $final;
+		// dd($sql);
+		return $sql;
+	}
+
 	public $item_array = [
 		'screened' => 'Index Clients Screened',
 		'contacts_identified' => 'Contacts Identified',
@@ -54,7 +85,7 @@ class PNSController extends Controller
 		$months = $request->input('months');
 		$financial_year = $request->input('financial_year', 2018);
 
-		$sql = "facilitycode AS `MFL Code`, name AS `Facility`, new_name, 
+		$sql = "facilitycode AS `MFL Code`, name AS `Facility`,
 		financial_year AS `Financial Year`, year AS `Calendar Year`, month AS `Month`, 
 		MONTHNAME(concat(year, '-', month, '-01')) AS `Month Name` ";
 
@@ -79,8 +110,6 @@ class PNSController extends Controller
 			->get();
 
 		foreach ($rows as $row) {
-			if(!$row->Facility) $row->Facility = $row->new_name;
-			unset($row->new_name);
 			$row_array = get_object_vars($row);
 			$data[] = $row_array;
 		}
@@ -134,7 +163,9 @@ class PNSController extends Controller
 			}
 		}
 
-		foreach ($data as $row){
+		$stuff = [];
+
+		foreach ($data as $row_key => $row){
 			$fac = Facility::where('facilitycode', $row->mfl_code)->first();
 			if(!$fac) continue;
 			$update_data = ['dateupdated' => $today];
@@ -145,7 +176,11 @@ class PNSController extends Controller
 			DB::connection('mysql_wr')->table('d_pns')
 				->where(['facility' => $fac->id, 'year' => $row->calendar_year, 'month' => $row->month])
 				->update($update_data);
+
+			if($row_key > 180) $stuff[] = $update_data;
 		}
+
+		dd($stuff);
 
 		session(['toast_message' => "The updates have been made."]);
 		return back();

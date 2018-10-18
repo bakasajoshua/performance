@@ -20,11 +20,19 @@
 		    <div class="panel-heading">
 			    {{ $partner->name ?? '' }} 
           <br />
-          Upload Early Warning Indicators Excel
+          Upload PNS Excel
 		    </div>
 			<div class="panel-body" id="user_guide">
 				<form action="{{ url('pns/upload') }}" method="post" class="form-horizontal" enctype="multipart/form-data"> 
 					@csrf
+
+
+          <p style="font-size: 16;">
+            If you are getting a <br />
+            <b>413 Request Entity Too Large</b> Error  <br />
+
+            try saving the excel file as a csv and then try again.
+          </p>
 
           <div class="form-group">
               <label class="col-sm-5 control-label">Upload PNS Data</label>
