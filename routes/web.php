@@ -111,6 +111,9 @@ Route::prefix('indicators')->name('indicators.')->group(function(){
 });
 
 Route::prefix('pns')->name('pns.')->group(function(){
+	Route::get('summary_chart', 'PNSController@summary_chart')->name('summary_chart');
+	Route::get('pns_contribution', 'PNSController@pns_contribution')->name('pns_contribution');
+	Route::get('summary_table', 'PNSController@summary_table')->name('summary_table');
 	Route::get('get_table/{item}', 'PNSController@get_table')->name('get_table');
 
 	Route::post('download', 'PNSController@download_excel')->name('download');
@@ -150,6 +153,9 @@ Route::middleware(['clear_session', 'auth', 'check_live'])->group(function(){
 		Route::get('target', 'GeneralController@targets');
 	});
 	
+	Route::get('facilities/upload', 'GeneralController@upload_facilities');
+	Route::post('facilities/upload', 'PNSController@upload_facilities');
+
 	Route::get('pns/download', 'GeneralController@download_pns');
 	Route::get('pns/upload', 'GeneralController@upload_pns');
 	Route::get('otz/upload', 'GeneralController@upload_nonmer');

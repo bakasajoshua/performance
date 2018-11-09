@@ -12,6 +12,118 @@ use App\ViewFacility;
 class PNSController extends Controller
 {
 
+	public function summary_chart()
+	{
+		$date_query = Lookup::date_query();
+		$ages = $this->get_ages();
+		$sql = '';
+
+		$data['div'] = str_random(15);
+		$data['stacking_false'] = true;
+		$i=0;
+
+		foreach ($this->item_array as $item => $name) {
+			$data['outcomes'][$i]['name'] = $name;
+			$data['outcomes'][$i]['type'] = 'column';
+			$subsql = '(';
+			foreach ($ages as $age) {
+				$subsql .= "IFNULL(SUM({$item}_{$age}), 0) + ";
+			}
+			$subsql = substr($subsql, 0, -2);
+			$subsql .= ") as {$item}, ";
+			$sql .= $subsql;
+			$i++;
+		}
+		$sql = substr($sql, 0, -2);
+
+		$rows = DB::table('d_pns')
+			->join('view_facilitys', 'view_facilitys.id', '=', 'd_pns.facility')
+			->selectRaw($sql)
+			->when(true, $this->get_callback('screened'))
+			->whereRaw($date_query)
+			->having('screened', '>', 0)
+			->get();
+
+
+		foreach ($rows as $key => $row){
+			$data['categories'][$key] = Lookup::get_category($row);
+
+			$data["outcomes"][0]["data"][$key] = (int) $row->screened;
+			$data["outcomes"][1]["data"][$key] = (int) $row->contacts_identified;
+			$data["outcomes"][2]["data"][$key] = (int) $row->pos_contacts;
+			$data["outcomes"][3]["data"][$key] = (int) $row->eligible_contacts;
+			$data["outcomes"][4]["data"][$key] = (int) $row->contacts_tested;
+			$data["outcomes"][5]["data"][$key] = (int) $row->new_pos;
+			$data["outcomes"][6]["data"][$key] = (int) $row->linked_haart;
+		}	
+		return view('charts.bar_graph', $data);
+	}
+
+	public function pns_contribution()
+	{
+		$date_query = Lookup::date_query();
+    	$groupby = session('filter_groupby', 1);		
+
+		$data['ages_array'] = $this->ages_array;
+
+		$rows = DB::table('d_pns')
+			->join('view_facilitys', 'view_facilitys.id', '=', 'd_pns.facility')
+			->selectRaw($this->get_table_query('new_pos'))
+			->when(true, $this->get_callback('total'))
+			->whereRaw($date_query)
+			->get();
+
+		$rows2 = DB::table('m_testing')
+			->join('view_facilitys', 'view_facilitys.id', '=', 'm_testing.facility')
+			->selectRaw("SUM(positive_total) AS `pos` ")
+			->when(true, $this->get_callback())
+			->whereRaw($date_query)
+			->get();
+
+		$data['div'] = str_random(15);
+
+		$data['outcomes'][0]['name'] = "PNS New Positives";
+		$data['outcomes'][1]['name'] = "DHIS Positives Less PNS";
+		$data['outcomes'][2]['name'] = "PNS Contribution To Positives";
+
+		$data['outcomes'][0]['type'] = "column";
+		$data['outcomes'][1]['type'] = "column";
+		// $data['outcomes'][2]['type'] = "spline";
+
+		$data['outcomes'][0]['tooltip'] = array("valueSuffix" => ' ');
+		$data['outcomes'][1]['tooltip'] = array("valueSuffix" => ' ');
+		$data['outcomes'][2]['tooltip'] = array("valueSuffix" => ' %');
+
+		$data['outcomes'][0]['yAxis'] = 1;
+		$data['outcomes'][1]['yAxis'] = 1;
+
+		if($groupby < 10){
+			$data['outcomes'][2]['lineWidth'] = 0;
+			$data['outcomes'][2]['marker'] = ['enabled' => true, 'radius' => 4];
+			$data['outcomes'][2]['states'] = ['hover' => ['lineWidthPlus' => 0]];
+		}
+
+		$i = 0;
+
+		foreach ($rows as $key => $row) {
+			if($row->total == 0) continue;
+			$data['categories'][$i] = Lookup::get_category($row);
+			$dhis = (int) Lookup::get_val($row, $rows2, 'pos');
+			$data["outcomes"][0]["data"][$i] = (int) $row->total;	
+			$data["outcomes"][1]["data"][$i] = $dhis - $row->total;
+			$data["outcomes"][2]["data"][$i] = Lookup::get_percentage($row->total, $dhis);
+			$i++;
+		}
+		return view('charts.dual_axis', $data);
+	}
+
+	public function get_ages()
+	{
+		$ages = session('filter_pns_age', $this->mf_array);
+		if($ages == [] || in_array('null', $ages)) $ages = $this->mf_array;
+		return $ages;
+	}
+
 	public function get_table($item)
 	{		
 		$date_query = Lookup::date_query();
@@ -20,7 +132,7 @@ class PNSController extends Controller
 
 		$data['rows'] = DB::table('d_pns')
 			->join('view_facilitys', 'view_facilitys.id', '=', 'd_pns.facility')
-			->selectRaw($this->get_query($item))
+			->selectRaw($this->get_table_query($item))
 			->when(true, $this->get_callback('total'))
 			->whereRaw($date_query)
 			->get();
@@ -28,18 +140,67 @@ class PNSController extends Controller
 		return view('tables.pns', $data);
 	}
 
-	public function get_query($item)
+	public function summary_table()
+	{
+		$date_query = Lookup::date_query();
+		$ages = $this->get_ages();
+		$sql = '';
+
+		$data = Lookup::table_data();
+		$i=0;
+
+		foreach ($this->item_array as $item => $name) {
+			$data['outcomes'][$i]['name'] = $name;
+			$data['outcomes'][$i]['type'] = 'column';
+			$subsql = '(';
+			foreach ($ages as $age) {
+				$subsql .= "IFNULL(SUM({$item}_{$age}), 0) + ";
+			}
+			$subsql = substr($subsql, 0, -2);
+			$subsql .= ") as {$item}, ";
+			$sql .= $subsql;
+			$i++;
+		}
+		$sql = substr($sql, 0, -2);
+
+		$data['rows'] = DB::table('d_pns')
+			->join('view_facilitys', 'view_facilitys.id', '=', 'd_pns.facility')
+			->selectRaw($sql)
+			->when(true, $this->get_callback('contacts_identified'))
+			->whereRaw($date_query)
+			->having('contacts_identified', '>', 0)
+			->get();
+
+		return view('tables.pns_summary', $data);
+
+
+		foreach ($rows as $key => $row){
+			$data['categories'][$key] = Lookup::get_category($row);
+
+			$data["outcomes"][0]["data"][$key] = (int) $row->screened;
+			$data["outcomes"][1]["data"][$key] = (int) $row->contacts_identified;
+			$data["outcomes"][2]["data"][$key] = (int) $row->pos_contacts;
+			$data["outcomes"][3]["data"][$key] = (int) $row->eligible_contacts;
+			$data["outcomes"][4]["data"][$key] = (int) $row->contacts_tested;
+			$data["outcomes"][5]["data"][$key] = (int) $row->new_pos;
+			$data["outcomes"][6]["data"][$key] = (int) $row->linked_haart;
+		}	
+		return view('charts.bar_graph', $data);
+	}
+
+	public function get_table_query($item, $columns_array=null, $add_final=true)
 	{
 		$sql = '';
 		$final = '(';
-		foreach ($this->ages_array as $key => $value) {
+		if(!$columns_array) $columns_array = $this->ages_array;
+		foreach ($columns_array as $key => $value) {
+			if(is_numeric($key)) $key = $value;
 			$sql .= "SUM({$item}_{$key}) AS {$key}, ";
 			$final .= "IFNULL(SUM({$item}_{$key}), 0) + ";
 		}
 		$final = substr($final, 0, -2);
 		$final .= ") as total ";
-		$sql .= $final;
-		// dd($sql);
+		if($add_final) $sql .= $final;
 		return $sql;
 	}
 
@@ -72,6 +233,13 @@ class PNSController extends Controller
 		'above_50_f' => 'Above 50 Female',
 	];
 
+	public $male_array = ['below_15_m', 'below_20_m', 'below_25_m', 'below_30_m', 'below_50_m', 'above_50_m'];
+	public $female_array = ['below_15_f', 'below_20_f', 'below_25_f', 'below_30_f', 'below_50_f', 'above_50_f'];
+
+	public $mf_array = ['unknown_m', 'unknown_f', 'below_1', 'below_10', 'below_15_m', 'below_20_m', 'below_25_m', 'below_30_m', 'below_50_m', 'above_50_m',
+	'below_15_f', 'below_20_f', 'below_25_f', 'below_30_f', 'below_50_f', 'above_50_f'];
+
+
 	public function download_excel(Request $request)
 	{
 		$partner = session('session_partner');
@@ -85,7 +253,8 @@ class PNSController extends Controller
 		$months = $request->input('months');
 		$financial_year = $request->input('financial_year', 2018);
 
-		$sql = "facilitycode AS `MFL Code`, name AS `Facility`,
+		$sql = "County, Subcounty,
+		facilitycode AS `MFL Code`, name AS `Facility`,
 		financial_year AS `Financial Year`, year AS `Calendar Year`, month AS `Month`, 
 		MONTHNAME(concat(year, '-', month, '-01')) AS `Month Name` ";
 
@@ -159,6 +328,7 @@ class PNSController extends Controller
 			foreach ($this->ages_array as $key2 => $value2) {
 				$column_name = $key . '_' . $key2;
 				$key_name = $str . '_' . str_replace(' ', '_', strtolower($value2));
+				$key_name = str_replace('-', '_', $key_name);
 				$columns[$key_name] = $column_name;
 			}
 		}
@@ -166,21 +336,70 @@ class PNSController extends Controller
 		$stuff = [];
 
 		foreach ($data as $row_key => $row){
+			if(!is_numeric($row->mfl_code) || (is_numeric($row->mfl_code) && $row->mfl_code < 10000)) continue;
 			$fac = Facility::where('facilitycode', $row->mfl_code)->first();
 			if(!$fac) continue;
+			// if($fac->partner != $partner->id){
+			// 	$fac->partner = $partner->id;
+			// 	$fac->save();
+
+			// 	DB::table('apidb.facilitys')->where('facilitycode', $fac->facilitycode)->update(['partner' => $partner->id]);
+			// 	DB::table('national_db.facilitys')->where('facilitycode', $fac->facilitycode)->update(['partner' => $partner->id]);
+			// }
+			$hasdata = false;
 			$update_data = ['dateupdated' => $today];
 			foreach ($row as $key => $value) {
-				if(isset($columns[$key])) $update_data[$columns[$key]] = (int) $value;
+				if(isset($columns[$key])){
+					$update_data[$columns[$key]] = (int) $value;
+					if(((int) $value) > 0) $hasdata = true;
+				}
+			}
+
+			if($hasdata && !$fac->is_pns){
+				$fac->is_pns = 1;
+				$fac->save();
 			}
 
 			DB::connection('mysql_wr')->table('d_pns')
 				->where(['facility' => $fac->id, 'year' => $row->calendar_year, 'month' => $row->month])
 				->update($update_data);
 
-			if($row_key > 180) $stuff[] = $update_data;
 		}
 
-		dd($stuff);
+		session(['toast_message' => "The updates have been made."]);
+		return back();
+	}
+
+	public function upload_facilities(Request $request)
+	{
+		ini_set('memory_limit', '-1');
+		if (!$request->hasFile('upload')){
+	        session(['toast_message' => 'Please select a file before clicking the submit button.']);
+	        session(['toast_error' => 1]);
+			return back();
+		}
+		$file = $request->upload->path();
+
+		if(auth()->user()->user_type_id != 1) return back();
+
+		$data = Excel::load($file, function($reader){
+			$reader->toArray();
+		})->get();
+
+		$partner = $request->input('partner_id');
+
+		$mflcodes = [];
+
+		foreach ($data as $key => $row) {
+			$mflcodes[] = $row->mfl_code;
+		}
+
+		// dd($mflcodes);
+
+		DB::table('facilitys')->whereIn('facilitycode', $mflcodes)->update(['partner' => $partner]);
+		DB::table('apidb.facilitys')->whereIn('facilitycode', $mflcodes)->update(['partner' => $partner]);
+		DB::table('national_db.facilitys')->whereIn('facilitycode', $mflcodes)->update(['partner' => $partner]);
+
 
 		session(['toast_message' => "The updates have been made."]);
 		return back();

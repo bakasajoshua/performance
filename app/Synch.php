@@ -447,7 +447,7 @@ class Synch
 		        }
 			}			
 			$offset += 50;
-	        // echo  'Completed updates for ' . $offset . " facilities at " . date('Y-m-d H:i:s a') . " \n";
+	        echo  'Completed updates for ' . $offset . " facilities at " . date('Y-m-d H:i:s a') . " \n";
 		}
 		echo "Completed updates at " . date('Y-m-d H:i:s a') . " \n";
 	} 
@@ -556,24 +556,24 @@ class Synch
 		        				$data[$column] += $value[3];
 		        			}
 		        		}
-		        		if($dmap){
-			        		$column = $my_service['dmap_column_name'];
-			        		$data[$column] = 0;
+		        		// if($dmap){
+			        	// 	$column = $my_service['dmap_column_name'];
+			        	// 	$data[$column] = 0;
 
-			        		if($dmap_body){
-				        		foreach ($dmap_body->rows as $key => $value){
-				        			if($value[2] == $period['name'] && in_array($value[0], $my_service['dmap_codes'])) {
-				        				$data[$column] += $value[3];
-				        			}
-				        		}	
-			        		}	        			
-		        		}
-		        		else{
-		        			if($other_fac && $other_fac->category == "standalone"){
-		        				$dmap_column = $my_service['dmap_column_name'];
-		        				$data[$dmap_column] = $data[$column];
-		        			} 
-		        		}
+			        	// 	if($dmap_body){
+				        // 		foreach ($dmap_body->rows as $key => $value){
+				        // 			if($value[2] == $period['name'] && in_array($value[0], $my_service['dmap_codes'])) {
+				        // 				$data[$column] += $value[3];
+				        // 			}
+				        // 		}	
+			        	// 	}	        			
+		        		// }
+		        		// else{
+		        		// 	if($other_fac && $other_fac->category == "standalone"){
+		        		// 		$dmap_column = $my_service['dmap_column_name'];
+		        		// 		$data[$dmap_column] = $data[$column];
+		        		// 	} 
+		        		// }
 		        	}
 
 		        	DB::connection('mysql_wr')->table('d_regimen_totals')
@@ -583,7 +583,8 @@ class Synch
 			}
 			// echo 'Completed updates for ' . $offset . " facilities at " . date('Y-m-d H:i:s a') . " \n";
 		}
-		echo "Completed updates at " . date('Y-m-d H:i:s a') . " \n";
+
+		echo "Completed regimen updates at " . date('Y-m-d H:i:s a') . " \n";
 
 		// DB::connection('mysql_wr')->whereIn('id', $messy_facilities)->update(['invalid_dhis' => 1]);
 	}
