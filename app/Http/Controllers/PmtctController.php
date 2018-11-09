@@ -228,6 +228,7 @@ class PmtctController extends Controller
 
 		foreach ($rows as $key => $row) {
 			$data['categories'][$key] = Lookup::get_category($row);
+
 			$data["outcomes"][0]["data"][$key] = (int) $row->initial_pcr_2m;
 			$data["outcomes"][1]["data"][$key] = (int) $row->initial_pcr_12m;
 
