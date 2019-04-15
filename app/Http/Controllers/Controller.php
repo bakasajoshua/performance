@@ -33,6 +33,7 @@ class Controller extends BaseController
     		if($groupby == 11) return $this->financial_callback($divisions_query);
     		if($groupby == 12) return $this->year_month_callback($divisions_query);
     		if($groupby == 13) return $this->year_quarter_callback($divisions_query);
+            if($groupby == 14) return $this->week_callback($divisions_query);
     	}
     	else{
     		$var = Lookup::groupby_query();
@@ -82,6 +83,17 @@ class Controller extends BaseController
     	};
     }
 
+    public function week_callback($divisions_query)
+    {
+        return function($query) use($divisions_query){
+            return $query->addSelect('financial_year', 'week_number')
+                ->whereRaw($divisions_query)
+                ->groupBy('financial_year', 'week_number')
+                ->orderBy('financial_year', 'asc')
+                ->orderBy('week_number', 'asc');
+        };
+    }
+
     public function divisions_callback($divisions_query, $var, $order_by=null)
     {
     	$raw = DB::raw($var['select_query']);
@@ -126,6 +138,17 @@ class Controller extends BaseController
 	    			->groupBy($var['group_query']);
 	    	};			
 		}
+    }
+
+    public function surge_columns_callback($modality=true, $gender=true, $age=true)
+    {
+        $columns_query = Lookup::surge_columns_query($modality, $gender, $age);
+        return function($query) use($columns_query){
+            return $query->whereRaw($columns_query)
+                ->orderBy('modality_id', 'asc')
+                ->orderBy('gender_id', 'asc')
+                ->orderBy('age_id', 'asc');
+        };
     }
 
 

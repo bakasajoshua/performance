@@ -22,10 +22,20 @@
                 value: 0,
                 width: 1,
                 color: '#808080'
-            }]
+            }],
+            labels: {
+                formatter: function() {
+                    return this.value + "{{ $suffix ?? '%' }}";
+                },
+                style: {
+                    
+                }
+            },
         },
         tooltip: {
-            valueSuffix: ""
+            valueSuffix: "{{ $suffix ?? '%' }}",
+            valuePrefix: "{{ $prefix ?? '' }}"
+            // valueDecimals: 2
         },
         legend: {
             /*layout: 'vertical',
@@ -35,11 +45,12 @@
             borderWidth: 0*/
             
             layout: 'horizontal',
-            align: 'right',
-            x: -100,
+            align: 'left',
+            // x: -100,
             verticalAlign: 'bottom',
-            y: -25,
+            // y: -25,
             floating: false,
+            width: $(window).width() - 20,
             backgroundColor: '#FFFFFF'
         },
         series: {!! json_encode($outcomes) !!}

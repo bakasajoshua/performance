@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use App\Lookup;
 use App\User;
+use App\Week;
 use DB;
 
 class GeneralController extends Controller
@@ -96,6 +97,14 @@ class GeneralController extends Controller
 		return view('base.pns', $data);
 	}
 
+	public function surge()
+	{
+		$data = Lookup::view_data_surges();
+		$financial_year = session('filter_financial_year');
+		$data['display_date'] = ' (October, ' . ($financial_year-1) . ' - September ' . $financial_year . ')';
+		return view('base.surge', $data);
+	}
+
 	public function indicators()
 	{
 		$data = Lookup::view_data();
@@ -150,6 +159,33 @@ class GeneralController extends Controller
 		$user = auth()->user();
 		$partner = session('session_partner');
 		return view('forms.upload_pns', ['no_header' => true, 'partner' => $partner]);
+	}
+
+	public function set_surge_facilities()
+	{
+		$user = auth()->user();
+		$partner = session('session_partner');
+		$facilities = \App\Facility::where('partner', $partner->id)
+			->orderBy('is_surge', 'desc')
+			->orderBy('name', 'asc')
+			->get();
+		return view('forms.set_surge_facilities', ['no_header' => true, 'partner' => $partner, 'facilities' => $facilities]);		
+	}
+
+	public function download_surge()
+	{
+		$data = Lookup::view_data_surges();
+		$user = auth()->user();
+		$data['partner'] = session('session_partner');
+		$data['no_header'] = true;
+		return view('forms.download_surge', $data);
+	}
+
+	public function upload_surge()
+	{
+		$user = auth()->user();
+		$partner = session('session_partner');
+		return view('forms.upload_surge', ['no_header' => true, 'partner' => $partner]);
 	}
 
 	public function upload_nonmer()

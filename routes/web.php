@@ -120,6 +120,17 @@ Route::prefix('pns')->name('pns.')->group(function(){
 	Route::post('upload', 'PNSController@upload_excel')->name('upload');
 });
 
+Route::prefix('surge')->name('surge.')->group(function(){
+	Route::get('testing', 'SurgeController@testing')->name('testing');
+	Route::get('linkage', 'SurgeController@linkage')->name('linkage');
+	Route::get('modality_yield', 'SurgeController@modality_yield')->name('modality_yield');
+	Route::get('gender_yield', 'SurgeController@gender_yield')->name('gender_yield');
+	Route::get('age_yield', 'SurgeController@age_yield')->name('age_yield');
+
+	Route::post('download', 'SurgeController@download_excel')->name('download');
+	Route::post('upload', 'SurgeController@upload_excel')->name('upload');
+});
+
 
 
 Route::middleware(['clear_session'])->group(function(){
@@ -136,6 +147,7 @@ Route::middleware(['clear_session'])->group(function(){
 	Route::get('otz', 'GeneralController@otz');
 	Route::get('pns', 'GeneralController@pns');
 	Route::get('indicators', 'GeneralController@indicators');
+	Route::get('surge', 'GeneralController@surge');
 
 	Route::get('guide', 'GeneralController@guide');
 });
@@ -158,6 +170,11 @@ Route::middleware(['clear_session', 'auth', 'check_live'])->group(function(){
 
 	Route::get('pns/download', 'GeneralController@download_pns');
 	Route::get('pns/upload', 'GeneralController@upload_pns');
+
+	Route::get('surge/download', 'GeneralController@download_surge');
+	Route::get('surge/upload', 'GeneralController@upload_surge');
+
+
 	Route::get('otz/upload', 'GeneralController@upload_nonmer');
 	Route::get('indicators/upload', 'GeneralController@upload_indicators');
 	Route::resource('user', 'UserController');

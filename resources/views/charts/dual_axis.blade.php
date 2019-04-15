@@ -28,7 +28,7 @@
                     }
                 },
                 title: {
-                    text: '<?= (isset($tat) ? @"Days": @"Percentage"); ?>',
+                    text: "{{ $yAxis2 ?? 'Percentage' }} ",
                     style: {
                         color: '#89A54E'
                     }
@@ -38,7 +38,7 @@
             }, { // Secondary yAxis
                 gridLineWidth: 0,
                 title: {
-                    text: '<?= (isset($tat) ? @"Days": @"Tests"); ?>',
+                    text: "{{ $yAxis ?? 'Tests' }} ",
                     style: {
                         color: '#4572A7'
                     }
@@ -70,11 +70,12 @@
             },
             legend: {
                 layout: 'horizontal',
-                align: 'right',
-                x: -100,
+                align: 'left',
+                // x: -100,
                 verticalAlign: 'bottom',
-                y: -25,
+                // y: -25,
                 floating: false,
+                width: $(window).width() - 20,
                 backgroundColor: '#FFFFFF'
             },
             navigation: {

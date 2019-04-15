@@ -10,6 +10,13 @@ use \App\Partner;
 use \App\Ward;
 use \App\Facility;
 
+use \App\Week;
+use App\SurgeAge;
+use App\SurgeGender;
+use App\SurgeModality;
+use App\SurgeColumn;
+use App\SurgeColumnView;
+
 use Excel;
 use Carbon\Carbon;
 use Illuminate\Support\Facades\Cache;
@@ -63,9 +70,7 @@ class Lookup
 				$value = '';
 				break;
 		}
-
 		return $value;
-
 	}
 
 	public static function get_category($row)
@@ -76,6 +81,7 @@ class Lookup
 			if($groupby == 11) return 'FY ' . $row->financial_year;
 			if($groupby == 12) return self::resolve_month($row->month) . ', ' . $row->year;
 			if($groupby == 13) return "FY {$row->financial_year} Q {$row->quarter}";
+			if($groupby == 14) return "FY {$row->financial_year} W {$row->week_number}";
 		}
 		else{
 			return $row->name ?? '';
@@ -185,6 +191,38 @@ class Lookup
 			'counties' => $counties,
 			'subcounties' => $subcounties,
 			'wards' => $wards,
+			'date_url' => url('filter/date'),
+		];
+	}
+
+	public static function view_data_surges()
+	{
+		$divisions = Division::all();
+		$agencies = FundingAgency::all();
+
+		$partners = Partner::select('id', 'name')->where('flag', 1)->orderBy('name', 'asc')->get();
+		$counties = County::select('id', 'name')->orderBy('name', 'asc')->get();
+		$subcounties = Subcounty::select('id', 'name')->orderBy('name', 'asc')->get();
+		$wards = Ward::select('id', 'name')->orderBy('name', 'asc')->get();
+
+		$weeks = Week::all();
+		$modalities = SurgeModality::all();
+		$genders = SurgeGender::all();
+		$ages = SurgeAge::all();
+
+		return [
+			'divisions' => $divisions,
+			'agencies' => $agencies,
+			'partners' => $partners,
+			'counties' => $counties,
+			'subcounties' => $subcounties,
+			'wards' => $wards,
+
+			'weeks' => $weeks,
+			'modalities' => $modalities,
+			'genders' => $genders,
+			'ages' => $ages,
+
 			'date_url' => url('filter/date'),
 		];
 	}
@@ -551,6 +589,9 @@ class Lookup
 		if(session('filter_partner') || is_numeric(session('filter_partner'))) $query .= " AND partner" . self::set_division_query(session('filter_partner'));
 		if(session('filter_agency')) $query .= " AND funding_agency_id" . self::set_division_query(session('filter_agency'));
 
+		// Though week is a time period, considering the way it is filtered, filter_week will be part of the divisions query
+		if(session('filter_week')) $query .= " AND week_id" . self::set_division_query(session('filter_week'));
+
 		return $query;
 	}
 
@@ -572,6 +613,16 @@ class Lookup
 			if($quote) return "='{$param}' ";
 			return "={$param} ";
 		}
+	}
+
+	public static function surge_columns_query($modality, $gender, $age)
+	{
+		$query = " 1 ";
+		if(session('filter_gender') && $gender) $query .= " AND gender_id" . self::set_division_query(session('filter_gender'));
+		if(session('filter_modality') && $modality) $query .= " AND modality_id" . self::set_division_query(session('filter_modality'));
+		if(session('filter_age') && $age) $query .= " AND age_id" . self::set_division_query(session('filter_age'));
+
+		return $query;		
 	}
 
 	public static function groupby_query($def=true)
