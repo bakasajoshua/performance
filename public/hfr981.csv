@@ -1,0 +1,982 @@
+index,date,orgunit,orgunituid,mech_code,partner,operatingunit,psnu,hts_tst.u15.f,hts_tst.u15.m,hts_tst.o15.f,hts_tst.o15.m,hts_tst_pos.u15.f,hts_tst_pos.u15.m,hts_tst_pos.o15.f,hts_tst_pos.o15.m,tx_new.u15.f,tx_new.u15.m,tx_new.o15.f,tx_new.o15.m,vmmc_circ.u15.m,vmmc_circ.o15.m,prep_new.u15.f,prep_new.u15.m,prep_new.o15.f,prep_new.o15.m,tx_curr.u15.f,tx_curr.u15.m,tx_curr.o15.f,tx_curr.o15.m,tx_mmd.u15.f.u3mo,tx_mmd.u15.m.u3mo,tx_mmd.o15.f.u3mo,tx_mmd.o15.m.u3mo,tx_mmd.u15.f.35mo,tx_mmd.u15.m.35mo,tx_mmd.o15.f.35mo,tx_mmd.o15.m.35mo,tx_mmd.u15.f.o6mo,tx_mmd.u15.m.o6mo,tx_mmd.o15.f.o6mo,tx_mmd.o15.m.o6mo
+1,1/3/2022,AIC Biribiriet Dispensary,gyY8uDEGB4j,160357,USAID AMPATH Uzima,Kenya,Trans-Nzoia County,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+2,1/10/2022,AIC Biribiriet Dispensary,gyY8uDEGB4j,160357,USAID AMPATH Uzima,Kenya,Trans-Nzoia County,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+3,1/17/2022,AIC Biribiriet Dispensary,gyY8uDEGB4j,160357,USAID AMPATH Uzima,Kenya,Trans-Nzoia County,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+4,1/24/2022,AIC Biribiriet Dispensary,gyY8uDEGB4j,160357,USAID AMPATH Uzima,Kenya,Trans-Nzoia County,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+5,1/3/2022,Ainabkoi (RCEA) Health Centre,puC1BTI46Yu,160357,USAID AMPATH Uzima,Kenya,Uasin Gishu County,0,0,6,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+6,1/10/2022,Ainabkoi (RCEA) Health Centre,puC1BTI46Yu,160357,USAID AMPATH Uzima,Kenya,Uasin Gishu County,0,0,2,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+7,1/17/2022,Ainabkoi (RCEA) Health Centre,puC1BTI46Yu,160357,USAID AMPATH Uzima,Kenya,Uasin Gishu County,0,0,3,5,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+8,1/24/2022,Ainabkoi (RCEA) Health Centre,puC1BTI46Yu,160357,USAID AMPATH Uzima,Kenya,Uasin Gishu County,1,0,4,5,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+9,1/3/2022,Alale (AIC) Health Centre,IWHB63WvHEE,160357,USAID AMPATH Uzima,Kenya,West Pokot County,0,0,13,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+10,1/10/2022,Alale (AIC) Health Centre,IWHB63WvHEE,160357,USAID AMPATH Uzima,Kenya,West Pokot County,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+11,1/17/2022,Alale (AIC) Health Centre,IWHB63WvHEE,160357,USAID AMPATH Uzima,Kenya,West Pokot County,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+12,1/24/2022,Alale (AIC) Health Centre,IWHB63WvHEE,160357,USAID AMPATH Uzima,Kenya,West Pokot County,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+13,1/3/2022,Alale Health Centre,PicT9BT2EVv,160357,USAID AMPATH Uzima,Kenya,West Pokot County,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+14,1/10/2022,Alale Health Centre,PicT9BT2EVv,160357,USAID AMPATH Uzima,Kenya,West Pokot County,0,0,18,6,0,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+15,1/17/2022,Alale Health Centre,PicT9BT2EVv,160357,USAID AMPATH Uzima,Kenya,West Pokot County,1,0,7,7,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+16,1/24/2022,Alale Health Centre,PicT9BT2EVv,160357,USAID AMPATH Uzima,Kenya,West Pokot County,0,0,6,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,18,16,0,0,0,0,0,0,0,0,0,0,0,0
+17,1/3/2022,Alphima Medical Clinic,vIEUICFg2ax,160357,USAID AMPATH Uzima,Kenya,Uasin Gishu County,0,0,3,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+18,1/10/2022,Alphima Medical Clinic,vIEUICFg2ax,160357,USAID AMPATH Uzima,Kenya,Uasin Gishu County,0,0,2,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+19,1/17/2022,Alphima Medical Clinic,vIEUICFg2ax,160357,USAID AMPATH Uzima,Kenya,Uasin Gishu County,0,0,3,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+20,1/24/2022,Alphima Medical Clinic,vIEUICFg2ax,160357,USAID AMPATH Uzima,Kenya,Uasin Gishu County,0,0,2,5,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,86,43,0,0,12,3,0,0,68,37,0,0,0,0
+21,1/3/2022,Amakuriat Dispensary,f6pRoNrH31Q,160357,USAID AMPATH Uzima,Kenya,West Pokot County,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+22,1/10/2022,Amakuriat Dispensary,f6pRoNrH31Q,160357,USAID AMPATH Uzima,Kenya,West Pokot County,0,0,10,5,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+23,1/17/2022,Amakuriat Dispensary,f6pRoNrH31Q,160357,USAID AMPATH Uzima,Kenya,West Pokot County,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+24,1/24/2022,Amakuriat Dispensary,f6pRoNrH31Q,160357,USAID AMPATH Uzima,Kenya,West Pokot County,0,0,4,4,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2,24,14,0,0,0,0,0,0,0,0,0,0,0,0
+25,1/10/2022,Andersen Medical Centre,TddcNdoxqhp,160357,USAID AMPATH Uzima,Kenya,Trans-Nzoia County,4,0,19,8,0,0,6,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+26,1/17/2022,Andersen Medical Centre,TddcNdoxqhp,160357,USAID AMPATH Uzima,Kenya,Trans-Nzoia County,0,0,20,5,0,0,0,1,0,0,0,2,0,0,0,0,0,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+27,1/24/2022,Andersen Medical Centre,TddcNdoxqhp,160357,USAID AMPATH Uzima,Kenya,Trans-Nzoia County,1,1,15,0,0,0,1,0,0,0,0,0,0,0,0,0,2,0,12,13,306,145,12,12,67,19,0,0,229,118,0,0,0,0
+28,1/3/2022,Arror Health Centre,MMwJQFmcWq7,160357,USAID AMPATH Uzima,Kenya,Elgeyo-Marakwet County,0,0,4,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+29,1/10/2022,Arror Health Centre,MMwJQFmcWq7,160357,USAID AMPATH Uzima,Kenya,Elgeyo-Marakwet County,0,0,15,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+30,1/17/2022,Arror Health Centre,MMwJQFmcWq7,160357,USAID AMPATH Uzima,Kenya,Elgeyo-Marakwet County,0,0,8,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+31,1/24/2022,Arror Health Centre,MMwJQFmcWq7,160357,USAID AMPATH Uzima,Kenya,Elgeyo-Marakwet County,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2,20,8,0,1,0,0,0,1,20,8,0,0,0,0
+32,1/3/2022,Assumption Sisters Dispensary,EY55JylX4SC,160357,USAID AMPATH Uzima,Kenya,Elgeyo-Marakwet County,0,0,2,0,0,0,2,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+33,1/10/2022,Assumption Sisters Dispensary,EY55JylX4SC,160357,USAID AMPATH Uzima,Kenya,Elgeyo-Marakwet County,0,0,6,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+34,1/17/2022,Assumption Sisters Dispensary,EY55JylX4SC,160357,USAID AMPATH Uzima,Kenya,Elgeyo-Marakwet County,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+35,1/24/2022,Assumption Sisters Dispensary,EY55JylX4SC,160357,USAID AMPATH Uzima,Kenya,Elgeyo-Marakwet County,0,0,3,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+36,1/3/2022,Baraka Medical Clinic (Trans Nzoia East),MbMHtb4LFlu,160357,USAID AMPATH Uzima,Kenya,Trans-Nzoia County,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+37,1/10/2022,Baraka Medical Clinic (Trans Nzoia East),MbMHtb4LFlu,160357,USAID AMPATH Uzima,Kenya,Trans-Nzoia County,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+38,1/17/2022,Baraka Medical Clinic (Trans Nzoia East),MbMHtb4LFlu,160357,USAID AMPATH Uzima,Kenya,Trans-Nzoia County,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+39,1/24/2022,Baraka Medical Clinic (Trans Nzoia East),MbMHtb4LFlu,160357,USAID AMPATH Uzima,Kenya,Trans-Nzoia County,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+40,1/3/2022,Barsombe Dispensary,bR95hCnPIDU,160357,USAID AMPATH Uzima,Kenya,Uasin Gishu County,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+41,1/10/2022,Barsombe Dispensary,bR95hCnPIDU,160357,USAID AMPATH Uzima,Kenya,Uasin Gishu County,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+42,1/17/2022,Barsombe Dispensary,bR95hCnPIDU,160357,USAID AMPATH Uzima,Kenya,Uasin Gishu County,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+43,1/24/2022,Barsombe Dispensary,bR95hCnPIDU,160357,USAID AMPATH Uzima,Kenya,Uasin Gishu County,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+44,1/3/2022,Bidii Health Centre,AbFl2G2sQPD,160357,USAID AMPATH Uzima,Kenya,Trans-Nzoia County,0,0,16,4,0,0,2,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+45,1/10/2022,Bidii Health Centre,AbFl2G2sQPD,160357,USAID AMPATH Uzima,Kenya,Trans-Nzoia County,0,0,12,7,0,0,1,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+46,1/17/2022,Bidii Health Centre,AbFl2G2sQPD,160357,USAID AMPATH Uzima,Kenya,Trans-Nzoia County,1,1,7,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+47,1/24/2022,Bidii Health Centre,AbFl2G2sQPD,160357,USAID AMPATH Uzima,Kenya,Trans-Nzoia County,0,0,6,3,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,5,67,38,4,2,17,6,0,0,44,28,0,0,0,0
+48,1/3/2022,Bikeke Health Centre,knQCXqV1T2E,160357,USAID AMPATH Uzima,Kenya,Trans-Nzoia County,2,0,32,6,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+49,1/10/2022,Bikeke Health Centre,knQCXqV1T2E,160357,USAID AMPATH Uzima,Kenya,Trans-Nzoia County,0,0,18,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+50,1/17/2022,Bikeke Health Centre,knQCXqV1T2E,160357,USAID AMPATH Uzima,Kenya,Trans-Nzoia County,2,0,25,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+51,1/24/2022,Bikeke Health Centre,knQCXqV1T2E,160357,USAID AMPATH Uzima,Kenya,Trans-Nzoia County,0,0,23,2,0,0,1,0,0,0,0,0,0,0,0,0,1,0,11,9,147,69,6,8,87,39,5,1,60,30,0,0,0,0
+52,1/3/2022,Biretwa health centre,vXv0uxOyzte,160357,USAID AMPATH Uzima,Kenya,Elgeyo-Marakwet County,0,0,2,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+53,1/10/2022,Biretwa health centre,vXv0uxOyzte,160357,USAID AMPATH Uzima,Kenya,Elgeyo-Marakwet County,0,0,12,2,0,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+54,1/17/2022,Biretwa health centre,vXv0uxOyzte,160357,USAID AMPATH Uzima,Kenya,Elgeyo-Marakwet County,0,0,6,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+55,1/24/2022,Biretwa health centre,vXv0uxOyzte,160357,USAID AMPATH Uzima,Kenya,Elgeyo-Marakwet County,0,0,10,4,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,2,39,14,1,2,13,1,0,0,26,13,0,0,0,0
+56,1/3/2022,Bondeni Health Centre (Trans Nzoia - Saboti),EdlxO5gs71j,160357,USAID AMPATH Uzima,Kenya,Trans-Nzoia County,0,0,7,1,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+57,1/10/2022,Bondeni Health Centre (Trans Nzoia - Saboti),EdlxO5gs71j,160357,USAID AMPATH Uzima,Kenya,Trans-Nzoia County,0,0,19,3,0,0,2,0,0,0,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+58,1/17/2022,Bondeni Health Centre (Trans Nzoia - Saboti),EdlxO5gs71j,160357,USAID AMPATH Uzima,Kenya,Trans-Nzoia County,1,0,8,1,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+59,1/24/2022,Bondeni Health Centre (Trans Nzoia - Saboti),EdlxO5gs71j,160357,USAID AMPATH Uzima,Kenya,Trans-Nzoia County,0,0,13,2,0,0,0,0,0,0,0,0,0,0,0,0,1,0,7,8,85,23,0,3,25,4,7,5,42,16,0,0,0,0
+60,1/3/2022,Burnt Forest Sub County Hospital,D1TlavlC4mB,160357,USAID AMPATH Uzima,Kenya,Uasin Gishu County,3,0,30,6,0,0,3,3,0,0,3,3,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+61,1/10/2022,Burnt Forest Sub County Hospital,D1TlavlC4mB,160357,USAID AMPATH Uzima,Kenya,Uasin Gishu County,3,0,32,7,0,0,3,2,0,0,4,2,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+62,1/17/2022,Burnt Forest Sub County Hospital,D1TlavlC4mB,160357,USAID AMPATH Uzima,Kenya,Uasin Gishu County,0,0,26,11,0,0,0,1,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+63,1/24/2022,Burnt Forest Sub County Hospital,D1TlavlC4mB,160357,USAID AMPATH Uzima,Kenya,Uasin Gishu County,0,0,22,9,0,0,2,0,0,0,2,0,0,0,0,0,0,0,30,29,1064,480,23,16,171,78,5,12,821,360,0,0,0,0
+64,1/3/2022,Bwayi Dispensary,BkpxIK4Q1b4,160357,USAID AMPATH Uzima,Kenya,Trans-Nzoia County,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+65,1/10/2022,Bwayi Dispensary,BkpxIK4Q1b4,160357,USAID AMPATH Uzima,Kenya,Trans-Nzoia County,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+66,1/17/2022,Bwayi Dispensary,BkpxIK4Q1b4,160357,USAID AMPATH Uzima,Kenya,Trans-Nzoia County,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+67,1/24/2022,Bwayi Dispensary,BkpxIK4Q1b4,160357,USAID AMPATH Uzima,Kenya,Trans-Nzoia County,0,0,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,5,1,0,0,0,0,0,0,5,1,0,0,0,0
+68,1/3/2022,Cedar Associate Clinic,EihyELfXIWr,160357,USAID AMPATH Uzima,Kenya,Uasin Gishu County,0,0,3,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+69,1/10/2022,Cedar Associate Clinic,EihyELfXIWr,160357,USAID AMPATH Uzima,Kenya,Uasin Gishu County,0,0,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+70,1/17/2022,Cedar Associate Clinic,EihyELfXIWr,160357,USAID AMPATH Uzima,Kenya,Uasin Gishu County,0,0,2,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+71,1/24/2022,Cedar Associate Clinic,EihyELfXIWr,160357,USAID AMPATH Uzima,Kenya,Uasin Gishu County,0,0,3,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,33,20,0,0,1,1,1,0,28,16,0,0,0,0
+72,1/3/2022,Cedar Hospital -Eldoret,s4UcxxzrWlL,160357,USAID AMPATH Uzima,Kenya,Uasin Gishu County,0,0,9,4,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+73,1/10/2022,Cedar Hospital -Eldoret,s4UcxxzrWlL,160357,USAID AMPATH Uzima,Kenya,Uasin Gishu County,0,0,8,5,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+74,1/17/2022,Cedar Hospital -Eldoret,s4UcxxzrWlL,160357,USAID AMPATH Uzima,Kenya,Uasin Gishu County,0,1,10,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+75,1/24/2022,Cedar Hospital -Eldoret,s4UcxxzrWlL,160357,USAID AMPATH Uzima,Kenya,Uasin Gishu County,0,0,0,10,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+76,1/3/2022,Chebaiwa Dispensary,zZL8J3HCmdc,160357,USAID AMPATH Uzima,Kenya,Uasin Gishu County,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+77,1/10/2022,Chebaiwa Dispensary,zZL8J3HCmdc,160357,USAID AMPATH Uzima,Kenya,Uasin Gishu County,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+78,1/17/2022,Chebaiwa Dispensary,zZL8J3HCmdc,160357,USAID AMPATH Uzima,Kenya,Uasin Gishu County,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+79,1/24/2022,Chebaiwa Dispensary,zZL8J3HCmdc,160357,USAID AMPATH Uzima,Kenya,Uasin Gishu County,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+80,1/3/2022,Chebiemit Sub county Hospital,U0ZQeXc1U2s,160357,USAID AMPATH Uzima,Kenya,Elgeyo-Marakwet County,0,0,8,3,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+81,1/10/2022,Chebiemit Sub county Hospital,U0ZQeXc1U2s,160357,USAID AMPATH Uzima,Kenya,Elgeyo-Marakwet County,0,0,21,9,0,0,2,0,0,0,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+82,1/17/2022,Chebiemit Sub county Hospital,U0ZQeXc1U2s,160357,USAID AMPATH Uzima,Kenya,Elgeyo-Marakwet County,0,0,11,5,0,0,2,1,0,0,2,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+83,1/24/2022,Chebiemit Sub county Hospital,U0ZQeXc1U2s,160357,USAID AMPATH Uzima,Kenya,Elgeyo-Marakwet County,0,0,22,8,0,0,3,0,0,0,3,0,0,0,0,0,0,0,2,7,121,48,1,4,15,5,1,3,99,43,0,0,0,0
+84,1/3/2022,Cheboin Dispensary,tkkWaV4TWer,160357,USAID AMPATH Uzima,Kenya,Uasin Gishu County,0,0,0,3,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+85,1/10/2022,Cheboin Dispensary,tkkWaV4TWer,160357,USAID AMPATH Uzima,Kenya,Uasin Gishu County,0,0,3,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+86,1/17/2022,Cheboin Dispensary,tkkWaV4TWer,160357,USAID AMPATH Uzima,Kenya,Uasin Gishu County,0,0,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+87,1/24/2022,Cheboin Dispensary,tkkWaV4TWer,160357,USAID AMPATH Uzima,Kenya,Uasin Gishu County,0,0,2,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+88,1/3/2022,Chebororwa Health Centre,TrGrM79U8mL,160357,USAID AMPATH Uzima,Kenya,Elgeyo-Marakwet County,0,0,24,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+89,1/10/2022,Chebororwa Health Centre,TrGrM79U8mL,160357,USAID AMPATH Uzima,Kenya,Elgeyo-Marakwet County,0,0,10,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+90,1/17/2022,Chebororwa Health Centre,TrGrM79U8mL,160357,USAID AMPATH Uzima,Kenya,Elgeyo-Marakwet County,0,0,10,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+91,1/24/2022,Chebororwa Health Centre,TrGrM79U8mL,160357,USAID AMPATH Uzima,Kenya,Elgeyo-Marakwet County,0,0,14,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,5,3,81,31,0,0,0,0,0,0,0,0,0,0,0,0
+92,1/3/2022,Chegilet Health Centre,wuRCdcaRcyK,160357,USAID AMPATH Uzima,Kenya,Elgeyo-Marakwet County,0,0,8,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+93,1/10/2022,Chegilet Health Centre,wuRCdcaRcyK,160357,USAID AMPATH Uzima,Kenya,Elgeyo-Marakwet County,0,0,7,3,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+94,1/17/2022,Chegilet Health Centre,wuRCdcaRcyK,160357,USAID AMPATH Uzima,Kenya,Elgeyo-Marakwet County,0,0,5,4,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+95,1/24/2022,Chegilet Health Centre,wuRCdcaRcyK,160357,USAID AMPATH Uzima,Kenya,Elgeyo-Marakwet County,0,0,3,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2,1,23,14,2,1,4,2,0,0,19,12,0,0,0,0
+96,1/3/2022,Chembulet Health Centre,Quet4l0HEqI,160357,USAID AMPATH Uzima,Kenya,Uasin Gishu County,0,0,12,6,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+97,1/10/2022,Chembulet Health Centre,Quet4l0HEqI,160357,USAID AMPATH Uzima,Kenya,Uasin Gishu County,0,0,9,5,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+98,1/17/2022,Chembulet Health Centre,Quet4l0HEqI,160357,USAID AMPATH Uzima,Kenya,Uasin Gishu County,0,0,23,4,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+99,1/24/2022,Chembulet Health Centre,Quet4l0HEqI,160357,USAID AMPATH Uzima,Kenya,Uasin Gishu County,0,0,30,5,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+100,1/3/2022,Chemworor Health Centre,K9SE2PQn4CG,160357,USAID AMPATH Uzima,Kenya,Elgeyo-Marakwet County,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+101,1/10/2022,Chemworor Health Centre,K9SE2PQn4CG,160357,USAID AMPATH Uzima,Kenya,Elgeyo-Marakwet County,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+102,1/17/2022,Chemworor Health Centre,K9SE2PQn4CG,160357,USAID AMPATH Uzima,Kenya,Elgeyo-Marakwet County,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+103,1/24/2022,Chemworor Health Centre,K9SE2PQn4CG,160357,USAID AMPATH Uzima,Kenya,Elgeyo-Marakwet County,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,3,1,21,7,2,1,2,0,1,0,18,6,0,0,0,0
+104,1/3/2022,Chepareria (SDA) Dispensary,FYTMdANDEKJ,160357,USAID AMPATH Uzima,Kenya,West Pokot County,0,0,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+105,1/10/2022,Chepareria (SDA) Dispensary,FYTMdANDEKJ,160357,USAID AMPATH Uzima,Kenya,West Pokot County,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+106,1/17/2022,Chepareria (SDA) Dispensary,FYTMdANDEKJ,160357,USAID AMPATH Uzima,Kenya,West Pokot County,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+107,1/24/2022,Chepareria (SDA) Dispensary,FYTMdANDEKJ,160357,USAID AMPATH Uzima,Kenya,West Pokot County,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+108,1/3/2022,Chepareria Sub District Hospital,waCMEIRsFyZ,160357,USAID AMPATH Uzima,Kenya,West Pokot County,0,0,50,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+109,1/10/2022,Chepareria Sub District Hospital,waCMEIRsFyZ,160357,USAID AMPATH Uzima,Kenya,West Pokot County,1,0,52,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+110,1/17/2022,Chepareria Sub District Hospital,waCMEIRsFyZ,160357,USAID AMPATH Uzima,Kenya,West Pokot County,0,0,85,2,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+111,1/24/2022,Chepareria Sub District Hospital,waCMEIRsFyZ,160357,USAID AMPATH Uzima,Kenya,West Pokot County,0,0,58,3,0,0,1,0,0,0,1,0,0,0,0,0,0,0,10,8,156,65,8,8,50,22,1,1,98,39,0,0,0,1
+112,1/10/2022,Chepchoina Dispensary,wJUbyPn3nXj,160357,USAID AMPATH Uzima,Kenya,Trans-Nzoia County,0,0,4,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+113,1/17/2022,Chepchoina Dispensary,wJUbyPn3nXj,160357,USAID AMPATH Uzima,Kenya,Trans-Nzoia County,0,0,3,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+114,1/24/2022,Chepchoina Dispensary,wJUbyPn3nXj,160357,USAID AMPATH Uzima,Kenya,Trans-Nzoia County,0,0,6,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,8,4,105,39,6,4,47,16,0,0,51,19,0,0,0,0
+115,1/3/2022,Chepkanga Health Centre,TvIiM9I5ssO,160357,USAID AMPATH Uzima,Kenya,Uasin Gishu County,0,0,6,3,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+116,1/10/2022,Chepkanga Health Centre,TvIiM9I5ssO,160357,USAID AMPATH Uzima,Kenya,Uasin Gishu County,2,0,3,3,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+117,1/17/2022,Chepkanga Health Centre,TvIiM9I5ssO,160357,USAID AMPATH Uzima,Kenya,Uasin Gishu County,0,1,3,2,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+118,1/24/2022,Chepkanga Health Centre,TvIiM9I5ssO,160357,USAID AMPATH Uzima,Kenya,Uasin Gishu County,0,0,3,7,0,0,1,0,0,0,1,0,0,0,0,0,0,0,7,6,231,81,3,0,61,6,4,5,151,63,0,0,0,0
+119,1/3/2022,Chepkemel Dispensary,jUvMhocKHOu,160357,USAID AMPATH Uzima,Kenya,Uasin Gishu County,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+120,1/10/2022,Chepkemel Dispensary,jUvMhocKHOu,160357,USAID AMPATH Uzima,Kenya,Uasin Gishu County,0,0,4,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+121,1/17/2022,Chepkemel Dispensary,jUvMhocKHOu,160357,USAID AMPATH Uzima,Kenya,Uasin Gishu County,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+122,1/24/2022,Chepkemel Dispensary,jUvMhocKHOu,160357,USAID AMPATH Uzima,Kenya,Uasin Gishu County,0,0,2,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+123,1/3/2022,Chepkigen Dispensary,oelX4arc5rL,160357,USAID AMPATH Uzima,Kenya,Uasin Gishu County,1,1,36,2,0,0,1,0,0,0,1,0,0,0,0,0,6,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+124,1/10/2022,Chepkigen Dispensary,oelX4arc5rL,160357,USAID AMPATH Uzima,Kenya,Uasin Gishu County,0,0,25,3,0,0,4,1,0,0,0,3,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+125,1/17/2022,Chepkigen Dispensary,oelX4arc5rL,160357,USAID AMPATH Uzima,Kenya,Uasin Gishu County,2,2,23,4,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+126,1/24/2022,Chepkigen Dispensary,oelX4arc5rL,160357,USAID AMPATH Uzima,Kenya,Uasin Gishu County,2,2,15,4,0,0,0,1,0,0,0,1,0,0,0,0,0,0,5,10,152,66,5,10,11,4,0,0,141,62,0,0,0,0
+127,1/3/2022,Chepkorio Health Centre,Bm3Nx6OUXy8,160357,USAID AMPATH Uzima,Kenya,Elgeyo-Marakwet County,0,0,21,3,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+128,1/10/2022,Chepkorio Health Centre,Bm3Nx6OUXy8,160357,USAID AMPATH Uzima,Kenya,Elgeyo-Marakwet County,0,0,26,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+129,1/17/2022,Chepkorio Health Centre,Bm3Nx6OUXy8,160357,USAID AMPATH Uzima,Kenya,Elgeyo-Marakwet County,0,0,9,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+130,1/24/2022,Chepkorio Health Centre,Bm3Nx6OUXy8,160357,USAID AMPATH Uzima,Kenya,Elgeyo-Marakwet County,0,0,14,6,0,0,0,0,0,0,0,0,0,0,0,0,0,0,14,9,174,73,9,5,17,7,5,4,157,66,0,0,0,0
+131,1/3/2022,Chepsaita Dispensary,VVrl5mNJ4fC,160357,USAID AMPATH Uzima,Kenya,Uasin Gishu County,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+132,1/10/2022,Chepsaita Dispensary,VVrl5mNJ4fC,160357,USAID AMPATH Uzima,Kenya,Uasin Gishu County,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+133,1/17/2022,Chepsaita Dispensary,VVrl5mNJ4fC,160357,USAID AMPATH Uzima,Kenya,Uasin Gishu County,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+134,1/24/2022,Chepsaita Dispensary,VVrl5mNJ4fC,160357,USAID AMPATH Uzima,Kenya,Uasin Gishu County,0,0,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2,3,51,15,0,3,10,5,1,0,38,10,0,0,0,0
+135,1/3/2022,Chepsiro Health Centre,o8VkRAaa9TG,160357,USAID AMPATH Uzima,Kenya,Trans-Nzoia County,0,0,2,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+136,1/10/2022,Chepsiro Health Centre,o8VkRAaa9TG,160357,USAID AMPATH Uzima,Kenya,Trans-Nzoia County,0,0,3,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+137,1/17/2022,Chepsiro Health Centre,o8VkRAaa9TG,160357,USAID AMPATH Uzima,Kenya,Trans-Nzoia County,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+138,1/24/2022,Chepsiro Health Centre,o8VkRAaa9TG,160357,USAID AMPATH Uzima,Kenya,Trans-Nzoia County,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,4,1,38,18,3,1,19,14,1,0,13,3,0,0,0,0
+139,1/3/2022,Cheptongei Health Centre,Y5ExXBUuy1g,160357,USAID AMPATH Uzima,Kenya,Elgeyo-Marakwet County,0,0,9,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+140,1/10/2022,Cheptongei Health Centre,Y5ExXBUuy1g,160357,USAID AMPATH Uzima,Kenya,Elgeyo-Marakwet County,0,0,16,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+141,1/17/2022,Cheptongei Health Centre,Y5ExXBUuy1g,160357,USAID AMPATH Uzima,Kenya,Elgeyo-Marakwet County,0,0,11,0,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+142,1/24/2022,Cheptongei Health Centre,Y5ExXBUuy1g,160357,USAID AMPATH Uzima,Kenya,Elgeyo-Marakwet County,0,0,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,7,5,52,27,7,5,23,1,0,0,29,25,0,0,0,0
+143,1/3/2022,Cheramei Dispensary,V6Gt0Y2TZ4N,160357,USAID AMPATH Uzima,Kenya,Uasin Gishu County,1,0,24,3,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+144,1/10/2022,Cheramei Dispensary,V6Gt0Y2TZ4N,160357,USAID AMPATH Uzima,Kenya,Uasin Gishu County,0,1,10,4,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+145,1/17/2022,Cheramei Dispensary,V6Gt0Y2TZ4N,160357,USAID AMPATH Uzima,Kenya,Uasin Gishu County,1,2,11,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+146,1/24/2022,Cheramei Dispensary,V6Gt0Y2TZ4N,160357,USAID AMPATH Uzima,Kenya,Uasin Gishu County,1,0,13,6,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2,3,97,40,2,3,48,20,0,0,28,12,0,0,0,0
+147,1/3/2022,Cherangany Nursing Home,OoS3Ua2QnMC,160357,USAID AMPATH Uzima,Kenya,Trans-Nzoia County,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+148,1/10/2022,Cherangany Nursing Home,OoS3Ua2QnMC,160357,USAID AMPATH Uzima,Kenya,Trans-Nzoia County,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+149,1/17/2022,Cherangany Nursing Home,OoS3Ua2QnMC,160357,USAID AMPATH Uzima,Kenya,Trans-Nzoia County,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+150,1/24/2022,Cherangany Nursing Home,OoS3Ua2QnMC,160357,USAID AMPATH Uzima,Kenya,Trans-Nzoia County,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,6,3,0,0,1,0,1,0,6,2,0,0,0,0
+151,1/3/2022,Cherangany Sub County Hospital,uOMzkMdxwGZ,160357,USAID AMPATH Uzima,Kenya,Trans-Nzoia County,1,1,19,5,0,0,0,3,0,0,2,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+152,1/10/2022,Cherangany Sub County Hospital,uOMzkMdxwGZ,160357,USAID AMPATH Uzima,Kenya,Trans-Nzoia County,5,3,31,8,0,0,4,1,0,0,3,1,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+153,1/17/2022,Cherangany Sub County Hospital,uOMzkMdxwGZ,160357,USAID AMPATH Uzima,Kenya,Trans-Nzoia County,1,4,25,4,1,1,0,0,0,1,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+154,1/24/2022,Cherangany Sub County Hospital,uOMzkMdxwGZ,160357,USAID AMPATH Uzima,Kenya,Trans-Nzoia County,0,0,16,3,0,0,1,1,0,0,1,1,0,0,0,0,1,1,27,19,361,180,21,10,242,132,4,6,91,29,0,0,5,4
+155,1/3/2022,Chesoi Health Centre,NOp8UPwdF3Y,160357,USAID AMPATH Uzima,Kenya,Elgeyo-Marakwet County,0,0,2,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+156,1/10/2022,Chesoi Health Centre,NOp8UPwdF3Y,160357,USAID AMPATH Uzima,Kenya,Elgeyo-Marakwet County,0,0,3,5,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+157,1/17/2022,Chesoi Health Centre,NOp8UPwdF3Y,160357,USAID AMPATH Uzima,Kenya,Elgeyo-Marakwet County,0,0,3,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+158,1/24/2022,Chesoi Health Centre,NOp8UPwdF3Y,160357,USAID AMPATH Uzima,Kenya,Elgeyo-Marakwet County,0,0,5,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,23,5,1,1,3,1,0,0,20,4,0,0,0,0
+159,1/3/2022,Chesongoch Health Centre,Qj8KVZUINS6,160357,USAID AMPATH Uzima,Kenya,Elgeyo-Marakwet County,0,2,8,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+160,1/10/2022,Chesongoch Health Centre,Qj8KVZUINS6,160357,USAID AMPATH Uzima,Kenya,Elgeyo-Marakwet County,0,0,1,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+161,1/17/2022,Chesongoch Health Centre,Qj8KVZUINS6,160357,USAID AMPATH Uzima,Kenya,Elgeyo-Marakwet County,2,1,4,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+162,1/24/2022,Chesongoch Health Centre,Qj8KVZUINS6,160357,USAID AMPATH Uzima,Kenya,Elgeyo-Marakwet County,0,0,2,0,0,0,1,0,0,0,1,0,0,0,0,0,0,0,1,0,20,6,1,0,3,0,0,0,17,6,0,0,0,0
+163,1/3/2022,Chesta Dispensary,RlMJ9s28ahf,160357,USAID AMPATH Uzima,Kenya,West Pokot County,1,0,2,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+164,1/10/2022,Chesta Dispensary,RlMJ9s28ahf,160357,USAID AMPATH Uzima,Kenya,West Pokot County,0,0,2,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+165,1/17/2022,Chesta Dispensary,RlMJ9s28ahf,160357,USAID AMPATH Uzima,Kenya,West Pokot County,0,0,2,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+166,1/24/2022,Chesta Dispensary,RlMJ9s28ahf,160357,USAID AMPATH Uzima,Kenya,West Pokot County,0,0,10,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+167,1/3/2022,Chukura Dispensary,smwe4L8Ei3u,160357,USAID AMPATH Uzima,Kenya,Uasin Gishu County,0,0,4,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+168,1/10/2022,Chukura Dispensary,smwe4L8Ei3u,160357,USAID AMPATH Uzima,Kenya,Uasin Gishu County,0,0,12,5,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+169,1/17/2022,Chukura Dispensary,smwe4L8Ei3u,160357,USAID AMPATH Uzima,Kenya,Uasin Gishu County,0,0,9,3,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+170,1/24/2022,Chukura Dispensary,smwe4L8Ei3u,160357,USAID AMPATH Uzima,Kenya,Uasin Gishu County,0,0,2,3,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+171,1/3/2022,Elgeyo Boader Dispensary,Hc638TC9nvA,160357,USAID AMPATH Uzima,Kenya,Uasin Gishu County,0,0,2,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+172,1/10/2022,Elgeyo Boader Dispensary,Hc638TC9nvA,160357,USAID AMPATH Uzima,Kenya,Uasin Gishu County,0,0,3,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+173,1/17/2022,Elgeyo Boader Dispensary,Hc638TC9nvA,160357,USAID AMPATH Uzima,Kenya,Uasin Gishu County,0,0,2,1,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+174,1/24/2022,Elgeyo Boader Dispensary,Hc638TC9nvA,160357,USAID AMPATH Uzima,Kenya,Uasin Gishu County,0,0,5,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2,2,50,17,0,0,0,0,0,0,0,0,0,0,0,0
+175,1/3/2022,Emc Kimumu Dispensary,EMwxb4QCHH5,160357,USAID AMPATH Uzima,Kenya,Uasin Gishu County,0,0,3,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+176,1/10/2022,Emc Kimumu Dispensary,EMwxb4QCHH5,160357,USAID AMPATH Uzima,Kenya,Uasin Gishu County,0,0,13,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+177,1/17/2022,Emc Kimumu Dispensary,EMwxb4QCHH5,160357,USAID AMPATH Uzima,Kenya,Uasin Gishu County,0,0,26,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+178,1/24/2022,Emc Kimumu Dispensary,EMwxb4QCHH5,160357,USAID AMPATH Uzima,Kenya,Uasin Gishu County,0,0,30,0,0,0,2,0,0,0,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+179,1/3/2022,Endebess Sub- County Hospital,B1IJ2WqiIYG,160357,USAID AMPATH Uzima,Kenya,Trans-Nzoia County,0,0,39,1,0,0,2,1,0,0,2,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+180,1/10/2022,Endebess Sub- County Hospital,B1IJ2WqiIYG,160357,USAID AMPATH Uzima,Kenya,Trans-Nzoia County,1,0,17,2,0,0,3,0,0,0,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+181,1/17/2022,Endebess Sub- County Hospital,B1IJ2WqiIYG,160357,USAID AMPATH Uzima,Kenya,Trans-Nzoia County,1,0,17,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+182,1/24/2022,Endebess Sub- County Hospital,B1IJ2WqiIYG,160357,USAID AMPATH Uzima,Kenya,Trans-Nzoia County,0,0,20,2,0,0,3,1,0,0,2,1,0,0,0,0,0,0,27,31,480,209,5,4,33,4,21,25,413,190,0,0,0,0
+183,1/3/2022,Endo Health Centre,kZ6Ew1S8hO1,160357,USAID AMPATH Uzima,Kenya,Elgeyo-Marakwet County,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+184,1/10/2022,Endo Health Centre,kZ6Ew1S8hO1,160357,USAID AMPATH Uzima,Kenya,Elgeyo-Marakwet County,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+185,1/17/2022,Endo Health Centre,kZ6Ew1S8hO1,160357,USAID AMPATH Uzima,Kenya,Elgeyo-Marakwet County,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+186,1/24/2022,Endo Health Centre,kZ6Ew1S8hO1,160357,USAID AMPATH Uzima,Kenya,Elgeyo-Marakwet County,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,7,3,0,0,0,0,0,0,7,3,0,0,0,0
+187,1/3/2022,Flax Dispensary,VlJAvHydp1V,160357,USAID AMPATH Uzima,Kenya,Elgeyo-Marakwet County,1,0,25,6,0,0,1,1,0,0,0,1,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+188,1/10/2022,Flax Dispensary,VlJAvHydp1V,160357,USAID AMPATH Uzima,Kenya,Elgeyo-Marakwet County,0,1,34,5,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+189,1/17/2022,Flax Dispensary,VlJAvHydp1V,160357,USAID AMPATH Uzima,Kenya,Elgeyo-Marakwet County,0,0,23,3,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+190,1/24/2022,Flax Dispensary,VlJAvHydp1V,160357,USAID AMPATH Uzima,Kenya,Elgeyo-Marakwet County,0,0,22,2,0,0,2,0,0,0,2,0,0,0,0,0,0,0,5,8,101,47,3,4,33,7,2,4,68,40,0,0,0,0
+191,1/3/2022,Fluorspar Health Centre,DweSLkRn36a,160357,USAID AMPATH Uzima,Kenya,Elgeyo-Marakwet County,0,0,4,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+192,1/10/2022,Fluorspar Health Centre,DweSLkRn36a,160357,USAID AMPATH Uzima,Kenya,Elgeyo-Marakwet County,0,0,3,3,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+193,1/17/2022,Fluorspar Health Centre,DweSLkRn36a,160357,USAID AMPATH Uzima,Kenya,Elgeyo-Marakwet County,0,0,4,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+194,1/24/2022,Fluorspar Health Centre,DweSLkRn36a,160357,USAID AMPATH Uzima,Kenya,Elgeyo-Marakwet County,0,0,6,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,2,44,22,1,2,4,1,0,0,40,21,0,0,0,0
+195,1/3/2022,Fountain Healthcare,xawDePFIs5Z,160357,USAID AMPATH Uzima,Kenya,Uasin Gishu County,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+196,1/10/2022,Fountain Healthcare,xawDePFIs5Z,160357,USAID AMPATH Uzima,Kenya,Uasin Gishu County,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+197,1/17/2022,Fountain Healthcare,xawDePFIs5Z,160357,USAID AMPATH Uzima,Kenya,Uasin Gishu County,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+198,1/24/2022,Fountain Healthcare,xawDePFIs5Z,160357,USAID AMPATH Uzima,Kenya,Uasin Gishu County,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,17,10,0,0,0,1,0,0,16,8,0,0,0,0
+199,1/3/2022,Galilee Medical Centre,yORrUEsm3Dw,160357,USAID AMPATH Uzima,Kenya,Trans-Nzoia County,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+200,1/10/2022,Galilee Medical Centre,yORrUEsm3Dw,160357,USAID AMPATH Uzima,Kenya,Trans-Nzoia County,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+201,1/17/2022,Galilee Medical Centre,yORrUEsm3Dw,160357,USAID AMPATH Uzima,Kenya,Trans-Nzoia County,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+202,1/24/2022,Galilee Medical Centre,yORrUEsm3Dw,160357,USAID AMPATH Uzima,Kenya,Trans-Nzoia County,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,10,4,0,0,2,0,0,0,8,4,0,0,0,0
+203,1/3/2022,Gitwamba Health Centre,bhpWnzkxE3U,160357,USAID AMPATH Uzima,Kenya,Trans-Nzoia County,0,0,10,5,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+204,1/10/2022,Gitwamba Health Centre,bhpWnzkxE3U,160357,USAID AMPATH Uzima,Kenya,Trans-Nzoia County,0,0,16,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+205,1/17/2022,Gitwamba Health Centre,bhpWnzkxE3U,160357,USAID AMPATH Uzima,Kenya,Trans-Nzoia County,0,0,7,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+206,1/24/2022,Gitwamba Health Centre,bhpWnzkxE3U,160357,USAID AMPATH Uzima,Kenya,Trans-Nzoia County,0,0,8,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,3,1,26,9,1,1,5,0,1,0,20,9,0,0,0,0
+207,1/3/2022,GK Prisons Dispensary (Ngeria),chnXeF8bfgv,160357,USAID AMPATH Uzima,Kenya,Uasin Gishu County,5,2,11,4,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+208,1/10/2022,GK Prisons Dispensary (Ngeria),chnXeF8bfgv,160357,USAID AMPATH Uzima,Kenya,Uasin Gishu County,0,0,7,15,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+209,1/17/2022,GK Prisons Dispensary (Ngeria),chnXeF8bfgv,160357,USAID AMPATH Uzima,Kenya,Uasin Gishu County,0,0,0,10,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+210,1/24/2022,GK Prisons Dispensary (Ngeria),chnXeF8bfgv,160357,USAID AMPATH Uzima,Kenya,Uasin Gishu County,0,0,0,5,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2,0,16,21,0,0,3,6,1,0,11,9,0,0,0,0
+211,1/3/2022,Goseta Dispensary,idLD2LEefO5,160357,USAID AMPATH Uzima,Kenya,Trans-Nzoia County,0,2,7,6,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+212,1/10/2022,Goseta Dispensary,idLD2LEefO5,160357,USAID AMPATH Uzima,Kenya,Trans-Nzoia County,0,0,4,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+213,1/17/2022,Goseta Dispensary,idLD2LEefO5,160357,USAID AMPATH Uzima,Kenya,Trans-Nzoia County,1,0,6,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+214,1/24/2022,Goseta Dispensary,idLD2LEefO5,160357,USAID AMPATH Uzima,Kenya,Trans-Nzoia County,0,0,3,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,38,14,0,1,9,5,1,0,22,8,0,0,0,0
+215,1/3/2022,Grassland Dispensary,gTxCpscLKEH,160357,USAID AMPATH Uzima,Kenya,Trans-Nzoia County,0,0,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+216,1/10/2022,Grassland Dispensary,gTxCpscLKEH,160357,USAID AMPATH Uzima,Kenya,Trans-Nzoia County,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+217,1/17/2022,Grassland Dispensary,gTxCpscLKEH,160357,USAID AMPATH Uzima,Kenya,Trans-Nzoia County,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+218,1/24/2022,Grassland Dispensary,gTxCpscLKEH,160357,USAID AMPATH Uzima,Kenya,Trans-Nzoia County,0,0,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+219,1/3/2022,Huruma District Hospital,ZGqUHXgmVex,160357,USAID AMPATH Uzima,Kenya,Uasin Gishu County,0,0,78,8,0,0,2,1,0,0,3,3,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+220,1/10/2022,Huruma District Hospital,ZGqUHXgmVex,160357,USAID AMPATH Uzima,Kenya,Uasin Gishu County,7,4,87,14,0,0,0,1,0,0,1,3,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+221,1/17/2022,Huruma District Hospital,ZGqUHXgmVex,160357,USAID AMPATH Uzima,Kenya,Uasin Gishu County,4,2,91,12,0,0,5,1,0,0,2,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+222,1/24/2022,Huruma District Hospital,ZGqUHXgmVex,160357,USAID AMPATH Uzima,Kenya,Uasin Gishu County,2,1,85,13,0,0,4,1,0,0,2,3,0,0,0,0,1,1,46,32,1099,462,34,23,394,131,5,2,633,300,0,0,1,0
+223,1/3/2022,Iten County Referral Hospital,JqIAXhJN4lW,160357,USAID AMPATH Uzima,Kenya,Elgeyo-Marakwet County,0,1,20,14,0,0,2,1,0,0,2,1,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+224,1/10/2022,Iten County Referral Hospital,JqIAXhJN4lW,160357,USAID AMPATH Uzima,Kenya,Elgeyo-Marakwet County,0,0,61,20,0,0,0,2,0,0,0,1,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+225,1/17/2022,Iten County Referral Hospital,JqIAXhJN4lW,160357,USAID AMPATH Uzima,Kenya,Elgeyo-Marakwet County,3,1,28,14,0,0,1,1,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+226,1/24/2022,Iten County Referral Hospital,JqIAXhJN4lW,160357,USAID AMPATH Uzima,Kenya,Elgeyo-Marakwet County,1,0,43,15,0,0,0,0,0,0,0,0,0,0,0,0,0,0,24,30,791,346,10,15,149,72,13,13,600,255,0,0,0,0
+227,1/3/2022,Jamii Bora Clinical Services,YphP2DMkQq9,160357,USAID AMPATH Uzima,Kenya,West Pokot County,0,0,7,2,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+228,1/10/2022,Jamii Bora Clinical Services,YphP2DMkQq9,160357,USAID AMPATH Uzima,Kenya,West Pokot County,0,0,2,3,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+229,1/17/2022,Jamii Bora Clinical Services,YphP2DMkQq9,160357,USAID AMPATH Uzima,Kenya,West Pokot County,0,0,4,3,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+230,1/24/2022,Jamii Bora Clinical Services,YphP2DMkQq9,160357,USAID AMPATH Uzima,Kenya,West Pokot County,0,0,4,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+231,1/3/2022,Kabetwa Health Centre,wVhfA0jZy4Z,160357,USAID AMPATH Uzima,Kenya,Elgeyo-Marakwet County,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+232,1/10/2022,Kabetwa Health Centre,wVhfA0jZy4Z,160357,USAID AMPATH Uzima,Kenya,Elgeyo-Marakwet County,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+233,1/17/2022,Kabetwa Health Centre,wVhfA0jZy4Z,160357,USAID AMPATH Uzima,Kenya,Elgeyo-Marakwet County,0,0,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+234,1/24/2022,Kabetwa Health Centre,wVhfA0jZy4Z,160357,USAID AMPATH Uzima,Kenya,Elgeyo-Marakwet County,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,3,2,1,1,3,2,0,0,0,0,0,0,0,0
+235,1/3/2022,Kabichbich Health Centre,J7iTynirbOa,160357,USAID AMPATH Uzima,Kenya,West Pokot County,0,0,17,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+236,1/10/2022,Kabichbich Health Centre,J7iTynirbOa,160357,USAID AMPATH Uzima,Kenya,West Pokot County,0,0,20,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+237,1/17/2022,Kabichbich Health Centre,J7iTynirbOa,160357,USAID AMPATH Uzima,Kenya,West Pokot County,0,0,11,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+238,1/24/2022,Kabichbich Health Centre,J7iTynirbOa,160357,USAID AMPATH Uzima,Kenya,West Pokot County,0,0,27,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2,8,21,37,0,0,0,0,0,0,0,0,0,0,0,0
+239,1/3/2022,Kabiemit Dispensary (Keiyo),SNtzR4hDGka,160357,USAID AMPATH Uzima,Kenya,Elgeyo-Marakwet County,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+240,1/10/2022,Kabiemit Dispensary (Keiyo),SNtzR4hDGka,160357,USAID AMPATH Uzima,Kenya,Elgeyo-Marakwet County,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+241,1/17/2022,Kabiemit Dispensary (Keiyo),SNtzR4hDGka,160357,USAID AMPATH Uzima,Kenya,Elgeyo-Marakwet County,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+242,1/24/2022,Kabiemit Dispensary (Keiyo),SNtzR4hDGka,160357,USAID AMPATH Uzima,Kenya,Elgeyo-Marakwet County,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+243,1/3/2022,Kabulwo Dispensary,mdaKjRGDcas,160357,USAID AMPATH Uzima,Kenya,Elgeyo-Marakwet County,0,0,7,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+244,1/10/2022,Kabulwo Dispensary,mdaKjRGDcas,160357,USAID AMPATH Uzima,Kenya,Elgeyo-Marakwet County,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+245,1/17/2022,Kabulwo Dispensary,mdaKjRGDcas,160357,USAID AMPATH Uzima,Kenya,Elgeyo-Marakwet County,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+246,1/24/2022,Kabulwo Dispensary,mdaKjRGDcas,160357,USAID AMPATH Uzima,Kenya,Elgeyo-Marakwet County,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+247,1/3/2022,Kacheliba District Hospital,h32R9kWOuC2,160357,USAID AMPATH Uzima,Kenya,West Pokot County,1,1,36,4,0,0,1,1,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+248,1/10/2022,Kacheliba District Hospital,h32R9kWOuC2,160357,USAID AMPATH Uzima,Kenya,West Pokot County,2,3,60,6,0,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+249,1/17/2022,Kacheliba District Hospital,h32R9kWOuC2,160357,USAID AMPATH Uzima,Kenya,West Pokot County,0,0,50,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+250,1/24/2022,Kacheliba District Hospital,h32R9kWOuC2,160357,USAID AMPATH Uzima,Kenya,West Pokot County,1,1,79,34,0,0,1,4,0,0,1,4,0,0,0,0,4,9,11,12,200,113,9,7,54,46,2,0,72,45,0,0,23,10
+251,1/3/2022,Kaibei Dispensary,kmxaflQ2OtF,160357,USAID AMPATH Uzima,Kenya,Trans-Nzoia County,0,0,8,3,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+252,1/10/2022,Kaibei Dispensary,kmxaflQ2OtF,160357,USAID AMPATH Uzima,Kenya,Trans-Nzoia County,0,0,7,5,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+253,1/17/2022,Kaibei Dispensary,kmxaflQ2OtF,160357,USAID AMPATH Uzima,Kenya,Trans-Nzoia County,0,1,10,4,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+254,1/24/2022,Kaibei Dispensary,kmxaflQ2OtF,160357,USAID AMPATH Uzima,Kenya,Trans-Nzoia County,1,0,5,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,34,5,0,1,4,2,0,0,20,3,0,0,0,0
+255,1/3/2022,Kaibos Dispensary,f9zgOWgCHyl,160357,USAID AMPATH Uzima,Kenya,West Pokot County,0,0,2,0,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+256,1/10/2022,Kaibos Dispensary,f9zgOWgCHyl,160357,USAID AMPATH Uzima,Kenya,West Pokot County,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+257,1/17/2022,Kaibos Dispensary,f9zgOWgCHyl,160357,USAID AMPATH Uzima,Kenya,West Pokot County,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+258,1/24/2022,Kaibos Dispensary,f9zgOWgCHyl,160357,USAID AMPATH Uzima,Kenya,West Pokot County,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+259,1/3/2022,Kaisagat Health Centre,cRetZ92OTD1,160357,USAID AMPATH Uzima,Kenya,Trans-Nzoia County,0,0,5,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+260,1/10/2022,Kaisagat Health Centre,cRetZ92OTD1,160357,USAID AMPATH Uzima,Kenya,Trans-Nzoia County,0,0,2,3,0,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+261,1/17/2022,Kaisagat Health Centre,cRetZ92OTD1,160357,USAID AMPATH Uzima,Kenya,Trans-Nzoia County,0,0,2,2,0,0,0,1,0,0,0,1,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+262,1/24/2022,Kaisagat Health Centre,cRetZ92OTD1,160357,USAID AMPATH Uzima,Kenya,Trans-Nzoia County,0,0,1,3,0,0,0,0,0,0,0,0,0,0,0,0,1,0,6,4,60,33,2,0,16,9,4,4,41,21,0,0,0,0
+263,1/3/2022,Kalwal Dispensary,bvhspyLnxLM,160357,USAID AMPATH Uzima,Kenya,Elgeyo-Marakwet County,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+264,1/10/2022,Kalwal Dispensary,bvhspyLnxLM,160357,USAID AMPATH Uzima,Kenya,Elgeyo-Marakwet County,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+265,1/17/2022,Kalwal Dispensary,bvhspyLnxLM,160357,USAID AMPATH Uzima,Kenya,Elgeyo-Marakwet County,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+266,1/24/2022,Kalwal Dispensary,bvhspyLnxLM,160357,USAID AMPATH Uzima,Kenya,Elgeyo-Marakwet County,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+267,1/3/2022,Kamogo Health Centre,dp85y1bpORz,160357,USAID AMPATH Uzima,Kenya,Elgeyo-Marakwet County,0,0,9,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+268,1/10/2022,Kamogo Health Centre,dp85y1bpORz,160357,USAID AMPATH Uzima,Kenya,Elgeyo-Marakwet County,0,0,9,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+269,1/17/2022,Kamogo Health Centre,dp85y1bpORz,160357,USAID AMPATH Uzima,Kenya,Elgeyo-Marakwet County,0,0,9,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+270,1/24/2022,Kamogo Health Centre,dp85y1bpORz,160357,USAID AMPATH Uzima,Kenya,Elgeyo-Marakwet County,0,0,10,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,4,1,0,0,4,1,0,0,0,0,0,0,0,0
+271,1/3/2022,Kamoi Health Centre,ocs7BQHK3xQ,160357,USAID AMPATH Uzima,Kenya,Elgeyo-Marakwet County,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+272,1/10/2022,Kamoi Health Centre,ocs7BQHK3xQ,160357,USAID AMPATH Uzima,Kenya,Elgeyo-Marakwet County,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+273,1/17/2022,Kamoi Health Centre,ocs7BQHK3xQ,160357,USAID AMPATH Uzima,Kenya,Elgeyo-Marakwet County,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+274,1/24/2022,Kamoi Health Centre,ocs7BQHK3xQ,160357,USAID AMPATH Uzima,Kenya,Elgeyo-Marakwet County,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+275,1/3/2022,Kamwosor Sub County hospital,yeZpOyXXB4n,160357,USAID AMPATH Uzima,Kenya,Elgeyo-Marakwet County,1,0,20,7,0,0,1,1,0,0,1,1,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+276,1/10/2022,Kamwosor Sub County hospital,yeZpOyXXB4n,160357,USAID AMPATH Uzima,Kenya,Elgeyo-Marakwet County,0,0,13,4,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+277,1/17/2022,Kamwosor Sub County hospital,yeZpOyXXB4n,160357,USAID AMPATH Uzima,Kenya,Elgeyo-Marakwet County,0,0,14,4,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+278,1/24/2022,Kamwosor Sub County hospital,yeZpOyXXB4n,160357,USAID AMPATH Uzima,Kenya,Elgeyo-Marakwet County,0,0,23,7,0,0,0,1,0,0,0,1,0,0,0,0,0,0,14,12,157,69,13,11,14,7,1,1,143,62,0,0,0,0
+279,1/3/2022,Kanyarkwat Dispensary,BPzUOO82HBv,160357,USAID AMPATH Uzima,Kenya,West Pokot County,0,0,17,1,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+280,1/10/2022,Kanyarkwat Dispensary,BPzUOO82HBv,160357,USAID AMPATH Uzima,Kenya,West Pokot County,0,0,7,2,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+281,1/17/2022,Kanyarkwat Dispensary,BPzUOO82HBv,160357,USAID AMPATH Uzima,Kenya,West Pokot County,1,0,19,16,0,0,0,0,0,0,0,1,0,0,0,0,0,11,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+282,1/24/2022,Kanyarkwat Dispensary,BPzUOO82HBv,160357,USAID AMPATH Uzima,Kenya,West Pokot County,0,0,13,3,0,0,1,1,0,0,1,1,0,0,0,0,0,0,1,7,76,46,0,5,12,2,1,2,49,33,0,0,6,1
+283,1/3/2022,Kaparon Health Centre,IRMFUnCD89B,160357,USAID AMPATH Uzima,Kenya,Elgeyo-Marakwet County,0,0,3,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+284,1/10/2022,Kaparon Health Centre,IRMFUnCD89B,160357,USAID AMPATH Uzima,Kenya,Elgeyo-Marakwet County,0,0,3,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+285,1/17/2022,Kaparon Health Centre,IRMFUnCD89B,160357,USAID AMPATH Uzima,Kenya,Elgeyo-Marakwet County,0,0,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+286,1/24/2022,Kaparon Health Centre,IRMFUnCD89B,160357,USAID AMPATH Uzima,Kenya,Elgeyo-Marakwet County,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,25,11,0,0,8,6,0,0,16,5,0,0,0,0
+287,1/3/2022,Kapchelal Health Centre,cFBL5SqaWQ8,160357,USAID AMPATH Uzima,Kenya,Elgeyo-Marakwet County,0,0,8,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+288,1/10/2022,Kapchelal Health Centre,cFBL5SqaWQ8,160357,USAID AMPATH Uzima,Kenya,Elgeyo-Marakwet County,0,0,4,3,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+289,1/17/2022,Kapchelal Health Centre,cFBL5SqaWQ8,160357,USAID AMPATH Uzima,Kenya,Elgeyo-Marakwet County,0,0,6,3,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+290,1/24/2022,Kapchelal Health Centre,cFBL5SqaWQ8,160357,USAID AMPATH Uzima,Kenya,Elgeyo-Marakwet County,0,0,2,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,4,1,0,1,4,1,0,0,0,0,0,0,0,0
+291,1/3/2022,Kapcherop Health centre,b7kP5uesTVd,160357,USAID AMPATH Uzima,Kenya,Elgeyo-Marakwet County,0,0,19,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+292,1/10/2022,Kapcherop Health centre,b7kP5uesTVd,160357,USAID AMPATH Uzima,Kenya,Elgeyo-Marakwet County,0,0,30,4,0,0,3,0,0,0,1,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+293,1/24/2022,Kapcherop Health centre,b7kP5uesTVd,160357,USAID AMPATH Uzima,Kenya,Elgeyo-Marakwet County,0,0,20,2,0,0,0,1,0,0,1,0,0,0,0,0,0,0,14,10,266,131,12,7,75,34,2,3,162,81,0,0,0,0
+294,1/3/2022,Kapenguria County Referral Hospital,I4NlMEN7IyV,160357,USAID AMPATH Uzima,Kenya,West Pokot County,3,1,118,22,0,0,5,2,0,0,4,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+295,1/10/2022,Kapenguria County Referral Hospital,I4NlMEN7IyV,160357,USAID AMPATH Uzima,Kenya,West Pokot County,8,7,176,32,0,1,3,1,0,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+296,1/17/2022,Kapenguria County Referral Hospital,I4NlMEN7IyV,160357,USAID AMPATH Uzima,Kenya,West Pokot County,10,11,121,23,1,1,2,1,1,1,1,1,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+297,1/24/2022,Kapenguria County Referral Hospital,I4NlMEN7IyV,160357,USAID AMPATH Uzima,Kenya,West Pokot County,6,8,158,12,0,0,6,2,0,0,6,2,0,0,0,0,0,0,45,38,959,468,22,22,357,152,19,15,494,266,0,0,4,5
+298,1/3/2022,Kapkessum Dispensary,Uhrk2fisIo5,160357,USAID AMPATH Uzima,Kenya,Elgeyo-Marakwet County,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+299,1/10/2022,Kapkessum Dispensary,Uhrk2fisIo5,160357,USAID AMPATH Uzima,Kenya,Elgeyo-Marakwet County,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+300,1/17/2022,Kapkessum Dispensary,Uhrk2fisIo5,160357,USAID AMPATH Uzima,Kenya,Elgeyo-Marakwet County,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+301,1/24/2022,Kapkessum Dispensary,Uhrk2fisIo5,160357,USAID AMPATH Uzima,Kenya,Elgeyo-Marakwet County,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+302,1/3/2022,Kapkoi Health Centre,ukpkHU12nUy,160357,USAID AMPATH Uzima,Kenya,Elgeyo-Marakwet County,0,0,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+303,1/10/2022,Kapkoi Health Centre,ukpkHU12nUy,160357,USAID AMPATH Uzima,Kenya,Elgeyo-Marakwet County,0,0,4,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+304,1/17/2022,Kapkoi Health Centre,ukpkHU12nUy,160357,USAID AMPATH Uzima,Kenya,Elgeyo-Marakwet County,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+305,1/24/2022,Kapkoi Health Centre,ukpkHU12nUy,160357,USAID AMPATH Uzima,Kenya,Elgeyo-Marakwet County,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,7,3,0,0,1,1,0,0,6,2,0,0,0,0
+306,1/3/2022,Kapkoi Health Centre (Kwanza),iosoNjHE96B,160357,USAID AMPATH Uzima,Kenya,Trans-Nzoia County,0,0,27,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+307,1/10/2022,Kapkoi Health Centre (Kwanza),iosoNjHE96B,160357,USAID AMPATH Uzima,Kenya,Trans-Nzoia County,2,2,15,1,0,0,4,1,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+308,1/17/2022,Kapkoi Health Centre (Kwanza),iosoNjHE96B,160357,USAID AMPATH Uzima,Kenya,Trans-Nzoia County,0,0,10,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+309,1/24/2022,Kapkoi Health Centre (Kwanza),iosoNjHE96B,160357,USAID AMPATH Uzima,Kenya,Trans-Nzoia County,0,0,6,2,0,0,1,0,0,0,0,0,0,0,0,0,0,0,6,13,168,72,0,7,35,9,3,5,105,56,0,0,0,0
+310,1/3/2022,Kaplamai Health Centre,a2hM2z2O4aH,160357,USAID AMPATH Uzima,Kenya,Trans-Nzoia County,0,0,15,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+311,1/10/2022,Kaplamai Health Centre,a2hM2z2O4aH,160357,USAID AMPATH Uzima,Kenya,Trans-Nzoia County,0,0,18,0,0,0,2,0,0,0,3,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+312,1/17/2022,Kaplamai Health Centre,a2hM2z2O4aH,160357,USAID AMPATH Uzima,Kenya,Trans-Nzoia County,0,0,13,1,0,0,1,1,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+313,1/24/2022,Kaplamai Health Centre,a2hM2z2O4aH,160357,USAID AMPATH Uzima,Kenya,Trans-Nzoia County,0,0,11,1,0,0,0,0,0,0,0,0,0,0,0,0,0,1,17,25,204,110,9,20,148,80,7,4,49,20,0,0,1,0
+314,1/3/2022,Kaplelach Chepyakwai dispensary,v4GQARiFLVo,160357,USAID AMPATH Uzima,Kenya,Uasin Gishu County,0,0,11,4,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+315,1/10/2022,Kaplelach Chepyakwai dispensary,v4GQARiFLVo,160357,USAID AMPATH Uzima,Kenya,Uasin Gishu County,0,0,19,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+316,1/17/2022,Kaplelach Chepyakwai dispensary,v4GQARiFLVo,160357,USAID AMPATH Uzima,Kenya,Uasin Gishu County,0,0,18,4,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+317,1/24/2022,Kaplelach Chepyakwai dispensary,v4GQARiFLVo,160357,USAID AMPATH Uzima,Kenya,Uasin Gishu County,0,0,5,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+318,1/3/2022,Kapngetuny Dispensary,UYcWWuU62xm,160357,USAID AMPATH Uzima,Kenya,Uasin Gishu County,0,0,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+319,1/10/2022,Kapngetuny Dispensary,UYcWWuU62xm,160357,USAID AMPATH Uzima,Kenya,Uasin Gishu County,0,0,3,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+320,1/17/2022,Kapngetuny Dispensary,UYcWWuU62xm,160357,USAID AMPATH Uzima,Kenya,Uasin Gishu County,0,0,5,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+321,1/24/2022,Kapngetuny Dispensary,UYcWWuU62xm,160357,USAID AMPATH Uzima,Kenya,Uasin Gishu County,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+322,1/3/2022,Kapsara Sub County Hospital,r6XV80WNwUg,160357,USAID AMPATH Uzima,Kenya,Trans-Nzoia County,0,2,17,2,0,0,2,1,0,0,2,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+323,1/10/2022,Kapsara Sub County Hospital,r6XV80WNwUg,160357,USAID AMPATH Uzima,Kenya,Trans-Nzoia County,1,1,17,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+324,1/17/2022,Kapsara Sub County Hospital,r6XV80WNwUg,160357,USAID AMPATH Uzima,Kenya,Trans-Nzoia County,1,0,12,2,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+325,1/24/2022,Kapsara Sub County Hospital,r6XV80WNwUg,160357,USAID AMPATH Uzima,Kenya,Trans-Nzoia County,1,0,19,4,0,0,0,0,0,0,0,0,0,0,0,0,0,2,19,19,300,133,10,12,162,85,8,6,119,37,0,0,0,0
+326,1/3/2022,Kapsitwet Dispensary,fLUVEDyMQgI,160357,USAID AMPATH Uzima,Kenya,Trans-Nzoia County,0,0,10,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+327,1/10/2022,Kapsitwet Dispensary,fLUVEDyMQgI,160357,USAID AMPATH Uzima,Kenya,Trans-Nzoia County,0,0,41,6,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+328,1/17/2022,Kapsitwet Dispensary,fLUVEDyMQgI,160357,USAID AMPATH Uzima,Kenya,Trans-Nzoia County,1,0,3,1,0,0,2,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+329,1/24/2022,Kapsitwet Dispensary,fLUVEDyMQgI,160357,USAID AMPATH Uzima,Kenya,Trans-Nzoia County,0,0,12,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2,2,42,27,2,2,15,9,0,0,27,18,0,0,0,0
+330,1/3/2022,Kapsowar (AIC) Hospital,s2FOx1Kyn6t,160357,USAID AMPATH Uzima,Kenya,Elgeyo-Marakwet County,0,0,25,3,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+331,1/10/2022,Kapsowar (AIC) Hospital,s2FOx1Kyn6t,160357,USAID AMPATH Uzima,Kenya,Elgeyo-Marakwet County,0,0,18,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+332,1/17/2022,Kapsowar (AIC) Hospital,s2FOx1Kyn6t,160357,USAID AMPATH Uzima,Kenya,Elgeyo-Marakwet County,0,0,21,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+333,1/24/2022,Kapsowar (AIC) Hospital,s2FOx1Kyn6t,160357,USAID AMPATH Uzima,Kenya,Elgeyo-Marakwet County,0,0,18,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,6,5,128,38,0,0,0,0,0,0,0,0,0,0,0,0
+334,1/3/2022,Kapsoya Health Centre,Fg7VnS2fQ3c,160357,USAID AMPATH Uzima,Kenya,Uasin Gishu County,6,4,25,3,2,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+335,1/10/2022,Kapsoya Health Centre,Fg7VnS2fQ3c,160357,USAID AMPATH Uzima,Kenya,Uasin Gishu County,0,0,33,4,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+336,1/17/2022,Kapsoya Health Centre,Fg7VnS2fQ3c,160357,USAID AMPATH Uzima,Kenya,Uasin Gishu County,0,0,31,4,0,0,2,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+337,1/24/2022,Kapsoya Health Centre,Fg7VnS2fQ3c,160357,USAID AMPATH Uzima,Kenya,Uasin Gishu County,2,2,24,9,0,0,1,0,0,0,0,0,0,0,0,0,0,0,2,1,139,45,0,0,35,8,1,1,100,34,0,0,0,0
+338,1/3/2022,Kaptabuk Dispensary,ZXpAqMsZBO3,160357,USAID AMPATH Uzima,Kenya,West Pokot County,0,0,6,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+339,1/10/2022,Kaptabuk Dispensary,ZXpAqMsZBO3,160357,USAID AMPATH Uzima,Kenya,West Pokot County,0,0,12,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+340,1/17/2022,Kaptabuk Dispensary,ZXpAqMsZBO3,160357,USAID AMPATH Uzima,Kenya,West Pokot County,0,0,5,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+341,1/24/2022,Kaptabuk Dispensary,ZXpAqMsZBO3,160357,USAID AMPATH Uzima,Kenya,West Pokot County,0,0,4,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2,0,15,5,0,0,0,0,0,0,0,0,0,0,0,0
+342,1/3/2022,Kaptalamwa Health Centre,u14dqUblG07,160357,USAID AMPATH Uzima,Kenya,Elgeyo-Marakwet County,0,0,6,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+343,1/10/2022,Kaptalamwa Health Centre,u14dqUblG07,160357,USAID AMPATH Uzima,Kenya,Elgeyo-Marakwet County,0,0,12,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+344,1/17/2022,Kaptalamwa Health Centre,u14dqUblG07,160357,USAID AMPATH Uzima,Kenya,Elgeyo-Marakwet County,0,0,9,1,0,0,0,1,0,0,0,1,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+345,1/24/2022,Kaptalamwa Health Centre,u14dqUblG07,160357,USAID AMPATH Uzima,Kenya,Elgeyo-Marakwet County,0,0,11,2,0,0,0,1,0,0,0,1,0,0,0,0,0,0,5,3,35,16,2,0,14,4,2,2,20,14,0,0,0,0
+346,1/3/2022,Kaptarakwa Sub County Hospital,ho6Wcp0T6E1,160357,USAID AMPATH Uzima,Kenya,Elgeyo-Marakwet County,0,0,6,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+347,1/10/2022,Kaptarakwa Sub County Hospital,ho6Wcp0T6E1,160357,USAID AMPATH Uzima,Kenya,Elgeyo-Marakwet County,0,0,4,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+348,1/17/2022,Kaptarakwa Sub County Hospital,ho6Wcp0T6E1,160357,USAID AMPATH Uzima,Kenya,Elgeyo-Marakwet County,0,0,6,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+349,1/24/2022,Kaptarakwa Sub County Hospital,ho6Wcp0T6E1,160357,USAID AMPATH Uzima,Kenya,Elgeyo-Marakwet County,0,0,6,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,3,56,13,1,0,2,1,0,3,54,12,0,0,0,0
+350,1/3/2022,Kapteldet Dispensary,n9Q51LjUIis,160357,USAID AMPATH Uzima,Kenya,Uasin Gishu County,0,0,5,6,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+351,1/10/2022,Kapteldet Dispensary,n9Q51LjUIis,160357,USAID AMPATH Uzima,Kenya,Uasin Gishu County,0,0,11,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+352,1/17/2022,Kapteldet Dispensary,n9Q51LjUIis,160357,USAID AMPATH Uzima,Kenya,Uasin Gishu County,0,0,11,4,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+353,1/24/2022,Kapteldet Dispensary,n9Q51LjUIis,160357,USAID AMPATH Uzima,Kenya,Uasin Gishu County,0,0,2,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+354,1/3/2022,Kapteldon Health Centre,nliJkWdstrG,160357,USAID AMPATH Uzima,Kenya,Uasin Gishu County,2,1,49,3,0,0,2,0,0,0,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+355,1/10/2022,Kapteldon Health Centre,nliJkWdstrG,160357,USAID AMPATH Uzima,Kenya,Uasin Gishu County,0,0,28,2,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+356,1/17/2022,Kapteldon Health Centre,nliJkWdstrG,160357,USAID AMPATH Uzima,Kenya,Uasin Gishu County,0,0,31,29,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+357,1/24/2022,Kapteldon Health Centre,nliJkWdstrG,160357,USAID AMPATH Uzima,Kenya,Uasin Gishu County,0,0,0,5,0,0,0,0,0,0,0,0,0,0,0,0,0,0,3,3,53,50,3,3,8,3,0,0,45,47,0,0,0,0
+358,1/3/2022,Kapteren Health Centre,k7jMiAj66F2,160357,USAID AMPATH Uzima,Kenya,Elgeyo-Marakwet County,0,0,11,3,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+359,1/10/2022,Kapteren Health Centre,k7jMiAj66F2,160357,USAID AMPATH Uzima,Kenya,Elgeyo-Marakwet County,1,1,13,4,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+360,1/17/2022,Kapteren Health Centre,k7jMiAj66F2,160357,USAID AMPATH Uzima,Kenya,Elgeyo-Marakwet County,0,0,2,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+361,1/24/2022,Kapteren Health Centre,k7jMiAj66F2,160357,USAID AMPATH Uzima,Kenya,Elgeyo-Marakwet County,0,0,13,4,0,0,0,1,0,0,0,1,0,0,0,0,0,0,1,3,80,47,1,2,15,7,0,1,65,40,0,0,0,0
+362,1/3/2022,Kaptumo Dispensary,y890dNeVvSY,160357,USAID AMPATH Uzima,Kenya,Uasin Gishu County,0,0,5,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+363,1/10/2022,Kaptumo Dispensary,y890dNeVvSY,160357,USAID AMPATH Uzima,Kenya,Uasin Gishu County,0,0,5,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+364,1/17/2022,Kaptumo Dispensary,y890dNeVvSY,160357,USAID AMPATH Uzima,Kenya,Uasin Gishu County,0,0,4,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+365,1/24/2022,Kaptumo Dispensary,y890dNeVvSY,160357,USAID AMPATH Uzima,Kenya,Uasin Gishu County,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+366,1/3/2022,Kapyego Health Centre,beTYyllgORF,160357,USAID AMPATH Uzima,Kenya,Elgeyo-Marakwet County,0,0,13,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+367,1/10/2022,Kapyego Health Centre,beTYyllgORF,160357,USAID AMPATH Uzima,Kenya,Elgeyo-Marakwet County,0,0,8,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+368,1/17/2022,Kapyego Health Centre,beTYyllgORF,160357,USAID AMPATH Uzima,Kenya,Elgeyo-Marakwet County,0,0,10,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+369,1/24/2022,Kapyego Health Centre,beTYyllgORF,160357,USAID AMPATH Uzima,Kenya,Elgeyo-Marakwet County,0,0,14,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2,0,27,6,2,0,8,2,0,0,18,4,0,0,0,0
+370,1/3/2022,Kapyemit Dispensary,pXubPXBYM35,160357,USAID AMPATH Uzima,Kenya,Uasin Gishu County,1,0,7,6,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+371,1/10/2022,Kapyemit Dispensary,pXubPXBYM35,160357,USAID AMPATH Uzima,Kenya,Uasin Gishu County,0,0,15,7,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+372,1/17/2022,Kapyemit Dispensary,pXubPXBYM35,160357,USAID AMPATH Uzima,Kenya,Uasin Gishu County,0,0,10,3,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+373,1/24/2022,Kapyemit Dispensary,pXubPXBYM35,160357,USAID AMPATH Uzima,Kenya,Uasin Gishu County,0,0,16,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,12,0,0,0,12,0,0,0,0,0,0,0,0,0
+374,1/3/2022,Karuna Dispensary,GAtCJ6Xy7fE,160357,USAID AMPATH Uzima,Kenya,Uasin Gishu County,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+375,1/10/2022,Karuna Dispensary,GAtCJ6Xy7fE,160357,USAID AMPATH Uzima,Kenya,Uasin Gishu County,0,0,2,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+376,1/17/2022,Karuna Dispensary,GAtCJ6Xy7fE,160357,USAID AMPATH Uzima,Kenya,Uasin Gishu County,0,0,5,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+377,1/24/2022,Karuna Dispensary,GAtCJ6Xy7fE,160357,USAID AMPATH Uzima,Kenya,Uasin Gishu County,0,1,4,3,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+378,1/3/2022,Keiyo Dispensary,ehxvNUPn2T7,160357,USAID AMPATH Uzima,Kenya,Trans-Nzoia County,0,0,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+379,1/10/2022,Keiyo Dispensary,ehxvNUPn2T7,160357,USAID AMPATH Uzima,Kenya,Trans-Nzoia County,1,0,2,3,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+380,1/17/2022,Keiyo Dispensary,ehxvNUPn2T7,160357,USAID AMPATH Uzima,Kenya,Trans-Nzoia County,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+381,1/24/2022,Keiyo Dispensary,ehxvNUPn2T7,160357,USAID AMPATH Uzima,Kenya,Trans-Nzoia County,0,0,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,15,6,0,0,3,2,0,0,12,3,0,0,0,0
+382,1/3/2022,Keringet Health Centre,KncEaHz1RZ2,160357,USAID AMPATH Uzima,Kenya,West Pokot County,0,0,18,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+383,1/10/2022,Keringet Health Centre,KncEaHz1RZ2,160357,USAID AMPATH Uzima,Kenya,West Pokot County,0,0,15,1,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+384,1/17/2022,Keringet Health Centre,KncEaHz1RZ2,160357,USAID AMPATH Uzima,Kenya,West Pokot County,0,0,10,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+385,1/24/2022,Keringet Health Centre,KncEaHz1RZ2,160357,USAID AMPATH Uzima,Kenya,West Pokot County,0,0,12,5,0,0,0,0,0,0,0,0,0,0,0,0,0,1,6,4,112,43,2,0,8,8,4,4,85,34,0,0,0,0
+386,1/3/2022,Kesses Health Centre,Yz7QaCqpfEC,160357,USAID AMPATH Uzima,Kenya,Uasin Gishu County,1,0,28,8,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+387,1/10/2022,Kesses Health Centre,Yz7QaCqpfEC,160357,USAID AMPATH Uzima,Kenya,Uasin Gishu County,0,4,24,3,0,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+388,1/17/2022,Kesses Health Centre,Yz7QaCqpfEC,160357,USAID AMPATH Uzima,Kenya,Uasin Gishu County,0,0,12,7,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+389,1/24/2022,Kesses Health Centre,Yz7QaCqpfEC,160357,USAID AMPATH Uzima,Kenya,Uasin Gishu County,0,3,34,5,0,0,0,0,0,0,0,0,0,0,0,0,0,0,7,2,215,85,2,1,62,10,5,1,145,71,0,0,2,0
+390,1/3/2022,Kibendo Health Centre,ZkHd7TGEziy,160357,USAID AMPATH Uzima,Kenya,Elgeyo-Marakwet County,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+391,1/10/2022,Kibendo Health Centre,ZkHd7TGEziy,160357,USAID AMPATH Uzima,Kenya,Elgeyo-Marakwet County,0,0,2,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+392,1/17/2022,Kibendo Health Centre,ZkHd7TGEziy,160357,USAID AMPATH Uzima,Kenya,Elgeyo-Marakwet County,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+393,1/24/2022,Kibendo Health Centre,ZkHd7TGEziy,160357,USAID AMPATH Uzima,Kenya,Elgeyo-Marakwet County,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+394,1/3/2022,Kibormos Dispensary,C4vfSoUIROW,160357,USAID AMPATH Uzima,Kenya,Trans-Nzoia County,0,0,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+395,1/10/2022,Kibormos Dispensary,C4vfSoUIROW,160357,USAID AMPATH Uzima,Kenya,Trans-Nzoia County,0,0,1,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+396,1/17/2022,Kibormos Dispensary,C4vfSoUIROW,160357,USAID AMPATH Uzima,Kenya,Trans-Nzoia County,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+397,1/24/2022,Kibormos Dispensary,C4vfSoUIROW,160357,USAID AMPATH Uzima,Kenya,Trans-Nzoia County,0,0,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,7,1,0,0,3,0,1,0,4,1,0,0,0,0
+398,1/3/2022,Kiminini Cottage Mission Hospital,PCCzCFl3oWz,160357,USAID AMPATH Uzima,Kenya,Trans-Nzoia County,0,0,10,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+399,1/10/2022,Kiminini Cottage Mission Hospital,PCCzCFl3oWz,160357,USAID AMPATH Uzima,Kenya,Trans-Nzoia County,0,0,19,2,0,0,1,1,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+400,1/17/2022,Kiminini Cottage Mission Hospital,PCCzCFl3oWz,160357,USAID AMPATH Uzima,Kenya,Trans-Nzoia County,0,1,8,1,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+401,1/24/2022,Kiminini Cottage Mission Hospital,PCCzCFl3oWz,160357,USAID AMPATH Uzima,Kenya,Trans-Nzoia County,0,0,3,2,0,0,0,1,0,0,0,0,0,0,0,0,0,0,13,11,334,155,9,5,60,17,5,10,257,126,0,0,16,8
+402,1/3/2022,Kiminini Health Centre,FkjL12r4AiS,160357,USAID AMPATH Uzima,Kenya,Trans-Nzoia County,0,0,2,3,0,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+403,1/10/2022,Kiminini Health Centre,FkjL12r4AiS,160357,USAID AMPATH Uzima,Kenya,Trans-Nzoia County,0,0,4,1,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+404,1/17/2022,Kiminini Health Centre,FkjL12r4AiS,160357,USAID AMPATH Uzima,Kenya,Trans-Nzoia County,0,1,2,0,0,0,1,0,0,0,1,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+405,1/24/2022,Kiminini Health Centre,FkjL12r4AiS,160357,USAID AMPATH Uzima,Kenya,Trans-Nzoia County,0,0,3,4,0,0,2,0,0,0,2,0,0,0,0,0,0,1,4,0,36,8,2,0,19,5,2,0,17,3,0,0,0,0
+406,1/3/2022,Kimnai Health Centre,Sh8p7nYXjU3,160357,USAID AMPATH Uzima,Kenya,Elgeyo-Marakwet County,0,0,14,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+407,1/10/2022,Kimnai Health Centre,Sh8p7nYXjU3,160357,USAID AMPATH Uzima,Kenya,Elgeyo-Marakwet County,0,1,5,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+408,1/17/2022,Kimnai Health Centre,Sh8p7nYXjU3,160357,USAID AMPATH Uzima,Kenya,Elgeyo-Marakwet County,0,0,12,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+409,1/24/2022,Kimnai Health Centre,Sh8p7nYXjU3,160357,USAID AMPATH Uzima,Kenya,Elgeyo-Marakwet County,0,0,16,3,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2,3,44,13,0,0,0,0,0,0,0,0,0,0,0,0
+410,1/3/2022,Kimondo Dispensary,Hm7IHqIkFOH,160357,USAID AMPATH Uzima,Kenya,Trans-Nzoia County,0,0,3,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+411,1/10/2022,Kimondo Dispensary,Hm7IHqIkFOH,160357,USAID AMPATH Uzima,Kenya,Trans-Nzoia County,0,0,5,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+412,1/17/2022,Kimondo Dispensary,Hm7IHqIkFOH,160357,USAID AMPATH Uzima,Kenya,Trans-Nzoia County,1,0,6,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+413,1/24/2022,Kimondo Dispensary,Hm7IHqIkFOH,160357,USAID AMPATH Uzima,Kenya,Trans-Nzoia County,0,0,3,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,7,2,0,1,5,2,0,0,2,0,0,0,0,0
+414,1/3/2022,Kimuri Dispensary,FesmlkZgbzR,160357,USAID AMPATH Uzima,Kenya,Uasin Gishu County,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+415,1/10/2022,Kimuri Dispensary,FesmlkZgbzR,160357,USAID AMPATH Uzima,Kenya,Uasin Gishu County,0,0,3,3,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+416,1/17/2022,Kimuri Dispensary,FesmlkZgbzR,160357,USAID AMPATH Uzima,Kenya,Uasin Gishu County,0,0,4,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+417,1/24/2022,Kimuri Dispensary,FesmlkZgbzR,160357,USAID AMPATH Uzima,Kenya,Uasin Gishu County,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+418,1/3/2022,Kipkabus Health Centre,M7rXTRlFLqB,160357,USAID AMPATH Uzima,Kenya,Uasin Gishu County,0,0,15,5,0,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+419,1/10/2022,Kipkabus Health Centre,M7rXTRlFLqB,160357,USAID AMPATH Uzima,Kenya,Uasin Gishu County,0,0,14,6,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+420,1/17/2022,Kipkabus Health Centre,M7rXTRlFLqB,160357,USAID AMPATH Uzima,Kenya,Uasin Gishu County,0,0,16,5,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+421,1/24/2022,Kipkabus Health Centre,M7rXTRlFLqB,160357,USAID AMPATH Uzima,Kenya,Uasin Gishu County,0,4,15,13,0,0,0,1,0,0,0,1,0,0,0,0,0,1,3,4,79,37,0,1,17,9,3,2,54,25,0,0,0,0
+422,1/3/2022,Kipkeikei Dispensary,BlUKGQHUshr,160357,USAID AMPATH Uzima,Kenya,Trans-Nzoia County,0,0,13,3,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+423,1/10/2022,Kipkeikei Dispensary,BlUKGQHUshr,160357,USAID AMPATH Uzima,Kenya,Trans-Nzoia County,0,0,15,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+424,1/17/2022,Kipkeikei Dispensary,BlUKGQHUshr,160357,USAID AMPATH Uzima,Kenya,Trans-Nzoia County,0,0,10,5,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+425,1/24/2022,Kipkeikei Dispensary,BlUKGQHUshr,160357,USAID AMPATH Uzima,Kenya,Trans-Nzoia County,1,1,6,3,0,0,1,0,0,0,1,0,0,0,0,0,0,0,1,2,33,4,1,2,29,3,0,0,1,0,0,0,0,0
+426,1/3/2022,Kipkenyo Dispensary,IZJPsyyTGhK,160357,USAID AMPATH Uzima,Kenya,Uasin Gishu County,0,0,12,3,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+427,1/10/2022,Kipkenyo Dispensary,IZJPsyyTGhK,160357,USAID AMPATH Uzima,Kenya,Uasin Gishu County,0,0,15,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+428,1/17/2022,Kipkenyo Dispensary,IZJPsyyTGhK,160357,USAID AMPATH Uzima,Kenya,Uasin Gishu County,0,0,11,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+429,1/24/2022,Kipkenyo Dispensary,IZJPsyyTGhK,160357,USAID AMPATH Uzima,Kenya,Uasin Gishu County,0,0,4,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+430,1/3/2022,Kipsigak Health Centre,vSlupgnCvbB,160357,USAID AMPATH Uzima,Kenya,Uasin Gishu County,0,0,4,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+431,1/10/2022,Kipsigak Health Centre,vSlupgnCvbB,160357,USAID AMPATH Uzima,Kenya,Uasin Gishu County,0,0,7,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+432,1/17/2022,Kipsigak Health Centre,vSlupgnCvbB,160357,USAID AMPATH Uzima,Kenya,Uasin Gishu County,0,0,3,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+433,1/24/2022,Kipsigak Health Centre,vSlupgnCvbB,160357,USAID AMPATH Uzima,Kenya,Uasin Gishu County,0,0,8,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+434,1/3/2022,Kisor Dispensary,XrxcrC71Xau,160357,USAID AMPATH Uzima,Kenya,Uasin Gishu County,0,0,6,3,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+435,1/10/2022,Kisor Dispensary,XrxcrC71Xau,160357,USAID AMPATH Uzima,Kenya,Uasin Gishu County,0,0,11,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+436,1/17/2022,Kisor Dispensary,XrxcrC71Xau,160357,USAID AMPATH Uzima,Kenya,Uasin Gishu County,0,0,12,3,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+437,1/24/2022,Kisor Dispensary,XrxcrC71Xau,160357,USAID AMPATH Uzima,Kenya,Uasin Gishu County,0,0,7,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+438,1/3/2022,Kitalale Dispensary,pEMxgHSOZm7,160357,USAID AMPATH Uzima,Kenya,Trans-Nzoia County,0,0,1,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+439,1/10/2022,Kitalale Dispensary,pEMxgHSOZm7,160357,USAID AMPATH Uzima,Kenya,Trans-Nzoia County,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+440,1/17/2022,Kitalale Dispensary,pEMxgHSOZm7,160357,USAID AMPATH Uzima,Kenya,Trans-Nzoia County,0,0,15,1,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+441,1/24/2022,Kitalale Dispensary,pEMxgHSOZm7,160357,USAID AMPATH Uzima,Kenya,Trans-Nzoia County,0,0,15,3,0,0,0,1,0,0,0,1,0,0,0,0,1,1,7,6,105,47,7,6,86,45,0,0,9,0,0,0,0,0
+442,1/3/2022,Kitale County Referral Hospital,QeRvw2MPGd1,160357,USAID AMPATH Uzima,Kenya,Trans-Nzoia County,1,2,121,14,0,0,7,2,0,0,5,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+443,1/10/2022,Kitale County Referral Hospital,QeRvw2MPGd1,160357,USAID AMPATH Uzima,Kenya,Trans-Nzoia County,1,0,125,31,1,0,7,7,1,0,6,4,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+444,1/17/2022,Kitale County Referral Hospital,QeRvw2MPGd1,160357,USAID AMPATH Uzima,Kenya,Trans-Nzoia County,0,0,85,24,0,0,6,4,1,0,7,2,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+445,1/24/2022,Kitale County Referral Hospital,QeRvw2MPGd1,160357,USAID AMPATH Uzima,Kenya,Trans-Nzoia County,1,1,94,36,0,0,9,4,0,0,10,4,0,0,0,0,0,0,164,180,5418,2450,60,71,566,203,89,93,4492,2071,0,0,11,9
+446,1/3/2022,Kitum Dispensary,FhaMGCujBgO,160357,USAID AMPATH Uzima,Kenya,Trans-Nzoia County,0,0,2,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+447,1/10/2022,Kitum Dispensary,FhaMGCujBgO,160357,USAID AMPATH Uzima,Kenya,Trans-Nzoia County,0,1,4,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+448,1/17/2022,Kitum Dispensary,FhaMGCujBgO,160357,USAID AMPATH Uzima,Kenya,Trans-Nzoia County,0,0,3,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+449,1/24/2022,Kitum Dispensary,FhaMGCujBgO,160357,USAID AMPATH Uzima,Kenya,Trans-Nzoia County,0,0,9,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,11,0,0,0,6,0,0,0,5,0,0,0,0,0
+450,1/3/2022,Kobos Health Centre,Hada69uwgBB,160357,USAID AMPATH Uzima,Kenya,Trans-Nzoia County,0,0,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+451,1/10/2022,Kobos Health Centre,Hada69uwgBB,160357,USAID AMPATH Uzima,Kenya,Trans-Nzoia County,1,0,7,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+452,1/17/2022,Kobos Health Centre,Hada69uwgBB,160357,USAID AMPATH Uzima,Kenya,Trans-Nzoia County,0,0,2,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+453,1/24/2022,Kobos Health Centre,Hada69uwgBB,160357,USAID AMPATH Uzima,Kenya,Trans-Nzoia County,0,0,4,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,3,1,40,12,1,0,2,1,2,1,29,8,0,0,0,0
+454,1/3/2022,Kocholwo Sub County Hospital,HtiLTtN35US,160357,USAID AMPATH Uzima,Kenya,Elgeyo-Marakwet County,0,0,5,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+455,1/10/2022,Kocholwo Sub County Hospital,HtiLTtN35US,160357,USAID AMPATH Uzima,Kenya,Elgeyo-Marakwet County,0,0,8,3,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+456,1/17/2022,Kocholwo Sub County Hospital,HtiLTtN35US,160357,USAID AMPATH Uzima,Kenya,Elgeyo-Marakwet County,0,0,3,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+457,1/24/2022,Kocholwo Sub County Hospital,HtiLTtN35US,160357,USAID AMPATH Uzima,Kenya,Elgeyo-Marakwet County,0,0,7,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,9,9,0,1,8,6,0,0,1,3,0,0,0,0
+458,1/3/2022,Kolongolo Mission Dispensary,W27JjLciKIg,160357,USAID AMPATH Uzima,Kenya,Trans-Nzoia County,0,0,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+459,1/10/2022,Kolongolo Mission Dispensary,W27JjLciKIg,160357,USAID AMPATH Uzima,Kenya,Trans-Nzoia County,0,0,3,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+460,1/17/2022,Kolongolo Mission Dispensary,W27JjLciKIg,160357,USAID AMPATH Uzima,Kenya,Trans-Nzoia County,0,0,4,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+461,1/24/2022,Kolongolo Mission Dispensary,W27JjLciKIg,160357,USAID AMPATH Uzima,Kenya,Trans-Nzoia County,0,0,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,14,4,0,0,5,1,0,0,9,3,0,0,0,0
+462,1/3/2022,Kondabilet Dispensary,PW74icK81xX,160357,USAID AMPATH Uzima,Kenya,Elgeyo-Marakwet County,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+463,1/10/2022,Kondabilet Dispensary,PW74icK81xX,160357,USAID AMPATH Uzima,Kenya,Elgeyo-Marakwet County,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+464,1/17/2022,Kondabilet Dispensary,PW74icK81xX,160357,USAID AMPATH Uzima,Kenya,Elgeyo-Marakwet County,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+465,1/24/2022,Kondabilet Dispensary,PW74icK81xX,160357,USAID AMPATH Uzima,Kenya,Elgeyo-Marakwet County,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+466,1/3/2022,Konyao Dispensary,j6XO4MxM8pX,160357,USAID AMPATH Uzima,Kenya,West Pokot County,0,0,25,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+467,1/10/2022,Konyao Dispensary,j6XO4MxM8pX,160357,USAID AMPATH Uzima,Kenya,West Pokot County,0,0,26,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+468,1/17/2022,Konyao Dispensary,j6XO4MxM8pX,160357,USAID AMPATH Uzima,Kenya,West Pokot County,0,0,29,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+469,1/24/2022,Konyao Dispensary,j6XO4MxM8pX,160357,USAID AMPATH Uzima,Kenya,West Pokot County,0,0,26,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,12,6,0,0,0,0,0,0,0,0,0,0,0,0
+470,1/3/2022,Kuinet Dispensary,sv8Ov1o5dGK,160357,USAID AMPATH Uzima,Kenya,Uasin Gishu County,0,0,15,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+471,1/10/2022,Kuinet Dispensary,sv8Ov1o5dGK,160357,USAID AMPATH Uzima,Kenya,Uasin Gishu County,0,0,9,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+472,1/17/2022,Kuinet Dispensary,sv8Ov1o5dGK,160357,USAID AMPATH Uzima,Kenya,Uasin Gishu County,0,0,7,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+473,1/24/2022,Kuinet Dispensary,sv8Ov1o5dGK,160357,USAID AMPATH Uzima,Kenya,Uasin Gishu County,0,0,17,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+474,1/3/2022,Kwanza Sub County Hospital,Z0H8FdLuAox,160357,USAID AMPATH Uzima,Kenya,Trans-Nzoia County,0,0,2,1,0,0,2,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+475,1/10/2022,Kwanza Sub County Hospital,Z0H8FdLuAox,160357,USAID AMPATH Uzima,Kenya,Trans-Nzoia County,0,0,3,0,0,0,2,0,0,0,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+476,1/17/2022,Kwanza Sub County Hospital,Z0H8FdLuAox,160357,USAID AMPATH Uzima,Kenya,Trans-Nzoia County,0,0,17,2,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+477,1/24/2022,Kwanza Sub County Hospital,Z0H8FdLuAox,160357,USAID AMPATH Uzima,Kenya,Trans-Nzoia County,1,0,30,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,27,25,357,139,17,10,104,30,6,4,181,80,0,0,0,0
+478,1/3/2022,Langas RCEA Health Center,U9xqB4eJfxj,160357,USAID AMPATH Uzima,Kenya,Uasin Gishu County,1,1,26,8,0,0,5,2,0,0,3,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+479,1/10/2022,Langas RCEA Health Center,U9xqB4eJfxj,160357,USAID AMPATH Uzima,Kenya,Uasin Gishu County,3,7,19,3,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+480,1/17/2022,Langas RCEA Health Center,U9xqB4eJfxj,160357,USAID AMPATH Uzima,Kenya,Uasin Gishu County,1,0,23,4,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+481,1/24/2022,Langas RCEA Health Center,U9xqB4eJfxj,160357,USAID AMPATH Uzima,Kenya,Uasin Gishu County,0,0,49,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,14,15,461,221,8,12,167,39,3,2,242,147,0,0,3,3
+482,1/3/2022,Lelboinet Health Centre (Keiyo),Cj0T7CP0914,160357,USAID AMPATH Uzima,Kenya,Elgeyo-Marakwet County,0,0,3,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+483,1/10/2022,Lelboinet Health Centre (Keiyo),Cj0T7CP0914,160357,USAID AMPATH Uzima,Kenya,Elgeyo-Marakwet County,0,0,5,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+484,1/17/2022,Lelboinet Health Centre (Keiyo),Cj0T7CP0914,160357,USAID AMPATH Uzima,Kenya,Elgeyo-Marakwet County,0,0,4,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+485,1/24/2022,Lelboinet Health Centre (Keiyo),Cj0T7CP0914,160357,USAID AMPATH Uzima,Kenya,Elgeyo-Marakwet County,0,0,4,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,8,7,0,0,2,1,0,0,6,6,0,0,0,0
+486,1/3/2022,Lelmolok Nursing Home,cnnhgB9BfTN,160357,USAID AMPATH Uzima,Kenya,Uasin Gishu County,0,0,5,4,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+487,1/10/2022,Lelmolok Nursing Home,cnnhgB9BfTN,160357,USAID AMPATH Uzima,Kenya,Uasin Gishu County,0,0,4,8,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+488,1/17/2022,Lelmolok Nursing Home,cnnhgB9BfTN,160357,USAID AMPATH Uzima,Kenya,Uasin Gishu County,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+489,1/24/2022,Lelmolok Nursing Home,cnnhgB9BfTN,160357,USAID AMPATH Uzima,Kenya,Uasin Gishu County,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+490,1/3/2022,Lomut Dispensary,ZzIfW53pEx9,160357,USAID AMPATH Uzima,Kenya,West Pokot County,0,0,27,4,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+491,1/10/2022,Lomut Dispensary,ZzIfW53pEx9,160357,USAID AMPATH Uzima,Kenya,West Pokot County,0,0,10,5,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+492,1/17/2022,Lomut Dispensary,ZzIfW53pEx9,160357,USAID AMPATH Uzima,Kenya,West Pokot County,1,1,20,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+493,1/24/2022,Lomut Dispensary,ZzIfW53pEx9,160357,USAID AMPATH Uzima,Kenya,West Pokot County,0,0,20,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2,2,24,12,0,0,0,0,0,0,21,10,0,0,0,0
+494,1/3/2022,Lukhome Health Centre,YonSll1OAkj,160357,USAID AMPATH Uzima,Kenya,Trans-Nzoia County,0,0,16,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+495,1/10/2022,Lukhome Health Centre,YonSll1OAkj,160357,USAID AMPATH Uzima,Kenya,Trans-Nzoia County,1,0,19,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+496,1/17/2022,Lukhome Health Centre,YonSll1OAkj,160357,USAID AMPATH Uzima,Kenya,Trans-Nzoia County,0,0,13,3,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+497,1/24/2022,Lukhome Health Centre,YonSll1OAkj,160357,USAID AMPATH Uzima,Kenya,Trans-Nzoia County,1,0,18,1,0,0,0,0,0,0,0,0,0,0,0,0,0,1,4,1,41,12,1,0,30,10,1,0,4,0,0,0,0,0
+498,1/3/2022,Maili Saba Dispensary,f2dOdaXghnY,160357,USAID AMPATH Uzima,Kenya,Trans-Nzoia County,0,0,2,3,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+499,1/10/2022,Maili Saba Dispensary,f2dOdaXghnY,160357,USAID AMPATH Uzima,Kenya,Trans-Nzoia County,1,0,3,2,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+500,1/17/2022,Maili Saba Dispensary,f2dOdaXghnY,160357,USAID AMPATH Uzima,Kenya,Trans-Nzoia County,0,0,0,3,0,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+501,1/24/2022,Maili Saba Dispensary,f2dOdaXghnY,160357,USAID AMPATH Uzima,Kenya,Trans-Nzoia County,0,0,3,2,0,0,1,0,0,0,1,0,0,0,0,0,0,0,4,4,54,23,3,4,24,11,1,0,28,14,0,0,0,0
+502,1/3/2022,Mary Immaculate Dispensary (Eldoret East),rpt8dpmnfu0,160357,USAID AMPATH Uzima,Kenya,Uasin Gishu County,0,0,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+503,1/10/2022,Mary Immaculate Dispensary (Eldoret East),rpt8dpmnfu0,160357,USAID AMPATH Uzima,Kenya,Uasin Gishu County,0,0,2,3,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+504,1/17/2022,Mary Immaculate Dispensary (Eldoret East),rpt8dpmnfu0,160357,USAID AMPATH Uzima,Kenya,Uasin Gishu County,0,0,3,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+505,1/24/2022,Mary Immaculate Dispensary (Eldoret East),rpt8dpmnfu0,160357,USAID AMPATH Uzima,Kenya,Uasin Gishu County,0,0,4,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,27,17,0,1,6,0,0,0,16,15,0,0,0,0
+506,1/3/2022,Matunda Sub County Hospital,wiWPrTwkjQj,160357,USAID AMPATH Uzima,Kenya,Trans-Nzoia County,0,0,25,2,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+507,1/10/2022,Matunda Sub County Hospital,wiWPrTwkjQj,160357,USAID AMPATH Uzima,Kenya,Trans-Nzoia County,0,1,47,4,0,1,2,0,0,1,2,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+508,1/17/2022,Matunda Sub County Hospital,wiWPrTwkjQj,160357,USAID AMPATH Uzima,Kenya,Trans-Nzoia County,1,0,33,2,0,0,2,0,0,0,2,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+509,1/24/2022,Matunda Sub County Hospital,wiWPrTwkjQj,160357,USAID AMPATH Uzima,Kenya,Trans-Nzoia County,1,1,25,2,0,0,1,1,0,0,0,1,0,0,0,0,1,0,12,34,379,169,10,29,82,32,2,5,283,125,0,0,14,12
+510,1/3/2022,Mediheal Hospital,zzEoB6yISxL,160357,USAID AMPATH Uzima,Kenya,Uasin Gishu County,2,4,63,44,0,0,1,1,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+511,1/10/2022,Mediheal Hospital,zzEoB6yISxL,160357,USAID AMPATH Uzima,Kenya,Uasin Gishu County,3,4,80,37,0,0,2,2,0,0,2,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+512,1/17/2022,Mediheal Hospital,zzEoB6yISxL,160357,USAID AMPATH Uzima,Kenya,Uasin Gishu County,3,7,92,43,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+513,1/24/2022,Mediheal Hospital,zzEoB6yISxL,160357,USAID AMPATH Uzima,Kenya,Uasin Gishu County,3,5,75,42,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2,1,89,59,1,0,5,6,1,1,70,41,0,0,1,3
+514,1/3/2022,Meibeki Dispensary,ZcrHclCuCOw,160357,USAID AMPATH Uzima,Kenya,Uasin Gishu County,0,0,13,11,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+515,1/10/2022,Meibeki Dispensary,ZcrHclCuCOw,160357,USAID AMPATH Uzima,Kenya,Uasin Gishu County,0,0,10,5,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+516,1/17/2022,Meibeki Dispensary,ZcrHclCuCOw,160357,USAID AMPATH Uzima,Kenya,Uasin Gishu County,0,0,9,11,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+517,1/24/2022,Meibeki Dispensary,ZcrHclCuCOw,160357,USAID AMPATH Uzima,Kenya,Uasin Gishu County,3,2,14,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+518,1/3/2022,Merewet Dispensary,VoqDRO8d6Gr,160357,USAID AMPATH Uzima,Kenya,Uasin Gishu County,0,0,11,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+519,1/10/2022,Merewet Dispensary,VoqDRO8d6Gr,160357,USAID AMPATH Uzima,Kenya,Uasin Gishu County,0,1,6,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+520,1/17/2022,Merewet Dispensary,VoqDRO8d6Gr,160357,USAID AMPATH Uzima,Kenya,Uasin Gishu County,0,0,7,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+521,1/24/2022,Merewet Dispensary,VoqDRO8d6Gr,160357,USAID AMPATH Uzima,Kenya,Uasin Gishu County,0,0,11,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+522,1/3/2022,Mitume Dispensary,HkZnd7DWlQM,160357,USAID AMPATH Uzima,Kenya,Trans-Nzoia County,1,0,3,3,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+523,1/10/2022,Mitume Dispensary,HkZnd7DWlQM,160357,USAID AMPATH Uzima,Kenya,Trans-Nzoia County,0,0,5,3,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+524,1/17/2022,Mitume Dispensary,HkZnd7DWlQM,160357,USAID AMPATH Uzima,Kenya,Trans-Nzoia County,1,1,3,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+525,1/24/2022,Mitume Dispensary,HkZnd7DWlQM,160357,USAID AMPATH Uzima,Kenya,Trans-Nzoia County,1,1,3,1,0,0,0,0,0,0,0,1,0,0,0,0,0,1,0,0,41,15,0,0,30,12,0,0,0,0,0,0,0,0
+526,1/3/2022,Mobet Dispensary,VCHtonTX0Nb,160357,USAID AMPATH Uzima,Kenya,Uasin Gishu County,0,0,5,3,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+527,1/10/2022,Mobet Dispensary,VCHtonTX0Nb,160357,USAID AMPATH Uzima,Kenya,Uasin Gishu County,0,0,5,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+528,1/17/2022,Mobet Dispensary,VCHtonTX0Nb,160357,USAID AMPATH Uzima,Kenya,Uasin Gishu County,0,0,7,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+529,1/24/2022,Mobet Dispensary,VCHtonTX0Nb,160357,USAID AMPATH Uzima,Kenya,Uasin Gishu County,0,0,3,9,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+530,1/3/2022,Mogil Health Centre,KmnNDufzd7W,160357,USAID AMPATH Uzima,Kenya,Elgeyo-Marakwet County,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+531,1/10/2022,Mogil Health Centre,KmnNDufzd7W,160357,USAID AMPATH Uzima,Kenya,Elgeyo-Marakwet County,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+532,1/17/2022,Mogil Health Centre,KmnNDufzd7W,160357,USAID AMPATH Uzima,Kenya,Elgeyo-Marakwet County,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+533,1/24/2022,Mogil Health Centre,KmnNDufzd7W,160357,USAID AMPATH Uzima,Kenya,Elgeyo-Marakwet County,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,10,2,0,0,10,2,0,0,0,0,0,0,0,0
+534,1/3/2022,Mogoon Dispensary,I52k4BRFVPR,160357,USAID AMPATH Uzima,Kenya,Uasin Gishu County,0,0,6,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+535,1/10/2022,Mogoon Dispensary,I52k4BRFVPR,160357,USAID AMPATH Uzima,Kenya,Uasin Gishu County,0,0,5,4,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+536,1/17/2022,Mogoon Dispensary,I52k4BRFVPR,160357,USAID AMPATH Uzima,Kenya,Uasin Gishu County,0,0,9,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+537,1/24/2022,Mogoon Dispensary,I52k4BRFVPR,160357,USAID AMPATH Uzima,Kenya,Uasin Gishu County,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+538,1/3/2022,Moi Teaching Refferal Hospital,c5XctY3poiv,160357,USAID AMPATH Uzima,Kenya,Uasin Gishu County ,13,13,232,166,0,2,8,1,0,2,11,5,0,0,0,0,4,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+539,1/10/2022,Moi Teaching Refferal Hospital,c5XctY3poiv,160357,USAID AMPATH Uzima,Kenya,Uasin Gishu County ,9,15,238,152,0,0,8,11,0,0,7,7,0,0,0,0,5,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+540,1/17/2022,Moi Teaching Refferal Hospital,c5XctY3poiv,160357,USAID AMPATH Uzima,Kenya,Uasin Gishu County ,13,9,245,194,1,0,8,5,1,0,9,8,0,0,0,0,2,9,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+541,1/24/2022,Moi Teaching Refferal Hospital,c5XctY3poiv,160357,USAID AMPATH Uzima,Kenya,Uasin Gishu County ,4,6,293,181,0,0,10,8,0,0,11,6,0,0,0,0,5,6,212,224,8628,5027,122,114,1333,759,87,106,6994,4047,0,0,4,1
+542,1/3/2022,Moi University Health Centre,ztu3GqKMZWE,160357,USAID AMPATH Uzima,Kenya,Uasin Gishu County,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+543,1/10/2022,Moi University Health Centre,ztu3GqKMZWE,160357,USAID AMPATH Uzima,Kenya,Uasin Gishu County,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+544,1/17/2022,Moi University Health Centre,ztu3GqKMZWE,160357,USAID AMPATH Uzima,Kenya,Uasin Gishu County,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+545,1/24/2022,Moi University Health Centre,ztu3GqKMZWE,160357,USAID AMPATH Uzima,Kenya,Uasin Gishu County,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,5,5,75,42,0,1,2,4,5,4,57,34,0,0,4,1
+546,1/3/2022,Moi's Bridge Catholic,gueptUAsY5M,160357,USAID AMPATH Uzima,Kenya,Uasin Gishu County,0,0,5,6,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+547,1/10/2022,Moi's Bridge Catholic,gueptUAsY5M,160357,USAID AMPATH Uzima,Kenya,Uasin Gishu County,0,0,4,8,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+548,1/17/2022,Moi's Bridge Catholic,gueptUAsY5M,160357,USAID AMPATH Uzima,Kenya,Uasin Gishu County,0,0,6,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+549,1/24/2022,Moi's Bridge Catholic,gueptUAsY5M,160357,USAID AMPATH Uzima,Kenya,Uasin Gishu County,0,0,5,6,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+550,1/3/2022,Moi's Bridge Health Centre,q9tLR5BgkVv,160357,USAID AMPATH Uzima,Kenya,Uasin Gishu County,4,2,7,6,0,0,1,2,0,0,1,2,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+551,1/10/2022,Moi's Bridge Health Centre,q9tLR5BgkVv,160357,USAID AMPATH Uzima,Kenya,Uasin Gishu County,3,1,81,13,1,1,3,1,1,1,3,1,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+552,1/17/2022,Moi's Bridge Health Centre,q9tLR5BgkVv,160357,USAID AMPATH Uzima,Kenya,Uasin Gishu County,0,1,27,5,0,1,2,0,0,1,2,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+553,1/24/2022,Moi's Bridge Health Centre,q9tLR5BgkVv,160357,USAID AMPATH Uzima,Kenya,Uasin Gishu County,1,2,34,7,0,0,4,2,0,0,4,2,0,0,0,0,0,0,48,48,1132,438,17,14,143,48,31,31,845,339,0,0,75,19
+554,1/3/2022,Moiben Health Centre,Jb3gN2sdyGk,160357,USAID AMPATH Uzima,Kenya,Uasin Gishu County,0,0,8,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+555,1/10/2022,Moiben Health Centre,Jb3gN2sdyGk,160357,USAID AMPATH Uzima,Kenya,Uasin Gishu County,0,0,35,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+556,1/17/2022,Moiben Health Centre,Jb3gN2sdyGk,160357,USAID AMPATH Uzima,Kenya,Uasin Gishu County,0,0,29,0,0,0,1,0,0,0,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+557,1/24/2022,Moiben Health Centre,Jb3gN2sdyGk,160357,USAID AMPATH Uzima,Kenya,Uasin Gishu County,0,0,18,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,11,9,227,104,7,7,120,54,4,0,84,43,0,0,0,0
+558,1/3/2022,Motosiet Health Centre,dA9igeN6G1h,160357,USAID AMPATH Uzima,Kenya,Trans-Nzoia County,0,0,20,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+559,1/10/2022,Motosiet Health Centre,dA9igeN6G1h,160357,USAID AMPATH Uzima,Kenya,Trans-Nzoia County,0,1,13,3,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+560,1/17/2022,Motosiet Health Centre,dA9igeN6G1h,160357,USAID AMPATH Uzima,Kenya,Trans-Nzoia County,1,0,12,4,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+561,1/24/2022,Motosiet Health Centre,dA9igeN6G1h,160357,USAID AMPATH Uzima,Kenya,Trans-Nzoia County,0,0,21,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,4,4,53,15,4,4,46,13,0,0,5,2,0,0,0,0
+562,1/3/2022,Msekekwa Health Centre,PdOn1LHL9gq,160357,USAID AMPATH Uzima,Kenya,Elgeyo-Marakwet County,0,0,21,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+563,1/10/2022,Msekekwa Health Centre,PdOn1LHL9gq,160357,USAID AMPATH Uzima,Kenya,Elgeyo-Marakwet County,0,0,14,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+564,1/17/2022,Msekekwa Health Centre,PdOn1LHL9gq,160357,USAID AMPATH Uzima,Kenya,Elgeyo-Marakwet County,0,0,12,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+565,1/24/2022,Msekekwa Health Centre,PdOn1LHL9gq,160357,USAID AMPATH Uzima,Kenya,Elgeyo-Marakwet County,0,0,12,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,59,16,1,1,33,10,0,0,26,6,0,0,0,0
+566,1/3/2022,Mt Elgon National Park Dispensary,ms95bNNC4KO,160357,USAID AMPATH Uzima,Kenya,Trans-Nzoia County,0,0,5,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+567,1/10/2022,Mt Elgon National Park Dispensary,ms95bNNC4KO,160357,USAID AMPATH Uzima,Kenya,Trans-Nzoia County,0,1,4,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+568,1/17/2022,Mt Elgon National Park Dispensary,ms95bNNC4KO,160357,USAID AMPATH Uzima,Kenya,Trans-Nzoia County,0,1,12,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+569,1/24/2022,Mt Elgon National Park Dispensary,ms95bNNC4KO,160357,USAID AMPATH Uzima,Kenya,Trans-Nzoia County,0,0,5,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,3,0,47,23,1,0,17,3,2,0,27,18,0,0,0,0
+570,1/3/2022,Murgusi Dispensary,HlUbutafdiD,160357,USAID AMPATH Uzima,Kenya,Uasin Gishu County,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+571,1/10/2022,Murgusi Dispensary,HlUbutafdiD,160357,USAID AMPATH Uzima,Kenya,Uasin Gishu County,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+572,1/17/2022,Murgusi Dispensary,HlUbutafdiD,160357,USAID AMPATH Uzima,Kenya,Uasin Gishu County,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+573,1/24/2022,Murgusi Dispensary,HlUbutafdiD,160357,USAID AMPATH Uzima,Kenya,Uasin Gishu County,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+574,1/3/2022,MURKWIJIT DISPENSARY,eib0yLHoP84,160357,USAID AMPATH Uzima,Kenya,West Pokot County,0,0,2,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+575,1/10/2022,MURKWIJIT DISPENSARY,eib0yLHoP84,160357,USAID AMPATH Uzima,Kenya,West Pokot County,0,0,9,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+576,1/17/2022,MURKWIJIT DISPENSARY,eib0yLHoP84,160357,USAID AMPATH Uzima,Kenya,West Pokot County,0,0,2,2,0,0,2,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+577,1/24/2022,MURKWIJIT DISPENSARY,eib0yLHoP84,160357,USAID AMPATH Uzima,Kenya,West Pokot County,0,0,7,2,0,0,2,0,0,0,2,0,0,0,0,0,0,0,0,2,42,21,0,0,3,3,0,2,31,15,0,0,2,1
+578,1/3/2022,Muskut Health Centre,aLCEdqsqO25,160357,USAID AMPATH Uzima,Kenya,Elgeyo-Marakwet County,0,0,14,3,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+579,1/10/2022,Muskut Health Centre,aLCEdqsqO25,160357,USAID AMPATH Uzima,Kenya,Elgeyo-Marakwet County,0,0,4,2,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+580,1/17/2022,Muskut Health Centre,aLCEdqsqO25,160357,USAID AMPATH Uzima,Kenya,Elgeyo-Marakwet County,0,0,7,4,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+581,1/24/2022,Muskut Health Centre,aLCEdqsqO25,160357,USAID AMPATH Uzima,Kenya,Elgeyo-Marakwet County,0,0,15,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,2,1,29,14,2,1,1,0,0,0,28,14,0,0,0,0
+582,1/3/2022,Mwangaza Medical Clinic,E0ABt1X9oyO,160357,USAID AMPATH Uzima,Kenya,Uasin Gishu County,0,0,5,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+583,1/10/2022,Mwangaza Medical Clinic,E0ABt1X9oyO,160357,USAID AMPATH Uzima,Kenya,Uasin Gishu County,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+584,1/17/2022,Mwangaza Medical Clinic,E0ABt1X9oyO,160357,USAID AMPATH Uzima,Kenya,Uasin Gishu County,0,0,9,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+585,1/24/2022,Mwangaza Medical Clinic,E0ABt1X9oyO,160357,USAID AMPATH Uzima,Kenya,Uasin Gishu County,0,0,6,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+586,1/3/2022,Nabkoi Dispensary,D4c8DwpaQu9,160357,USAID AMPATH Uzima,Kenya,Uasin Gishu County,0,1,12,2,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+587,1/10/2022,Nabkoi Dispensary,D4c8DwpaQu9,160357,USAID AMPATH Uzima,Kenya,Uasin Gishu County,0,0,16,4,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+588,1/17/2022,Nabkoi Dispensary,D4c8DwpaQu9,160357,USAID AMPATH Uzima,Kenya,Uasin Gishu County,0,0,12,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+589,1/24/2022,Nabkoi Dispensary,D4c8DwpaQu9,160357,USAID AMPATH Uzima,Kenya,Uasin Gishu County,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+590,1/3/2022,Namanjalala Dispensary,ekxBik0du7Z,160357,USAID AMPATH Uzima,Kenya,Trans-Nzoia County,0,1,5,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+591,1/10/2022,Namanjalala Dispensary,ekxBik0du7Z,160357,USAID AMPATH Uzima,Kenya,Trans-Nzoia County,0,1,6,0,0,0,1,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+592,1/17/2022,Namanjalala Dispensary,ekxBik0du7Z,160357,USAID AMPATH Uzima,Kenya,Trans-Nzoia County,1,0,5,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+593,1/24/2022,Namanjalala Dispensary,ekxBik0du7Z,160357,USAID AMPATH Uzima,Kenya,Trans-Nzoia County,0,1,5,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,6,6,156,52,4,0,34,9,2,6,104,40,0,0,0,0
+594,1/3/2022,Neema Tunza Medical Clinic,NvpmXqaLYLl,160357,USAID AMPATH Uzima,Kenya,Trans-Nzoia County,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+595,1/10/2022,Neema Tunza Medical Clinic,NvpmXqaLYLl,160357,USAID AMPATH Uzima,Kenya,Trans-Nzoia County,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+596,1/17/2022,Neema Tunza Medical Clinic,NvpmXqaLYLl,160357,USAID AMPATH Uzima,Kenya,Trans-Nzoia County,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+597,1/24/2022,Neema Tunza Medical Clinic,NvpmXqaLYLl,160357,USAID AMPATH Uzima,Kenya,Trans-Nzoia County,0,0,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,3,0,0,0,0,0,0,0,3,0,0,0,0,0
+598,1/3/2022,Ngelel Tarit Dispensary,ay5u9dYiBY1,160357,USAID AMPATH Uzima,Kenya,Uasin Gishu County,0,0,10,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+599,1/10/2022,Ngelel Tarit Dispensary,ay5u9dYiBY1,160357,USAID AMPATH Uzima,Kenya,Uasin Gishu County,0,0,15,4,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+600,1/17/2022,Ngelel Tarit Dispensary,ay5u9dYiBY1,160357,USAID AMPATH Uzima,Kenya,Uasin Gishu County,0,0,5,9,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+601,1/24/2022,Ngelel Tarit Dispensary,ay5u9dYiBY1,160357,USAID AMPATH Uzima,Kenya,Uasin Gishu County,0,0,13,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+602,1/3/2022,Nyaru Dispensary,Ls70ilngpW2,160357,USAID AMPATH Uzima,Kenya,Elgeyo-Marakwet County,0,0,3,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+603,1/10/2022,Nyaru Dispensary,Ls70ilngpW2,160357,USAID AMPATH Uzima,Kenya,Elgeyo-Marakwet County,0,0,6,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+604,1/17/2022,Nyaru Dispensary,Ls70ilngpW2,160357,USAID AMPATH Uzima,Kenya,Elgeyo-Marakwet County,0,0,7,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+605,1/24/2022,Nyaru Dispensary,Ls70ilngpW2,160357,USAID AMPATH Uzima,Kenya,Elgeyo-Marakwet County,0,0,19,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+606,1/3/2022,Nzoia Health Centre,sAecnIiP8Eu,160357,USAID AMPATH Uzima,Kenya,Trans-Nzoia County,0,0,10,4,0,0,1,0,0,0,1,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+607,1/10/2022,Nzoia Health Centre,sAecnIiP8Eu,160357,USAID AMPATH Uzima,Kenya,Trans-Nzoia County,0,0,15,3,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+608,1/17/2022,Nzoia Health Centre,sAecnIiP8Eu,160357,USAID AMPATH Uzima,Kenya,Trans-Nzoia County,0,0,11,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+609,1/24/2022,Nzoia Health Centre,sAecnIiP8Eu,160357,USAID AMPATH Uzima,Kenya,Trans-Nzoia County,0,0,9,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,7,5,0,0,0,0,0,0,4,5,0,0,0,0
+610,1/3/2022,Ongata Dispensary,i8kgSNksl9F,160357,USAID AMPATH Uzima,Kenya,Uasin Gishu County,0,0,7,3,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+611,1/10/2022,Ongata Dispensary,i8kgSNksl9F,160357,USAID AMPATH Uzima,Kenya,Uasin Gishu County,0,0,14,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+612,1/17/2022,Ongata Dispensary,i8kgSNksl9F,160357,USAID AMPATH Uzima,Kenya,Uasin Gishu County,0,0,3,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+613,1/24/2022,Ongata Dispensary,i8kgSNksl9F,160357,USAID AMPATH Uzima,Kenya,Uasin Gishu County,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+614,1/3/2022,Ortum Mission Hospital,F1Y9giq4xH3,160357,USAID AMPATH Uzima,Kenya,West Pokot County,0,0,3,4,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+615,1/10/2022,Ortum Mission Hospital,F1Y9giq4xH3,160357,USAID AMPATH Uzima,Kenya,West Pokot County,1,0,61,3,0,0,0,2,0,0,0,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+616,1/17/2022,Ortum Mission Hospital,F1Y9giq4xH3,160357,USAID AMPATH Uzima,Kenya,West Pokot County,1,0,58,7,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+617,1/24/2022,Ortum Mission Hospital,F1Y9giq4xH3,160357,USAID AMPATH Uzima,Kenya,West Pokot County,1,0,84,5,0,0,0,0,0,0,0,0,0,0,0,0,0,0,8,7,92,36,0,0,0,0,0,0,0,0,0,0,0,0
+618,1/3/2022,Osorongai Dispensary,NpujAUN2CYg,160357,USAID AMPATH Uzima,Kenya,Uasin Gishu County,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+619,1/10/2022,Osorongai Dispensary,NpujAUN2CYg,160357,USAID AMPATH Uzima,Kenya,Uasin Gishu County,0,0,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+620,1/17/2022,Osorongai Dispensary,NpujAUN2CYg,160357,USAID AMPATH Uzima,Kenya,Uasin Gishu County,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+621,1/24/2022,Osorongai Dispensary,NpujAUN2CYg,160357,USAID AMPATH Uzima,Kenya,Uasin Gishu County,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+622,1/3/2022,P O M Dispensary,qgJOGaNeg9r,160357,USAID AMPATH Uzima,Kenya,West Pokot County,0,0,4,5,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+623,1/10/2022,P O M Dispensary,qgJOGaNeg9r,160357,USAID AMPATH Uzima,Kenya,West Pokot County,0,0,5,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+624,1/17/2022,P O M Dispensary,qgJOGaNeg9r,160357,USAID AMPATH Uzima,Kenya,West Pokot County,0,0,2,3,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+625,1/24/2022,P O M Dispensary,qgJOGaNeg9r,160357,USAID AMPATH Uzima,Kenya,West Pokot County,0,0,5,6,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+626,1/3/2022,Pioneer Health Centre,E7JTAQCZAbC,160357,USAID AMPATH Uzima,Kenya,Uasin Gishu County,1,0,11,14,0,0,1,1,0,0,2,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+627,1/10/2022,Pioneer Health Centre,E7JTAQCZAbC,160357,USAID AMPATH Uzima,Kenya,Uasin Gishu County,1,1,204,20,0,0,1,1,0,0,5,4,0,0,0,0,14,8,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+628,1/17/2022,Pioneer Health Centre,E7JTAQCZAbC,160357,USAID AMPATH Uzima,Kenya,Uasin Gishu County,0,0,10,11,0,0,0,0,0,0,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+629,1/24/2022,Pioneer Health Centre,E7JTAQCZAbC,160357,USAID AMPATH Uzima,Kenya,Uasin Gishu County,1,0,40,17,0,0,7,2,0,0,0,0,0,0,0,0,0,0,19,20,659,313,13,14,169,59,5,5,441,234,0,0,0,0
+630,1/3/2022,Plateau Hospital,rwWEPlaFOhM,160357,USAID AMPATH Uzima,Kenya,Uasin Gishu County,0,0,8,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+631,1/10/2022,Plateau Hospital,rwWEPlaFOhM,160357,USAID AMPATH Uzima,Kenya,Uasin Gishu County,0,0,6,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+632,1/17/2022,Plateau Hospital,rwWEPlaFOhM,160357,USAID AMPATH Uzima,Kenya,Uasin Gishu County,0,0,12,3,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+633,1/24/2022,Plateau Hospital,rwWEPlaFOhM,160357,USAID AMPATH Uzima,Kenya,Uasin Gishu County,0,0,11,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,12,11,275,115,6,5,35,10,6,4,220,96,0,0,0,0
+634,1/3/2022,Racecourse Hospital,pYIybTqwer1,160357,USAID AMPATH Uzima,Kenya,Uasin Gishu County,0,0,20,20,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+635,1/10/2022,Racecourse Hospital,pYIybTqwer1,160357,USAID AMPATH Uzima,Kenya,Uasin Gishu County,0,0,40,16,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+636,1/17/2022,Racecourse Hospital,pYIybTqwer1,160357,USAID AMPATH Uzima,Kenya,Uasin Gishu County,0,0,22,10,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+637,1/24/2022,Racecourse Hospital,pYIybTqwer1,160357,USAID AMPATH Uzima,Kenya,Uasin Gishu County,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+638,1/3/2022,Rafiki Health Centre,lfb7ZGjIOcb,160357,USAID AMPATH Uzima,Kenya,Trans-Nzoia County,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+639,1/10/2022,Rafiki Health Centre,lfb7ZGjIOcb,160357,USAID AMPATH Uzima,Kenya,Trans-Nzoia County,0,0,3,3,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+640,1/17/2022,Rafiki Health Centre,lfb7ZGjIOcb,160357,USAID AMPATH Uzima,Kenya,Trans-Nzoia County,0,0,12,2,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+641,1/24/2022,Rafiki Health Centre,lfb7ZGjIOcb,160357,USAID AMPATH Uzima,Kenya,Trans-Nzoia County,0,2,12,2,0,0,0,1,0,0,0,1,0,0,0,0,0,1,0,1,33,15,0,1,14,6,0,0,19,9,0,0,0,0
+642,1/3/2022,Railways Dispensary,NhVaBSm5jJa,160357,USAID AMPATH Uzima,Kenya,Uasin Gishu County,0,0,4,7,0,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+643,1/10/2022,Railways Dispensary,NhVaBSm5jJa,160357,USAID AMPATH Uzima,Kenya,Uasin Gishu County,0,0,19,6,0,0,2,2,0,0,2,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+644,1/17/2022,Railways Dispensary,NhVaBSm5jJa,160357,USAID AMPATH Uzima,Kenya,Uasin Gishu County,0,0,4,4,0,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+645,1/24/2022,Railways Dispensary,NhVaBSm5jJa,160357,USAID AMPATH Uzima,Kenya,Uasin Gishu County,0,0,18,6,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+646,1/3/2022,Reale Hospital Clinic,XF4SxK08nls,160357,USAID AMPATH Uzima,Kenya,Uasin Gishu County,12,11,40,32,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+647,1/10/2022,Reale Hospital Clinic,XF4SxK08nls,160357,USAID AMPATH Uzima,Kenya,Uasin Gishu County,0,0,36,29,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+648,1/17/2022,Reale Hospital Clinic,XF4SxK08nls,160357,USAID AMPATH Uzima,Kenya,Uasin Gishu County,0,0,32,44,0,0,1,1,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+649,1/24/2022,Reale Hospital Clinic,XF4SxK08nls,160357,USAID AMPATH Uzima,Kenya,Uasin Gishu County,0,0,39,3,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2,0,78,68,0,0,5,4,2,0,60,63,0,0,0,0
+650,1/3/2022,Saboti Sub-County Hospital,KmhJaE23d10,160357,USAID AMPATH Uzima,Kenya,Trans-Nzoia County,1,2,11,2,0,0,1,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+651,1/10/2022,Saboti Sub-County Hospital,KmhJaE23d10,160357,USAID AMPATH Uzima,Kenya,Trans-Nzoia County,0,0,40,3,0,0,2,0,0,0,2,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+652,1/17/2022,Saboti Sub-County Hospital,KmhJaE23d10,160357,USAID AMPATH Uzima,Kenya,Trans-Nzoia County,0,0,19,1,0,0,1,0,0,0,1,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+653,1/24/2022,Saboti Sub-County Hospital,KmhJaE23d10,160357,USAID AMPATH Uzima,Kenya,Trans-Nzoia County,0,0,22,5,0,0,1,1,0,0,1,1,0,0,0,0,0,3,27,22,384,151,16,18,217,96,9,2,125,44,0,0,0,0
+654,1/3/2022,Segero Dispensary (SDA),z8vVhYleh96,160357,USAID AMPATH Uzima,Kenya,Uasin Gishu County,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+655,1/10/2022,Segero Dispensary (SDA),z8vVhYleh96,160357,USAID AMPATH Uzima,Kenya,Uasin Gishu County,0,0,3,5,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+656,1/17/2022,Segero Dispensary (SDA),z8vVhYleh96,160357,USAID AMPATH Uzima,Kenya,Uasin Gishu County,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+657,1/24/2022,Segero Dispensary (SDA),z8vVhYleh96,160357,USAID AMPATH Uzima,Kenya,Uasin Gishu County,0,0,1,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+658,1/3/2022,Sekerr Dispensary,WqHKIcjneAx,160357,USAID AMPATH Uzima,Kenya,West Pokot County,0,0,21,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+659,1/10/2022,Sekerr Dispensary,WqHKIcjneAx,160357,USAID AMPATH Uzima,Kenya,West Pokot County,0,0,27,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+660,1/17/2022,Sekerr Dispensary,WqHKIcjneAx,160357,USAID AMPATH Uzima,Kenya,West Pokot County,1,0,22,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+661,1/24/2022,Sekerr Dispensary,WqHKIcjneAx,160357,USAID AMPATH Uzima,Kenya,West Pokot County,0,0,29,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+662,1/3/2022,Sergoit Health Centre (Keiyo),oRqlJ8pyv7z,160357,USAID AMPATH Uzima,Kenya,Elgeyo-Marakwet County,0,0,11,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+663,1/10/2022,Sergoit Health Centre (Keiyo),oRqlJ8pyv7z,160357,USAID AMPATH Uzima,Kenya,Elgeyo-Marakwet County,0,0,1,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+664,1/17/2022,Sergoit Health Centre (Keiyo),oRqlJ8pyv7z,160357,USAID AMPATH Uzima,Kenya,Elgeyo-Marakwet County,0,0,7,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+665,1/24/2022,Sergoit Health Centre (Keiyo),oRqlJ8pyv7z,160357,USAID AMPATH Uzima,Kenya,Elgeyo-Marakwet County,0,0,4,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,24,4,1,1,20,3,0,0,4,1,0,0,0,0
+666,1/3/2022,Sigor Sub District Hospital,Dd4o4GIlPhm,160357,USAID AMPATH Uzima,Kenya,West Pokot County,2,0,37,10,0,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+667,1/10/2022,Sigor Sub District Hospital,Dd4o4GIlPhm,160357,USAID AMPATH Uzima,Kenya,West Pokot County,3,0,36,13,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+668,1/17/2022,Sigor Sub District Hospital,Dd4o4GIlPhm,160357,USAID AMPATH Uzima,Kenya,West Pokot County,2,0,41,9,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+669,1/24/2022,Sigor Sub District Hospital,Dd4o4GIlPhm,160357,USAID AMPATH Uzima,Kenya,West Pokot County,0,0,29,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,6,4,147,71,3,4,46,27,2,0,96,38,0,0,4,2
+670,1/3/2022,Sikhendu Dispensary,RYfRhr21yfW,160357,USAID AMPATH Uzima,Kenya,Trans-Nzoia County,0,0,8,3,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+671,1/10/2022,Sikhendu Dispensary,RYfRhr21yfW,160357,USAID AMPATH Uzima,Kenya,Trans-Nzoia County,0,0,4,6,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+672,1/17/2022,Sikhendu Dispensary,RYfRhr21yfW,160357,USAID AMPATH Uzima,Kenya,Trans-Nzoia County,0,0,3,2,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+673,1/24/2022,Sikhendu Dispensary,RYfRhr21yfW,160357,USAID AMPATH Uzima,Kenya,Trans-Nzoia County,0,0,2,0,0,0,1,0,0,0,1,0,0,0,0,0,0,0,1,2,41,17,0,0,18,8,1,2,23,9,0,0,0,0
+674,1/3/2022,Sikhendu Medical Clinic,xifuDx6zbRV,160357,USAID AMPATH Uzima,Kenya,Trans-Nzoia County,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+675,1/10/2022,Sikhendu Medical Clinic,xifuDx6zbRV,160357,USAID AMPATH Uzima,Kenya,Trans-Nzoia County,0,0,11,5,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+676,1/17/2022,Sikhendu Medical Clinic,xifuDx6zbRV,160357,USAID AMPATH Uzima,Kenya,Trans-Nzoia County,0,0,1,3,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+677,1/24/2022,Sikhendu Medical Clinic,xifuDx6zbRV,160357,USAID AMPATH Uzima,Kenya,Trans-Nzoia County,0,0,3,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,5,1,0,0,2,1,0,0,3,0,0,0,0,0
+678,1/3/2022,Simotwo Dispensary (Keiyo),TQP4cKirfav,160357,USAID AMPATH Uzima,Kenya,Elgeyo-Marakwet County,0,0,10,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+679,1/10/2022,Simotwo Dispensary (Keiyo),TQP4cKirfav,160357,USAID AMPATH Uzima,Kenya,Elgeyo-Marakwet County,0,0,7,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+680,1/17/2022,Simotwo Dispensary (Keiyo),TQP4cKirfav,160357,USAID AMPATH Uzima,Kenya,Elgeyo-Marakwet County,0,0,5,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+681,1/24/2022,Simotwo Dispensary (Keiyo),TQP4cKirfav,160357,USAID AMPATH Uzima,Kenya,Elgeyo-Marakwet County,0,0,9,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2,52,16,0,1,1,0,0,1,51,16,0,0,0,0
+682,1/3/2022,Sina Dispensary,ExVVOOVOUlZ,160357,USAID AMPATH Uzima,Kenya,West Pokot County,0,0,8,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+683,1/10/2022,Sina Dispensary,ExVVOOVOUlZ,160357,USAID AMPATH Uzima,Kenya,West Pokot County,0,0,6,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+684,1/17/2022,Sina Dispensary,ExVVOOVOUlZ,160357,USAID AMPATH Uzima,Kenya,West Pokot County,0,0,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+685,1/24/2022,Sina Dispensary,ExVVOOVOUlZ,160357,USAID AMPATH Uzima,Kenya,West Pokot County,0,0,17,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,13,7,0,0,0,0,0,0,0,0,0,0,0,0
+686,1/3/2022,Sister Fredas Medical Centre,rt7M573wuRu,160357,USAID AMPATH Uzima,Kenya,Trans-Nzoia County,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+687,1/10/2022,Sister Fredas Medical Centre,rt7M573wuRu,160357,USAID AMPATH Uzima,Kenya,Trans-Nzoia County,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+688,1/17/2022,Sister Fredas Medical Centre,rt7M573wuRu,160357,USAID AMPATH Uzima,Kenya,Trans-Nzoia County,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+689,1/24/2022,Sister Fredas Medical Centre,rt7M573wuRu,160357,USAID AMPATH Uzima,Kenya,Trans-Nzoia County,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,11,0,0,0,1,0,0,0,10,0,0,0,0,0
+690,1/3/2022,Sitatunga Dispensary,Grh9FZSUAmk,160357,USAID AMPATH Uzima,Kenya,Trans-Nzoia County,1,0,17,3,0,0,2,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+691,1/10/2022,Sitatunga Dispensary,Grh9FZSUAmk,160357,USAID AMPATH Uzima,Kenya,Trans-Nzoia County,0,0,23,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+692,1/17/2022,Sitatunga Dispensary,Grh9FZSUAmk,160357,USAID AMPATH Uzima,Kenya,Trans-Nzoia County,0,0,15,2,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+693,1/24/2022,Sitatunga Dispensary,Grh9FZSUAmk,160357,USAID AMPATH Uzima,Kenya,Trans-Nzoia County,0,0,13,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,7,7,95,37,6,3,82,32,0,0,7,1,0,0,1,0
+694,1/3/2022,Songeto Dispensary,WMoSKviaoye,160357,USAID AMPATH Uzima,Kenya,Elgeyo-Marakwet County,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+695,1/10/2022,Songeto Dispensary,WMoSKviaoye,160357,USAID AMPATH Uzima,Kenya,Elgeyo-Marakwet County,0,0,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+696,1/17/2022,Songeto Dispensary,WMoSKviaoye,160357,USAID AMPATH Uzima,Kenya,Elgeyo-Marakwet County,0,0,2,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+697,1/24/2022,Songeto Dispensary,WMoSKviaoye,160357,USAID AMPATH Uzima,Kenya,Elgeyo-Marakwet County,0,0,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+698,1/3/2022,Soy Health Centre,SntkaR6V0va,160357,USAID AMPATH Uzima,Kenya,Uasin Gishu County,0,0,24,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+699,1/10/2022,Soy Health Centre,SntkaR6V0va,160357,USAID AMPATH Uzima,Kenya,Uasin Gishu County,2,1,37,21,0,0,3,0,0,0,3,0,0,0,0,0,2,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+700,1/17/2022,Soy Health Centre,SntkaR6V0va,160357,USAID AMPATH Uzima,Kenya,Uasin Gishu County,0,0,23,5,0,0,1,0,0,0,1,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+701,1/24/2022,Soy Health Centre,SntkaR6V0va,160357,USAID AMPATH Uzima,Kenya,Uasin Gishu County,1,1,23,4,0,0,0,0,0,0,0,0,0,0,0,0,0,0,26,20,493,168,26,19,144,33,0,0,325,124,0,0,0,0
+702,1/3/2022,St Lukes Orthopaedic and Trauma Hospital,lNimFgAZZPf,160357,USAID AMPATH Uzima,Kenya,Uasin Gishu County,0,0,5,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+703,1/10/2022,St Lukes Orthopaedic and Trauma Hospital,lNimFgAZZPf,160357,USAID AMPATH Uzima,Kenya,Uasin Gishu County,0,0,5,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+704,1/17/2022,St Lukes Orthopaedic and Trauma Hospital,lNimFgAZZPf,160357,USAID AMPATH Uzima,Kenya,Uasin Gishu County,0,0,12,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+705,1/24/2022,St Lukes Orthopaedic and Trauma Hospital,lNimFgAZZPf,160357,USAID AMPATH Uzima,Kenya,Uasin Gishu County,0,0,8,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2,0,94,91,0,0,4,7,2,0,63,58,0,0,14,9
+706,1/3/2022,St Mary's Kapsoya Dispensary,anRGlW2W6rl,160357,USAID AMPATH Uzima,Kenya,Uasin Gishu County,0,0,8,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+707,1/10/2022,St Mary's Kapsoya Dispensary,anRGlW2W6rl,160357,USAID AMPATH Uzima,Kenya,Uasin Gishu County,1,0,7,3,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+708,1/17/2022,St Mary's Kapsoya Dispensary,anRGlW2W6rl,160357,USAID AMPATH Uzima,Kenya,Uasin Gishu County,0,0,17,12,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+709,1/24/2022,St Mary's Kapsoya Dispensary,anRGlW2W6rl,160357,USAID AMPATH Uzima,Kenya,Uasin Gishu County,0,0,27,38,0,0,2,0,0,0,1,0,0,0,0,0,0,0,1,6,60,20,0,0,0,0,0,0,0,0,0,0,0,0
+710,1/3/2022,St Raphael Arch Medical,eIwNO7hMGKL,160357,USAID AMPATH Uzima,Kenya,Uasin Gishu County,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+711,1/10/2022,St Raphael Arch Medical,eIwNO7hMGKL,160357,USAID AMPATH Uzima,Kenya,Uasin Gishu County,0,0,2,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+712,1/17/2022,St Raphael Arch Medical,eIwNO7hMGKL,160357,USAID AMPATH Uzima,Kenya,Uasin Gishu County,0,0,3,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+713,1/24/2022,St Raphael Arch Medical,eIwNO7hMGKL,160357,USAID AMPATH Uzima,Kenya,Uasin Gishu County,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+714,1/3/2022,St Ursula Dispensary,EQCv13x7AwY,160357,USAID AMPATH Uzima,Kenya,Trans-Nzoia County,0,0,14,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+715,1/10/2022,St Ursula Dispensary,EQCv13x7AwY,160357,USAID AMPATH Uzima,Kenya,Trans-Nzoia County,1,0,9,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+716,1/17/2022,St Ursula Dispensary,EQCv13x7AwY,160357,USAID AMPATH Uzima,Kenya,Trans-Nzoia County,0,0,12,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+717,1/24/2022,St Ursula Dispensary,EQCv13x7AwY,160357,USAID AMPATH Uzima,Kenya,Trans-Nzoia County,0,0,11,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,14,5,0,0,8,2,0,0,7,2,0,0,0,0
+718,1/3/2022,St.Raphael Dispensary (Matisi),y1337MIdqZG,160357,USAID AMPATH Uzima,Kenya,Trans-Nzoia County,0,0,16,1,0,0,2,0,0,0,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+719,1/10/2022,St.Raphael Dispensary (Matisi),y1337MIdqZG,160357,USAID AMPATH Uzima,Kenya,Trans-Nzoia County,0,0,16,6,0,0,1,0,0,0,1,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+720,1/17/2022,St.Raphael Dispensary (Matisi),y1337MIdqZG,160357,USAID AMPATH Uzima,Kenya,Trans-Nzoia County,1,1,13,1,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+721,1/24/2022,St.Raphael Dispensary (Matisi),y1337MIdqZG,160357,USAID AMPATH Uzima,Kenya,Trans-Nzoia County,0,0,13,3,0,0,0,0,0,0,0,0,0,0,0,0,0,0,17,14,351,148,15,14,322,140,2,0,26,7,0,0,0,0
+722,1/3/2022,Starlight Mti Moja,UwRwmgtfAsT,160357,USAID AMPATH Uzima,Kenya,Uasin Gishu County,0,0,3,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+723,1/10/2022,Starlight Mti Moja,UwRwmgtfAsT,160357,USAID AMPATH Uzima,Kenya,Uasin Gishu County,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+724,1/17/2022,Starlight Mti Moja,UwRwmgtfAsT,160357,USAID AMPATH Uzima,Kenya,Uasin Gishu County,0,0,0,3,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+725,1/24/2022,Starlight Mti Moja,UwRwmgtfAsT,160357,USAID AMPATH Uzima,Kenya,Uasin Gishu County,0,0,6,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+726,1/3/2022,State Lodge Dispensary,Pl540NCDLRk,160357,USAID AMPATH Uzima,Kenya,Uasin Gishu County,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+727,1/10/2022,State Lodge Dispensary,Pl540NCDLRk,160357,USAID AMPATH Uzima,Kenya,Uasin Gishu County,0,0,3,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+728,1/17/2022,State Lodge Dispensary,Pl540NCDLRk,160357,USAID AMPATH Uzima,Kenya,Uasin Gishu County,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+729,1/24/2022,State Lodge Dispensary,Pl540NCDLRk,160357,USAID AMPATH Uzima,Kenya,Uasin Gishu County,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+730,1/3/2022,Suwerwa Health Centre,wn5FWOzRq3a,160357,USAID AMPATH Uzima,Kenya,Trans-Nzoia County,0,0,7,3,0,0,1,0,0,0,1,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+731,1/10/2022,Suwerwa Health Centre,wn5FWOzRq3a,160357,USAID AMPATH Uzima,Kenya,Trans-Nzoia County,0,0,9,2,0,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+732,1/17/2022,Suwerwa Health Centre,wn5FWOzRq3a,160357,USAID AMPATH Uzima,Kenya,Trans-Nzoia County,0,0,8,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+733,1/24/2022,Suwerwa Health Centre,wn5FWOzRq3a,160357,USAID AMPATH Uzima,Kenya,Trans-Nzoia County,0,0,10,1,0,0,0,0,0,0,1,0,0,0,0,0,0,0,7,9,93,46,6,9,74,36,1,0,15,8,0,0,4,2
+734,1/3/2022,Tambach Sub-County Hospital,LLwRYzxhpH4,160357,USAID AMPATH Uzima,Kenya,Elgeyo-Marakwet County,0,1,12,9,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+735,1/10/2022,Tambach Sub-County Hospital,LLwRYzxhpH4,160357,USAID AMPATH Uzima,Kenya,Elgeyo-Marakwet County,0,0,16,11,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+736,1/17/2022,Tambach Sub-County Hospital,LLwRYzxhpH4,160357,USAID AMPATH Uzima,Kenya,Elgeyo-Marakwet County,0,0,18,11,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+737,1/24/2022,Tambach Sub-County Hospital,LLwRYzxhpH4,160357,USAID AMPATH Uzima,Kenya,Elgeyo-Marakwet County,0,0,32,7,0,0,0,1,0,0,0,1,0,0,0,0,0,0,9,6,98,45,7,5,27,16,1,1,67,22,0,0,0,0
+738,1/3/2022,Tamough Health Centre,a8reY51Ck88,160357,USAID AMPATH Uzima,Kenya,West Pokot County,0,0,7,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+739,1/10/2022,Tamough Health Centre,a8reY51Ck88,160357,USAID AMPATH Uzima,Kenya,West Pokot County,0,0,5,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+740,1/17/2022,Tamough Health Centre,a8reY51Ck88,160357,USAID AMPATH Uzima,Kenya,West Pokot County,0,0,5,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+741,1/24/2022,Tamough Health Centre,a8reY51Ck88,160357,USAID AMPATH Uzima,Kenya,West Pokot County,0,0,10,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+742,1/3/2022,Tiinei Dispensary,FdeUMDxeajL,160357,USAID AMPATH Uzima,Kenya,West Pokot County,0,0,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+743,1/10/2022,Tiinei Dispensary,FdeUMDxeajL,160357,USAID AMPATH Uzima,Kenya,West Pokot County,0,0,3,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+744,1/17/2022,Tiinei Dispensary,FdeUMDxeajL,160357,USAID AMPATH Uzima,Kenya,West Pokot County,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+745,1/24/2022,Tiinei Dispensary,FdeUMDxeajL,160357,USAID AMPATH Uzima,Kenya,West Pokot County,0,0,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+746,1/3/2022,Tom Mboya Health Centre,BY6svse0t6g,160357,USAID AMPATH Uzima,Kenya,Trans-Nzoia County,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+747,1/10/2022,Tom Mboya Health Centre,BY6svse0t6g,160357,USAID AMPATH Uzima,Kenya,Trans-Nzoia County,0,1,41,7,0,0,1,1,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+748,1/17/2022,Tom Mboya Health Centre,BY6svse0t6g,160357,USAID AMPATH Uzima,Kenya,Trans-Nzoia County,0,0,22,1,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+749,1/24/2022,Tom Mboya Health Centre,BY6svse0t6g,160357,USAID AMPATH Uzima,Kenya,Trans-Nzoia County,0,0,20,1,0,0,1,0,0,0,1,0,0,0,0,0,1,0,3,2,106,34,3,2,105,33,0,0,0,0,0,0,0,0
+750,1/3/2022,Top Station Dispensary,UUq8RRwtPRk,160357,USAID AMPATH Uzima,Kenya,Trans-Nzoia County,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+751,1/10/2022,Top Station Dispensary,UUq8RRwtPRk,160357,USAID AMPATH Uzima,Kenya,Trans-Nzoia County,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+752,1/17/2022,Top Station Dispensary,UUq8RRwtPRk,160357,USAID AMPATH Uzima,Kenya,Trans-Nzoia County,0,0,2,1,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+753,1/24/2022,Top Station Dispensary,UUq8RRwtPRk,160357,USAID AMPATH Uzima,Kenya,Trans-Nzoia County,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2,8,28,12,2,5,15,6,0,2,13,6,0,0,0,0
+754,1/3/2022,Tot Sub County hospital,dMByuIAYDp2,160357,USAID AMPATH Uzima,Kenya,Elgeyo-Marakwet County,0,0,7,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+755,1/10/2022,Tot Sub County hospital,dMByuIAYDp2,160357,USAID AMPATH Uzima,Kenya,Elgeyo-Marakwet County,0,0,9,3,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+756,1/17/2022,Tot Sub County hospital,dMByuIAYDp2,160357,USAID AMPATH Uzima,Kenya,Elgeyo-Marakwet County,0,0,7,2,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+757,1/24/2022,Tot Sub County hospital,dMByuIAYDp2,160357,USAID AMPATH Uzima,Kenya,Elgeyo-Marakwet County,0,0,8,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,6,3,60,23,6,4,12,4,0,0,40,18,0,0,0,0
+758,1/3/2022,Tulwet Health Centre,hrOEyF0hSqf,160357,USAID AMPATH Uzima,Kenya,Trans-Nzoia County,0,0,2,3,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+759,1/10/2022,Tulwet Health Centre,hrOEyF0hSqf,160357,USAID AMPATH Uzima,Kenya,Trans-Nzoia County,0,2,11,5,0,0,1,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+760,1/17/2022,Tulwet Health Centre,hrOEyF0hSqf,160357,USAID AMPATH Uzima,Kenya,Trans-Nzoia County,0,1,9,1,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+761,1/24/2022,Tulwet Health Centre,hrOEyF0hSqf,160357,USAID AMPATH Uzima,Kenya,Trans-Nzoia County,0,1,5,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,9,6,148,55,8,5,77,32,1,1,71,23,0,0,0,0
+762,1/3/2022,Turbo Sub County Hospital,CJCZrfwwxHl,160357,USAID AMPATH Uzima,Kenya,Uasin Gishu County,2,0,80,6,0,0,2,2,0,0,2,2,0,0,0,0,1,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+763,1/10/2022,Turbo Sub County Hospital,CJCZrfwwxHl,160357,USAID AMPATH Uzima,Kenya,Uasin Gishu County,2,2,102,7,0,0,2,4,0,0,3,3,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+764,1/17/2022,Turbo Sub County Hospital,CJCZrfwwxHl,160357,USAID AMPATH Uzima,Kenya,Uasin Gishu County,2,0,47,3,0,0,2,0,1,0,2,1,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+765,1/24/2022,Turbo Sub County Hospital,CJCZrfwwxHl,160357,USAID AMPATH Uzima,Kenya,Uasin Gishu County,1,1,76,8,0,0,3,2,0,0,3,2,0,0,0,0,0,1,65,55,2161,928,27,24,260,92,31,29,1801,778,0,0,0,0
+766,1/3/2022,Turkwel Health Centre,corbg0RKoql,160357,USAID AMPATH Uzima,Kenya,West Pokot County,0,0,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+767,1/10/2022,Turkwel Health Centre,corbg0RKoql,160357,USAID AMPATH Uzima,Kenya,West Pokot County,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+768,1/17/2022,Turkwel Health Centre,corbg0RKoql,160357,USAID AMPATH Uzima,Kenya,West Pokot County,0,0,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+769,1/24/2022,Turkwel Health Centre,corbg0RKoql,160357,USAID AMPATH Uzima,Kenya,West Pokot County,0,0,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,11,8,0,0,0,0,0,0,11,8,0,0,0,0
+770,1/3/2022,Twiga Dispensary,rrFMkuz07n7,160357,USAID AMPATH Uzima,Kenya,Uasin Gishu County,0,0,5,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+771,1/10/2022,Twiga Dispensary,rrFMkuz07n7,160357,USAID AMPATH Uzima,Kenya,Uasin Gishu County,2,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+772,1/17/2022,Twiga Dispensary,rrFMkuz07n7,160357,USAID AMPATH Uzima,Kenya,Uasin Gishu County,0,0,4,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+773,1/24/2022,Twiga Dispensary,rrFMkuz07n7,160357,USAID AMPATH Uzima,Kenya,Uasin Gishu County,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+774,1/3/2022,Uasin Gishu District Hospital,zgmfPz4Cu9G,160357,USAID AMPATH Uzima,Kenya,Uasin Gishu County,0,0,97,5,0,0,3,3,0,0,3,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+775,1/10/2022,Uasin Gishu District Hospital,zgmfPz4Cu9G,160357,USAID AMPATH Uzima,Kenya,Uasin Gishu County,1,2,165,12,0,0,6,1,0,0,6,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+776,1/17/2022,Uasin Gishu District Hospital,zgmfPz4Cu9G,160357,USAID AMPATH Uzima,Kenya,Uasin Gishu County,3,3,117,9,0,0,6,1,0,0,6,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+777,1/24/2022,Uasin Gishu District Hospital,zgmfPz4Cu9G,160357,USAID AMPATH Uzima,Kenya,Uasin Gishu County,2,3,86,14,0,1,6,2,0,1,6,2,0,0,0,0,3,3,36,33,1670,746,31,26,386,100,3,3,1179,588,0,0,2,1
+778,1/3/2022,Uhuru Dispensary,BTRtLFvVJVg,160357,USAID AMPATH Uzima,Kenya,Uasin Gishu County,0,0,15,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+779,1/10/2022,Uhuru Dispensary,BTRtLFvVJVg,160357,USAID AMPATH Uzima,Kenya,Uasin Gishu County,0,0,10,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+780,1/17/2022,Uhuru Dispensary,BTRtLFvVJVg,160357,USAID AMPATH Uzima,Kenya,Uasin Gishu County,0,0,3,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+781,1/24/2022,Uhuru Dispensary,BTRtLFvVJVg,160357,USAID AMPATH Uzima,Kenya,Uasin Gishu County,0,0,3,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+782,1/3/2022,Wanainchi Medical Clinic,aBYzHTzwB51,160357,USAID AMPATH Uzima,Kenya,Uasin Gishu County,0,0,12,4,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+783,1/10/2022,Wanainchi Medical Clinic,aBYzHTzwB51,160357,USAID AMPATH Uzima,Kenya,Uasin Gishu County,0,0,12,14,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+784,1/17/2022,Wanainchi Medical Clinic,aBYzHTzwB51,160357,USAID AMPATH Uzima,Kenya,Uasin Gishu County,1,0,13,10,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+785,1/24/2022,Wanainchi Medical Clinic,aBYzHTzwB51,160357,USAID AMPATH Uzima,Kenya,Uasin Gishu County,0,0,12,10,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+786,1/3/2022,Weonia Health Centre,wGCTMRE3Ads,160357,USAID AMPATH Uzima,Kenya,Trans-Nzoia County,1,0,9,2,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+787,1/10/2022,Weonia Health Centre,wGCTMRE3Ads,160357,USAID AMPATH Uzima,Kenya,Trans-Nzoia County,0,0,6,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+788,1/17/2022,Weonia Health Centre,wGCTMRE3Ads,160357,USAID AMPATH Uzima,Kenya,Trans-Nzoia County,0,0,7,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+789,1/24/2022,Weonia Health Centre,wGCTMRE3Ads,160357,USAID AMPATH Uzima,Kenya,Trans-Nzoia County,2,0,6,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,3,7,88,39,3,8,39,17,0,0,49,21,0,0,0,0
+790,1/3/2022,West Health Centre,t1AtvrIyVVD,160357,USAID AMPATH Uzima,Kenya,Uasin Gishu County,1,1,60,6,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+791,1/10/2022,West Health Centre,t1AtvrIyVVD,160357,USAID AMPATH Uzima,Kenya,Uasin Gishu County,0,0,66,6,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+792,1/17/2022,West Health Centre,t1AtvrIyVVD,160357,USAID AMPATH Uzima,Kenya,Uasin Gishu County,2,0,52,7,0,0,1,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+793,1/24/2022,West Health Centre,t1AtvrIyVVD,160357,USAID AMPATH Uzima,Kenya,Uasin Gishu County,0,1,78,5,0,0,1,0,0,0,1,0,0,0,0,0,0,0,1,2,98,0,0,2,54,0,0,0,32,0,0,0,0,0
+794,1/3/2022,Wiyeta Dispensary,Ca3HOTdSzIg,160357,USAID AMPATH Uzima,Kenya,Trans-Nzoia County,0,0,8,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+795,1/10/2022,Wiyeta Dispensary,Ca3HOTdSzIg,160357,USAID AMPATH Uzima,Kenya,Trans-Nzoia County,0,0,12,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+796,1/17/2022,Wiyeta Dispensary,Ca3HOTdSzIg,160357,USAID AMPATH Uzima,Kenya,Trans-Nzoia County,6,0,8,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+797,1/24/2022,Wiyeta Dispensary,Ca3HOTdSzIg,160357,USAID AMPATH Uzima,Kenya,Trans-Nzoia County,0,0,6,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,5,6,86,45,5,6,73,39,0,0,12,6,0,0,1,0
+798,1/3/2022,Ziwa Sub County Hospital,RS9hSB3Qgx3,160357,USAID AMPATH Uzima,Kenya,Uasin Gishu County,1,1,32,5,0,0,2,0,0,0,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+799,1/10/2022,Ziwa Sub County Hospital,RS9hSB3Qgx3,160357,USAID AMPATH Uzima,Kenya,Uasin Gishu County,2,2,41,5,0,0,1,2,1,0,4,1,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+800,1/17/2022,Ziwa Sub County Hospital,RS9hSB3Qgx3,160357,USAID AMPATH Uzima,Kenya,Uasin Gishu County,0,0,41,5,0,0,1,2,0,0,2,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+801,1/24/2022,Ziwa Sub County Hospital,RS9hSB3Qgx3,160357,USAID AMPATH Uzima,Kenya,Uasin Gishu County,0,3,55,9,0,0,0,0,0,0,0,0,0,0,0,0,1,0,30,28,777,350,16,6,92,48,11,19,629,273,0,0,5,1
+802,1/3/2022,ADC Danisa Dispensary,AnB4FtDxwWv,84475,Stawisha Pwani,Kenya,Kilifi,2,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+803,1/10/2022,ADC Danisa Dispensary,AnB4FtDxwWv,84475,Stawisha Pwani,Kenya,Kilifi,0,0,1,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+804,1/17/2022,ADC Danisa Dispensary,AnB4FtDxwWv,84475,Stawisha Pwani,Kenya,Kilifi,0,0,1,3,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+805,1/24/2022,ADC Danisa Dispensary,AnB4FtDxwWv,84475,Stawisha Pwani,Kenya,Kilifi,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,4,2,0,1,2,2,0,0,2,0,0,0,0,0
+806,1/3/2022,Adu Dispensary,yGyvw1GcZLR,84475,Stawisha Pwani,Kenya,Kilifi,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+807,1/10/2022,Adu Dispensary,yGyvw1GcZLR,84475,Stawisha Pwani,Kenya,Kilifi,0,0,19,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+808,1/17/2022,Adu Dispensary,yGyvw1GcZLR,84475,Stawisha Pwani,Kenya,Kilifi,0,0,12,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+809,1/24/2022,Adu Dispensary,yGyvw1GcZLR,84475,Stawisha Pwani,Kenya,Kilifi,2,8,55,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,5,8,63,29,3,7,17,0,2,1,43,26,0,0,3,3
+810,1/3/2022,Amani Medical Clinic (Kilifi),cDdCkjh4kS9,84475,Stawisha Pwani,Kenya,Kilifi,0,0,4,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+811,1/10/2022,Amani Medical Clinic (Kilifi),cDdCkjh4kS9,84475,Stawisha Pwani,Kenya,Kilifi,0,0,3,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+812,1/17/2022,Amani Medical Clinic (Kilifi),cDdCkjh4kS9,84475,Stawisha Pwani,Kenya,Kilifi,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+813,1/24/2022,Amani Medical Clinic (Kilifi),cDdCkjh4kS9,84475,Stawisha Pwani,Kenya,Kilifi,0,0,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,37,13,1,0,32,11,0,0,5,2,0,0,0,0
+814,1/3/2022,Bamba Health Centre,GeIpXX3iWQR,84475,Stawisha Pwani,Kenya,Kilifi,1,0,60,5,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+815,1/10/2022,Bamba Health Centre,GeIpXX3iWQR,84475,Stawisha Pwani,Kenya,Kilifi,1,0,65,10,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+816,1/17/2022,Bamba Health Centre,GeIpXX3iWQR,84475,Stawisha Pwani,Kenya,Kilifi,0,0,39,9,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+817,1/24/2022,Bamba Health Centre,GeIpXX3iWQR,84475,Stawisha Pwani,Kenya,Kilifi,0,0,12,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,33,36,302,80,33,36,132,37,0,0,170,43,0,0,0,0
+818,1/3/2022,Bamba Medical Clinic,DDp9MWbn0nR,84475,Stawisha Pwani,Kenya,Kilifi,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+819,1/10/2022,Bamba Medical Clinic,DDp9MWbn0nR,84475,Stawisha Pwani,Kenya,Kilifi,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+820,1/17/2022,Bamba Medical Clinic,DDp9MWbn0nR,84475,Stawisha Pwani,Kenya,Kilifi,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+821,1/24/2022,Bamba Medical Clinic,DDp9MWbn0nR,84475,Stawisha Pwani,Kenya,Kilifi,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,17,6,0,0,0,0,0,0,17,6,0,0,0,0
+822,1/3/2022,Baolala Dispensary,JuxFMgC7ZcF,84475,Stawisha Pwani,Kenya,Kilifi,0,0,23,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+823,1/10/2022,Baolala Dispensary,JuxFMgC7ZcF,84475,Stawisha Pwani,Kenya,Kilifi,0,0,27,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+824,1/17/2022,Baolala Dispensary,JuxFMgC7ZcF,84475,Stawisha Pwani,Kenya,Kilifi,0,0,23,9,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+825,1/24/2022,Baolala Dispensary,JuxFMgC7ZcF,84475,Stawisha Pwani,Kenya,Kilifi,0,0,13,3,0,0,0,0,0,0,0,0,0,0,0,0,0,0,6,4,103,30,5,4,45,9,1,0,58,21,0,0,0,0
+826,1/3/2022,Baricho Dispensary (Malindi),FTZ4cdD6jmr,84475,Stawisha Pwani,Kenya,Kilifi,0,0,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+827,1/10/2022,Baricho Dispensary (Malindi),FTZ4cdD6jmr,84475,Stawisha Pwani,Kenya,Kilifi,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+828,1/17/2022,Baricho Dispensary (Malindi),FTZ4cdD6jmr,84475,Stawisha Pwani,Kenya,Kilifi,0,0,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+829,1/24/2022,Baricho Dispensary (Malindi),FTZ4cdD6jmr,84475,Stawisha Pwani,Kenya,Kilifi,0,0,9,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,11,1,0,0,3,0,0,0,8,1,0,0,0,0
+830,1/3/2022,Bomani Dispensary,NIUuAMx7FSP,84475,Stawisha Pwani,Kenya,Kilifi,1,1,23,1,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+831,1/10/2022,Bomani Dispensary,NIUuAMx7FSP,84475,Stawisha Pwani,Kenya,Kilifi,2,0,20,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+832,1/17/2022,Bomani Dispensary,NIUuAMx7FSP,84475,Stawisha Pwani,Kenya,Kilifi,0,0,14,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+833,1/24/2022,Bomani Dispensary,NIUuAMx7FSP,84475,Stawisha Pwani,Kenya,Kilifi,0,1,12,3,0,0,0,1,0,0,0,1,0,0,0,0,0,0,3,2,36,10,3,2,4,1,0,0,32,9,0,0,0,0
+834,1/3/2022,Bombi Dispensary,MfJPVxso9OD,84475,Stawisha Pwani,Kenya,Kilifi,0,0,3,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+835,1/10/2022,Bombi Dispensary,MfJPVxso9OD,84475,Stawisha Pwani,Kenya,Kilifi,0,0,3,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+836,1/17/2022,Bombi Dispensary,MfJPVxso9OD,84475,Stawisha Pwani,Kenya,Kilifi,0,0,2,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+837,1/24/2022,Bombi Dispensary,MfJPVxso9OD,84475,Stawisha Pwani,Kenya,Kilifi,0,0,6,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2,0,0,0,2,0,0,0,0,0,0,0,0,0
+838,1/3/2022,Bwagamoyo Dispensary,Agtf2oFILAc,84475,Stawisha Pwani,Kenya,Kilifi,0,0,6,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+839,1/10/2022,Bwagamoyo Dispensary,Agtf2oFILAc,84475,Stawisha Pwani,Kenya,Kilifi,0,0,7,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+840,1/17/2022,Bwagamoyo Dispensary,Agtf2oFILAc,84475,Stawisha Pwani,Kenya,Kilifi,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+841,1/24/2022,Bwagamoyo Dispensary,Agtf2oFILAc,84475,Stawisha Pwani,Kenya,Kilifi,0,0,2,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,21,4,0,1,0,0,1,0,21,4,0,0,0,0
+842,1/3/2022,Chakama Dispensary,nBUAoh8nHez,84475,Stawisha Pwani,Kenya,Kilifi,0,0,3,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+843,1/10/2022,Chakama Dispensary,nBUAoh8nHez,84475,Stawisha Pwani,Kenya,Kilifi,0,0,4,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+844,1/17/2022,Chakama Dispensary,nBUAoh8nHez,84475,Stawisha Pwani,Kenya,Kilifi,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+845,1/24/2022,Chakama Dispensary,nBUAoh8nHez,84475,Stawisha Pwani,Kenya,Kilifi,0,0,4,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,14,2,1,0,14,2,0,0,0,0,0,0,0,0
+846,1/3/2022,Challani Dispensary,T4UTlYHh75o,84475,Stawisha Pwani,Kenya,Kilifi,0,0,13,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+847,1/10/2022,Challani Dispensary,T4UTlYHh75o,84475,Stawisha Pwani,Kenya,Kilifi,0,0,17,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+848,1/17/2022,Challani Dispensary,T4UTlYHh75o,84475,Stawisha Pwani,Kenya,Kilifi,0,0,10,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+849,1/24/2022,Challani Dispensary,T4UTlYHh75o,84475,Stawisha Pwani,Kenya,Kilifi,0,0,29,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,15,5,0,0,6,3,0,0,9,2,0,0,0,0
+850,1/3/2022,Chamalo Medical Clinic,p5wJSR2b6aD,84475,Stawisha Pwani,Kenya,Kilifi,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+851,1/10/2022,Chamalo Medical Clinic,p5wJSR2b6aD,84475,Stawisha Pwani,Kenya,Kilifi,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+852,1/17/2022,Chamalo Medical Clinic,p5wJSR2b6aD,84475,Stawisha Pwani,Kenya,Kilifi,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+853,1/24/2022,Chamalo Medical Clinic,p5wJSR2b6aD,84475,Stawisha Pwani,Kenya,Kilifi,0,0,18,7,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,10,0,0,0,0,0,1,0,10,0,0,0,0,0
+854,1/3/2022,Chasimba H/C,QJULOG1MtRe,84475,Stawisha Pwani,Kenya,Kilifi,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+855,1/10/2022,Chasimba H/C,QJULOG1MtRe,84475,Stawisha Pwani,Kenya,Kilifi,0,0,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+856,1/17/2022,Chasimba H/C,QJULOG1MtRe,84475,Stawisha Pwani,Kenya,Kilifi,0,0,0,0,0,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+857,1/24/2022,Chasimba H/C,QJULOG1MtRe,84475,Stawisha Pwani,Kenya,Kilifi,9,6,131,49,0,0,0,0,0,0,0,0,0,0,0,0,0,0,21,17,287,112,21,17,55,21,0,0,232,91,0,0,0,0
+858,1/3/2022,Chumani Medical Clinic,vkeWoOp4I9i,84475,Stawisha Pwani,Kenya,Kilifi,0,0,9,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+859,1/10/2022,Chumani Medical Clinic,vkeWoOp4I9i,84475,Stawisha Pwani,Kenya,Kilifi,0,0,6,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+860,1/17/2022,Chumani Medical Clinic,vkeWoOp4I9i,84475,Stawisha Pwani,Kenya,Kilifi,0,0,5,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+861,1/24/2022,Chumani Medical Clinic,vkeWoOp4I9i,84475,Stawisha Pwani,Kenya,Kilifi,0,0,4,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,39,9,0,0,0,0,0,0,39,9,0,0,0,0
+862,1/3/2022,Cowdray Dispensary,c9TTIlMFakU,84475,Stawisha Pwani,Kenya,Kilifi,0,0,9,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+863,1/10/2022,Cowdray Dispensary,c9TTIlMFakU,84475,Stawisha Pwani,Kenya,Kilifi,0,0,18,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+864,1/17/2022,Cowdray Dispensary,c9TTIlMFakU,84475,Stawisha Pwani,Kenya,Kilifi,0,0,24,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+865,1/24/2022,Cowdray Dispensary,c9TTIlMFakU,84475,Stawisha Pwani,Kenya,Kilifi,0,0,15,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,17,8,1,1,15,6,0,0,2,2,0,0,0,0
+866,1/3/2022,Dagamra Dispensary,FvisfV4MsUy,84475,Stawisha Pwani,Kenya,Kilifi,0,0,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+867,1/10/2022,Dagamra Dispensary,FvisfV4MsUy,84475,Stawisha Pwani,Kenya,Kilifi,0,0,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+868,1/17/2022,Dagamra Dispensary,FvisfV4MsUy,84475,Stawisha Pwani,Kenya,Kilifi,0,0,6,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+869,1/24/2022,Dagamra Dispensary,FvisfV4MsUy,84475,Stawisha Pwani,Kenya,Kilifi,0,0,2,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,3,2,15,4,3,2,5,3,0,0,10,1,0,0,0,0
+870,1/3/2022,Dagamra Medical Clinic,uZx64yFVfBj,84475,Stawisha Pwani,Kenya,Kilifi,0,0,5,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+871,1/10/2022,Dagamra Medical Clinic,uZx64yFVfBj,84475,Stawisha Pwani,Kenya,Kilifi,0,0,11,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+872,1/17/2022,Dagamra Medical Clinic,uZx64yFVfBj,84475,Stawisha Pwani,Kenya,Kilifi,0,0,7,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+873,1/24/2022,Dagamra Medical Clinic,uZx64yFVfBj,84475,Stawisha Pwani,Kenya,Kilifi,0,0,9,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+874,1/3/2022,Dida Dispensary,htareY9BAEa,84475,Stawisha Pwani,Kenya,Kilifi,0,0,6,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+875,1/10/2022,Dida Dispensary,htareY9BAEa,84475,Stawisha Pwani,Kenya,Kilifi,0,0,10,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+876,1/17/2022,Dida Dispensary,htareY9BAEa,84475,Stawisha Pwani,Kenya,Kilifi,0,0,17,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+877,1/24/2022,Dida Dispensary,htareY9BAEa,84475,Stawisha Pwani,Kenya,Kilifi,0,0,7,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,5,4,69,26,5,4,19,16,0,0,50,10,0,0,0,0
+878,1/3/2022,Drop In Centre Malindi _ICRH,au90nBCNc7C,84475,Stawisha Pwani,Kenya,Kilifi,0,0,3,1,0,0,0,0,0,0,0,0,0,0,0,0,1,0, , , , , , , , , , , , , , , , 
+879,1/10/2022,Drop In Centre Malindi _ICRH,au90nBCNc7C,84475,Stawisha Pwani,Kenya,Kilifi,0,0,8,1,0,0,0,1,0,0,1,1,0,0,0,0,2,0, , , , , , , , , , , , , , , , 
+880,1/17/2022,Drop In Centre Malindi _ICRH,au90nBCNc7C,84475,Stawisha Pwani,Kenya,Kilifi,0,0,9,0,0,0,1,0,0,0,1,0,0,0,0,0,3,0, , , , , , , , , , , , , , , , 
+881,1/24/2022,Drop In Centre Malindi _ICRH,au90nBCNc7C,84475,Stawisha Pwani,Kenya,Kilifi,0,0,11,2,0,0,2,1,0,0,2,1,0,0,0,0,1,0,0,0,208,10,0,0,4,2,0,0,204,8,0,0,0,0
+882,1/3/2022,Dzikunze Dispensary,CUwL7xw3kc0,84475,Stawisha Pwani,Kenya,Kilifi,0,0,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+883,1/10/2022,Dzikunze Dispensary,CUwL7xw3kc0,84475,Stawisha Pwani,Kenya,Kilifi,0,0,6,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+884,1/17/2022,Dzikunze Dispensary,CUwL7xw3kc0,84475,Stawisha Pwani,Kenya,Kilifi,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+885,1/24/2022,Dzikunze Dispensary,CUwL7xw3kc0,84475,Stawisha Pwani,Kenya,Kilifi,0,0,4,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,43,6,0,0,43,6,0,0,0,0,0,0,0,0
+886,1/3/2022,Fundi Issa Dispensary,Oiny7ZOriXR,84475,Stawisha Pwani,Kenya,Kilifi,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+887,1/10/2022,Fundi Issa Dispensary,Oiny7ZOriXR,84475,Stawisha Pwani,Kenya,Kilifi,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+888,1/17/2022,Fundi Issa Dispensary,Oiny7ZOriXR,84475,Stawisha Pwani,Kenya,Kilifi,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+889,1/24/2022,Fundi Issa Dispensary,Oiny7ZOriXR,84475,Stawisha Pwani,Kenya,Kilifi,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+890,1/3/2022,Gahaleni Dispensary,seRJrsbNlPA,84475,Stawisha Pwani,Kenya,Kilifi,0,0,9,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+891,1/10/2022,Gahaleni Dispensary,seRJrsbNlPA,84475,Stawisha Pwani,Kenya,Kilifi,0,0,18,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+892,1/17/2022,Gahaleni Dispensary,seRJrsbNlPA,84475,Stawisha Pwani,Kenya,Kilifi,0,0,16,0,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+893,1/24/2022,Gahaleni Dispensary,seRJrsbNlPA,84475,Stawisha Pwani,Kenya,Kilifi,0,0,8,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,4,2,56,10,4,2,0,0,0,0,56,10,0,0,0,0
+894,1/3/2022,Ganda Dispensary,eShM2rJP5E0,84475,Stawisha Pwani,Kenya,Kilifi,0,0,34,0,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+895,1/10/2022,Ganda Dispensary,eShM2rJP5E0,84475,Stawisha Pwani,Kenya,Kilifi,1,0,13,5,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+896,1/17/2022,Ganda Dispensary,eShM2rJP5E0,84475,Stawisha Pwani,Kenya,Kilifi,1,0,32,8,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+897,1/24/2022,Ganda Dispensary,eShM2rJP5E0,84475,Stawisha Pwani,Kenya,Kilifi,0,0,33,5,0,0,0,0,0,0,0,0,0,0,0,0,0,0,8,11,118,34,8,11,15,11,0,0,103,23,0,0,0,0
+898,1/3/2022,Ganze Dispensary,gn9ZAmNrj1a,84475,Stawisha Pwani,Kenya,Kilifi,0,0,28,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+899,1/10/2022,Ganze Dispensary,gn9ZAmNrj1a,84475,Stawisha Pwani,Kenya,Kilifi,0,0,30,7,0,0,1,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+900,1/17/2022,Ganze Dispensary,gn9ZAmNrj1a,84475,Stawisha Pwani,Kenya,Kilifi,1,1,36,9,0,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+901,1/24/2022,Ganze Dispensary,gn9ZAmNrj1a,84475,Stawisha Pwani,Kenya,Kilifi,2,2,26,5,0,0,0,0,0,0,0,0,0,0,0,0,0,0,23,20,204,65,23,20,62,18,0,0,142,47,0,0,0,0
+902,1/3/2022,Garashi Dispensary,DY55b5vIWjD,84475,Stawisha Pwani,Kenya,Kilifi,0,0,12,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+903,1/10/2022,Garashi Dispensary,DY55b5vIWjD,84475,Stawisha Pwani,Kenya,Kilifi,0,0,21,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+904,1/17/2022,Garashi Dispensary,DY55b5vIWjD,84475,Stawisha Pwani,Kenya,Kilifi,0,0,15,10,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+905,1/24/2022,Garashi Dispensary,DY55b5vIWjD,84475,Stawisha Pwani,Kenya,Kilifi,0,0,18,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,4,75,26,1,4,43,15,0,0,32,11,0,0,0,0
+906,1/3/2022,Gede Health Centre,Ordks0wfK4r,84475,Stawisha Pwani,Kenya,Kilifi,0,2,28,15,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+907,1/10/2022,Gede Health Centre,Ordks0wfK4r,84475,Stawisha Pwani,Kenya,Kilifi,1,1,50,10,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+908,1/17/2022,Gede Health Centre,Ordks0wfK4r,84475,Stawisha Pwani,Kenya,Kilifi,1,3,28,5,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+909,1/24/2022,Gede Health Centre,Ordks0wfK4r,84475,Stawisha Pwani,Kenya,Kilifi,2,0,19,5,0,0,0,0,0,0,0,0,0,0,0,0,0,0,30,22,567,180,30,22,480,130,0,0,86,49,0,0,1,1
+910,1/3/2022,Giriama Dispensary,n1mgrdeZqAo,84475,Stawisha Pwani,Kenya,Kilifi,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+911,1/10/2022,Giriama Dispensary,n1mgrdeZqAo,84475,Stawisha Pwani,Kenya,Kilifi,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+912,1/17/2022,Giriama Dispensary,n1mgrdeZqAo,84475,Stawisha Pwani,Kenya,Kilifi,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+913,1/24/2022,Giriama Dispensary,n1mgrdeZqAo,84475,Stawisha Pwani,Kenya,Kilifi,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+914,1/3/2022,Gongoni Health Centre,BM1PQwnsHby,84475,Stawisha Pwani,Kenya,Kilifi,2,1,33,6,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+915,1/10/2022,Gongoni Health Centre,BM1PQwnsHby,84475,Stawisha Pwani,Kenya,Kilifi,4,2,88,13,0,0,2,0,0,0,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+916,1/17/2022,Gongoni Health Centre,BM1PQwnsHby,84475,Stawisha Pwani,Kenya,Kilifi,1,3,97,14,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+917,1/24/2022,Gongoni Health Centre,BM1PQwnsHby,84475,Stawisha Pwani,Kenya,Kilifi,3,1,23,18,0,0,0,0,0,0,0,0,0,0,0,0,0,0,45,34,436,162,43,31,162,74,2,3,274,88,0,0,0,0
+918,1/3/2022,Gotani Dispensary,volfGYguJkC,84475,Stawisha Pwani,Kenya,Kilifi,0,0,24,6,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+919,1/10/2022,Gotani Dispensary,volfGYguJkC,84475,Stawisha Pwani,Kenya,Kilifi,0,0,21,8,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+920,1/17/2022,Gotani Dispensary,volfGYguJkC,84475,Stawisha Pwani,Kenya,Kilifi,0,0,21,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+921,1/24/2022,Gotani Dispensary,volfGYguJkC,84475,Stawisha Pwani,Kenya,Kilifi,0,0,23,4,0,0,1,0,0,0,1,0,0,0,0,0,0,0,16,10,209,58,16,10,50,19,0,0,159,39,0,0,0,0
+922,1/3/2022,ICRH Drop-in-centre Kilifi,ZcuwkES9ejZ,84475,Stawisha Pwani,Kenya,Kilifi,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0, , , , , , , , , , , , , , , , 
+923,1/10/2022,ICRH Drop-in-centre Kilifi,ZcuwkES9ejZ,84475,Stawisha Pwani,Kenya,Kilifi,0,0,3,2,0,0,0,0,0,0,0,0,0,0,0,0,1,0, , , , , , , , , , , , , , , , 
+924,1/17/2022,ICRH Drop-in-centre Kilifi,ZcuwkES9ejZ,84475,Stawisha Pwani,Kenya,Kilifi,0,0,22,2,0,0,0,0,0,0,0,0,0,0,0,0,5,0, , , , , , , , , , , , , , , , 
+925,1/24/2022,ICRH Drop-in-centre Kilifi,ZcuwkES9ejZ,84475,Stawisha Pwani,Kenya,Kilifi,0,0,43,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,138,0,0,0,0,0,0,0,138,0,0,0,0,0
+926,1/3/2022,Jaribuni Dispensary,hfNWemHIJrx,84475,Stawisha Pwani,Kenya,Kilifi,0,0,13,2,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+927,1/10/2022,Jaribuni Dispensary,hfNWemHIJrx,84475,Stawisha Pwani,Kenya,Kilifi,0,0,8,4,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+928,1/17/2022,Jaribuni Dispensary,hfNWemHIJrx,84475,Stawisha Pwani,Kenya,Kilifi,0,1,7,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+929,1/24/2022,Jaribuni Dispensary,hfNWemHIJrx,84475,Stawisha Pwani,Kenya,Kilifi,1,0,23,3,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,2,45,17,1,1,2,0,0,1,43,17,0,0,0,0
+930,1/3/2022,Jibana Sub District Hospital,WGF8a1zVHbH,84475,Stawisha Pwani,Kenya,Kilifi,1,0,10,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+931,1/10/2022,Jibana Sub District Hospital,WGF8a1zVHbH,84475,Stawisha Pwani,Kenya,Kilifi,0,0,2,4,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+932,1/17/2022,Jibana Sub District Hospital,WGF8a1zVHbH,84475,Stawisha Pwani,Kenya,Kilifi,0,1,12,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+933,1/24/2022,Jibana Sub District Hospital,WGF8a1zVHbH,84475,Stawisha Pwani,Kenya,Kilifi,0,0,24,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,8,3,104,44,8,3,18,5,0,0,86,39,0,0,0,0
+934,1/3/2022,Jilore Dispensary,zMEGrOCnZht,84475,Stawisha Pwani,Kenya,Kilifi,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+935,1/10/2022,Jilore Dispensary,zMEGrOCnZht,84475,Stawisha Pwani,Kenya,Kilifi,0,0,6,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+936,1/17/2022,Jilore Dispensary,zMEGrOCnZht,84475,Stawisha Pwani,Kenya,Kilifi,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+937,1/24/2022,Jilore Dispensary,zMEGrOCnZht,84475,Stawisha Pwani,Kenya,Kilifi,0,0,3,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,13,2,0,0,1,2,0,0,12,0,0,0,0,0
+938,1/3/2022,Joy Medical Clinic,ubJC73hL3lp,84475,Stawisha Pwani,Kenya,Kilifi,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+939,1/10/2022,Joy Medical Clinic,ubJC73hL3lp,84475,Stawisha Pwani,Kenya,Kilifi,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+940,1/17/2022,Joy Medical Clinic,ubJC73hL3lp,84475,Stawisha Pwani,Kenya,Kilifi,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+941,1/24/2022,Joy Medical Clinic,ubJC73hL3lp,84475,Stawisha Pwani,Kenya,Kilifi,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+942,1/3/2022,Junju Dispensary,VhYcFwqZAiX,84475,Stawisha Pwani,Kenya,Kilifi,0,0,19,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+943,1/10/2022,Junju Dispensary,VhYcFwqZAiX,84475,Stawisha Pwani,Kenya,Kilifi,0,0,10,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+944,1/17/2022,Junju Dispensary,VhYcFwqZAiX,84475,Stawisha Pwani,Kenya,Kilifi,0,0,9,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+945,1/24/2022,Junju Dispensary,VhYcFwqZAiX,84475,Stawisha Pwani,Kenya,Kilifi,0,0,6,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,4,5,36,10,4,5,2,3,0,0,34,7,0,0,0,0
+946,1/3/2022,Kadaina Community Dispensary,z9AW1zZyBd1,84475,Stawisha Pwani,Kenya,Kilifi,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+947,1/10/2022,Kadaina Community Dispensary,z9AW1zZyBd1,84475,Stawisha Pwani,Kenya,Kilifi,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+948,1/17/2022,Kadaina Community Dispensary,z9AW1zZyBd1,84475,Stawisha Pwani,Kenya,Kilifi,0,0,3,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+949,1/24/2022,Kadaina Community Dispensary,z9AW1zZyBd1,84475,Stawisha Pwani,Kenya,Kilifi,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2,1,0,0,2,1,0,0,0,0,0,0,0,0
+950,1/3/2022,Kadzinuni Dispensary,aAENtq2Il6J,84475,Stawisha Pwani,Kenya,Kilifi,0,0,22,9,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+951,1/10/2022,Kadzinuni Dispensary,aAENtq2Il6J,84475,Stawisha Pwani,Kenya,Kilifi,0,0,24,5,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+952,1/17/2022,Kadzinuni Dispensary,aAENtq2Il6J,84475,Stawisha Pwani,Kenya,Kilifi,0,0,12,9,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+953,1/24/2022,Kadzinuni Dispensary,aAENtq2Il6J,84475,Stawisha Pwani,Kenya,Kilifi,0,0,26,10,0,0,0,0,0,0,0,0,0,0,0,0,0,0,3,1,26,8,0,0,3,0,3,1,23,8,0,0,0,0
+954,1/3/2022,Kakoneni Dispensary,gApCfckr2XD,84475,Stawisha Pwani,Kenya,Kilifi,0,0,15,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+955,1/10/2022,Kakoneni Dispensary,gApCfckr2XD,84475,Stawisha Pwani,Kenya,Kilifi,0,0,20,5,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+956,1/17/2022,Kakoneni Dispensary,gApCfckr2XD,84475,Stawisha Pwani,Kenya,Kilifi,0,0,4,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+957,1/24/2022,Kakoneni Dispensary,gApCfckr2XD,84475,Stawisha Pwani,Kenya,Kilifi,1,0,4,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2,1,23,6,2,0,12,4,0,1,11,2,0,0,0,0
+958,1/3/2022,Kakuyuni Dispensary (Malindi),wNx1V2RXmlr,84475,Stawisha Pwani,Kenya,Kilifi,0,0,17,5,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+959,1/10/2022,Kakuyuni Dispensary (Malindi),wNx1V2RXmlr,84475,Stawisha Pwani,Kenya,Kilifi,3,1,11,9,0,1,1,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+960,1/17/2022,Kakuyuni Dispensary (Malindi),wNx1V2RXmlr,84475,Stawisha Pwani,Kenya,Kilifi,0,0,15,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+961,1/24/2022,Kakuyuni Dispensary (Malindi),wNx1V2RXmlr,84475,Stawisha Pwani,Kenya,Kilifi,0,1,23,3,0,0,0,0,0,0,0,0,0,0,0,0,0,0,16,12,197,50,16,12,74,16,0,0,123,34,0,0,0,0
+962,1/3/2022,Kanamai Health Care,tPKRncN9e1F,84475,Stawisha Pwani,Kenya,Kilifi,0,0,17,5,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+963,1/10/2022,Kanamai Health Care,tPKRncN9e1F,84475,Stawisha Pwani,Kenya,Kilifi,0,0,7,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+964,1/17/2022,Kanamai Health Care,tPKRncN9e1F,84475,Stawisha Pwani,Kenya,Kilifi,0,0,8,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+965,1/24/2022,Kanamai Health Care,tPKRncN9e1F,84475,Stawisha Pwani,Kenya,Kilifi,0,0,4,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,28,7,0,0,16,5,0,0,12,2,0,0,0,0
+966,1/3/2022,Kilifi District Hospital,IcjLhI2L6g0,84475,Stawisha Pwani,Kenya,Kilifi,3,15,77,31,1,0,1,1,0,0,1,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+967,1/10/2022,Kilifi District Hospital,IcjLhI2L6g0,84475,Stawisha Pwani,Kenya,Kilifi,12,3,192,43,0,0,4,3,0,0,3,2,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+968,1/17/2022,Kilifi District Hospital,IcjLhI2L6g0,84475,Stawisha Pwani,Kenya,Kilifi,10,7,190,68,1,0,6,3,1,0,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+969,1/24/2022,Kilifi District Hospital,IcjLhI2L6g0,84475,Stawisha Pwani,Kenya,Kilifi,10,9,209,63,1,1,3,2,0,2,2,4,0,0,0,0,1,0,107,83,1729,778,90,76,904,450,17,7,806,315,0,0,19,13
+970,1/3/2022,Kinarani Dispensary,ef3o2l2RpWy,84475,Stawisha Pwani,Kenya,Kilifi,0,0,7,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+971,1/10/2022,Kinarani Dispensary,ef3o2l2RpWy,84475,Stawisha Pwani,Kenya,Kilifi,0,0,13,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+972,1/17/2022,Kinarani Dispensary,ef3o2l2RpWy,84475,Stawisha Pwani,Kenya,Kilifi,0,0,8,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+973,1/24/2022,Kinarani Dispensary,ef3o2l2RpWy,84475,Stawisha Pwani,Kenya,Kilifi,0,0,11,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+974,1/3/2022,Kiwandani Dispensary,HxWgSzGq7r6,84475,Stawisha Pwani,Kenya,Kilifi,0,0,45,4,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+975,1/10/2022,Kiwandani Dispensary,HxWgSzGq7r6,84475,Stawisha Pwani,Kenya,Kilifi,1,2,49,3,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+976,1/17/2022,Kiwandani Dispensary,HxWgSzGq7r6,84475,Stawisha Pwani,Kenya,Kilifi,1,1,40,3,0,0,2,1,0,0,2,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+977,1/24/2022,Kiwandani Dispensary,HxWgSzGq7r6,84475,Stawisha Pwani,Kenya,Kilifi,1,0,50,5,0,0,1,0,0,0,1,0,0,0,0,0,0,0,6,3,175,35,6,3,167,31,0,0,8,4,0,0,0,0
+978,1/3/2022,Kizingo Dispensary,oojlw5GbPfH,84475,Stawisha Pwani,Kenya,Kilifi,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+979,1/10/2022,Kizingo Dispensary,oojlw5GbPfH,84475,Stawisha Pwani,Kenya,Kilifi,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+980,1/17/2022,Kizingo Dispensary,oojlw5GbPfH,84475,Stawisha Pwani,Kenya,Kilifi,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+981,1/24/2022,Kizingo Dispensary,oojlw5GbPfH,84475,Stawisha Pwani,Kenya,Kilifi,0,0,174,34,0,0,2,0,0,0,2,0,0,0,0,0,0,0,0,0,45,7,0,0,17,3,0,0,28,4,0,0,0,0
