@@ -1,0 +1,52 @@
+index,date,orgunit,orgunituid,mech_code,partner,operatingunit,psnu,hts_tst.u15.f,hts_tst.u15.m,hts_tst.o15.f,hts_tst.o15.m,hts_tst_pos.u15.f,hts_tst_pos.u15.m,hts_tst_pos.o15.f,hts_tst_pos.o15.m,tx_new.u15.f,tx_new.u15.m,tx_new.o15.f,tx_new.o15.m,vmmc_circ.u15.m,vmmc_circ.o15.m,prep_new.u15.f,prep_new.u15.m,prep_new.o15.f,prep_new.o15.m,tx_curr.u15.f,tx_curr.u15.m,tx_curr.o15.f,tx_curr.o15.m,tx_mmd.u15.f.u3mo,tx_mmd.u15.m.u3mo,tx_mmd.o15.f.u3mo,tx_mmd.o15.m.u3mo,tx_mmd.u15.f.35mo,tx_mmd.u15.m.35mo,tx_mmd.o15.f.35mo,tx_mmd.o15.m.35mo,tx_mmd.u15.f.o6mo,tx_mmd.u15.m.o6mo,tx_mmd.o15.f.o6mo,tx_mmd.o15.m.o6mo
+1,3/1/2021,Municipal Health Centre,mfUdBkrjkUa,17719,APHIAPlus Pwani,Kenya,Kilifi,0,0,128,18,0,0,2,0,0,0,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+2,3/15/2021,Municipal Health Centre,mfUdBkrjkUa,17719,APHIAPlus Pwani,Kenya,Kilifi,2,1,116,34,0,0,2,0,0,0,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+3,3/22/2021,Municipal Health Centre,mfUdBkrjkUa,17719,APHIAPlus Pwani,Kenya,Kilifi,3,1,85,13,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+4,3/29/2021,Municipal Health Centre,mfUdBkrjkUa,17719,APHIAPlus Pwani,Kenya,Kilifi,2,3,69,20,0,0,0,0,0,0,0,0,0,0,0,0,0,0,22,21,621,185,8,11,200,61,14,10,421,124,0,0,0,0
+5,3/8/2021,Municipal Health Centre,mfUdBkrjkUa,17719,APHIAPlus Pwani,Kenya,Kilifi,0,1,91,20,0,0,1,1,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+6,3/1/2021,Serem Health Centre,zuAut3lF562,14012,AMPATHPlus,Kenya,Vihiga County,4,2,53,19,0,0,2,2,0,0,3,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+7,3/15/2021,Serem Health Centre,zuAut3lF562,14012,AMPATHPlus,Kenya,Vihiga County,0,2,59,37,0,0,1,1,0,0,1,1,0,0,0,0,4,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+8,3/22/2021,Serem Health Centre,zuAut3lF562,14012,AMPATHPlus,Kenya,Vihiga County,0,0,39,19,0,0,1,3,0,0,1,3,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+9,3/29/2021,Serem Health Centre,zuAut3lF562,14012,AMPATHPlus,Kenya,Vihiga County,1,1,28,9,0,0,3,0,0,0,2,1,0,0,0,0,0,0,29,31,489,236,27,27,155,85,2,4,332,149,0,0,0,0
+10,3/8/2021,Serem Health Centre,zuAut3lF562,14012,AMPATHPlus,Kenya,Vihiga County,1,3,61,39,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+11,3/29/2021,Gsu Dispensary,Nca4ge091C8,18495,Afya Nyota Ya Bonde,Kenya,Nakuru,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2,1,43,27,2,1,1,2,0,0,37,21,0,0,5,4
+12,3/1/2021,Iranda Health Centre,lUYGxH6siib,14012,AMPATHPlus,Kenya,Kakamega County,0,0,5,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+13,3/15/2021,Iranda Health Centre,lUYGxH6siib,14012,AMPATHPlus,Kenya,Kakamega County,0,0,3,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+14,3/22/2021,Iranda Health Centre,lUYGxH6siib,14012,AMPATHPlus,Kenya,Kakamega County,0,0,4,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+15,3/29/2021,Iranda Health Centre,lUYGxH6siib,14012,AMPATHPlus,Kenya,Kakamega County,0,0,3,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,4,2,39,22,4,2,14,4,0,0,25,18,0,0,0,0
+16,3/8/2021,Iranda Health Centre,lUYGxH6siib,14012,AMPATHPlus,Kenya,Kakamega County,0,0,3,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+17,3/1/2021,Huruma Nursing Home,VGke2SoZbji,17718,Interchurch Medical Assistance. Inc,Kenya,Nairobi,0,1,27,8,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+18,3/15/2021,Huruma Nursing Home,VGke2SoZbji,17718,Interchurch Medical Assistance. Inc,Kenya,Nairobi,0,0,17,4,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+19,3/22/2021,Huruma Nursing Home,VGke2SoZbji,17718,Interchurch Medical Assistance. Inc,Kenya,Nairobi,0,0,3,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+20,3/29/2021,Huruma Nursing Home,VGke2SoZbji,17718,Interchurch Medical Assistance. Inc,Kenya,Nairobi,0,0,13,3,0,0,1,0,0,0,1,0,0,0,0,0,0,0,3,0,80,65,2,0,45,22,1,0,33,43,0,0,2,0
+21,3/8/2021,Huruma Nursing Home,VGke2SoZbji,17718,Interchurch Medical Assistance. Inc,Kenya,Nairobi,0,0,11,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+22,3/1/2021,Bukaya Medical Centre,K97Jfb3ugYu,14012,AMPATHPlus,Kenya,Kakamega County,0,0,4,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+23,3/15/2021,Bukaya Medical Centre,K97Jfb3ugYu,14012,AMPATHPlus,Kenya,Kakamega County,0,0,4,1,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+24,3/22/2021,Bukaya Medical Centre,K97Jfb3ugYu,14012,AMPATHPlus,Kenya,Kakamega County,0,0,3,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+25,3/29/2021,Bukaya Medical Centre,K97Jfb3ugYu,14012,AMPATHPlus,Kenya,Kakamega County,0,0,4,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+26,3/8/2021,Bukaya Medical Centre,K97Jfb3ugYu,14012,AMPATHPlus,Kenya,Kakamega County,0,0,2,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+27,3/1/2021,Galilee Medical Centre,yORrUEsm3Dw,14012,AMPATHPlus,Kenya,Trans-Nzoia County,0,0,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+28,3/15/2021,Galilee Medical Centre,yORrUEsm3Dw,14012,AMPATHPlus,Kenya,Trans-Nzoia County,0,0,2,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+29,3/22/2021,Galilee Medical Centre,yORrUEsm3Dw,14012,AMPATHPlus,Kenya,Trans-Nzoia County,0,0,7,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+30,3/29/2021,Galilee Medical Centre,yORrUEsm3Dw,14012,AMPATHPlus,Kenya,Trans-Nzoia County,0,0,9,4,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,7,3,0,0,7,3,0,0,0,0,0,0,0,0
+31,3/8/2021,Galilee Medical Centre,yORrUEsm3Dw,14012,AMPATHPlus,Kenya,Trans-Nzoia County,0,0,7,3,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+32,3/1/2021,Kibormos Dispensary,C4vfSoUIROW,14012,AMPATHPlus,Kenya,Trans-Nzoia County,0,0,4,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+33,3/15/2021,Kibormos Dispensary,C4vfSoUIROW,14012,AMPATHPlus,Kenya,Trans-Nzoia County,0,0,3,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+34,3/22/2021,Kibormos Dispensary,C4vfSoUIROW,14012,AMPATHPlus,Kenya,Trans-Nzoia County,0,0,3,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+35,3/29/2021,Kibormos Dispensary,C4vfSoUIROW,14012,AMPATHPlus,Kenya,Trans-Nzoia County,0,0,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,6,0,0,0,6,0,0,0,0,0,0,0,0,0
+36,3/8/2021,Kibormos Dispensary,C4vfSoUIROW,14012,AMPATHPlus,Kenya,Trans-Nzoia County,0,0,2,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+37,3/1/2021,Ebukoolo Dispensary,KD6v8Tm80eG,14012,AMPATHPlus,Kenya,Vihiga County,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+38,3/15/2021,Ebukoolo Dispensary,KD6v8Tm80eG,14012,AMPATHPlus,Kenya,Vihiga County,0,0,8,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+39,3/22/2021,Ebukoolo Dispensary,KD6v8Tm80eG,14012,AMPATHPlus,Kenya,Vihiga County,0,0,10,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+40,3/29/2021,Ebukoolo Dispensary,KD6v8Tm80eG,14012,AMPATHPlus,Kenya,Vihiga County,0,0,3,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+41,3/8/2021,Ebukoolo Dispensary,KD6v8Tm80eG,14012,AMPATHPlus,Kenya,Vihiga County,0,0,30,8,0,0,1,1,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+42,3/1/2021,Reale Hospital Clinic,XF4SxK08nls,14012,AMPATHPlus,Kenya,Uasin Gishu County,8,20,45,18,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+43,3/15/2021,Reale Hospital Clinic,XF4SxK08nls,14012,AMPATHPlus,Kenya,Uasin Gishu County,10,10,32,48,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+44,3/22/2021,Reale Hospital Clinic,XF4SxK08nls,14012,AMPATHPlus,Kenya,Uasin Gishu County,0,0,90,30,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+45,3/29/2021,Reale Hospital Clinic,XF4SxK08nls,14012,AMPATHPlus,Kenya,Uasin Gishu County,0,0,2,9,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,65,60,0,0,13,14,0,1,39,40,0,0,0,0
+46,3/8/2021,Reale Hospital Clinic,XF4SxK08nls,14012,AMPATHPlus,Kenya,Uasin Gishu County,10,7,38,22,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+47,3/1/2021,Sikhendu Dispensary,RYfRhr21yfW,14012,AMPATHPlus,Kenya,Trans-Nzoia County,0,0,7,3,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+48,3/15/2021,Sikhendu Dispensary,RYfRhr21yfW,14012,AMPATHPlus,Kenya,Trans-Nzoia County,0,1,5,4,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+49,3/22/2021,Sikhendu Dispensary,RYfRhr21yfW,14012,AMPATHPlus,Kenya,Trans-Nzoia County,0,1,6,5,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+50,3/29/2021,Sikhendu Dispensary,RYfRhr21yfW,14012,AMPATHPlus,Kenya,Trans-Nzoia County,0,0,8,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,2,38,10,1,2,35,8,0,0,3,2,0,0,0,0
+51,3/8/2021,Sikhendu Dispensary,RYfRhr21yfW,14012,AMPATHPlus,Kenya,Trans-Nzoia County,0,0,5,3,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0

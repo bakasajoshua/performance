@@ -1,0 +1,966 @@
+index,date,orgunit,orgunituid,mech_code,partner,operatingunit,psnu,hts_tst.u15.f,hts_tst.u15.m,hts_tst.o15.f,hts_tst.o15.m,hts_tst_pos.u15.f,hts_tst_pos.u15.m,hts_tst_pos.o15.f,hts_tst_pos.o15.m,tx_new.u15.f,tx_new.u15.m,tx_new.o15.f,tx_new.o15.m,vmmc_circ.u15.m,vmmc_circ.o15.m,prep_new.u15.f,prep_new.u15.m,prep_new.o15.f,prep_new.o15.m,tx_curr.u15.f,tx_curr.u15.m,tx_curr.o15.f,tx_curr.o15.m,tx_mmd.u15.f.u3mo,tx_mmd.u15.m.u3mo,tx_mmd.o15.f.u3mo,tx_mmd.o15.m.u3mo,tx_mmd.u15.f.35mo,tx_mmd.u15.m.35mo,tx_mmd.o15.f.35mo,tx_mmd.o15.m.35mo,tx_mmd.u15.f.o6mo,tx_mmd.u15.m.o6mo,tx_mmd.o15.f.o6mo,tx_mmd.o15.m.o6mo
+1,5/3/2021,Kianjokoma Sub-District Hospital,a2brqsdATIc,84476,Jamii Tekelezi,Kenya,Embu,0,0,13,3,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+2,5/3/2021,Mikinduri Sub-District Hospial,a6ONbsUpAdf,84476,Jamii Tekelezi,Kenya,Meru,2,0,37,3,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+3,5/3/2021,Gatimbi Health Centre,Acz9X8qvbtP,84476,Jamii Tekelezi,Kenya,Meru,0,0,9,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+4,5/3/2021,Kina Murera Dispensary,aFY6mSEf2lr,84476,Jamii Tekelezi,Kenya,Meru,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+5,5/3/2021,Kibugu Health Centre,Amjvsr9TKus,84476,Jamii Tekelezi,Kenya,Embu,0,0,13,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+6,5/3/2021,Kiamuchairu Health Centre,aQN1xlOQVLL,84476,Jamii Tekelezi,Kenya,Tharaka Nithi,0,0,6,3,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+7,5/3/2021,Kawiria Maternity and Nursing Home,aTqjTEXhhwG,84476,Jamii Tekelezi,Kenya,Meru,0,0,2,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+8,5/3/2021,Kawiru Dispensary,B0XtOtRHzXp,84476,Jamii Tekelezi,Kenya,Meru,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+9,5/3/2021,Meru Drop In Center,balbxgLRzp2,84476,Jamii Tekelezi,Kenya,Meru,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+10,5/3/2021,Uruku Health Centre,BbkpG6t5uy0,84476,Jamii Tekelezi,Kenya,Meru,0,0,2,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+11,5/3/2021,Karau Health Centre,Bdb91tBzdzh,84476,Jamii Tekelezi,Kenya,Embu,0,0,7,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+12,5/3/2021,Our Lady of Mercy (Magumu),bhxzvBtlT1z,84476,Jamii Tekelezi,Kenya,Nyandarua,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+13,5/3/2021,Kathithi Dispensary,BlseYmiMH5L,84476,Jamii Tekelezi,Kenya,Meru,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+14,5/3/2021,Kathanje Dispensary,BmbfMDSuhgW,84476,Jamii Tekelezi,Kenya,Embu,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+15,5/3/2021,Mbonzuki Dispensary,bmxJ6oH93l7,84476,Jamii Tekelezi,Kenya,Embu,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+16,5/3/2021,Kaanwa Dispensary,bpQjQEeuAzO,84476,Jamii Tekelezi,Kenya,Tharaka Nithi,0,0,17,3,0,0,3,0,0,0,3,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+17,5/3/2021,Woodlands Hospital,bqtQXIJE7j4,84476,Jamii Tekelezi,Kenya,Meru,0,0,2,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+18,5/3/2021,Kathangacini Dispensary,But0KGtpN8L,84476,Jamii Tekelezi,Kenya,Tharaka Nithi,0,0,19,5,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+19,5/3/2021,Kithegi Dispensary,bwsY8Ome3im,84476,Jamii Tekelezi,Kenya,Embu,0,0,8,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+20,5/3/2021,Kajuki Health Centre,bZBzAIFg2YN,84476,Jamii Tekelezi,Kenya,Tharaka Nithi,0,0,7,6,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+21,5/3/2021,HWWK Maua Dice,C8zA97wze40,84476,Jamii Tekelezi,Kenya,Meru,0,0,4,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+22,5/3/2021,Kaelo Dispensary,cIcY0ELoWC2,84476,Jamii Tekelezi,Kenya,Meru,0,0,6,7,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+23,5/3/2021,Mbeere District Hospital,Ckvm0JOmwe4,84476,Jamii Tekelezi,Kenya,Embu,0,0,5,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+24,5/3/2021,Huhoini Dispensary,CpuonBKIJba,84476,Jamii Tekelezi,Kenya,Nyandarua,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+25,5/3/2021,Kiritiri Health Centre,CtyUwxd2Su2,84476,Jamii Tekelezi,Kenya,Embu,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+26,5/3/2021,Machang'a Dispensary,cVfLPUZdBNq,84476,Jamii Tekelezi,Kenya,Embu,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+27,5/3/2021,Chugu Dispensary,cZXK5fUWJWb,84476,Jamii Tekelezi,Kenya,Meru,0,0,9,4,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+28,5/3/2021,Kigumo Dispensary,d8O7IEVmHMb,84476,Jamii Tekelezi,Kenya,Embu,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+29,5/3/2021,Cottolengo Mission Hospital,DbgpdrN6q4J,84476,Jamii Tekelezi,Kenya,Meru,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+30,5/3/2021,Turasha Dispensary,DbtqAZaFp7Z,84476,Jamii Tekelezi,Kenya,Nyandarua,0,0,5,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+31,5/3/2021,Muthambi Health Centre,DcTeh7tKU1m,84476,Jamii Tekelezi,Kenya,Tharaka Nithi,0,15,0,15,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+32,5/3/2021,Karuguaru Dispensary,dp1jTJDvgIV,84476,Jamii Tekelezi,Kenya,Tharaka Nithi,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+33,5/3/2021,Ruiri Rural Health Demonstration Centre,eFFxRLL36i9,84476,Jamii Tekelezi,Kenya,Meru,0,0,4,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+34,5/3/2021,Karaba Wango Dispensary,eTbcGObCPQB,84476,Jamii Tekelezi,Kenya,Embu,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+35,5/3/2021,Chuka District Hospital,EWTRe1nWQoJ,84476,Jamii Tekelezi,Kenya,Tharaka Nithi,2,0,36,22,0,0,2,0,0,0,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+36,5/3/2021,Kiraone Dispensary,F1NBPDgGqeM,84476,Jamii Tekelezi,Kenya,Meru,0,0,7,3,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+37,5/3/2021,Kithimu Dispensary,F4EQ1FCnous,84476,Jamii Tekelezi,Kenya,Embu,0,0,3,3,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+38,5/3/2021,CCS Kiritiri Clinic,fe5HPFmdgu6,84476,Jamii Tekelezi,Kenya,Embu,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+39,5/3/2021,Nyambene District Hospital,fKYvOdsKk6J,84476,Jamii Tekelezi,Kenya,Meru,1,1,49,30,0,0,4,3,0,0,3,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+40,5/3/2021,Mikumbune Sub-District Hospital,fmiRLDy0iye,84476,Jamii Tekelezi,Kenya,Meru,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+41,5/3/2021,CCS (ACK) Dispensary,fVnyy1GiNRb,84476,Jamii Tekelezi,Kenya,Meru,0,0,4,3,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+42,5/3/2021,Kiereni Dispensary,G3EbXsPHdL0,84476,Jamii Tekelezi,Kenya,Tharaka Nithi,0,0,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+43,5/3/2021,Kirima Dispensary,g490Mk9Eaqn,84476,Jamii Tekelezi,Kenya,Nyandarua,0,0,2,3,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+44,5/3/2021,Kunene Dispensary,GdKb08lTvH0,84476,Jamii Tekelezi,Kenya,Meru,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+45,5/3/2021,Mukothima Health Centre,GdX6FEVfztL,84476,Jamii Tekelezi,Kenya,Tharaka Nithi,0,0,11,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+46,5/3/2021,Ngano Health Centre,Gj8bqGWwvwC,84476,Jamii Tekelezi,Kenya,Nyandarua,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+47,5/3/2021,Nthagaiya Catholic Dispensary,gKIlbKz2QQv,84476,Jamii Tekelezi,Kenya,Embu,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+48,5/3/2021,Gatunduri Dispensary,gQEY28Ondgf,84476,Jamii Tekelezi,Kenya,Embu,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+49,5/3/2021,Nthambiro Dispensary,gsprlCwOVIO,84476,Jamii Tekelezi,Kenya,Meru,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+50,5/3/2021,Kibugua Health Centre,GWGU5sLBMGH,84476,Jamii Tekelezi,Kenya,Tharaka Nithi,0,1,12,6,0,0,1,0,0,0,1,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+51,5/3/2021,Ishiara Sub-District Hospital,gwZuDfkIEkI,84476,Jamii Tekelezi,Kenya,Embu,0,0,1,1,0,0,1,1,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+52,5/3/2021,Mpukoni Health Centre,gWZzqLjSXUb,84476,Jamii Tekelezi,Kenya,Tharaka Nithi,0,0,15,14,0,0,2,0,0,0,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+53,5/3/2021,St Lukes Cottage Hospital,h4bWnNCptHy,84476,Jamii Tekelezi,Kenya,Meru,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+54,5/3/2021,Wachoro Dispensary,hbfqeZrD6Xy,84476,Jamii Tekelezi,Kenya,Embu,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+55,5/3/2021,Mutuati Sub-District Hospital,hbjcWVatbIY,84476,Jamii Tekelezi,Kenya,Meru,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+56,5/3/2021,Ikuu Dispensary,hdruOpsxv36,84476,Jamii Tekelezi,Kenya,Tharaka Nithi,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+57,5/3/2021,Tigania Hospital,hmsQbHsXkMV,84476,Jamii Tekelezi,Kenya,Meru,0,0,4,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+58,5/3/2021,Timau Catholic Dispensary,huiBrr0Ox0D,84476,Jamii Tekelezi,Kenya,Meru,0,0,4,4,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+59,5/3/2021,Kaimbaga Dispensary,hWQU2KIoWxo,84476,Jamii Tekelezi,Kenya,Nyandarua,0,0,43,18,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+60,5/3/2021,Nembure Health Centre,I8ZnWhClkyq,84476,Jamii Tekelezi,Kenya,Embu,3,0,14,9,0,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+61,5/3/2021,Ndunyu Njeru Dispensary,iBgKjn8OYnx,84476,Jamii Tekelezi,Kenya,Nyandarua,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+62,5/3/2021,Emmanuel Kigari (ACK) Dispensary,Ii5P8lU4YJs,84476,Jamii Tekelezi,Kenya,Embu,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+63,5/3/2021,Family Care Medical Centre (Meru),iPcFQjFTxPm,84476,Jamii Tekelezi,Kenya,Meru,0,0,3,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+64,5/3/2021,Embu Provincial General Hospital,IROLxe1CWyV,84476,Jamii Tekelezi,Kenya,Embu,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+65,5/3/2021,Kiriogo Dispensary,iUa6FxxfB0g,84476,Jamii Tekelezi,Kenya,Nyandarua,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+66,5/3/2021,Mbeu Sub-District Hospital,iVfmG7129mb,84476,Jamii Tekelezi,Kenya,Meru,0,0,20,7,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+67,5/3/2021,St Theresa Kiirua Hospital (Kiirua),jHV9gJpWFRA,84476,Jamii Tekelezi,Kenya,Meru,0,0,20,12,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+68,5/3/2021,Kamwathu Dispensary,JIeuKUhcULm,84476,Jamii Tekelezi,Kenya,Tharaka Nithi,0,0,5,3,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+69,5/3/2021,Kamaindi Dispensary,JkTPYDJBimp,84476,Jamii Tekelezi,Kenya,Tharaka Nithi,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+70,5/3/2021,Mbuyu Dispensary,jlAJXVHPvhs,84476,Jamii Tekelezi,Kenya,Nyandarua,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+71,5/3/2021,Mutiokiama Health Centre,JRDGFC6UgdQ,84476,Jamii Tekelezi,Kenya,Meru,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+72,5/3/2021,Kiambere Dam Dispensary,JVPTCgh6LRT,84476,Jamii Tekelezi,Kenya,Embu,0,1,9,4,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+73,5/3/2021,Magutuni District Hospital,jXqVorDP9fd,84476,Jamii Tekelezi,Kenya,Tharaka Nithi,0,0,21,4,0,0,1,0,0,0,1,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+74,5/3/2021,Mutionjuri Health Centre,K9QlnCr7QUT,84476,Jamii Tekelezi,Kenya,Meru,0,0,8,3,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+75,5/3/2021,Kiburine Dispensary,Kg0zTVtAxUm,84476,Jamii Tekelezi,Kenya,Meru,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+76,5/3/2021,Githongo District Hospital,kovi3AADCml,84476,Jamii Tekelezi,Kenya,Meru,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+77,5/3/2021,Kiambere Health Centre,ksk4ITPDqt0,84476,Jamii Tekelezi,Kenya,Embu,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+78,5/3/2021,Muutine Med Clinic,L5iL25uaP3R,84476,Jamii Tekelezi,Kenya,Meru,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+79,5/3/2021,Mboroga Dispensary,L6IeW8vTHa6,84476,Jamii Tekelezi,Kenya,Meru,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+80,5/3/2021,Weru Health Center,lIrbYqhuPsJ,84476,Jamii Tekelezi,Kenya,Nyandarua,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+81,5/3/2021,Gategi Health Centre,lmtezswxrLy,84476,Jamii Tekelezi,Kenya,Embu,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+82,5/3/2021,Kigaa Dispensary,lOVj53te4fi,84476,Jamii Tekelezi,Kenya,Embu,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+83,5/3/2021,Minugu Dispensary,LoZIj2B6ifU,84476,Jamii Tekelezi,Kenya,Tharaka Nithi,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+84,5/3/2021,Liviero Dispensary,lpVF7ECK6je,84476,Jamii Tekelezi,Kenya,Embu,0,0,3,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+85,5/3/2021,Ndaragwa Health Centre,LqyOkuzfVuX,84476,Jamii Tekelezi,Kenya,Nyandarua,1,1,12,12,0,1,0,1,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+86,5/3/2021,Bamboo Health Centre,LTOr1pNejds,84476,Jamii Tekelezi,Kenya,Nyandarua,0,0,18,7,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+87,5/3/2021,Subuku Dispensary (Nyandarua North),M0VxTclDHJv,84476,Jamii Tekelezi,Kenya,Nyandarua,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+88,5/3/2021,Kiirua Dispensary,m2fVjr2GTIa,84476,Jamii Tekelezi,Kenya,Meru,0,0,10,3,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+89,5/3/2021,Muthara Sub-District Hospital,M2ryogi5lVN,84476,Jamii Tekelezi,Kenya,Meru,3,0,7,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+90,5/3/2021,Presbyterian Ttc Rubate Health Centre,Mi0j9FIX3es,84476,Jamii Tekelezi,Kenya,Tharaka Nithi,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+91,5/3/2021,Baari Health Centre,mJzeKiO6YML,84476,Jamii Tekelezi,Kenya,Nyandarua,0,1,9,7,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+92,5/3/2021,Riachina Dispensary,mkYbzTcCgwb,84476,Jamii Tekelezi,Kenya,Embu,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+93,5/3/2021,Mukungi Dispensary,MMJfiTABVdg,84476,Jamii Tekelezi,Kenya,Nyandarua,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+94,5/3/2021,Kibunga Sub-District Hospital,MnVkYrRhRwA,84476,Jamii Tekelezi,Kenya,Tharaka Nithi,0,0,6,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+95,5/3/2021,Naari Health Centre,mrOnRf9alIA,84476,Jamii Tekelezi,Kenya,Meru,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+96,5/3/2021,Kiamiriru MCK Dispensary,nbrFJNJFkxJ,84476,Jamii Tekelezi,Kenya,Meru,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+97,5/3/2021,Makengi Dispensary (Embu),niYZBDA5gbc,84476,Jamii Tekelezi,Kenya,Embu,0,0,5,3,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+98,5/3/2021,Kionyo Dispensary (Imenti South),NoErV4BxNA7,84476,Jamii Tekelezi,Kenya,Meru,0,0,3,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+99,5/3/2021,Runyenjes District Hospital,NqPH5CKYgUU,84476,Jamii Tekelezi,Kenya,Embu,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+100,5/3/2021,Mirangine Health Centre,NrmTe0EXHbJ,84476,Jamii Tekelezi,Kenya,Nyandarua,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+101,5/3/2021,Karurumo Rhtc,NUo3VBnrx47,84476,Jamii Tekelezi,Kenya,Embu,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+102,5/3/2021,Timau Sub-District Hospital,NV96Kj0anjZ,84476,Jamii Tekelezi,Kenya,Meru,0,0,25,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+103,5/3/2021,Kimachia Dispensary,NwZT5hzUkjB,84476,Jamii Tekelezi,Kenya,Meru,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+104,5/3/2021,Makima Dispensary,nylUU33ouME,84476,Jamii Tekelezi,Kenya,Embu,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+105,5/3/2021,Kahembe Health Centre,oBIUaatujZR,84476,Jamii Tekelezi,Kenya,Nyandarua,0,0,7,6,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+106,5/3/2021,Manunga Health Centre,odx2EmmP8IM,84476,Jamii Tekelezi,Kenya,Nyandarua,1,1,35,3,0,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+107,5/3/2021,Kathigu Health Center,OnAjLmJXtED,84476,Jamii Tekelezi,Kenya,Meru,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+108,5/3/2021,Olborosat Dispensary,oR12Qi7Kaw0,84476,Jamii Tekelezi,Kenya,Nyandarua,0,0,15,4,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+109,5/3/2021,Ngorika Dispensary,PAwJ0bAl42A,84476,Jamii Tekelezi,Kenya,Nyandarua,0,0,7,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+110,5/3/2021,Nkubu Dispensary,pHBSxLgQYtC,84476,Jamii Tekelezi,Kenya,Meru,1,0,15,11,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+111,5/3/2021,Mastoo Dispensary,pHP1u0HE6qc,84476,Jamii Tekelezi,Kenya,Nyandarua,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+112,5/3/2021,Ugweri Disp,PlKbNw6G3Wv,84476,Jamii Tekelezi,Kenya,Embu,2,1,10,7,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+113,5/3/2021,Kibirichia Sub-District Hospital,PLkZf0geGoy,84476,Jamii Tekelezi,Kenya,Meru,0,0,8,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+114,5/3/2021,Chuka Cottage Hospital,psHTPguSW3j,84476,Jamii Tekelezi,Kenya,Tharaka Nithi,0,0,10,5,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+115,5/3/2021,Shamata Health Centre,psTyb7YzhF5,84476,Jamii Tekelezi,Kenya,Nyandarua,0,0,13,5,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+116,5/3/2021,Charuru Dispensary,PTh0sEHCAxa,84476,Jamii Tekelezi,Kenya,Meru,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+117,5/3/2021,Pesi Dispensary,pVdxoyR7T6I,84476,Jamii Tekelezi,Kenya,Nyandarua,0,0,3,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+118,5/3/2021,Uringu Health Centre,PyOitpr2WOx,84476,Jamii Tekelezi,Kenya,Meru,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+119,5/3/2021,Chamuka (CDF) Dispensary,Q30hhBbLqPC,84476,Jamii Tekelezi,Kenya,Nyandarua,0,0,3,4,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+120,5/3/2021,Nguruki-Iruma Dispensary,qh6MKLclI6s,84476,Jamii Tekelezi,Kenya,Tharaka Nithi,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+121,5/3/2021,Lewa Downs Dispensary,QHlmwA4FD1n,84476,Jamii Tekelezi,Kenya,Meru,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+122,5/3/2021,Embu Children Clinic,qk04xUaN0fK,84476,Jamii Tekelezi,Kenya,Embu,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+123,5/3/2021,Kathunguri Dispensary,QMWuh8GY4FP,84476,Jamii Tekelezi,Kenya,Embu,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+124,5/3/2021,Gichiche Dispensary,qO7hARsKOb6,84476,Jamii Tekelezi,Kenya,Embu,0,0,3,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+125,5/3/2021,Kanyuambora Dispensary,qSjEGB1yUKs,84476,Jamii Tekelezi,Kenya,Embu,0,1,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+126,5/3/2021,Mitunguu Ccs Dispensary,R1co9eO3q12,84476,Jamii Tekelezi,Kenya,Meru,0,0,1,0,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+127,5/3/2021,Kambandi Dispensary,RDvymjyauVd,84476,Jamii Tekelezi,Kenya,Tharaka Nithi,0,0,9,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+128,5/3/2021,Kiarago Health Centre (Imenti South),RGFmjPF38II,84476,Jamii Tekelezi,Kenya,Meru,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+129,5/3/2021,Wanjohi Health Centre,RTlbXR77IWU,84476,Jamii Tekelezi,Kenya,Nyandarua,0,0,5,3,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+130,5/3/2021,St Michael Nursing Home,rtPtlYR3NII,84476,Jamii Tekelezi,Kenya,Embu,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+131,5/3/2021,PCEA Kiengu Disp/Mat,Rzk2ARMziZP,84476,Jamii Tekelezi,Kenya,Meru,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+132,5/3/2021,Kiamuringa Dispensary,s9UiGKh0HKW,84476,Jamii Tekelezi,Kenya,Embu,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+133,5/3/2021,Rukira Dispensary,saKQjMNz8Ik,84476,Jamii Tekelezi,Kenya,Embu,0,0,1,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+134,5/3/2021,Kirie Dispensary,Sar9tmOr36x,84476,Jamii Tekelezi,Kenya,Embu,0,1,8,4,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+135,5/3/2021,Meru District Hospital,sCRnmH3motj,84476,Jamii Tekelezi,Kenya,Meru,0,0,16,1,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+136,5/3/2021,Oljororok Catholic Dispensary,Sjn4QAov5aQ,84476,Jamii Tekelezi,Kenya,Nyandarua,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+137,5/3/2021,Kangeta Health Centre,sNlRanexgey,84476,Jamii Tekelezi,Kenya,Meru,0,0,7,4,0,0,1,1,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+138,5/3/2021,Kirogine Dispensary,sQCei5jPh44,84476,Jamii Tekelezi,Kenya,Meru,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+139,5/3/2021,Dallas Dispensary,sRdAeQShDlw,84476,Jamii Tekelezi,Kenya,Embu,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+140,5/3/2021,Kamumu Dispensary,sYuN2zJiBKb,84476,Jamii Tekelezi,Kenya,Embu,0,0,4,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+141,5/3/2021,Kiguchwa Health Center,SZgqoLCOoCv,84476,Jamii Tekelezi,Kenya,Meru,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+142,5/3/2021,St Joseph Catholic Dispensary (Igembe),t1GTMOrAsOa,84476,Jamii Tekelezi,Kenya,Meru,0,0,2,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+143,5/3/2021,Gakoromone Dispensary,TA3vuXzobuL,84476,Jamii Tekelezi,Kenya,Meru,1,0,9,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+144,5/3/2021,Baragu Health Centre,tb2ANtsOua0,84476,Jamii Tekelezi,Kenya,Tharaka Nithi,0,0,7,6,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+145,5/3/2021,New Mawingu Health Centre,TCHLeOkYYsn,84476,Jamii Tekelezi,Kenya,Nyandarua,1,0,2,6,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+146,5/3/2021,Kunati Health Centre,Tk9hMTW6YlM,84476,Jamii Tekelezi,Kenya,Meru,0,0,6,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+147,5/3/2021,Silibwet Health Centre (Nyandaruawest),TtSspBiYzHq,84476,Jamii Tekelezi,Kenya,Nyandarua,0,0,9,5,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+148,5/3/2021,Uruku Dispensary,tXVR1t0rqFM,84476,Jamii Tekelezi,Kenya,Nyandarua,0,0,0,3,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+149,5/3/2021,Amugaa Health Centre,U1CwLZE4Sya,84476,Jamii Tekelezi,Kenya,Meru,0,0,7,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+150,5/3/2021,Mutindwa Dispensary,U2bOmE6Iyxy,84476,Jamii Tekelezi,Kenya,Tharaka Nithi,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+151,5/3/2021,Karama Dispensary,UFJmL1fAqoW,84476,Jamii Tekelezi,Kenya,Meru,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+152,5/3/2021,Gachuriri Dispensary,ulvOUkZPOys,84476,Jamii Tekelezi,Kenya,Embu,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+153,5/3/2021,Rwika Dispensary,ULzIuKZw7pX,84476,Jamii Tekelezi,Kenya,Embu,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+154,5/3/2021,Igoki Dispensary,URINYkRF6cu,84476,Jamii Tekelezi,Kenya,Meru,0,0,2,3,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+155,5/3/2021,Lereshwa Dispensary,USUCFkjtjj8,84476,Jamii Tekelezi,Kenya,Nyandarua,0,0,3,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+156,5/3/2021,Ithimbari Dispensary,uttUWo9CbSm,84476,Jamii Tekelezi,Kenya,Meru,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+157,5/3/2021,Gatunga Health Centre,UVqXkWGPMha,84476,Jamii Tekelezi,Kenya,Tharaka Nithi,0,1,16,4,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+158,5/3/2021,Kinoro Sub-District Hospital,UvYZDCyPJBu,84476,Jamii Tekelezi,Kenya,Meru,0,0,10,2,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+159,5/3/2021,Kaongo Health Centre,UW4LuVnAN23,84476,Jamii Tekelezi,Kenya,Meru,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+160,5/3/2021,Kanja Health Centre,uzOAQslSgmN,84476,Jamii Tekelezi,Kenya,Embu,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+161,5/3/2021,Mwerokanga Dispensary,V9Hf7cG0JDf,84476,Jamii Tekelezi,Kenya,Meru,0,0,3,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+162,5/3/2021,Gatunga Model Health Centre,vDavi1lTko3,84476,Jamii Tekelezi,Kenya,Tharaka Nithi,0,0,16,3,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+163,5/3/2021,Geta Bush Health Centre,VdWKAir7fEv,84476,Jamii Tekelezi,Kenya,Nyandarua,1,0,7,0,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+164,5/3/2021,Chiakariga H/C,vEeFkE72jt7,84476,Jamii Tekelezi,Kenya,Tharaka Nithi,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+165,5/3/2021,Murungaru Health Centre,VHkUOWg7v3c,84476,Jamii Tekelezi,Kenya,Nyandarua,0,0,21,8,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+166,5/3/2021,Acef Ena Health Centre,VUv3MNGbLMe,84476,Jamii Tekelezi,Kenya,Embu,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+167,5/3/2021,Kairuri Health Centre,vZt0Soe1AsL,84476,Jamii Tekelezi,Kenya,Embu,0,0,7,2,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+168,5/3/2021,Mukui Health Centre,W0NGQJPgGQR,84476,Jamii Tekelezi,Kenya,Tharaka Nithi,0,0,15,6,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+169,5/3/2021,Ndemi Health Centre,w6NbIpYTDAc,84476,Jamii Tekelezi,Kenya,Nyandarua,1,0,10,3,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+170,5/3/2021,Ichomba Clinic,WbOSQm83adC,84476,Jamii Tekelezi,Kenya,Meru,0,0,5,6,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+171,5/3/2021,St Mathews and Sarah Dispensary,wdkjDZUc0Vd,84476,Jamii Tekelezi,Kenya,Nyandarua,0,0,3,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+172,5/3/2021,Kieni Kia Ndege Dispensary,WL692GiqMHm,84476,Jamii Tekelezi,Kenya,Meru,0,0,3,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+173,5/3/2021,Mitunguu Dispensary,WsH1zEK3sGP,84476,Jamii Tekelezi,Kenya,Meru,2,2,13,7,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+174,5/3/2021,Ontulili Dispensary,wu7982abqS7,84476,Jamii Tekelezi,Kenya,Meru,0,0,2,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+175,5/3/2021,Karangatha Health Centre,wy1SFAUIGpo,84476,Jamii Tekelezi,Kenya,Nyandarua,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+176,5/3/2021,Theere Health Centre,x4H4rQ3T7F6,84476,Jamii Tekelezi,Kenya,Meru,0,0,14,3,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+177,5/3/2021,Mweru Dispensary (Imenti South),XACCCky77Qb,84476,Jamii Tekelezi,Kenya,Meru,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+178,5/3/2021,Tharaka District Hospital,xce9AFrapR9,84476,Jamii Tekelezi,Kenya,Tharaka Nithi,0,0,27,4,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+179,5/3/2021,Kanyakine District Hospital,XGw1fCwVLc6,84476,Jamii Tekelezi,Kenya,Meru,1,0,37,10,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+180,5/3/2021,Mukuuni Dispensary,XGZslyAbXPS,84476,Jamii Tekelezi,Kenya,Tharaka Nithi,1,0,11,4,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+181,5/3/2021,Nganduri Dispensary,xwVOvXuJvpL,84476,Jamii Tekelezi,Kenya,Embu,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+182,5/3/2021,Gatimu Health Centre,yDVD7PQVNW3,84476,Jamii Tekelezi,Kenya,Nyandarua,0,0,13,7,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+183,5/3/2021,Akachiu Health Centre,YGtY9QtkwrW,84476,Jamii Tekelezi,Kenya,Meru,0,1,4,4,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+184,5/3/2021,Giaki Sub-District Hospital,yJw7N5gx1HW,84476,Jamii Tekelezi,Kenya,Meru,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+185,5/3/2021,Getrude Dispensary,Yn4wNsOQBFU,84476,Jamii Tekelezi,Kenya,Embu,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+186,5/3/2021,Thanantu Faith Clinic Dispensary,YslGk4Jhs6q,84476,Jamii Tekelezi,Kenya,Tharaka Nithi,0,0,8,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+187,5/3/2021,Mufu Dispensary,z4Kwdy0Rnt8,84476,Jamii Tekelezi,Kenya,Embu,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+188,5/3/2021,Gitoro Dispensary,zF1v5qs0nKg,84476,Jamii Tekelezi,Kenya,Meru,0,0,18,9,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+189,5/3/2021,Miathene District Hospital,zf4jnHpWR16,84476,Jamii Tekelezi,Kenya,Meru,0,0,21,9,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+190,5/3/2021,Gaciongo Dispensary,zG7VieG5pUR,84476,Jamii Tekelezi,Kenya,Tharaka Nithi,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+191,5/3/2021,Kinoru Dispensary,zHWXo9YeEMy,84476,Jamii Tekelezi,Kenya,Meru,0,0,12,3,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+192,5/3/2021,Ntemwene Dispensary,ZpdIMKMptdX,84476,Jamii Tekelezi,Kenya,Meru,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+193,5/3/2021,Tuuru Catholic Health Centre,ZR91mGF1tim,84476,Jamii Tekelezi,Kenya,Meru,0,0,10,4,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+194,5/10/2021,Kianjokoma Sub-District Hospital,a2brqsdATIc,84476,Jamii Tekelezi,Kenya,Embu,0,2,14,5,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+195,5/10/2021,Mikinduri Sub-District Hospial,a6ONbsUpAdf,84476,Jamii Tekelezi,Kenya,Meru,0,0,24,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+196,5/10/2021,Gatimbi Health Centre,Acz9X8qvbtP,84476,Jamii Tekelezi,Kenya,Meru,0,0,4,0,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+197,5/10/2021,Kina Murera Dispensary,aFY6mSEf2lr,84476,Jamii Tekelezi,Kenya,Meru,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+198,5/10/2021,Kibugu Health Centre,Amjvsr9TKus,84476,Jamii Tekelezi,Kenya,Embu,0,0,8,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+199,5/10/2021,Kiamuchairu Health Centre,aQN1xlOQVLL,84476,Jamii Tekelezi,Kenya,Tharaka Nithi,0,0,2,4,0,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+200,5/10/2021,Kawiria Maternity and Nursing Home,aTqjTEXhhwG,84476,Jamii Tekelezi,Kenya,Meru,0,0,2,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+201,5/10/2021,Kawiru Dispensary,B0XtOtRHzXp,84476,Jamii Tekelezi,Kenya,Meru,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+202,5/10/2021,Meru Drop In Center,balbxgLRzp2,84476,Jamii Tekelezi,Kenya,Meru,0,0,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+203,5/10/2021,Uruku Health Centre,BbkpG6t5uy0,84476,Jamii Tekelezi,Kenya,Meru,0,0,3,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+204,5/10/2021,Karau Health Centre,Bdb91tBzdzh,84476,Jamii Tekelezi,Kenya,Embu,0,0,4,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+205,5/10/2021,Our Lady of Mercy (Magumu),bhxzvBtlT1z,84476,Jamii Tekelezi,Kenya,Nyandarua,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+206,5/10/2021,Kathithi Dispensary,BlseYmiMH5L,84476,Jamii Tekelezi,Kenya,Meru,0,0,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+207,5/10/2021,Kathanje Dispensary,BmbfMDSuhgW,84476,Jamii Tekelezi,Kenya,Embu,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+208,5/10/2021,Mbonzuki Dispensary,bmxJ6oH93l7,84476,Jamii Tekelezi,Kenya,Embu,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+209,5/10/2021,Kaanwa Dispensary,bpQjQEeuAzO,84476,Jamii Tekelezi,Kenya,Tharaka Nithi,0,0,18,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+210,5/10/2021,Woodlands Hospital,bqtQXIJE7j4,84476,Jamii Tekelezi,Kenya,Meru,0,0,2,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+211,5/10/2021,Kathangacini Dispensary,But0KGtpN8L,84476,Jamii Tekelezi,Kenya,Tharaka Nithi,0,3,11,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+212,5/10/2021,Kithegi Dispensary,bwsY8Ome3im,84476,Jamii Tekelezi,Kenya,Embu,0,0,4,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+213,5/10/2021,Kajuki Health Centre,bZBzAIFg2YN,84476,Jamii Tekelezi,Kenya,Tharaka Nithi,0,1,36,22,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+214,5/10/2021,HWWK Maua Dice,C8zA97wze40,84476,Jamii Tekelezi,Kenya,Meru,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+215,5/10/2021,Kaelo Dispensary,cIcY0ELoWC2,84476,Jamii Tekelezi,Kenya,Meru,0,0,9,6,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+216,5/10/2021,Mbeere District Hospital,Ckvm0JOmwe4,84476,Jamii Tekelezi,Kenya,Embu,0,0,23,1,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+217,5/10/2021,Huhoini Dispensary,CpuonBKIJba,84476,Jamii Tekelezi,Kenya,Nyandarua,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+218,5/10/2021,Kiritiri Health Centre,CtyUwxd2Su2,84476,Jamii Tekelezi,Kenya,Embu,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+219,5/10/2021,Machang'a Dispensary,cVfLPUZdBNq,84476,Jamii Tekelezi,Kenya,Embu,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+220,5/10/2021,Chugu Dispensary,cZXK5fUWJWb,84476,Jamii Tekelezi,Kenya,Meru,0,0,7,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+221,5/10/2021,Kigumo Dispensary,d8O7IEVmHMb,84476,Jamii Tekelezi,Kenya,Embu,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+222,5/10/2021,Cottolengo Mission Hospital,DbgpdrN6q4J,84476,Jamii Tekelezi,Kenya,Meru,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+223,5/10/2021,Turasha Dispensary,DbtqAZaFp7Z,84476,Jamii Tekelezi,Kenya,Nyandarua,0,0,5,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+224,5/10/2021,Muthambi Health Centre,DcTeh7tKU1m,84476,Jamii Tekelezi,Kenya,Tharaka Nithi,0,0,38,10,0,0,2,0,0,0,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+225,5/10/2021,Karuguaru Dispensary,dp1jTJDvgIV,84476,Jamii Tekelezi,Kenya,Tharaka Nithi,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+226,5/10/2021,Ruiri Rural Health Demonstration Centre,eFFxRLL36i9,84476,Jamii Tekelezi,Kenya,Meru,0,0,5,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+227,5/10/2021,Karaba Wango Dispensary,eTbcGObCPQB,84476,Jamii Tekelezi,Kenya,Embu,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+228,5/10/2021,Chuka District Hospital,EWTRe1nWQoJ,84476,Jamii Tekelezi,Kenya,Tharaka Nithi,0,1,31,20,0,0,2,0,0,0,2,0,0,0,0,0,0,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+229,5/10/2021,Kiraone Dispensary,F1NBPDgGqeM,84476,Jamii Tekelezi,Kenya,Meru,0,0,6,5,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+230,5/10/2021,Kithimu Dispensary,F4EQ1FCnous,84476,Jamii Tekelezi,Kenya,Embu,0,0,1,5,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+231,5/10/2021,CCS Kiritiri Clinic,fe5HPFmdgu6,84476,Jamii Tekelezi,Kenya,Embu,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+232,5/10/2021,Nyambene District Hospital,fKYvOdsKk6J,84476,Jamii Tekelezi,Kenya,Meru,1,2,50,20,0,0,3,1,0,0,2,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+233,5/10/2021,Mikumbune Sub-District Hospital,fmiRLDy0iye,84476,Jamii Tekelezi,Kenya,Meru,0,0,0,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+234,5/10/2021,CCS (ACK) Dispensary,fVnyy1GiNRb,84476,Jamii Tekelezi,Kenya,Meru,0,0,3,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+235,5/10/2021,Kiereni Dispensary,G3EbXsPHdL0,84476,Jamii Tekelezi,Kenya,Tharaka Nithi,0,0,3,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+236,5/10/2021,Kirima Dispensary,g490Mk9Eaqn,84476,Jamii Tekelezi,Kenya,Nyandarua,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+237,5/10/2021,Kunene Dispensary,GdKb08lTvH0,84476,Jamii Tekelezi,Kenya,Meru,0,0,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+238,5/10/2021,Mukothima Health Centre,GdX6FEVfztL,84476,Jamii Tekelezi,Kenya,Tharaka Nithi,0,0,13,3,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+239,5/10/2021,Ngano Health Centre,Gj8bqGWwvwC,84476,Jamii Tekelezi,Kenya,Nyandarua,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+240,5/10/2021,Nthagaiya Catholic Dispensary,gKIlbKz2QQv,84476,Jamii Tekelezi,Kenya,Embu,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+241,5/10/2021,Gatunduri Dispensary,gQEY28Ondgf,84476,Jamii Tekelezi,Kenya,Embu,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+242,5/10/2021,Nthambiro Dispensary,gsprlCwOVIO,84476,Jamii Tekelezi,Kenya,Meru,0,0,12,7,0,0,0,0,0,0,0,0,0,0,0,0,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+243,5/10/2021,Kibugua Health Centre,GWGU5sLBMGH,84476,Jamii Tekelezi,Kenya,Tharaka Nithi,0,0,8,1,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+244,5/10/2021,Ishiara Sub-District Hospital,gwZuDfkIEkI,84476,Jamii Tekelezi,Kenya,Embu,0,0,0,1,0,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+245,5/10/2021,Mpukoni Health Centre,gWZzqLjSXUb,84476,Jamii Tekelezi,Kenya,Tharaka Nithi,0,1,9,5,0,1,0,1,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+246,5/10/2021,St Lukes Cottage Hospital,h4bWnNCptHy,84476,Jamii Tekelezi,Kenya,Meru,0,0,3,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+247,5/10/2021,Wachoro Dispensary,hbfqeZrD6Xy,84476,Jamii Tekelezi,Kenya,Embu,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+248,5/10/2021,Mutuati Sub-District Hospital,hbjcWVatbIY,84476,Jamii Tekelezi,Kenya,Meru,0,0,56,7,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+249,5/10/2021,Ikuu Dispensary,hdruOpsxv36,84476,Jamii Tekelezi,Kenya,Tharaka Nithi,0,0,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+250,5/10/2021,Tigania Hospital,hmsQbHsXkMV,84476,Jamii Tekelezi,Kenya,Meru,0,0,3,0,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+251,5/10/2021,Timau Catholic Dispensary,huiBrr0Ox0D,84476,Jamii Tekelezi,Kenya,Meru,0,0,5,3,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+252,5/10/2021,Kaimbaga Dispensary,hWQU2KIoWxo,84476,Jamii Tekelezi,Kenya,Nyandarua,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+253,5/10/2021,Nembure Health Centre,I8ZnWhClkyq,84476,Jamii Tekelezi,Kenya,Embu,0,0,13,5,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+254,5/10/2021,Ndunyu Njeru Dispensary,iBgKjn8OYnx,84476,Jamii Tekelezi,Kenya,Nyandarua,0,0,19,7,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+255,5/10/2021,Emmanuel Kigari (ACK) Dispensary,Ii5P8lU4YJs,84476,Jamii Tekelezi,Kenya,Embu,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+256,5/10/2021,Family Care Medical Centre (Meru),iPcFQjFTxPm,84476,Jamii Tekelezi,Kenya,Meru,0,0,4,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+257,5/10/2021,Embu Provincial General Hospital,IROLxe1CWyV,84476,Jamii Tekelezi,Kenya,Embu,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+258,5/10/2021,Kiriogo Dispensary,iUa6FxxfB0g,84476,Jamii Tekelezi,Kenya,Nyandarua,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+259,5/10/2021,Mbeu Sub-District Hospital,iVfmG7129mb,84476,Jamii Tekelezi,Kenya,Meru,1,0,7,5,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+260,5/10/2021,St Theresa Kiirua Hospital (Kiirua),jHV9gJpWFRA,84476,Jamii Tekelezi,Kenya,Meru,0,0,17,9,0,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+261,5/10/2021,Kamwathu Dispensary,JIeuKUhcULm,84476,Jamii Tekelezi,Kenya,Tharaka Nithi,0,0,3,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+262,5/10/2021,Kamaindi Dispensary,JkTPYDJBimp,84476,Jamii Tekelezi,Kenya,Tharaka Nithi,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+263,5/10/2021,Mbuyu Dispensary,jlAJXVHPvhs,84476,Jamii Tekelezi,Kenya,Nyandarua,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+264,5/10/2021,Mutiokiama Health Centre,JRDGFC6UgdQ,84476,Jamii Tekelezi,Kenya,Meru,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+265,5/10/2021,Kiambere Dam Dispensary,JVPTCgh6LRT,84476,Jamii Tekelezi,Kenya,Embu,0,0,0,2,0,0,0,0,0,0,0,0,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+266,5/10/2021,Magutuni District Hospital,jXqVorDP9fd,84476,Jamii Tekelezi,Kenya,Tharaka Nithi,0,0,19,6,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+267,5/10/2021,Mutionjuri Health Centre,K9QlnCr7QUT,84476,Jamii Tekelezi,Kenya,Meru,0,0,9,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+268,5/10/2021,Kiburine Dispensary,Kg0zTVtAxUm,84476,Jamii Tekelezi,Kenya,Meru,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+269,5/10/2021,Githongo District Hospital,kovi3AADCml,84476,Jamii Tekelezi,Kenya,Meru,0,1,3,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+270,5/10/2021,Kiambere Health Centre,ksk4ITPDqt0,84476,Jamii Tekelezi,Kenya,Embu,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+271,5/10/2021,Muutine Med Clinic,L5iL25uaP3R,84476,Jamii Tekelezi,Kenya,Meru,0,0,2,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+272,5/10/2021,Mboroga Dispensary,L6IeW8vTHa6,84476,Jamii Tekelezi,Kenya,Meru,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+273,5/10/2021,Weru Health Center,lIrbYqhuPsJ,84476,Jamii Tekelezi,Kenya,Nyandarua,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+274,5/10/2021,Gategi Health Centre,lmtezswxrLy,84476,Jamii Tekelezi,Kenya,Embu,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+275,5/10/2021,Kigaa Dispensary,lOVj53te4fi,84476,Jamii Tekelezi,Kenya,Embu,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+276,5/10/2021,Minugu Dispensary,LoZIj2B6ifU,84476,Jamii Tekelezi,Kenya,Tharaka Nithi,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+277,5/10/2021,Liviero Dispensary,lpVF7ECK6je,84476,Jamii Tekelezi,Kenya,Embu,0,0,14,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+278,5/10/2021,Ndaragwa Health Centre,LqyOkuzfVuX,84476,Jamii Tekelezi,Kenya,Nyandarua,0,0,17,8,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+279,5/10/2021,Bamboo Health Centre,LTOr1pNejds,84476,Jamii Tekelezi,Kenya,Nyandarua,0,0,6,5,0,0,2,1,0,0,2,1,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+280,5/10/2021,Subuku Dispensary (Nyandarua North),M0VxTclDHJv,84476,Jamii Tekelezi,Kenya,Nyandarua,0,0,3,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+281,5/10/2021,Kiirua Dispensary,m2fVjr2GTIa,84476,Jamii Tekelezi,Kenya,Meru,0,0,9,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+282,5/10/2021,Muthara Sub-District Hospital,M2ryogi5lVN,84476,Jamii Tekelezi,Kenya,Meru,0,0,0,1,0,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+283,5/10/2021,Presbyterian Ttc Rubate Health Centre,Mi0j9FIX3es,84476,Jamii Tekelezi,Kenya,Tharaka Nithi,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+284,5/10/2021,Baari Health Centre,mJzeKiO6YML,84476,Jamii Tekelezi,Kenya,Nyandarua,0,1,3,5,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+285,5/10/2021,Riachina Dispensary,mkYbzTcCgwb,84476,Jamii Tekelezi,Kenya,Embu,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+286,5/10/2021,Mukungi Dispensary,MMJfiTABVdg,84476,Jamii Tekelezi,Kenya,Nyandarua,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+287,5/10/2021,Kibunga Sub-District Hospital,MnVkYrRhRwA,84476,Jamii Tekelezi,Kenya,Tharaka Nithi,0,1,5,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+288,5/10/2021,Naari Health Centre,mrOnRf9alIA,84476,Jamii Tekelezi,Kenya,Meru,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+289,5/10/2021,Kiamiriru MCK Dispensary,nbrFJNJFkxJ,84476,Jamii Tekelezi,Kenya,Meru,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+290,5/10/2021,Makengi Dispensary (Embu),niYZBDA5gbc,84476,Jamii Tekelezi,Kenya,Embu,0,0,6,4,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+291,5/10/2021,Kionyo Dispensary (Imenti South),NoErV4BxNA7,84476,Jamii Tekelezi,Kenya,Meru,0,0,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+292,5/10/2021,Runyenjes District Hospital,NqPH5CKYgUU,84476,Jamii Tekelezi,Kenya,Embu,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+293,5/10/2021,Mirangine Health Centre,NrmTe0EXHbJ,84476,Jamii Tekelezi,Kenya,Nyandarua,2,0,36,10,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+294,5/10/2021,Karurumo Rhtc,NUo3VBnrx47,84476,Jamii Tekelezi,Kenya,Embu,1,1,17,3,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+295,5/10/2021,Timau Sub-District Hospital,NV96Kj0anjZ,84476,Jamii Tekelezi,Kenya,Meru,0,0,31,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+296,5/10/2021,Kimachia Dispensary,NwZT5hzUkjB,84476,Jamii Tekelezi,Kenya,Meru,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+297,5/10/2021,Makima Dispensary,nylUU33ouME,84476,Jamii Tekelezi,Kenya,Embu,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+298,5/10/2021,Kahembe Health Centre,oBIUaatujZR,84476,Jamii Tekelezi,Kenya,Nyandarua,0,1,4,5,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+299,5/10/2021,Manunga Health Centre,odx2EmmP8IM,84476,Jamii Tekelezi,Kenya,Nyandarua,1,0,32,3,0,0,2,0,0,0,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+300,5/10/2021,Kathigu Health Center,OnAjLmJXtED,84476,Jamii Tekelezi,Kenya,Meru,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+301,5/10/2021,Olborosat Dispensary,oR12Qi7Kaw0,84476,Jamii Tekelezi,Kenya,Nyandarua,0,0,11,4,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+302,5/10/2021,Ngorika Dispensary,PAwJ0bAl42A,84476,Jamii Tekelezi,Kenya,Nyandarua,0,0,6,3,0,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+303,5/10/2021,Nkubu Dispensary,pHBSxLgQYtC,84476,Jamii Tekelezi,Kenya,Meru,0,0,13,9,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+304,5/10/2021,Mastoo Dispensary,pHP1u0HE6qc,84476,Jamii Tekelezi,Kenya,Nyandarua,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+305,5/10/2021,Ugweri Disp,PlKbNw6G3Wv,84476,Jamii Tekelezi,Kenya,Embu,0,0,7,4,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+306,5/10/2021,Kibirichia Sub-District Hospital,PLkZf0geGoy,84476,Jamii Tekelezi,Kenya,Meru,0,0,10,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+307,5/10/2021,Chuka Cottage Hospital,psHTPguSW3j,84476,Jamii Tekelezi,Kenya,Tharaka Nithi,0,0,7,3,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+308,5/10/2021,Shamata Health Centre,psTyb7YzhF5,84476,Jamii Tekelezi,Kenya,Nyandarua,0,0,16,5,0,0,1,0,0,0,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+309,5/10/2021,Charuru Dispensary,PTh0sEHCAxa,84476,Jamii Tekelezi,Kenya,Meru,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+310,5/10/2021,Pesi Dispensary,pVdxoyR7T6I,84476,Jamii Tekelezi,Kenya,Nyandarua,0,0,5,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+311,5/10/2021,Uringu Health Centre,PyOitpr2WOx,84476,Jamii Tekelezi,Kenya,Meru,0,0,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+312,5/10/2021,Chamuka (CDF) Dispensary,Q30hhBbLqPC,84476,Jamii Tekelezi,Kenya,Nyandarua,0,0,2,5,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+313,5/10/2021,Nguruki-Iruma Dispensary,qh6MKLclI6s,84476,Jamii Tekelezi,Kenya,Tharaka Nithi,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+314,5/10/2021,Lewa Downs Dispensary,QHlmwA4FD1n,84476,Jamii Tekelezi,Kenya,Meru,0,0,2,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+315,5/10/2021,Embu Children Clinic,qk04xUaN0fK,84476,Jamii Tekelezi,Kenya,Embu,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+316,5/10/2021,Kathunguri Dispensary,QMWuh8GY4FP,84476,Jamii Tekelezi,Kenya,Embu,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+317,5/10/2021,Gichiche Dispensary,qO7hARsKOb6,84476,Jamii Tekelezi,Kenya,Embu,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+318,5/10/2021,Kanyuambora Dispensary,qSjEGB1yUKs,84476,Jamii Tekelezi,Kenya,Embu,0,0,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+319,5/10/2021,Mitunguu Ccs Dispensary,R1co9eO3q12,84476,Jamii Tekelezi,Kenya,Meru,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+320,5/10/2021,Kambandi Dispensary,RDvymjyauVd,84476,Jamii Tekelezi,Kenya,Tharaka Nithi,0,0,7,1,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+321,5/10/2021,Kiarago Health Centre (Imenti South),RGFmjPF38II,84476,Jamii Tekelezi,Kenya,Meru,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+322,5/10/2021,Wanjohi Health Centre,RTlbXR77IWU,84476,Jamii Tekelezi,Kenya,Nyandarua,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+323,5/10/2021,St Michael Nursing Home,rtPtlYR3NII,84476,Jamii Tekelezi,Kenya,Embu,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+324,5/10/2021,PCEA Kiengu Disp/Mat,Rzk2ARMziZP,84476,Jamii Tekelezi,Kenya,Meru,0,0,2,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+325,5/10/2021,Kiamuringa Dispensary,s9UiGKh0HKW,84476,Jamii Tekelezi,Kenya,Embu,0,0,4,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+326,5/10/2021,Rukira Dispensary,saKQjMNz8Ik,84476,Jamii Tekelezi,Kenya,Embu,0,0,3,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+327,5/10/2021,Kirie Dispensary,Sar9tmOr36x,84476,Jamii Tekelezi,Kenya,Embu,0,0,1,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+328,5/10/2021,Meru District Hospital,sCRnmH3motj,84476,Jamii Tekelezi,Kenya,Meru,0,1,22,1,0,0,2,2,0,0,2,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+329,5/10/2021,Oljororok Catholic Dispensary,Sjn4QAov5aQ,84476,Jamii Tekelezi,Kenya,Nyandarua,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+330,5/10/2021,Kangeta Health Centre,sNlRanexgey,84476,Jamii Tekelezi,Kenya,Meru,0,0,7,5,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+331,5/10/2021,Kirogine Dispensary,sQCei5jPh44,84476,Jamii Tekelezi,Kenya,Meru,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+332,5/10/2021,Dallas Dispensary,sRdAeQShDlw,84476,Jamii Tekelezi,Kenya,Embu,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+333,5/10/2021,Kamumu Dispensary,sYuN2zJiBKb,84476,Jamii Tekelezi,Kenya,Embu,0,0,6,7,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+334,5/10/2021,Kiguchwa Health Center,SZgqoLCOoCv,84476,Jamii Tekelezi,Kenya,Meru,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+335,5/10/2021,St Joseph Catholic Dispensary (Igembe),t1GTMOrAsOa,84476,Jamii Tekelezi,Kenya,Meru,0,0,2,3,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+336,5/10/2021,Gakoromone Dispensary,TA3vuXzobuL,84476,Jamii Tekelezi,Kenya,Meru,0,0,14,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+337,5/10/2021,Baragu Health Centre,tb2ANtsOua0,84476,Jamii Tekelezi,Kenya,Tharaka Nithi,0,0,10,0,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+338,5/10/2021,New Mawingu Health Centre,TCHLeOkYYsn,84476,Jamii Tekelezi,Kenya,Nyandarua,0,0,2,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+339,5/10/2021,Kunati Health Centre,Tk9hMTW6YlM,84476,Jamii Tekelezi,Kenya,Meru,0,0,8,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+340,5/10/2021,Silibwet Health Centre (Nyandaruawest),TtSspBiYzHq,84476,Jamii Tekelezi,Kenya,Nyandarua,0,0,10,5,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+341,5/10/2021,Uruku Dispensary,tXVR1t0rqFM,84476,Jamii Tekelezi,Kenya,Nyandarua,0,0,2,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+342,5/10/2021,Amugaa Health Centre,U1CwLZE4Sya,84476,Jamii Tekelezi,Kenya,Meru,0,0,2,6,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+343,5/10/2021,Mutindwa Dispensary,U2bOmE6Iyxy,84476,Jamii Tekelezi,Kenya,Tharaka Nithi,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+344,5/10/2021,Karama Dispensary,UFJmL1fAqoW,84476,Jamii Tekelezi,Kenya,Meru,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+345,5/10/2021,Gachuriri Dispensary,ulvOUkZPOys,84476,Jamii Tekelezi,Kenya,Embu,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+346,5/10/2021,Rwika Dispensary,ULzIuKZw7pX,84476,Jamii Tekelezi,Kenya,Embu,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+347,5/10/2021,Igoki Dispensary,URINYkRF6cu,84476,Jamii Tekelezi,Kenya,Meru,0,0,4,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,,0,0,0,0,0
+348,5/10/2021,Lereshwa Dispensary,USUCFkjtjj8,84476,Jamii Tekelezi,Kenya,Nyandarua,0,0,2,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+349,5/10/2021,Ithimbari Dispensary,uttUWo9CbSm,84476,Jamii Tekelezi,Kenya,Meru,0,0,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+350,5/10/2021,Gatunga Health Centre,UVqXkWGPMha,84476,Jamii Tekelezi,Kenya,Tharaka Nithi,1,0,24,6,0,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+351,5/10/2021,Kinoro Sub-District Hospital,UvYZDCyPJBu,84476,Jamii Tekelezi,Kenya,Meru,0,0,3,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+352,5/10/2021,Kaongo Health Centre,UW4LuVnAN23,84476,Jamii Tekelezi,Kenya,Meru,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+353,5/10/2021,Kanja Health Centre,uzOAQslSgmN,84476,Jamii Tekelezi,Kenya,Embu,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+354,5/10/2021,Mwerokanga Dispensary,V9Hf7cG0JDf,84476,Jamii Tekelezi,Kenya,Meru,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+355,5/10/2021,Gatunga Model Health Centre,vDavi1lTko3,84476,Jamii Tekelezi,Kenya,Tharaka Nithi,0,0,18,7,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+356,5/10/2021,Geta Bush Health Centre,VdWKAir7fEv,84476,Jamii Tekelezi,Kenya,Nyandarua,0,0,3,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+357,5/10/2021,Chiakariga H/C,vEeFkE72jt7,84476,Jamii Tekelezi,Kenya,Tharaka Nithi,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+358,5/10/2021,Murungaru Health Centre,VHkUOWg7v3c,84476,Jamii Tekelezi,Kenya,Nyandarua,1,2,25,5,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+359,5/10/2021,Acef Ena Health Centre,VUv3MNGbLMe,84476,Jamii Tekelezi,Kenya,Embu,0,0,9,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+360,5/10/2021,Kairuri Health Centre,vZt0Soe1AsL,84476,Jamii Tekelezi,Kenya,Embu,0,0,6,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+361,5/10/2021,Mukui Health Centre,W0NGQJPgGQR,84476,Jamii Tekelezi,Kenya,Tharaka Nithi,0,0,7,5,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+362,5/10/2021,Ndemi Health Centre,w6NbIpYTDAc,84476,Jamii Tekelezi,Kenya,Nyandarua,0,0,8,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+363,5/10/2021,Ichomba Clinic,WbOSQm83adC,84476,Jamii Tekelezi,Kenya,Meru,0,0,4,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+364,5/10/2021,St Mathews and Sarah Dispensary,wdkjDZUc0Vd,84476,Jamii Tekelezi,Kenya,Nyandarua,0,0,4,3,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+365,5/10/2021,Kieni Kia Ndege Dispensary,WL692GiqMHm,84476,Jamii Tekelezi,Kenya,Meru,0,0,1,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+366,5/10/2021,Mitunguu Dispensary,WsH1zEK3sGP,84476,Jamii Tekelezi,Kenya,Meru,1,0,10,5,0,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+367,5/10/2021,Ontulili Dispensary,wu7982abqS7,84476,Jamii Tekelezi,Kenya,Meru,0,0,2,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+368,5/10/2021,Karangatha Health Centre,wy1SFAUIGpo,84476,Jamii Tekelezi,Kenya,Nyandarua,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+369,5/10/2021,Theere Health Centre,x4H4rQ3T7F6,84476,Jamii Tekelezi,Kenya,Meru,0,1,31,5,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+370,5/10/2021,Mweru Dispensary (Imenti South),XACCCky77Qb,84476,Jamii Tekelezi,Kenya,Meru,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+371,5/10/2021,Tharaka District Hospital,xce9AFrapR9,84476,Jamii Tekelezi,Kenya,Tharaka Nithi,0,1,23,11,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+372,5/10/2021,Kanyakine District Hospital,XGw1fCwVLc6,84476,Jamii Tekelezi,Kenya,Meru,0,0,32,13,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+373,5/10/2021,Mukuuni Dispensary,XGZslyAbXPS,84476,Jamii Tekelezi,Kenya,Tharaka Nithi,0,0,5,5,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+374,5/10/2021,Nganduri Dispensary,xwVOvXuJvpL,84476,Jamii Tekelezi,Kenya,Embu,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+375,5/10/2021,Gatimu Health Centre,yDVD7PQVNW3,84476,Jamii Tekelezi,Kenya,Nyandarua,0,0,13,3,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+376,5/10/2021,Akachiu Health Centre,YGtY9QtkwrW,84476,Jamii Tekelezi,Kenya,Meru,1,0,6,5,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+377,5/10/2021,Giaki Sub-District Hospital,yJw7N5gx1HW,84476,Jamii Tekelezi,Kenya,Meru,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+378,5/10/2021,Getrude Dispensary,Yn4wNsOQBFU,84476,Jamii Tekelezi,Kenya,Embu,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+379,5/10/2021,Thanantu Faith Clinic Dispensary,YslGk4Jhs6q,84476,Jamii Tekelezi,Kenya,Tharaka Nithi,2,0,7,3,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+380,5/10/2021,Mufu Dispensary,z4Kwdy0Rnt8,84476,Jamii Tekelezi,Kenya,Embu,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+381,5/10/2021,Gitoro Dispensary,zF1v5qs0nKg,84476,Jamii Tekelezi,Kenya,Meru,0,0,21,10,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+382,5/10/2021,Miathene District Hospital,zf4jnHpWR16,84476,Jamii Tekelezi,Kenya,Meru,0,0,12,4,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+383,5/10/2021,Gaciongo Dispensary,zG7VieG5pUR,84476,Jamii Tekelezi,Kenya,Tharaka Nithi,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+384,5/10/2021,Kinoru Dispensary,zHWXo9YeEMy,84476,Jamii Tekelezi,Kenya,Meru,0,0,18,7,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+385,5/10/2021,Ntemwene Dispensary,ZpdIMKMptdX,84476,Jamii Tekelezi,Kenya,Meru,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+386,5/10/2021,Tuuru Catholic Health Centre,ZR91mGF1tim,84476,Jamii Tekelezi,Kenya,Meru,0,0,16,4,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+387,5/17/2021,Kianjokoma Sub-District Hospital,a2brqsdATIc,84476,Jamii Tekelezi,Kenya,Embu,1,0,12,4,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+388,5/17/2021,Mikinduri Sub-District Hospial,a6ONbsUpAdf,84476,Jamii Tekelezi,Kenya,Meru,0,0,18,2,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+389,5/17/2021,Gatimbi Health Centre,Acz9X8qvbtP,84476,Jamii Tekelezi,Kenya,Meru,0,0,8,2,0,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+390,5/17/2021,Kina Murera Dispensary,aFY6mSEf2lr,84476,Jamii Tekelezi,Kenya,Meru,0,0,2,2,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+391,5/17/2021,Kibugu Health Centre,Amjvsr9TKus,84476,Jamii Tekelezi,Kenya,Embu,0,0,6,1,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+392,5/17/2021,Kiamuchairu Health Centre,aQN1xlOQVLL,84476,Jamii Tekelezi,Kenya,Tharaka Nithi,0,0,4,3,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+393,5/17/2021,Kawiria Maternity and Nursing Home,aTqjTEXhhwG,84476,Jamii Tekelezi,Kenya,Meru,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+394,5/17/2021,Kawiru Dispensary,B0XtOtRHzXp,84476,Jamii Tekelezi,Kenya,Meru,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+395,5/17/2021,Meru Drop In Center,balbxgLRzp2,84476,Jamii Tekelezi,Kenya,Meru,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+396,5/17/2021,Uruku Health Centre,BbkpG6t5uy0,84476,Jamii Tekelezi,Kenya,Meru,0,0,2,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+397,5/17/2021,Karau Health Centre,Bdb91tBzdzh,84476,Jamii Tekelezi,Kenya,Embu,0,0,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+398,5/17/2021,Our Lady of Mercy (Magumu),bhxzvBtlT1z,84476,Jamii Tekelezi,Kenya,Nyandarua,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+399,5/17/2021,Kathithi Dispensary,BlseYmiMH5L,84476,Jamii Tekelezi,Kenya,Meru,0,0,3,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+400,5/17/2021,Kathanje Dispensary,BmbfMDSuhgW,84476,Jamii Tekelezi,Kenya,Embu,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+401,5/17/2021,Mbonzuki Dispensary,bmxJ6oH93l7,84476,Jamii Tekelezi,Kenya,Embu,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+402,5/17/2021,Kaanwa Dispensary,bpQjQEeuAzO,84476,Jamii Tekelezi,Kenya,Tharaka Nithi,0,0,21,4,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+403,5/17/2021,Woodlands Hospital,bqtQXIJE7j4,84476,Jamii Tekelezi,Kenya,Meru,0,0,2,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+404,5/17/2021,Kathangacini Dispensary,But0KGtpN8L,84476,Jamii Tekelezi,Kenya,Tharaka Nithi,0,0,16,7,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+405,5/17/2021,Kithegi Dispensary,bwsY8Ome3im,84476,Jamii Tekelezi,Kenya,Embu,0,1,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+406,5/17/2021,Kajuki Health Centre,bZBzAIFg2YN,84476,Jamii Tekelezi,Kenya,Tharaka Nithi,0,1,26,12,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+407,5/17/2021,HWWK Maua Dice,C8zA97wze40,84476,Jamii Tekelezi,Kenya,Meru,0,0,8,7,0,0,0,0,0,0,0,0,0,0,0,0,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+408,5/17/2021,Kaelo Dispensary,cIcY0ELoWC2,84476,Jamii Tekelezi,Kenya,Meru,0,0,8,5,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+409,5/17/2021,Mbeere District Hospital,Ckvm0JOmwe4,84476,Jamii Tekelezi,Kenya,Embu,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+410,5/17/2021,Huhoini Dispensary,CpuonBKIJba,84476,Jamii Tekelezi,Kenya,Nyandarua,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+411,5/17/2021,Kiritiri Health Centre,CtyUwxd2Su2,84476,Jamii Tekelezi,Kenya,Embu,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+412,5/17/2021,Machang'a Dispensary,cVfLPUZdBNq,84476,Jamii Tekelezi,Kenya,Embu,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+413,5/17/2021,Chugu Dispensary,cZXK5fUWJWb,84476,Jamii Tekelezi,Kenya,Meru,0,0,6,3,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+414,5/17/2021,Kigumo Dispensary,d8O7IEVmHMb,84476,Jamii Tekelezi,Kenya,Embu,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+415,5/17/2021,Cottolengo Mission Hospital,DbgpdrN6q4J,84476,Jamii Tekelezi,Kenya,Meru,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+416,5/17/2021,Turasha Dispensary,DbtqAZaFp7Z,84476,Jamii Tekelezi,Kenya,Nyandarua,0,0,4,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+417,5/17/2021,Muthambi Health Centre,DcTeh7tKU1m,84476,Jamii Tekelezi,Kenya,Tharaka Nithi,0,2,26,19,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+418,5/17/2021,Karuguaru Dispensary,dp1jTJDvgIV,84476,Jamii Tekelezi,Kenya,Tharaka Nithi,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+419,5/17/2021,Ruiri Rural Health Demonstration Centre,eFFxRLL36i9,84476,Jamii Tekelezi,Kenya,Meru,0,0,3,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+420,5/17/2021,Karaba Wango Dispensary,eTbcGObCPQB,84476,Jamii Tekelezi,Kenya,Embu,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+421,5/17/2021,Chuka District Hospital,EWTRe1nWQoJ,84476,Jamii Tekelezi,Kenya,Tharaka Nithi,2,0,50,27,0,0,2,0,0,0,2,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+422,5/17/2021,Kiraone Dispensary,F1NBPDgGqeM,84476,Jamii Tekelezi,Kenya,Meru,0,0,0,4,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+423,5/17/2021,Kithimu Dispensary,F4EQ1FCnous,84476,Jamii Tekelezi,Kenya,Embu,0,0,7,5,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+424,5/17/2021,CCS Kiritiri Clinic,fe5HPFmdgu6,84476,Jamii Tekelezi,Kenya,Embu,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+425,5/17/2021,Nyambene District Hospital,fKYvOdsKk6J,84476,Jamii Tekelezi,Kenya,Meru,1,2,60,37,0,0,2,3,0,0,2,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+426,5/17/2021,Mikumbune Sub-District Hospital,fmiRLDy0iye,84476,Jamii Tekelezi,Kenya,Meru,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+427,5/17/2021,CCS (ACK) Dispensary,fVnyy1GiNRb,84476,Jamii Tekelezi,Kenya,Meru,0,0,3,3,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+428,5/17/2021,Kiereni Dispensary,G3EbXsPHdL0,84476,Jamii Tekelezi,Kenya,Tharaka Nithi,0,0,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+429,5/17/2021,Kirima Dispensary,g490Mk9Eaqn,84476,Jamii Tekelezi,Kenya,Nyandarua,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+430,5/17/2021,Kunene Dispensary,GdKb08lTvH0,84476,Jamii Tekelezi,Kenya,Meru,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+431,5/17/2021,Mukothima Health Centre,GdX6FEVfztL,84476,Jamii Tekelezi,Kenya,Tharaka Nithi,0,0,10,5,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+432,5/17/2021,Ngano Health Centre,Gj8bqGWwvwC,84476,Jamii Tekelezi,Kenya,Nyandarua,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+433,5/17/2021,Nthagaiya Catholic Dispensary,gKIlbKz2QQv,84476,Jamii Tekelezi,Kenya,Embu,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+434,5/17/2021,Gatunduri Dispensary,gQEY28Ondgf,84476,Jamii Tekelezi,Kenya,Embu,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+435,5/17/2021,Nthambiro Dispensary,gsprlCwOVIO,84476,Jamii Tekelezi,Kenya,Meru,0,0,20,4,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+436,5/17/2021,Kibugua Health Centre,GWGU5sLBMGH,84476,Jamii Tekelezi,Kenya,Tharaka Nithi,0,0,3,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+437,5/17/2021,Ishiara Sub-District Hospital,gwZuDfkIEkI,84476,Jamii Tekelezi,Kenya,Embu,0,0,1,0,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+438,5/17/2021,Mpukoni Health Centre,gWZzqLjSXUb,84476,Jamii Tekelezi,Kenya,Tharaka Nithi,1,0,6,14,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+439,5/17/2021,St Lukes Cottage Hospital,h4bWnNCptHy,84476,Jamii Tekelezi,Kenya,Meru,0,0,2,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+440,5/17/2021,Wachoro Dispensary,hbfqeZrD6Xy,84476,Jamii Tekelezi,Kenya,Embu,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+441,5/17/2021,Mutuati Sub-District Hospital,hbjcWVatbIY,84476,Jamii Tekelezi,Kenya,Meru,0,0,20,4,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+442,5/17/2021,Ikuu Dispensary,hdruOpsxv36,84476,Jamii Tekelezi,Kenya,Tharaka Nithi,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+443,5/17/2021,Tigania Hospital,hmsQbHsXkMV,84476,Jamii Tekelezi,Kenya,Meru,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+444,5/17/2021,Timau Catholic Dispensary,huiBrr0Ox0D,84476,Jamii Tekelezi,Kenya,Meru,0,0,6,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+445,5/17/2021,Kaimbaga Dispensary,hWQU2KIoWxo,84476,Jamii Tekelezi,Kenya,Nyandarua,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+446,5/17/2021,Nembure Health Centre,I8ZnWhClkyq,84476,Jamii Tekelezi,Kenya,Embu,0,0,0,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+447,5/17/2021,Ndunyu Njeru Dispensary,iBgKjn8OYnx,84476,Jamii Tekelezi,Kenya,Nyandarua,1,0,21,12,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+448,5/17/2021,Emmanuel Kigari (ACK) Dispensary,Ii5P8lU4YJs,84476,Jamii Tekelezi,Kenya,Embu,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+449,5/17/2021,Family Care Medical Centre (Meru),iPcFQjFTxPm,84476,Jamii Tekelezi,Kenya,Meru,0,0,7,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+450,5/17/2021,Embu Provincial General Hospital,IROLxe1CWyV,84476,Jamii Tekelezi,Kenya,Embu,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+451,5/17/2021,Kiriogo Dispensary,iUa6FxxfB0g,84476,Jamii Tekelezi,Kenya,Nyandarua,0,0,3,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+452,5/17/2021,Mbeu Sub-District Hospital,iVfmG7129mb,84476,Jamii Tekelezi,Kenya,Meru,0,0,12,10,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+453,5/17/2021,St Theresa Kiirua Hospital (Kiirua),jHV9gJpWFRA,84476,Jamii Tekelezi,Kenya,Meru,0,0,25,17,0,0,1,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+454,5/17/2021,Kamwathu Dispensary,JIeuKUhcULm,84476,Jamii Tekelezi,Kenya,Tharaka Nithi,0,0,2,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+455,5/17/2021,Kamaindi Dispensary,JkTPYDJBimp,84476,Jamii Tekelezi,Kenya,Tharaka Nithi,0,0,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+456,5/17/2021,Mbuyu Dispensary,jlAJXVHPvhs,84476,Jamii Tekelezi,Kenya,Nyandarua,0,0,0,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+457,5/17/2021,Mutiokiama Health Centre,JRDGFC6UgdQ,84476,Jamii Tekelezi,Kenya,Meru,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+458,5/17/2021,Kiambere Dam Dispensary,JVPTCgh6LRT,84476,Jamii Tekelezi,Kenya,Embu,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+459,5/17/2021,Magutuni District Hospital,jXqVorDP9fd,84476,Jamii Tekelezi,Kenya,Tharaka Nithi,0,0,22,14,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+460,5/17/2021,Mutionjuri Health Centre,K9QlnCr7QUT,84476,Jamii Tekelezi,Kenya,Meru,0,0,4,9,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+461,5/17/2021,Kiburine Dispensary,Kg0zTVtAxUm,84476,Jamii Tekelezi,Kenya,Meru,0,0,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+462,5/17/2021,Githongo District Hospital,kovi3AADCml,84476,Jamii Tekelezi,Kenya,Meru,0,0,0,9,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+463,5/17/2021,Kiambere Health Centre,ksk4ITPDqt0,84476,Jamii Tekelezi,Kenya,Embu,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+464,5/17/2021,Muutine Med Clinic,L5iL25uaP3R,84476,Jamii Tekelezi,Kenya,Meru,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+465,5/17/2021,Mboroga Dispensary,L6IeW8vTHa6,84476,Jamii Tekelezi,Kenya,Meru,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+466,5/17/2021,Weru Health Center,lIrbYqhuPsJ,84476,Jamii Tekelezi,Kenya,Nyandarua,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+467,5/17/2021,Gategi Health Centre,lmtezswxrLy,84476,Jamii Tekelezi,Kenya,Embu,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+468,5/17/2021,Kigaa Dispensary,lOVj53te4fi,84476,Jamii Tekelezi,Kenya,Embu,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+469,5/17/2021,Minugu Dispensary,LoZIj2B6ifU,84476,Jamii Tekelezi,Kenya,Tharaka Nithi,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+470,5/17/2021,Liviero Dispensary,lpVF7ECK6je,84476,Jamii Tekelezi,Kenya,Embu,0,0,5,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+471,5/17/2021,Ndaragwa Health Centre,LqyOkuzfVuX,84476,Jamii Tekelezi,Kenya,Nyandarua,0,0,24,8,0,0,1,1,0,0,1,1,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+472,5/17/2021,Bamboo Health Centre,LTOr1pNejds,84476,Jamii Tekelezi,Kenya,Nyandarua,0,0,1,0,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+473,5/17/2021,Subuku Dispensary (Nyandarua North),M0VxTclDHJv,84476,Jamii Tekelezi,Kenya,Nyandarua,0,0,17,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+474,5/17/2021,Kiirua Dispensary,m2fVjr2GTIa,84476,Jamii Tekelezi,Kenya,Meru,0,0,13,4,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+475,5/17/2021,Muthara Sub-District Hospital,M2ryogi5lVN,84476,Jamii Tekelezi,Kenya,Meru,3,0,5,3,0,0,1,1,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+476,5/17/2021,Presbyterian Ttc Rubate Health Centre,Mi0j9FIX3es,84476,Jamii Tekelezi,Kenya,Tharaka Nithi,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+477,5/17/2021,Baari Health Centre,mJzeKiO6YML,84476,Jamii Tekelezi,Kenya,Nyandarua,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+478,5/17/2021,Riachina Dispensary,mkYbzTcCgwb,84476,Jamii Tekelezi,Kenya,Embu,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+479,5/17/2021,Mukungi Dispensary,MMJfiTABVdg,84476,Jamii Tekelezi,Kenya,Nyandarua,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+480,5/17/2021,Kibunga Sub-District Hospital,MnVkYrRhRwA,84476,Jamii Tekelezi,Kenya,Tharaka Nithi,0,0,8,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+481,5/17/2021,Naari Health Centre,mrOnRf9alIA,84476,Jamii Tekelezi,Kenya,Meru,0,0,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+482,5/17/2021,Kiamiriru MCK Dispensary,nbrFJNJFkxJ,84476,Jamii Tekelezi,Kenya,Meru,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+483,5/17/2021,Makengi Dispensary (Embu),niYZBDA5gbc,84476,Jamii Tekelezi,Kenya,Embu,0,0,9,5,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+484,5/17/2021,Kionyo Dispensary (Imenti South),NoErV4BxNA7,84476,Jamii Tekelezi,Kenya,Meru,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+485,5/17/2021,Runyenjes District Hospital,NqPH5CKYgUU,84476,Jamii Tekelezi,Kenya,Embu,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+486,5/17/2021,Mirangine Health Centre,NrmTe0EXHbJ,84476,Jamii Tekelezi,Kenya,Nyandarua,0,1,49,21,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+487,5/17/2021,Karurumo Rhtc,NUo3VBnrx47,84476,Jamii Tekelezi,Kenya,Embu,2,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+488,5/17/2021,Timau Sub-District Hospital,NV96Kj0anjZ,84476,Jamii Tekelezi,Kenya,Meru,0,0,19,1,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+489,5/17/2021,Kimachia Dispensary,NwZT5hzUkjB,84476,Jamii Tekelezi,Kenya,Meru,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+490,5/17/2021,Makima Dispensary,nylUU33ouME,84476,Jamii Tekelezi,Kenya,Embu,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+491,5/17/2021,Kahembe Health Centre,oBIUaatujZR,84476,Jamii Tekelezi,Kenya,Nyandarua,0,0,7,5,0,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+492,5/17/2021,Manunga Health Centre,odx2EmmP8IM,84476,Jamii Tekelezi,Kenya,Nyandarua,0,0,30,7,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+493,5/17/2021,Kathigu Health Center,OnAjLmJXtED,84476,Jamii Tekelezi,Kenya,Meru,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+494,5/17/2021,Olborosat Dispensary,oR12Qi7Kaw0,84476,Jamii Tekelezi,Kenya,Nyandarua,0,0,11,3,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+495,5/17/2021,Ngorika Dispensary,PAwJ0bAl42A,84476,Jamii Tekelezi,Kenya,Nyandarua,0,0,8,3,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+496,5/17/2021,Nkubu Dispensary,pHBSxLgQYtC,84476,Jamii Tekelezi,Kenya,Meru,0,0,9,6,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+497,5/17/2021,Mastoo Dispensary,pHP1u0HE6qc,84476,Jamii Tekelezi,Kenya,Nyandarua,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+498,5/17/2021,Ugweri Disp,PlKbNw6G3Wv,84476,Jamii Tekelezi,Kenya,Embu,1,1,6,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+499,5/17/2021,Kibirichia Sub-District Hospital,PLkZf0geGoy,84476,Jamii Tekelezi,Kenya,Meru,0,0,8,1,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+500,5/17/2021,Chuka Cottage Hospital,psHTPguSW3j,84476,Jamii Tekelezi,Kenya,Tharaka Nithi,0,1,15,10,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+501,5/17/2021,Shamata Health Centre,psTyb7YzhF5,84476,Jamii Tekelezi,Kenya,Nyandarua,0,0,12,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+502,5/17/2021,Charuru Dispensary,PTh0sEHCAxa,84476,Jamii Tekelezi,Kenya,Meru,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+503,5/17/2021,Pesi Dispensary,pVdxoyR7T6I,84476,Jamii Tekelezi,Kenya,Nyandarua,0,0,4,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+504,5/17/2021,Uringu Health Centre,PyOitpr2WOx,84476,Jamii Tekelezi,Kenya,Meru,0,0,3,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+505,5/17/2021,Chamuka (CDF) Dispensary,Q30hhBbLqPC,84476,Jamii Tekelezi,Kenya,Nyandarua,0,0,6,3,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+506,5/17/2021,Nguruki-Iruma Dispensary,qh6MKLclI6s,84476,Jamii Tekelezi,Kenya,Tharaka Nithi,0,0,4,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+507,5/17/2021,Lewa Downs Dispensary,QHlmwA4FD1n,84476,Jamii Tekelezi,Kenya,Meru,0,0,2,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+508,5/17/2021,Embu Children Clinic,qk04xUaN0fK,84476,Jamii Tekelezi,Kenya,Embu,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+509,5/17/2021,Kathunguri Dispensary,QMWuh8GY4FP,84476,Jamii Tekelezi,Kenya,Embu,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+510,5/17/2021,Gichiche Dispensary,qO7hARsKOb6,84476,Jamii Tekelezi,Kenya,Embu,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+511,5/17/2021,Kanyuambora Dispensary,qSjEGB1yUKs,84476,Jamii Tekelezi,Kenya,Embu,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+512,5/17/2021,Mitunguu Ccs Dispensary,R1co9eO3q12,84476,Jamii Tekelezi,Kenya,Meru,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+513,5/17/2021,Kambandi Dispensary,RDvymjyauVd,84476,Jamii Tekelezi,Kenya,Tharaka Nithi,2,0,2,1,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+514,5/17/2021,Kiarago Health Centre (Imenti South),RGFmjPF38II,84476,Jamii Tekelezi,Kenya,Meru,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+515,5/17/2021,Wanjohi Health Centre,RTlbXR77IWU,84476,Jamii Tekelezi,Kenya,Nyandarua,0,0,8,1,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+516,5/17/2021,St Michael Nursing Home,rtPtlYR3NII,84476,Jamii Tekelezi,Kenya,Embu,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+517,5/17/2021,PCEA Kiengu Disp/Mat,Rzk2ARMziZP,84476,Jamii Tekelezi,Kenya,Meru,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+518,5/17/2021,Kiamuringa Dispensary,s9UiGKh0HKW,84476,Jamii Tekelezi,Kenya,Embu,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+519,5/17/2021,Rukira Dispensary,saKQjMNz8Ik,84476,Jamii Tekelezi,Kenya,Embu,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+520,5/17/2021,Kirie Dispensary,Sar9tmOr36x,84476,Jamii Tekelezi,Kenya,Embu,0,0,5,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+521,5/17/2021,Meru District Hospital,sCRnmH3motj,84476,Jamii Tekelezi,Kenya,Meru,0,0,27,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+522,5/17/2021,Oljororok Catholic Dispensary,Sjn4QAov5aQ,84476,Jamii Tekelezi,Kenya,Nyandarua,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+523,5/17/2021,Kangeta Health Centre,sNlRanexgey,84476,Jamii Tekelezi,Kenya,Meru,0,0,3,3,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+524,5/17/2021,Kirogine Dispensary,sQCei5jPh44,84476,Jamii Tekelezi,Kenya,Meru,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+525,5/17/2021,Dallas Dispensary,sRdAeQShDlw,84476,Jamii Tekelezi,Kenya,Embu,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+526,5/17/2021,Kamumu Dispensary,sYuN2zJiBKb,84476,Jamii Tekelezi,Kenya,Embu,0,0,6,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+527,5/17/2021,Kiguchwa Health Center,SZgqoLCOoCv,84476,Jamii Tekelezi,Kenya,Meru,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+528,5/17/2021,St Joseph Catholic Dispensary (Igembe),t1GTMOrAsOa,84476,Jamii Tekelezi,Kenya,Meru,0,0,3,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+529,5/17/2021,Gakoromone Dispensary,TA3vuXzobuL,84476,Jamii Tekelezi,Kenya,Meru,0,0,6,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+530,5/17/2021,Baragu Health Centre,tb2ANtsOua0,84476,Jamii Tekelezi,Kenya,Tharaka Nithi,0,1,7,7,0,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+531,5/17/2021,New Mawingu Health Centre,TCHLeOkYYsn,84476,Jamii Tekelezi,Kenya,Nyandarua,0,0,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+532,5/17/2021,Kunati Health Centre,Tk9hMTW6YlM,84476,Jamii Tekelezi,Kenya,Meru,0,0,5,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+533,5/17/2021,Silibwet Health Centre (Nyandaruawest),TtSspBiYzHq,84476,Jamii Tekelezi,Kenya,Nyandarua,0,0,15,7,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+534,5/17/2021,Uruku Dispensary,tXVR1t0rqFM,84476,Jamii Tekelezi,Kenya,Nyandarua,0,0,2,3,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+535,5/17/2021,Amugaa Health Centre,U1CwLZE4Sya,84476,Jamii Tekelezi,Kenya,Meru,0,0,5,5,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+536,5/17/2021,Mutindwa Dispensary,U2bOmE6Iyxy,84476,Jamii Tekelezi,Kenya,Tharaka Nithi,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+537,5/17/2021,Karama Dispensary,UFJmL1fAqoW,84476,Jamii Tekelezi,Kenya,Meru,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+538,5/17/2021,Gachuriri Dispensary,ulvOUkZPOys,84476,Jamii Tekelezi,Kenya,Embu,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+539,5/17/2021,Rwika Dispensary,ULzIuKZw7pX,84476,Jamii Tekelezi,Kenya,Embu,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+540,5/17/2021,Igoki Dispensary,URINYkRF6cu,84476,Jamii Tekelezi,Kenya,Meru,0,0,3,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+541,5/17/2021,Lereshwa Dispensary,USUCFkjtjj8,84476,Jamii Tekelezi,Kenya,Nyandarua,0,0,3,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+542,5/17/2021,Ithimbari Dispensary,uttUWo9CbSm,84476,Jamii Tekelezi,Kenya,Meru,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+543,5/17/2021,Gatunga Health Centre,UVqXkWGPMha,84476,Jamii Tekelezi,Kenya,Tharaka Nithi,0,0,21,2,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+544,5/17/2021,Kinoro Sub-District Hospital,UvYZDCyPJBu,84476,Jamii Tekelezi,Kenya,Meru,0,0,5,0,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+545,5/17/2021,Kaongo Health Centre,UW4LuVnAN23,84476,Jamii Tekelezi,Kenya,Meru,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+546,5/17/2021,Kanja Health Centre,uzOAQslSgmN,84476,Jamii Tekelezi,Kenya,Embu,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+547,5/17/2021,Mwerokanga Dispensary,V9Hf7cG0JDf,84476,Jamii Tekelezi,Kenya,Meru,0,0,3,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+548,5/17/2021,Gatunga Model Health Centre,vDavi1lTko3,84476,Jamii Tekelezi,Kenya,Tharaka Nithi,0,0,12,4,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+549,5/17/2021,Geta Bush Health Centre,VdWKAir7fEv,84476,Jamii Tekelezi,Kenya,Nyandarua,0,0,7,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+550,5/17/2021,Chiakariga H/C,vEeFkE72jt7,84476,Jamii Tekelezi,Kenya,Tharaka Nithi,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+551,5/17/2021,Murungaru Health Centre,VHkUOWg7v3c,84476,Jamii Tekelezi,Kenya,Nyandarua,0,0,21,8,0,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+552,5/17/2021,Acef Ena Health Centre,VUv3MNGbLMe,84476,Jamii Tekelezi,Kenya,Embu,0,0,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+553,5/17/2021,Kairuri Health Centre,vZt0Soe1AsL,84476,Jamii Tekelezi,Kenya,Embu,0,0,5,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+554,5/17/2021,Mukui Health Centre,W0NGQJPgGQR,84476,Jamii Tekelezi,Kenya,Tharaka Nithi,0,0,21,9,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+555,5/17/2021,Ndemi Health Centre,w6NbIpYTDAc,84476,Jamii Tekelezi,Kenya,Nyandarua,0,0,13,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+556,5/17/2021,Ichomba Clinic,WbOSQm83adC,84476,Jamii Tekelezi,Kenya,Meru,0,0,2,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+557,5/17/2021,St Mathews and Sarah Dispensary,wdkjDZUc0Vd,84476,Jamii Tekelezi,Kenya,Nyandarua,0,0,2,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+558,5/17/2021,Kieni Kia Ndege Dispensary,WL692GiqMHm,84476,Jamii Tekelezi,Kenya,Meru,0,0,4,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+559,5/17/2021,Mitunguu Dispensary,WsH1zEK3sGP,84476,Jamii Tekelezi,Kenya,Meru,2,1,11,6,0,0,2,0,0,0,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+560,5/17/2021,Ontulili Dispensary,wu7982abqS7,84476,Jamii Tekelezi,Kenya,Meru,0,0,2,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+561,5/17/2021,Karangatha Health Centre,wy1SFAUIGpo,84476,Jamii Tekelezi,Kenya,Nyandarua,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+562,5/17/2021,Theere Health Centre,x4H4rQ3T7F6,84476,Jamii Tekelezi,Kenya,Meru,0,0,18,9,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+563,5/17/2021,Mweru Dispensary (Imenti South),XACCCky77Qb,84476,Jamii Tekelezi,Kenya,Meru,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+564,5/17/2021,Tharaka District Hospital,xce9AFrapR9,84476,Jamii Tekelezi,Kenya,Tharaka Nithi,1,0,22,9,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+565,5/17/2021,Kanyakine District Hospital,XGw1fCwVLc6,84476,Jamii Tekelezi,Kenya,Meru,0,0,35,9,0,0,0,0,0,0,0,0,0,0,0,0,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+566,5/17/2021,Mukuuni Dispensary,XGZslyAbXPS,84476,Jamii Tekelezi,Kenya,Tharaka Nithi,0,2,6,0,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+567,5/17/2021,Nganduri Dispensary,xwVOvXuJvpL,84476,Jamii Tekelezi,Kenya,Embu,0,0,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+568,5/17/2021,Gatimu Health Centre,yDVD7PQVNW3,84476,Jamii Tekelezi,Kenya,Nyandarua,0,0,9,7,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+569,5/17/2021,Akachiu Health Centre,YGtY9QtkwrW,84476,Jamii Tekelezi,Kenya,Meru,0,0,3,5,0,0,0,1,0,0,0,1,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+570,5/17/2021,Giaki Sub-District Hospital,yJw7N5gx1HW,84476,Jamii Tekelezi,Kenya,Meru,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+571,5/17/2021,Getrude Dispensary,Yn4wNsOQBFU,84476,Jamii Tekelezi,Kenya,Embu,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+572,5/17/2021,Thanantu Faith Clinic Dispensary,YslGk4Jhs6q,84476,Jamii Tekelezi,Kenya,Tharaka Nithi,0,2,10,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+573,5/17/2021,Mufu Dispensary,z4Kwdy0Rnt8,84476,Jamii Tekelezi,Kenya,Embu,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+574,5/17/2021,Gitoro Dispensary,zF1v5qs0nKg,84476,Jamii Tekelezi,Kenya,Meru,0,0,24,15,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+575,5/17/2021,Miathene District Hospital,zf4jnHpWR16,84476,Jamii Tekelezi,Kenya,Meru,3,1,28,12,0,1,2,1,0,1,2,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+576,5/17/2021,Gaciongo Dispensary,zG7VieG5pUR,84476,Jamii Tekelezi,Kenya,Tharaka Nithi,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+577,5/17/2021,Kinoru Dispensary,zHWXo9YeEMy,84476,Jamii Tekelezi,Kenya,Meru,0,0,31,4,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+578,5/17/2021,Ntemwene Dispensary,ZpdIMKMptdX,84476,Jamii Tekelezi,Kenya,Meru,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+579,5/17/2021,Tuuru Catholic Health Centre,ZR91mGF1tim,84476,Jamii Tekelezi,Kenya,Meru,0,0,13,4,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+580,5/24/2021,Kianjokoma Sub-District Hospital,a2brqsdATIc,84476,Jamii Tekelezi,Kenya,Embu,1,0,9,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+581,5/24/2021,Mikinduri Sub-District Hospial,a6ONbsUpAdf,84476,Jamii Tekelezi,Kenya,Meru,0,0,32,2,0,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+582,5/24/2021,Gatimbi Health Centre,Acz9X8qvbtP,84476,Jamii Tekelezi,Kenya,Meru,0,0,6,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+583,5/24/2021,Kina Murera Dispensary,aFY6mSEf2lr,84476,Jamii Tekelezi,Kenya,Meru,0,0,0,1,0,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+584,5/24/2021,Kibugu Health Centre,Amjvsr9TKus,84476,Jamii Tekelezi,Kenya,Embu,0,0,4,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+585,5/24/2021,Kiamuchairu Health Centre,aQN1xlOQVLL,84476,Jamii Tekelezi,Kenya,Tharaka Nithi,0,1,5,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+586,5/24/2021,Kawiria Maternity and Nursing Home,aTqjTEXhhwG,84476,Jamii Tekelezi,Kenya,Meru,0,0,3,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+587,5/24/2021,Kawiru Dispensary,B0XtOtRHzXp,84476,Jamii Tekelezi,Kenya,Meru,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+588,5/24/2021,Meru Drop In Center,balbxgLRzp2,84476,Jamii Tekelezi,Kenya,Meru,0,0,3,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+589,5/24/2021,Uruku Health Centre,BbkpG6t5uy0,84476,Jamii Tekelezi,Kenya,Meru,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+590,5/24/2021,Karau Health Centre,Bdb91tBzdzh,84476,Jamii Tekelezi,Kenya,Embu,0,0,3,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+591,5/24/2021,Our Lady of Mercy (Magumu),bhxzvBtlT1z,84476,Jamii Tekelezi,Kenya,Nyandarua,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+592,5/24/2021,Kathithi Dispensary,BlseYmiMH5L,84476,Jamii Tekelezi,Kenya,Meru,0,0,3,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+593,5/24/2021,Kathanje Dispensary,BmbfMDSuhgW,84476,Jamii Tekelezi,Kenya,Embu,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+594,5/24/2021,Mbonzuki Dispensary,bmxJ6oH93l7,84476,Jamii Tekelezi,Kenya,Embu,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+595,5/24/2021,Kaanwa Dispensary,bpQjQEeuAzO,84476,Jamii Tekelezi,Kenya,Tharaka Nithi,0,0,9,1,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+596,5/24/2021,Woodlands Hospital,bqtQXIJE7j4,84476,Jamii Tekelezi,Kenya,Meru,0,0,2,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+597,5/24/2021,Kathangacini Dispensary,But0KGtpN8L,84476,Jamii Tekelezi,Kenya,Tharaka Nithi,0,1,18,7,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+598,5/24/2021,Kithegi Dispensary,bwsY8Ome3im,84476,Jamii Tekelezi,Kenya,Embu,0,0,3,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+599,5/24/2021,Kajuki Health Centre,bZBzAIFg2YN,84476,Jamii Tekelezi,Kenya,Tharaka Nithi,0,0,27,5,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+600,5/24/2021,HWWK Maua Dice,C8zA97wze40,84476,Jamii Tekelezi,Kenya,Meru,0,0,7,4,0,0,0,0,0,0,0,0,0,0,0,0,3,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+601,5/24/2021,Kaelo Dispensary,cIcY0ELoWC2,84476,Jamii Tekelezi,Kenya,Meru,0,0,12,3,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+602,5/24/2021,Mbeere District Hospital,Ckvm0JOmwe4,84476,Jamii Tekelezi,Kenya,Embu,0,2,1,0,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+603,5/24/2021,Huhoini Dispensary,CpuonBKIJba,84476,Jamii Tekelezi,Kenya,Nyandarua,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+604,5/24/2021,Kiritiri Health Centre,CtyUwxd2Su2,84476,Jamii Tekelezi,Kenya,Embu,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+605,5/24/2021,Machang'a Dispensary,cVfLPUZdBNq,84476,Jamii Tekelezi,Kenya,Embu,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+606,5/24/2021,Chugu Dispensary,cZXK5fUWJWb,84476,Jamii Tekelezi,Kenya,Meru,0,0,8,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+607,5/24/2021,Kigumo Dispensary,d8O7IEVmHMb,84476,Jamii Tekelezi,Kenya,Embu,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+608,5/24/2021,Cottolengo Mission Hospital,DbgpdrN6q4J,84476,Jamii Tekelezi,Kenya,Meru,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+609,5/24/2021,Turasha Dispensary,DbtqAZaFp7Z,84476,Jamii Tekelezi,Kenya,Nyandarua,0,0,7,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+610,5/24/2021,Muthambi Health Centre,DcTeh7tKU1m,84476,Jamii Tekelezi,Kenya,Tharaka Nithi,0,0,4,3,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+611,5/24/2021,Karuguaru Dispensary,dp1jTJDvgIV,84476,Jamii Tekelezi,Kenya,Tharaka Nithi,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+612,5/24/2021,Ruiri Rural Health Demonstration Centre,eFFxRLL36i9,84476,Jamii Tekelezi,Kenya,Meru,0,0,3,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+613,5/24/2021,Karaba Wango Dispensary,eTbcGObCPQB,84476,Jamii Tekelezi,Kenya,Embu,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+614,5/24/2021,Chuka District Hospital,EWTRe1nWQoJ,84476,Jamii Tekelezi,Kenya,Tharaka Nithi,1,1,51,13,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+615,5/24/2021,Kiraone Dispensary,F1NBPDgGqeM,84476,Jamii Tekelezi,Kenya,Meru,0,0,3,3,0,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+616,5/24/2021,Kithimu Dispensary,F4EQ1FCnous,84476,Jamii Tekelezi,Kenya,Embu,0,0,4,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+617,5/24/2021,CCS Kiritiri Clinic,fe5HPFmdgu6,84476,Jamii Tekelezi,Kenya,Embu,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+618,5/24/2021,Nyambene District Hospital,fKYvOdsKk6J,84476,Jamii Tekelezi,Kenya,Meru,1,2,55,32,0,0,1,0,0,0,1,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+619,5/24/2021,Mikumbune Sub-District Hospital,fmiRLDy0iye,84476,Jamii Tekelezi,Kenya,Meru,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+620,5/24/2021,CCS (ACK) Dispensary,fVnyy1GiNRb,84476,Jamii Tekelezi,Kenya,Meru,0,0,3,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+621,5/24/2021,Kiereni Dispensary,G3EbXsPHdL0,84476,Jamii Tekelezi,Kenya,Tharaka Nithi,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+622,5/24/2021,Kirima Dispensary,g490Mk9Eaqn,84476,Jamii Tekelezi,Kenya,Nyandarua,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+623,5/24/2021,Kunene Dispensary,GdKb08lTvH0,84476,Jamii Tekelezi,Kenya,Meru,0,0,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+624,5/24/2021,Mukothima Health Centre,GdX6FEVfztL,84476,Jamii Tekelezi,Kenya,Tharaka Nithi,0,0,12,7,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+625,5/24/2021,Ngano Health Centre,Gj8bqGWwvwC,84476,Jamii Tekelezi,Kenya,Nyandarua,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+626,5/24/2021,Nthagaiya Catholic Dispensary,gKIlbKz2QQv,84476,Jamii Tekelezi,Kenya,Embu,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+627,5/24/2021,Gatunduri Dispensary,gQEY28Ondgf,84476,Jamii Tekelezi,Kenya,Embu,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+628,5/24/2021,Nthambiro Dispensary,gsprlCwOVIO,84476,Jamii Tekelezi,Kenya,Meru,0,0,17,7,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+629,5/24/2021,Kibugua Health Centre,GWGU5sLBMGH,84476,Jamii Tekelezi,Kenya,Tharaka Nithi,0,0,3,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+630,5/24/2021,Ishiara Sub-District Hospital,gwZuDfkIEkI,84476,Jamii Tekelezi,Kenya,Embu,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+631,5/24/2021,Mpukoni Health Centre,gWZzqLjSXUb,84476,Jamii Tekelezi,Kenya,Tharaka Nithi,0,0,10,5,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+632,5/24/2021,St Lukes Cottage Hospital,h4bWnNCptHy,84476,Jamii Tekelezi,Kenya,Meru,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+633,5/24/2021,Mutuati Sub-District Hospital,hbjcWVatbIY,84476,Jamii Tekelezi,Kenya,Meru,0,0,34,6,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+634,5/24/2021,Ikuu Dispensary,hdruOpsxv36,84476,Jamii Tekelezi,Kenya,Tharaka Nithi,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+635,5/24/2021,Tigania Hospital,hmsQbHsXkMV,84476,Jamii Tekelezi,Kenya,Meru,0,0,9,3,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+636,5/24/2021,Timau Catholic Dispensary,huiBrr0Ox0D,84476,Jamii Tekelezi,Kenya,Meru,0,0,3,3,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+637,5/24/2021,Kaimbaga Dispensary,hWQU2KIoWxo,84476,Jamii Tekelezi,Kenya,Nyandarua,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+638,5/24/2021,Nembure Health Centre,I8ZnWhClkyq,84476,Jamii Tekelezi,Kenya,Embu,0,0,2,4,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+639,5/24/2021,Ndunyu Njeru Dispensary,iBgKjn8OYnx,84476,Jamii Tekelezi,Kenya,Nyandarua,1,0,21,12,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+640,5/24/2021,Emmanuel Kigari (ACK) Dispensary,Ii5P8lU4YJs,84476,Jamii Tekelezi,Kenya,Embu,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+641,5/24/2021,Family Care Medical Centre (Meru),iPcFQjFTxPm,84476,Jamii Tekelezi,Kenya,Meru,0,0,4,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+642,5/24/2021,Embu Provincial General Hospital,IROLxe1CWyV,84476,Jamii Tekelezi,Kenya,Embu,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+643,5/24/2021,Kiriogo Dispensary,iUa6FxxfB0g,84476,Jamii Tekelezi,Kenya,Nyandarua,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+644,5/24/2021,Mbeu Sub-District Hospital,iVfmG7129mb,84476,Jamii Tekelezi,Kenya,Meru,0,0,13,6,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+645,5/24/2021,St Theresa Kiirua Hospital (Kiirua),jHV9gJpWFRA,84476,Jamii Tekelezi,Kenya,Meru,0,0,21,13,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+646,5/24/2021,Kamwathu Dispensary,JIeuKUhcULm,84476,Jamii Tekelezi,Kenya,Tharaka Nithi,0,0,3,3,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+647,5/24/2021,Kamaindi Dispensary,JkTPYDJBimp,84476,Jamii Tekelezi,Kenya,Tharaka Nithi,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+648,5/24/2021,Mbuyu Dispensary,jlAJXVHPvhs,84476,Jamii Tekelezi,Kenya,Nyandarua,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+649,5/24/2021,Mutiokiama Health Centre,JRDGFC6UgdQ,84476,Jamii Tekelezi,Kenya,Meru,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+650,5/24/2021,Kiambere Dam Dispensary,JVPTCgh6LRT,84476,Jamii Tekelezi,Kenya,Embu,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+651,5/24/2021,Magutuni District Hospital,jXqVorDP9fd,84476,Jamii Tekelezi,Kenya,Tharaka Nithi,1,1,8,18,0,0,0,1,0,0,0,1,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+652,5/24/2021,Mutionjuri Health Centre,K9QlnCr7QUT,84476,Jamii Tekelezi,Kenya,Meru,0,0,7,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+653,5/24/2021,Kiburine Dispensary,Kg0zTVtAxUm,84476,Jamii Tekelezi,Kenya,Meru,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+654,5/24/2021,Githongo District Hospital,kovi3AADCml,84476,Jamii Tekelezi,Kenya,Meru,0,0,7,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+655,5/24/2021,Kiambere Health Centre,ksk4ITPDqt0,84476,Jamii Tekelezi,Kenya,Embu,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+656,5/24/2021,Muutine Med Clinic,L5iL25uaP3R,84476,Jamii Tekelezi,Kenya,Meru,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+657,5/24/2021,Mboroga Dispensary,L6IeW8vTHa6,84476,Jamii Tekelezi,Kenya,Meru,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+658,5/24/2021,Weru Health Center,lIrbYqhuPsJ,84476,Jamii Tekelezi,Kenya,Nyandarua,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+659,5/24/2021,Gategi Health Centre,lmtezswxrLy,84476,Jamii Tekelezi,Kenya,Embu,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+660,5/24/2021,Kigaa Dispensary,lOVj53te4fi,84476,Jamii Tekelezi,Kenya,Embu,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+661,5/24/2021,Minugu Dispensary,LoZIj2B6ifU,84476,Jamii Tekelezi,Kenya,Tharaka Nithi,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+662,5/24/2021,Liviero Dispensary,lpVF7ECK6je,84476,Jamii Tekelezi,Kenya,Embu,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+663,5/24/2021,Ndaragwa Health Centre,LqyOkuzfVuX,84476,Jamii Tekelezi,Kenya,Nyandarua,0,0,20,13,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+664,5/24/2021,Bamboo Health Centre,LTOr1pNejds,84476,Jamii Tekelezi,Kenya,Nyandarua,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+665,5/24/2021,Subuku Dispensary (Nyandarua North),M0VxTclDHJv,84476,Jamii Tekelezi,Kenya,Nyandarua,0,0,5,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+666,5/24/2021,Kiirua Dispensary,m2fVjr2GTIa,84476,Jamii Tekelezi,Kenya,Meru,0,0,8,3,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+667,5/24/2021,Muthara Sub-District Hospital,M2ryogi5lVN,84476,Jamii Tekelezi,Kenya,Meru,1,0,8,1,0,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+668,5/24/2021,Presbyterian Ttc Rubate Health Centre,Mi0j9FIX3es,84476,Jamii Tekelezi,Kenya,Tharaka Nithi,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+669,5/24/2021,Baari Health Centre,mJzeKiO6YML,84476,Jamii Tekelezi,Kenya,Nyandarua,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+670,5/24/2021,Riachina Dispensary,mkYbzTcCgwb,84476,Jamii Tekelezi,Kenya,Embu,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+671,5/24/2021,Mukungi Dispensary,MMJfiTABVdg,84476,Jamii Tekelezi,Kenya,Nyandarua,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+672,5/24/2021,Kibunga Sub-District Hospital,MnVkYrRhRwA,84476,Jamii Tekelezi,Kenya,Tharaka Nithi,0,0,7,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+673,5/24/2021,Naari Health Centre,mrOnRf9alIA,84476,Jamii Tekelezi,Kenya,Meru,0,0,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+674,5/24/2021,Kiamiriru MCK Dispensary,nbrFJNJFkxJ,84476,Jamii Tekelezi,Kenya,Meru,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+675,5/24/2021,Makengi Dispensary (Embu),niYZBDA5gbc,84476,Jamii Tekelezi,Kenya,Embu,0,0,3,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+676,5/24/2021,Kionyo Dispensary (Imenti South),NoErV4BxNA7,84476,Jamii Tekelezi,Kenya,Meru,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+677,5/24/2021,Runyenjes District Hospital,NqPH5CKYgUU,84476,Jamii Tekelezi,Kenya,Embu,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+678,5/24/2021,Mirangine Health Centre,NrmTe0EXHbJ,84476,Jamii Tekelezi,Kenya,Nyandarua,0,1,30,9,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+679,5/24/2021,Karurumo Rhtc,NUo3VBnrx47,84476,Jamii Tekelezi,Kenya,Embu,0,0,2,2,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+680,5/24/2021,Timau Sub-District Hospital,NV96Kj0anjZ,84476,Jamii Tekelezi,Kenya,Meru,0,0,22,1,0,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+681,5/24/2021,Kimachia Dispensary,NwZT5hzUkjB,84476,Jamii Tekelezi,Kenya,Meru,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+682,5/24/2021,Makima Dispensary,nylUU33ouME,84476,Jamii Tekelezi,Kenya,Embu,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+683,5/24/2021,Kahembe Health Centre,oBIUaatujZR,84476,Jamii Tekelezi,Kenya,Nyandarua,0,0,5,3,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+684,5/24/2021,Manunga Health Centre,odx2EmmP8IM,84476,Jamii Tekelezi,Kenya,Nyandarua,1,0,23,3,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+685,5/24/2021,Kathigu Health Center,OnAjLmJXtED,84476,Jamii Tekelezi,Kenya,Meru,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+686,5/24/2021,Olborosat Dispensary,oR12Qi7Kaw0,84476,Jamii Tekelezi,Kenya,Nyandarua,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+687,5/24/2021,Ngorika Dispensary,PAwJ0bAl42A,84476,Jamii Tekelezi,Kenya,Nyandarua,0,0,3,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+688,5/24/2021,Nkubu Dispensary,pHBSxLgQYtC,84476,Jamii Tekelezi,Kenya,Meru,0,0,10,7,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+689,5/24/2021,Mastoo Dispensary,pHP1u0HE6qc,84476,Jamii Tekelezi,Kenya,Nyandarua,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+690,5/24/2021,Ugweri Disp,PlKbNw6G3Wv,84476,Jamii Tekelezi,Kenya,Embu,0,0,5,4,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+691,5/24/2021,Kibirichia Sub-District Hospital,PLkZf0geGoy,84476,Jamii Tekelezi,Kenya,Meru,0,0,7,1,0,0,1,1,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+692,5/24/2021,Chuka Cottage Hospital,psHTPguSW3j,84476,Jamii Tekelezi,Kenya,Tharaka Nithi,0,0,10,10,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+693,5/24/2021,Shamata Health Centre,psTyb7YzhF5,84476,Jamii Tekelezi,Kenya,Nyandarua,0,0,9,3,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+694,5/24/2021,Charuru Dispensary,PTh0sEHCAxa,84476,Jamii Tekelezi,Kenya,Meru,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+695,5/24/2021,Pesi Dispensary,pVdxoyR7T6I,84476,Jamii Tekelezi,Kenya,Nyandarua,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+696,5/24/2021,Uringu Health Centre,PyOitpr2WOx,84476,Jamii Tekelezi,Kenya,Meru,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+697,5/24/2021,Chamuka (CDF) Dispensary,Q30hhBbLqPC,84476,Jamii Tekelezi,Kenya,Nyandarua,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+698,5/24/2021,Nguruki-Iruma Dispensary,qh6MKLclI6s,84476,Jamii Tekelezi,Kenya,Tharaka Nithi,0,0,3,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+699,5/24/2021,Lewa Downs Dispensary,QHlmwA4FD1n,84476,Jamii Tekelezi,Kenya,Meru,0,0,2,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+700,5/24/2021,Embu Children Clinic,qk04xUaN0fK,84476,Jamii Tekelezi,Kenya,Embu,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+701,5/24/2021,Kathunguri Dispensary,QMWuh8GY4FP,84476,Jamii Tekelezi,Kenya,Embu,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+702,5/24/2021,Gichiche Dispensary,qO7hARsKOb6,84476,Jamii Tekelezi,Kenya,Embu,0,0,4,3,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+703,5/24/2021,Kanyuambora Dispensary,qSjEGB1yUKs,84476,Jamii Tekelezi,Kenya,Embu,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+704,5/24/2021,Mitunguu Ccs Dispensary,R1co9eO3q12,84476,Jamii Tekelezi,Kenya,Meru,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+705,5/24/2021,Kambandi Dispensary,RDvymjyauVd,84476,Jamii Tekelezi,Kenya,Tharaka Nithi,0,0,5,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+706,5/24/2021,Kiarago Health Centre (Imenti South),RGFmjPF38II,84476,Jamii Tekelezi,Kenya,Meru,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+707,5/24/2021,Wanjohi Health Centre,RTlbXR77IWU,84476,Jamii Tekelezi,Kenya,Nyandarua,0,0,11,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+708,5/24/2021,St Michael Nursing Home,rtPtlYR3NII,84476,Jamii Tekelezi,Kenya,Embu,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+709,5/24/2021,PCEA Kiengu Disp/Mat,Rzk2ARMziZP,84476,Jamii Tekelezi,Kenya,Meru,0,0,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+710,5/24/2021,Kiamuringa Dispensary,s9UiGKh0HKW,84476,Jamii Tekelezi,Kenya,Embu,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+711,5/24/2021,Rukira Dispensary,saKQjMNz8Ik,84476,Jamii Tekelezi,Kenya,Embu,0,0,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+712,5/24/2021,Kirie Dispensary,Sar9tmOr36x,84476,Jamii Tekelezi,Kenya,Embu,0,0,7,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+713,5/24/2021,Meru District Hospital,sCRnmH3motj,84476,Jamii Tekelezi,Kenya,Meru,1,0,23,0,1,0,1,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+714,5/24/2021,Oljororok Catholic Dispensary,Sjn4QAov5aQ,84476,Jamii Tekelezi,Kenya,Nyandarua,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+715,5/24/2021,Kangeta Health Centre,sNlRanexgey,84476,Jamii Tekelezi,Kenya,Meru,0,0,4,5,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+716,5/24/2021,Kirogine Dispensary,sQCei5jPh44,84476,Jamii Tekelezi,Kenya,Meru,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+717,5/24/2021,Dallas Dispensary,sRdAeQShDlw,84476,Jamii Tekelezi,Kenya,Embu,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+718,5/24/2021,Kamumu Dispensary,sYuN2zJiBKb,84476,Jamii Tekelezi,Kenya,Embu,0,0,4,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+719,5/24/2021,Kiguchwa Health Center,SZgqoLCOoCv,84476,Jamii Tekelezi,Kenya,Meru,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+720,5/24/2021,St Joseph Catholic Dispensary (Igembe),t1GTMOrAsOa,84476,Jamii Tekelezi,Kenya,Meru,0,0,2,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+721,5/24/2021,Gakoromone Dispensary,TA3vuXzobuL,84476,Jamii Tekelezi,Kenya,Meru,0,0,4,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+722,5/24/2021,Baragu Health Centre,tb2ANtsOua0,84476,Jamii Tekelezi,Kenya,Tharaka Nithi,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+723,5/24/2021,New Mawingu Health Centre,TCHLeOkYYsn,84476,Jamii Tekelezi,Kenya,Nyandarua,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+724,5/24/2021,Kunati Health Centre,Tk9hMTW6YlM,84476,Jamii Tekelezi,Kenya,Meru,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+725,5/24/2021,Silibwet Health Centre (Nyandaruawest),TtSspBiYzHq,84476,Jamii Tekelezi,Kenya,Nyandarua,0,0,6,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+726,5/24/2021,Uruku Dispensary,tXVR1t0rqFM,84476,Jamii Tekelezi,Kenya,Nyandarua,0,0,4,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+727,5/24/2021,Amugaa Health Centre,U1CwLZE4Sya,84476,Jamii Tekelezi,Kenya,Meru,0,0,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+728,5/24/2021,Mutindwa Dispensary,U2bOmE6Iyxy,84476,Jamii Tekelezi,Kenya,Tharaka Nithi,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+729,5/24/2021,Karama Dispensary,UFJmL1fAqoW,84476,Jamii Tekelezi,Kenya,Meru,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+730,5/24/2021,Gachuriri Dispensary,ulvOUkZPOys,84476,Jamii Tekelezi,Kenya,Embu,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+731,5/24/2021,Rwika Dispensary,ULzIuKZw7pX,84476,Jamii Tekelezi,Kenya,Embu,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+732,5/24/2021,Igoki Dispensary,URINYkRF6cu,84476,Jamii Tekelezi,Kenya,Meru,0,0,5,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+733,5/24/2021,Lereshwa Dispensary,USUCFkjtjj8,84476,Jamii Tekelezi,Kenya,Nyandarua,0,0,2,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+734,5/24/2021,Ithimbari Dispensary,uttUWo9CbSm,84476,Jamii Tekelezi,Kenya,Meru,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+735,5/24/2021,Gatunga Health Centre,UVqXkWGPMha,84476,Jamii Tekelezi,Kenya,Tharaka Nithi,0,0,13,3,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+736,5/24/2021,Kinoro Sub-District Hospital,UvYZDCyPJBu,84476,Jamii Tekelezi,Kenya,Meru,0,0,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+737,5/24/2021,Kaongo Health Centre,UW4LuVnAN23,84476,Jamii Tekelezi,Kenya,Meru,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+738,5/24/2021,Kanja Health Centre,uzOAQslSgmN,84476,Jamii Tekelezi,Kenya,Embu,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+739,5/24/2021,Mwerokanga Dispensary,V9Hf7cG0JDf,84476,Jamii Tekelezi,Kenya,Meru,0,0,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+740,5/24/2021,Gatunga Model Health Centre,vDavi1lTko3,84476,Jamii Tekelezi,Kenya,Tharaka Nithi,0,0,19,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+741,5/24/2021,Geta Bush Health Centre,VdWKAir7fEv,84476,Jamii Tekelezi,Kenya,Nyandarua,0,0,4,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+742,5/24/2021,Chiakariga H/C,vEeFkE72jt7,84476,Jamii Tekelezi,Kenya,Tharaka Nithi,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+743,5/24/2021,Murungaru Health Centre,VHkUOWg7v3c,84476,Jamii Tekelezi,Kenya,Nyandarua,1,0,10,4,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+744,5/24/2021,Acef Ena Health Centre,VUv3MNGbLMe,84476,Jamii Tekelezi,Kenya,Embu,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+745,5/24/2021,Kairuri Health Centre,vZt0Soe1AsL,84476,Jamii Tekelezi,Kenya,Embu,0,0,5,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+746,5/24/2021,Mukui Health Centre,W0NGQJPgGQR,84476,Jamii Tekelezi,Kenya,Tharaka Nithi,0,0,21,9,0,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+747,5/24/2021,Ndemi Health Centre,w6NbIpYTDAc,84476,Jamii Tekelezi,Kenya,Nyandarua,0,0,11,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+748,5/24/2021,Ichomba Clinic,WbOSQm83adC,84476,Jamii Tekelezi,Kenya,Meru,0,0,1,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+749,5/24/2021,St Mathews and Sarah Dispensary,wdkjDZUc0Vd,84476,Jamii Tekelezi,Kenya,Nyandarua,0,0,3,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+750,5/24/2021,Kieni Kia Ndege Dispensary,WL692GiqMHm,84476,Jamii Tekelezi,Kenya,Meru,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+751,5/24/2021,Mitunguu Dispensary,WsH1zEK3sGP,84476,Jamii Tekelezi,Kenya,Meru,0,0,8,4,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+752,5/24/2021,Ontulili Dispensary,wu7982abqS7,84476,Jamii Tekelezi,Kenya,Meru,0,0,2,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+753,5/24/2021,Karangatha Health Centre,wy1SFAUIGpo,84476,Jamii Tekelezi,Kenya,Nyandarua,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+754,5/24/2021,Theere Health Centre,x4H4rQ3T7F6,84476,Jamii Tekelezi,Kenya,Meru,0,0,17,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+755,5/24/2021,Mweru Dispensary (Imenti South),XACCCky77Qb,84476,Jamii Tekelezi,Kenya,Meru,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+756,5/24/2021,Tharaka District Hospital,xce9AFrapR9,84476,Jamii Tekelezi,Kenya,Tharaka Nithi,0,1,21,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+757,5/24/2021,Kanyakine District Hospital,XGw1fCwVLc6,84476,Jamii Tekelezi,Kenya,Meru,0,0,31,10,0,0,2,0,0,0,2,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+758,5/24/2021,Mukuuni Dispensary,XGZslyAbXPS,84476,Jamii Tekelezi,Kenya,Tharaka Nithi,0,1,8,2,0,0,1,0,0,0,1,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+759,5/24/2021,Nganduri Dispensary,xwVOvXuJvpL,84476,Jamii Tekelezi,Kenya,Embu,0,0,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+760,5/24/2021,Gatimu Health Centre,yDVD7PQVNW3,84476,Jamii Tekelezi,Kenya,Nyandarua,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+761,5/24/2021,Akachiu Health Centre,YGtY9QtkwrW,84476,Jamii Tekelezi,Kenya,Meru,0,0,4,4,0,0,1,1,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+762,5/24/2021,Giaki Sub-District Hospital,yJw7N5gx1HW,84476,Jamii Tekelezi,Kenya,Meru,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+763,5/24/2021,Getrude Dispensary,Yn4wNsOQBFU,84476,Jamii Tekelezi,Kenya,Embu,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+764,5/24/2021,Thanantu Faith Clinic Dispensary,YslGk4Jhs6q,84476,Jamii Tekelezi,Kenya,Tharaka Nithi,1,0,9,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+765,5/24/2021,Mufu Dispensary,z4Kwdy0Rnt8,84476,Jamii Tekelezi,Kenya,Embu,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+766,5/24/2021,Gitoro Dispensary,zF1v5qs0nKg,84476,Jamii Tekelezi,Kenya,Meru,0,0,21,10,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+767,5/24/2021,Miathene District Hospital,zf4jnHpWR16,84476,Jamii Tekelezi,Kenya,Meru,0,0,16,6,0,0,1,1,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+768,5/24/2021,Gaciongo Dispensary,zG7VieG5pUR,84476,Jamii Tekelezi,Kenya,Tharaka Nithi,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+769,5/24/2021,Kinoru Dispensary,zHWXo9YeEMy,84476,Jamii Tekelezi,Kenya,Meru,0,0,22,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+770,5/24/2021,Ntemwene Dispensary,ZpdIMKMptdX,84476,Jamii Tekelezi,Kenya,Meru,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+771,5/24/2021,Tuuru Catholic Health Centre,ZR91mGF1tim,84476,Jamii Tekelezi,Kenya,Meru,0,0,14,3,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+772,5/31/2021,Kianjokoma Sub-District Hospital,a2brqsdATIc,84476,Jamii Tekelezi,Kenya,Embu,0,0,5,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,16,11,259,124,2,2,62,27,14,9,197,97,0,0,0,0
+773,5/31/2021,Mikinduri Sub-District Hospial,a6ONbsUpAdf,84476,Jamii Tekelezi,Kenya,Meru,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,12,15,208,83,12,14,102,40,0,1,94,36,0,0,12,7
+774,5/31/2021,Gatimbi Health Centre,Acz9X8qvbtP,84476,Jamii Tekelezi,Kenya,Meru,0,0,2,3,0,0,0,0,0,0,0,0,0,0,0,0,0,0,4,11,122,47,4,11,25,6,0,0,97,41,0,0,0,0
+775,5/31/2021,Kina Murera Dispensary,aFY6mSEf2lr,84476,Jamii Tekelezi,Kenya,Meru,0,0,7,4,0,0,0,0,0,0,0,0,0,0,0,0,0,0,18,4,117,45,18,4,20,6,0,0,97,39,0,0,0,0
+776,5/31/2021,Kibugu Health Centre,Amjvsr9TKus,84476,Jamii Tekelezi,Kenya,Embu,0,0,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,9,2,167,68,5,0,36,20,4,2,131,48,0,0,0,0
+777,5/31/2021,Kiamuchairu Health Centre,aQN1xlOQVLL,84476,Jamii Tekelezi,Kenya,Tharaka Nithi,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,24,13,1,1,9,2,0,0,15,11,0,0,0,0
+778,5/31/2021,Kawiria Maternity and Nursing Home,aTqjTEXhhwG,84476,Jamii Tekelezi,Kenya,Meru,0,0,6,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+779,5/31/2021,Kawiru Dispensary,B0XtOtRHzXp,84476,Jamii Tekelezi,Kenya,Meru,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2,1,25,12,2,1,25,12,0,0,0,0,0,0,0,0
+780,5/31/2021,Meru Drop In Center,balbxgLRzp2,84476,Jamii Tekelezi,Kenya,Meru,0,0,0,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,65,22,0,0,17,5,0,0,48,16,0,0,0,1
+781,5/31/2021,Uruku Health Centre,BbkpG6t5uy0,84476,Jamii Tekelezi,Kenya,Meru,0,0,3,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,27,4,0,0,0,0,0,0,27,4,0,0,0,0
+782,5/31/2021,Karau Health Centre,Bdb91tBzdzh,84476,Jamii Tekelezi,Kenya,Embu,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,4,5,60,35,4,5,47,27,0,0,13,8,0,0,0,0
+783,5/31/2021,Our Lady of Mercy (Magumu),bhxzvBtlT1z,84476,Jamii Tekelezi,Kenya,Nyandarua,0,0,8,7,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+784,5/31/2021,Kathithi Dispensary,BlseYmiMH5L,84476,Jamii Tekelezi,Kenya,Meru,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,44,27,0,0,28,13,0,0,16,14,0,0,0,0
+785,5/31/2021,Kathanje Dispensary,BmbfMDSuhgW,84476,Jamii Tekelezi,Kenya,Embu,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,18,6,1,1,18,6,0,0,0,0,0,0,0,0
+786,5/31/2021,Mbonzuki Dispensary,bmxJ6oH93l7,84476,Jamii Tekelezi,Kenya,Embu,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+787,5/31/2021,Kaanwa Dispensary,bpQjQEeuAzO,84476,Jamii Tekelezi,Kenya,Tharaka Nithi,0,0,0,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,4,3,76,19,2,3,28,7,2,0,28,6,0,0,20,6
+788,5/31/2021,Woodlands Hospital,bqtQXIJE7j4,84476,Jamii Tekelezi,Kenya,Meru,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+789,5/31/2021,Kathangacini Dispensary,But0KGtpN8L,84476,Jamii Tekelezi,Kenya,Tharaka Nithi,0,0,12,3,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+790,5/31/2021,Kithegi Dispensary,bwsY8Ome3im,84476,Jamii Tekelezi,Kenya,Embu,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+791,5/31/2021,Kajuki Health Centre,bZBzAIFg2YN,84476,Jamii Tekelezi,Kenya,Tharaka Nithi,0,0,5,3,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,74,38,0,0,23,11,0,0,43,20,0,0,8,7
+792,5/31/2021,HWWK Maua Dice,C8zA97wze40,84476,Jamii Tekelezi,Kenya,Meru,0,0,14,1,0,0,0,0,0,0,0,0,0,0,0,0,2,0,0,0,9,4,0,0,3,4,0,0,6,0,0,0,0,0
+793,5/31/2021,Kaelo Dispensary,cIcY0ELoWC2,84476,Jamii Tekelezi,Kenya,Meru,0,0,7,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,12,5,0,0,12,5,0,0,0,0,0,0,0,0
+794,5/31/2021,Mbeere District Hospital,Ckvm0JOmwe4,84476,Jamii Tekelezi,Kenya,Embu,0,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,20,13,379,121,20,13,260,75,0,0,119,46,0,0,0,0
+795,5/31/2021,Huhoini Dispensary,CpuonBKIJba,84476,Jamii Tekelezi,Kenya,Nyandarua,0,0,7,3,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+796,5/31/2021,Kiritiri Health Centre,CtyUwxd2Su2,84476,Jamii Tekelezi,Kenya,Embu,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,23,26,438,195,12,9,165,69,11,17,267,121,0,0,6,5
+797,5/31/2021,Machang'a Dispensary,cVfLPUZdBNq,84476,Jamii Tekelezi,Kenya,Embu,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+798,5/31/2021,Chugu Dispensary,cZXK5fUWJWb,84476,Jamii Tekelezi,Kenya,Meru,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,22,9,0,0,7,2,0,0,15,7,0,0,0,0
+799,5/31/2021,Kigumo Dispensary,d8O7IEVmHMb,84476,Jamii Tekelezi,Kenya,Embu,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,3,1,39,17,3,1,29,16,0,0,10,1,0,0,0,0
+800,5/31/2021,Cottolengo Mission Hospital,DbgpdrN6q4J,84476,Jamii Tekelezi,Kenya,Meru,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,86,574,292,76,59,202,129,47,27,365,157,29,0,7,6,0
+801,5/31/2021,Turasha Dispensary,DbtqAZaFp7Z,84476,Jamii Tekelezi,Kenya,Nyandarua,0,0,3,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+802,5/31/2021,Muthambi Health Centre,DcTeh7tKU1m,84476,Jamii Tekelezi,Kenya,Tharaka Nithi,2,0,9,7,0,0,1,0,0,0,1,0,0,0,0,0,0,0,19,12,232,117,5,4,80,26,14,8,152,91,0,0,0,0
+803,5/31/2021,Karuguaru Dispensary,dp1jTJDvgIV,84476,Jamii Tekelezi,Kenya,Tharaka Nithi,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+804,5/31/2021,Ruiri Rural Health Demonstration Centre,eFFxRLL36i9,84476,Jamii Tekelezi,Kenya,Meru,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,3,4,112,47,3,4,35,16,0,0,77,31,0,0,0,0
+805,5/31/2021,Karaba Wango Dispensary,eTbcGObCPQB,84476,Jamii Tekelezi,Kenya,Embu,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+806,5/31/2021,Chuka District Hospital,EWTRe1nWQoJ,84476,Jamii Tekelezi,Kenya,Tharaka Nithi,1,0,29,10,0,0,4,0,0,0,4,0,0,0,0,0,0,1,37,22,831,403,4,3,98,27,33,18,632,328,0,1,101,48
+807,5/31/2021,Kiraone Dispensary,F1NBPDgGqeM,84476,Jamii Tekelezi,Kenya,Meru,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2,2,23,11,2,2,23,11,0,0,0,0,0,0,0,0
+808,5/31/2021,Kithimu Dispensary,F4EQ1FCnous,84476,Jamii Tekelezi,Kenya,Embu,0,0,1,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,5,4,90,35,3,0,16,6,2,4,48,18,0,0,26,11
+809,5/31/2021,CCS Kiritiri Clinic,fe5HPFmdgu6,84476,Jamii Tekelezi,Kenya,Embu,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+810,5/31/2021,Nyambene District Hospital,fKYvOdsKk6J,84476,Jamii Tekelezi,Kenya,Meru,0,1,45,32,0,0,0,0,0,0,0,0,0,0,0,0,0,0,41,42,999,424,19,18,232,55,21,23,363,171,1,1,404,198
+811,5/31/2021,Mikumbune Sub-District Hospital,fmiRLDy0iye,84476,Jamii Tekelezi,Kenya,Meru,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,8,2,170,72,8,2,66,14,0,0,104,58,0,0,0,0
+812,5/31/2021,CCS (ACK) Dispensary,fVnyy1GiNRb,84476,Jamii Tekelezi,Kenya,Meru,0,0,5,2,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+813,5/31/2021,Kiereni Dispensary,G3EbXsPHdL0,84476,Jamii Tekelezi,Kenya,Tharaka Nithi,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+814,5/31/2021,Kirima Dispensary,g490Mk9Eaqn,84476,Jamii Tekelezi,Kenya,Nyandarua,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+815,5/31/2021,Kunene Dispensary,GdKb08lTvH0,84476,Jamii Tekelezi,Kenya,Meru,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+816,5/31/2021,Mukothima Health Centre,GdX6FEVfztL,84476,Jamii Tekelezi,Kenya,Tharaka Nithi,0,0,14,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,3,33,24,1,2,15,8,0,1,18,16,0,0,0,0
+817,5/31/2021,Ngano Health Centre,Gj8bqGWwvwC,84476,Jamii Tekelezi,Kenya,Nyandarua,0,0,4,4,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2,3,45,18,0,2,10,0,2,1,35,18,0,0,0,0
+818,5/31/2021,Nthagaiya Catholic Dispensary,gKIlbKz2QQv,84476,Jamii Tekelezi,Kenya,Embu,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2,1,27,8,2,1,27,8,0,0,0,0,0,0,0,0
+819,5/31/2021,Gatunduri Dispensary,gQEY28Ondgf,84476,Jamii Tekelezi,Kenya,Embu,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+820,5/31/2021,Nthambiro Dispensary,gsprlCwOVIO,84476,Jamii Tekelezi,Kenya,Meru,0,0,18,3,0,0,0,0,0,0,0,0,0,0,0,0,0,0,16,10,152,81,16,10,90,51,0,0,62,30,0,0,0,0
+821,5/31/2021,Kibugua Health Centre,GWGU5sLBMGH,84476,Jamii Tekelezi,Kenya,Tharaka Nithi,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,12,7,170,80,8,6,51,14,4,1,100,57,0,0,19,9
+822,5/31/2021,Ishiara Sub-District Hospital,gwZuDfkIEkI,84476,Jamii Tekelezi,Kenya,Embu,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,28,13,342,166,28,13,342,166,0,0,0,0,0,0,0,0
+823,5/31/2021,Mpukoni Health Centre,gWZzqLjSXUb,84476,Jamii Tekelezi,Kenya,Tharaka Nithi,0,0,13,4,0,0,0,0,0,0,0,0,0,0,0,0,0,0,7,6,94,39,6,5,39,16,1,1,26,13,0,0,29,10
+824,5/31/2021,St Lukes Cottage Hospital,h4bWnNCptHy,84476,Jamii Tekelezi,Kenya,Meru,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+825,5/31/2021,Wachoro Dispensary,hbfqeZrD6Xy,84476,Jamii Tekelezi,Kenya,Embu,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+826,5/31/2021,Wachoro Dispensary,hbfqeZrD6Xy,84476,Jamii Tekelezi,Kenya,Embu,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+827,5/31/2021,Mutuati Sub-District Hospital,hbjcWVatbIY,84476,Jamii Tekelezi,Kenya,Meru,0,0,32,5,0,0,0,0,0,0,0,0,0,0,0,0,0,0,19,16,351,167,19,16,223,109,0,0,128,58,0,0,0,0
+828,5/31/2021,Ikuu Dispensary,hdruOpsxv36,84476,Jamii Tekelezi,Kenya,Tharaka Nithi,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+829,5/31/2021,Tigania Hospital,hmsQbHsXkMV,84476,Jamii Tekelezi,Kenya,Meru,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,10,7,221,94,10,6,85,24,0,1,136,70,0,0,0,0
+830,5/31/2021,Timau Catholic Dispensary,huiBrr0Ox0D,84476,Jamii Tekelezi,Kenya,Meru,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+831,5/31/2021,Kaimbaga Dispensary,hWQU2KIoWxo,84476,Jamii Tekelezi,Kenya,Nyandarua,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,19,7,0,0,17,6,0,0,2,1,0,0,0,0
+832,5/31/2021,Nembure Health Centre,I8ZnWhClkyq,84476,Jamii Tekelezi,Kenya,Embu,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,13,3,226,105,11,2,53,18,2,1,159,83,0,0,14,4
+833,5/31/2021,Ndunyu Njeru Dispensary,iBgKjn8OYnx,84476,Jamii Tekelezi,Kenya,Nyandarua,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,15,7,0,0,15,7,0,0,0,0,0,0,0,0
+834,5/31/2021,Emmanuel Kigari (ACK) Dispensary,Ii5P8lU4YJs,84476,Jamii Tekelezi,Kenya,Embu,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+835,5/31/2021,Family Care Medical Centre (Meru),iPcFQjFTxPm,84476,Jamii Tekelezi,Kenya,Meru,0,0,4,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,64,17,0,1,2,2,0,0,62,15,0,0,0,0
+836,5/31/2021,Embu Provincial General Hospital,IROLxe1CWyV,84476,Jamii Tekelezi,Kenya,Embu,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,37,41,1647,722,34,32,743,332,3,9,846,344,0,0,58,46
+837,5/31/2021,Kiriogo Dispensary,iUa6FxxfB0g,84476,Jamii Tekelezi,Kenya,Nyandarua,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+838,5/31/2021,Mbeu Sub-District Hospital,iVfmG7129mb,84476,Jamii Tekelezi,Kenya,Meru,0,0,3,3,0,0,0,0,0,0,0,0,0,0,0,0,0,0,7,8,110,48,7,5,62,28,0,3,48,20,0,0,0,0
+839,5/31/2021,St Theresa Kiirua Hospital (Kiirua),jHV9gJpWFRA,84476,Jamii Tekelezi,Kenya,Meru,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,13,10,450,174,13,10,105,31,0,0,345,143,0,0,0,0
+840,5/31/2021,Kamwathu Dispensary,JIeuKUhcULm,84476,Jamii Tekelezi,Kenya,Tharaka Nithi,0,0,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+841,5/31/2021,Kamaindi Dispensary,JkTPYDJBimp,84476,Jamii Tekelezi,Kenya,Tharaka Nithi,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+842,5/31/2021,Mbuyu Dispensary,jlAJXVHPvhs,84476,Jamii Tekelezi,Kenya,Nyandarua,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,15,13,373,149,2,3,57,7,13,10,316,142,0,0,0,0
+843,5/31/2021,Mutiokiama Health Centre,JRDGFC6UgdQ,84476,Jamii Tekelezi,Kenya,Meru,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,3,1,15,11,0,0,2,1,3,1,13,10,0,0,0,0
+844,5/31/2021,Kiambere Dam Dispensary,JVPTCgh6LRT,84476,Jamii Tekelezi,Kenya,Embu,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,11,9,122,32,11,9,122,32,0,0,0,0,0,0,0,0
+845,5/31/2021,Magutuni District Hospital,jXqVorDP9fd,84476,Jamii Tekelezi,Kenya,Tharaka Nithi,0,0,2,3,0,0,0,0,0,0,0,0,0,0,0,0,0,1,10,11,142,81,4,4,20,6,6,7,122,75,0,0,0,0
+846,5/31/2021,Mutionjuri Health Centre,K9QlnCr7QUT,84476,Jamii Tekelezi,Kenya,Meru,0,0,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2,2,14,7,2,2,12,5,0,0,2,2,0,0,0,0
+847,5/31/2021,Kiburine Dispensary,Kg0zTVtAxUm,84476,Jamii Tekelezi,Kenya,Meru,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2,1,29,14,2,1,16,7,0,0,13,7,0,0,0,0
+848,5/31/2021,Githongo District Hospital,kovi3AADCml,84476,Jamii Tekelezi,Kenya,Meru,0,0,13,7,0,0,0,0,0,0,0,0,0,0,0,0,0,0,13,6,261,95,11,6,49,10,2,0,212,85,0,0,0,0
+849,5/31/2021,Kiambere Health Centre,ksk4ITPDqt0,84476,Jamii Tekelezi,Kenya,Embu,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,3,47,17,0,3,24,11,0,0,23,6,0,0,0,0
+850,5/31/2021,Muutine Med Clinic,L5iL25uaP3R,84476,Jamii Tekelezi,Kenya,Meru,0,0,2,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+851,5/31/2021,Mboroga Dispensary,L6IeW8vTHa6,84476,Jamii Tekelezi,Kenya,Meru,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,2,45,15,1,2,0,0,0,0,45,15,0,0,0,0
+852,5/31/2021,Weru Health Center,lIrbYqhuPsJ,84476,Jamii Tekelezi,Kenya,Nyandarua,0,0,2,2,0,0,1,0,0,0,1,0,0,0,0,0,1,0,0,3,37,19,0,3,37,19,0,0,0,0,0,0,0,0
+853,5/31/2021,Gategi Health Centre,lmtezswxrLy,84476,Jamii Tekelezi,Kenya,Embu,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,9,9,139,65,9,9,72,27,0,0,17,10,0,0,50,28
+854,5/31/2021,Kigaa Dispensary,lOVj53te4fi,84476,Jamii Tekelezi,Kenya,Embu,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+855,5/31/2021,Minugu Dispensary,LoZIj2B6ifU,84476,Jamii Tekelezi,Kenya,Tharaka Nithi,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+856,5/31/2021,Liviero Dispensary,lpVF7ECK6je,84476,Jamii Tekelezi,Kenya,Embu,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+857,5/31/2021,Ndaragwa Health Centre,LqyOkuzfVuX,84476,Jamii Tekelezi,Kenya,Nyandarua,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2,5,100,51,2,5,62,32,0,0,38,19,0,0,0,0
+858,5/31/2021,Bamboo Health Centre,LTOr1pNejds,84476,Jamii Tekelezi,Kenya,Nyandarua,1,19,0,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,10,15,239,118,10,15,239,118,0,0,0,0,0,0,0,0
+859,5/31/2021,Subuku Dispensary (Nyandarua North),M0VxTclDHJv,84476,Jamii Tekelezi,Kenya,Nyandarua,0,0,15,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+860,5/31/2021,Kiirua Dispensary,m2fVjr2GTIa,84476,Jamii Tekelezi,Kenya,Meru,0,0,10,4,0,0,0,0,0,0,0,0,0,0,0,0,0,0,7,5,94,32,7,5,24,9,0,0,70,23,0,0,0,0
+861,5/31/2021,Muthara Sub-District Hospital,M2ryogi5lVN,84476,Jamii Tekelezi,Kenya,Meru,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,18,25,357,133,9,13,120,49,9,9,171,62,0,3,66,22
+862,5/31/2021,Presbyterian Ttc Rubate Health Centre,Mi0j9FIX3es,84476,Jamii Tekelezi,Kenya,Tharaka Nithi,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+863,5/31/2021,Baari Health Centre,mJzeKiO6YML,84476,Jamii Tekelezi,Kenya,Nyandarua,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,12,5,113,39,12,5,40,9,0,0,70,26,0,0,3,4
+864,5/31/2021,Riachina Dispensary,mkYbzTcCgwb,84476,Jamii Tekelezi,Kenya,Embu,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+865,5/31/2021,Mukungi Dispensary,MMJfiTABVdg,84476,Jamii Tekelezi,Kenya,Nyandarua,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+866,5/31/2021,Kibunga Sub-District Hospital,MnVkYrRhRwA,84476,Jamii Tekelezi,Kenya,Tharaka Nithi,0,0,8,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,5,1,51,24,5,1,22,9,0,0,28,14,0,0,1,1
+867,5/31/2021,Naari Health Centre,mrOnRf9alIA,84476,Jamii Tekelezi,Kenya,Meru,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,9,3,29,7,9,3,6,0,0,0,23,7,0,0,0,0
+868,5/31/2021,Kiamiriru MCK Dispensary,nbrFJNJFkxJ,84476,Jamii Tekelezi,Kenya,Meru,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+869,5/31/2021,Makengi Dispensary (Embu),niYZBDA5gbc,84476,Jamii Tekelezi,Kenya,Embu,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2,3,33,15,2,3,15,3,0,0,15,10,0,0,3,2
+870,5/31/2021,Kionyo Dispensary (Imenti South),NoErV4BxNA7,84476,Jamii Tekelezi,Kenya,Meru,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,3,1,31,15,3,1,27,12,0,0,4,3,0,0,0,0
+871,5/31/2021,Runyenjes District Hospital,NqPH5CKYgUU,84476,Jamii Tekelezi,Kenya,Embu,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,18,16,564,244,15,12,458,219,3,4,106,25,0,0,0,0
+872,5/31/2021,Mirangine Health Centre,NrmTe0EXHbJ,84476,Jamii Tekelezi,Kenya,Nyandarua,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,8,3,138,73,8,3,118,63,0,0,20,10,0,0,0,0
+873,5/31/2021,Karurumo Rhtc,NUo3VBnrx47,84476,Jamii Tekelezi,Kenya,Embu,0,0,2,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,9,12,231,97,7,10,156,57,2,2,59,29,0,0,16,11
+874,5/31/2021,Timau Sub-District Hospital,NV96Kj0anjZ,84476,Jamii Tekelezi,Kenya,Meru,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,11,14,347,140,11,14,62,21,0,0,285,119,0,0,0,0
+875,5/31/2021,Kimachia Dispensary,NwZT5hzUkjB,84476,Jamii Tekelezi,Kenya,Meru,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+876,5/31/2021,Makima Dispensary,nylUU33ouME,84476,Jamii Tekelezi,Kenya,Embu,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,4,3,46,6,4,3,35,1,0,0,11,5,0,0,0,0
+877,5/31/2021,Kahembe Health Centre,oBIUaatujZR,84476,Jamii Tekelezi,Kenya,Nyandarua,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,6,9,168,89,6,9,81,35,0,0,87,53,0,0,0,1
+878,5/31/2021,Manunga Health Centre,odx2EmmP8IM,84476,Jamii Tekelezi,Kenya,Nyandarua,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,6,5,186,70,6,5,68,14,0,0,107,56,0,0,11,0
+879,5/31/2021,Kathigu Health Center,OnAjLmJXtED,84476,Jamii Tekelezi,Kenya,Meru,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,5,8,0,0,5,8,0,0,0,0,0,0,0,0
+880,5/31/2021,Olborosat Dispensary,oR12Qi7Kaw0,84476,Jamii Tekelezi,Kenya,Nyandarua,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2,0,58,20,2,0,40,16,0,0,18,4,0,0,0,0
+881,5/31/2021,Ngorika Dispensary,PAwJ0bAl42A,84476,Jamii Tekelezi,Kenya,Nyandarua,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2,7,65,39,1,7,33,20,1,0,32,19,0,0,0,0
+882,5/31/2021,Nkubu Dispensary,pHBSxLgQYtC,84476,Jamii Tekelezi,Kenya,Meru,0,0,4,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,4,83,44,1,4,40,6,0,0,43,38,0,0,0,0
+883,5/31/2021,Mastoo Dispensary,pHP1u0HE6qc,84476,Jamii Tekelezi,Kenya,Nyandarua,0,0,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+884,5/31/2021,Ugweri Disp,PlKbNw6G3Wv,84476,Jamii Tekelezi,Kenya,Embu,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+885,5/31/2021,Kibirichia Sub-District Hospital,PLkZf0geGoy,84476,Jamii Tekelezi,Kenya,Meru,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,11,3,114,61,11,3,41,23,0,0,73,38,0,0,0,0
+886,5/31/2021,Chuka Cottage Hospital,psHTPguSW3j,84476,Jamii Tekelezi,Kenya,Tharaka Nithi,0,0,15,10,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+887,5/31/2021,Shamata Health Centre,psTyb7YzhF5,84476,Jamii Tekelezi,Kenya,Nyandarua,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,3,39,17,1,3,29,11,0,0,9,5,0,0,1,1
+888,5/31/2021,Charuru Dispensary,PTh0sEHCAxa,84476,Jamii Tekelezi,Kenya,Meru,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+889,5/31/2021,Pesi Dispensary,pVdxoyR7T6I,84476,Jamii Tekelezi,Kenya,Nyandarua,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+890,5/31/2021,Uringu Health Centre,PyOitpr2WOx,84476,Jamii Tekelezi,Kenya,Meru,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+891,5/31/2021,Chamuka (CDF) Dispensary,Q30hhBbLqPC,84476,Jamii Tekelezi,Kenya,Nyandarua,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,5,2,70,34,5,2,49,23,0,0,20,11,0,0,1,0
+892,5/31/2021,Nguruki-Iruma Dispensary,qh6MKLclI6s,84476,Jamii Tekelezi,Kenya,Tharaka Nithi,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+893,5/31/2021,Lewa Downs Dispensary,QHlmwA4FD1n,84476,Jamii Tekelezi,Kenya,Meru,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2,3,38,21,2,3,9,4,0,0,29,17,0,0,0,0
+894,5/31/2021,Embu Children Clinic,qk04xUaN0fK,84476,Jamii Tekelezi,Kenya,Embu,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,4,3,136,58,4,3,136,58,0,0,0,0,0,0,0,0
+895,5/31/2021,Kathunguri Dispensary,QMWuh8GY4FP,84476,Jamii Tekelezi,Kenya,Embu,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+896,5/31/2021,Gichiche Dispensary,qO7hARsKOb6,84476,Jamii Tekelezi,Kenya,Embu,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+897,5/31/2021,Kanyuambora Dispensary,qSjEGB1yUKs,84476,Jamii Tekelezi,Kenya,Embu,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,3,1,32,4,3,1,32,4,0,0,0,0,0,0,0,0
+898,5/31/2021,Mitunguu Ccs Dispensary,R1co9eO3q12,84476,Jamii Tekelezi,Kenya,Meru,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+899,5/31/2021,Kambandi Dispensary,RDvymjyauVd,84476,Jamii Tekelezi,Kenya,Tharaka Nithi,0,0,4,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,5,36,10,1,5,17,5,0,0,19,5,0,0,0,0
+900,5/31/2021,Kiarago Health Centre (Imenti South),RGFmjPF38II,84476,Jamii Tekelezi,Kenya,Meru,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+901,5/31/2021,Wanjohi Health Centre,RTlbXR77IWU,84476,Jamii Tekelezi,Kenya,Nyandarua,0,0,3,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,8,8,166,62,7,8,74,24,1,0,86,37,0,0,6,1
+902,5/31/2021,St Michael Nursing Home,rtPtlYR3NII,84476,Jamii Tekelezi,Kenya,Embu,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+903,5/31/2021,PCEA Kiengu Disp/Mat,Rzk2ARMziZP,84476,Jamii Tekelezi,Kenya,Meru,0,0,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+904,5/31/2021,Kiamuringa Dispensary,s9UiGKh0HKW,84476,Jamii Tekelezi,Kenya,Embu,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,2,61,24,1,2,50,24,0,0,11,0,0,0,0,0
+905,5/31/2021,Rukira Dispensary,saKQjMNz8Ik,84476,Jamii Tekelezi,Kenya,Embu,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+906,5/31/2021,Kirie Dispensary,Sar9tmOr36x,84476,Jamii Tekelezi,Kenya,Embu,0,0,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2,3,44,10,2,3,44,10,0,0,0,0,0,0,0,0
+907,5/31/2021,Meru District Hospital,sCRnmH3motj,84476,Jamii Tekelezi,Kenya,Meru,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,61,60,2125,983,44,45,940,424,17,15,689,332,0,0,496,227
+908,5/31/2021,Oljororok Catholic Dispensary,Sjn4QAov5aQ,84476,Jamii Tekelezi,Kenya,Nyandarua,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+909,5/31/2021,Kangeta Health Centre,sNlRanexgey,84476,Jamii Tekelezi,Kenya,Meru,0,0,7,4,0,0,0,0,0,0,0,0,0,0,0,0,0,0,13,12,218,97,13,12,47,22,0,0,168,75,0,0,3,0
+910,5/31/2021,Kirogine Dispensary,sQCei5jPh44,84476,Jamii Tekelezi,Kenya,Meru,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,11,14,0,1,2,2,0,0,9,12,0,0,0,0
+911,5/31/2021,Dallas Dispensary,sRdAeQShDlw,84476,Jamii Tekelezi,Kenya,Embu,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,5,6,156,65,5,6,156,65,0,0,0,0,0,0,0,0
+912,5/31/2021,Kamumu Dispensary,sYuN2zJiBKb,84476,Jamii Tekelezi,Kenya,Embu,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,4,4,21,8,4,4,21,8,0,0,0,0,0,0,0,0
+913,5/31/2021,Kiguchwa Health Center,SZgqoLCOoCv,84476,Jamii Tekelezi,Kenya,Meru,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,3,9,4,0,3,9,4,0,0,0,0,0,0,0,0
+914,5/31/2021,St Joseph Catholic Dispensary (Igembe),t1GTMOrAsOa,84476,Jamii Tekelezi,Kenya,Meru,0,0,3,3,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+915,5/31/2021,Gakoromone Dispensary,TA3vuXzobuL,84476,Jamii Tekelezi,Kenya,Meru,0,0,7,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,3,74,24,1,3,32,7,0,0,42,16,0,0,0,1
+916,5/31/2021,Baragu Health Centre,tb2ANtsOua0,84476,Jamii Tekelezi,Kenya,Tharaka Nithi,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,4,4,75,44,4,2,37,17,0,2,38,27,0,0,0,0
+917,5/31/2021,New Mawingu Health Centre,TCHLeOkYYsn,84476,Jamii Tekelezi,Kenya,Nyandarua,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2,2,37,24,1,2,13,6,1,0,24,18,0,0,0,0
+918,5/31/2021,Kunati Health Centre,Tk9hMTW6YlM,84476,Jamii Tekelezi,Kenya,Meru,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,22,6,0,1,14,5,0,0,8,1,0,0,0,0
+919,5/31/2021,Silibwet Health Centre (Nyandaruawest),TtSspBiYzHq,84476,Jamii Tekelezi,Kenya,Nyandarua,0,0,0,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,7,5,102,43,6,5,60,28,1,0,27,9,0,0,15,6
+920,5/31/2021,Uruku Dispensary,tXVR1t0rqFM,84476,Jamii Tekelezi,Kenya,Nyandarua,0,0,2,3,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+921,5/31/2021,Amugaa Health Centre,U1CwLZE4Sya,84476,Jamii Tekelezi,Kenya,Meru,0,0,5,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,5,1,0,0,2,1,0,1,3,0,0,0,0,0
+922,5/31/2021,Mutindwa Dispensary,U2bOmE6Iyxy,84476,Jamii Tekelezi,Kenya,Tharaka Nithi,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+923,5/31/2021,Karama Dispensary,UFJmL1fAqoW,84476,Jamii Tekelezi,Kenya,Meru,0,0,3,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,8,5,1,0,5,4,0,0,3,1,0,0,0,0
+924,5/31/2021,Gachuriri Dispensary,ulvOUkZPOys,84476,Jamii Tekelezi,Kenya,Embu,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,25,15,0,0,25,15,0,0,0,0,0,0,0,0
+925,5/31/2021,Rwika Dispensary,ULzIuKZw7pX,84476,Jamii Tekelezi,Kenya,Embu,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+926,5/31/2021,Igoki Dispensary,URINYkRF6cu,84476,Jamii Tekelezi,Kenya,Meru,0,0,4,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,41,21,1,1,16,10,0,0,25,11,0,0,0,0
+927,5/31/2021,Lereshwa Dispensary,USUCFkjtjj8,84476,Jamii Tekelezi,Kenya,Nyandarua,0,0,16,5,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+928,5/31/2021,Ithimbari Dispensary,uttUWo9CbSm,84476,Jamii Tekelezi,Kenya,Meru,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,5,3,0,0,0,0,0,0,5,3,0,0,0,0
+929,5/31/2021,Gatunga Health Centre,UVqXkWGPMha,84476,Jamii Tekelezi,Kenya,Tharaka Nithi,0,0,11,6,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2,32,9,0,0,4,4,0,2,28,5,0,0,0,0
+930,5/31/2021,Kinoro Sub-District Hospital,UvYZDCyPJBu,84476,Jamii Tekelezi,Kenya,Meru,0,0,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2,2,93,26,2,2,55,10,0,0,38,16,0,0,0,0
+931,5/31/2021,Kaongo Health Centre,UW4LuVnAN23,84476,Jamii Tekelezi,Kenya,Meru,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,5,6,49,26,5,6,5,0,0,0,44,26,0,0,0,0
+932,5/31/2021,Kanja Health Centre,uzOAQslSgmN,84476,Jamii Tekelezi,Kenya,Embu,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,6,57,36,0,5,17,7,1,1,40,28,0,0,0,1
+933,5/31/2021,Mwerokanga Dispensary,V9Hf7cG0JDf,84476,Jamii Tekelezi,Kenya,Meru,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,6,5,0,0,3,3,0,0,3,2,0,0,0,0
+934,5/31/2021,Gatunga Model Health Centre,vDavi1lTko3,84476,Jamii Tekelezi,Kenya,Tharaka Nithi,2,1,14,5,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+935,5/31/2021,Geta Bush Health Centre,VdWKAir7fEv,84476,Jamii Tekelezi,Kenya,Nyandarua,0,1,8,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,6,4,112,42,6,4,60,20,0,0,44,18,0,0,8,4
+936,5/31/2021,Chiakariga H/C,vEeFkE72jt7,84476,Jamii Tekelezi,Kenya,Tharaka Nithi,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,15,11,129,53,15,11,104,33,0,0,25,20,0,0,0,0
+937,5/31/2021,Murungaru Health Centre,VHkUOWg7v3c,84476,Jamii Tekelezi,Kenya,Nyandarua,0,0,21,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,3,7,120,61,3,7,120,61,0,0,0,0,0,0,0,0
+938,5/31/2021,Acef Ena Health Centre,VUv3MNGbLMe,84476,Jamii Tekelezi,Kenya,Embu,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,4,5,221,104,3,3,77,25,1,2,144,79,0,0,0,0
+939,5/31/2021,Kairuri Health Centre,vZt0Soe1AsL,84476,Jamii Tekelezi,Kenya,Embu,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,3,34,16,0,3,29,12,0,0,5,4,0,0,0,0
+940,5/31/2021,Mukui Health Centre,W0NGQJPgGQR,84476,Jamii Tekelezi,Kenya,Tharaka Nithi,0,0,6,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,3,3,11,11,1,2,1,1,2,1,10,10,0,0,0,0
+941,5/31/2021,Ndemi Health Centre,w6NbIpYTDAc,84476,Jamii Tekelezi,Kenya,Nyandarua,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2,4,37,20,2,4,25,12,0,0,2,3,0,0,10,5
+942,5/31/2021,Ichomba Clinic,WbOSQm83adC,84476,Jamii Tekelezi,Kenya,Meru,0,0,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+943,5/31/2021,St Mathews and Sarah Dispensary,wdkjDZUc0Vd,84476,Jamii Tekelezi,Kenya,Nyandarua,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2,0,37,11,2,0,8,1,0,0,29,10,0,0,0,0
+944,5/31/2021,Kieni Kia Ndege Dispensary,WL692GiqMHm,84476,Jamii Tekelezi,Kenya,Meru,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,3,1,31,22,3,1,15,4,0,0,16,18,0,0,0,0
+945,5/31/2021,Mitunguu Dispensary,WsH1zEK3sGP,84476,Jamii Tekelezi,Kenya,Meru,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,9,12,160,81,9,10,98,32,0,2,62,49,0,0,0,0
+946,5/31/2021,Ontulili Dispensary,wu7982abqS7,84476,Jamii Tekelezi,Kenya,Meru,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,26,9,0,0,2,0,0,0,24,9,0,0,0,0
+947,5/31/2021,Karangatha Health Centre,wy1SFAUIGpo,84476,Jamii Tekelezi,Kenya,Nyandarua,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,4,2,59,39,4,2,59,39,0,0,0,0,0,0,0,0
+948,5/31/2021,Theere Health Centre,x4H4rQ3T7F6,84476,Jamii Tekelezi,Kenya,Meru,0,0,20,2,0,0,1,0,0,0,1,0,0,0,0,0,0,0,5,6,97,48,5,6,54,39,0,0,43,9,0,0,0,0
+949,5/31/2021,Mweru Dispensary (Imenti South),XACCCky77Qb,84476,Jamii Tekelezi,Kenya,Meru,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+950,5/31/2021,Tharaka District Hospital,xce9AFrapR9,84476,Jamii Tekelezi,Kenya,Tharaka Nithi,1,0,15,7,1,0,0,0,1,0,0,0,0,0,0,0,0,0,16,8,188,99,6,1,62,27,10,7,126,72,0,0,0,0
+951,5/31/2021,Kanyakine District Hospital,XGw1fCwVLc6,84476,Jamii Tekelezi,Kenya,Meru,0,0,13,4,0,0,0,0,0,0,0,0,0,0,0,0,0,0,15,12,388,217,2,5,104,38,13,7,284,179,0,0,0,0
+952,5/31/2021,Mukuuni Dispensary,XGZslyAbXPS,84476,Jamii Tekelezi,Kenya,Tharaka Nithi,0,0,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,41,21,1,1,14,5,0,0,25,15,0,0,2,1
+953,5/31/2021,Nganduri Dispensary,xwVOvXuJvpL,84476,Jamii Tekelezi,Kenya,Embu,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,18,8,0,0,13,5,0,0,5,3,0,0,0,0
+954,5/31/2021,Gatimu Health Centre,yDVD7PQVNW3,84476,Jamii Tekelezi,Kenya,Nyandarua,0,0,1,0,0,0,1,0,0,0,1,0,0,0,0,0,0,0,2,2,52,21,2,2,46,12,0,0,6,9,0,0,0,0
+955,5/31/2021,Akachiu Health Centre,YGtY9QtkwrW,84476,Jamii Tekelezi,Kenya,Meru,0,0,5,6,0,0,1,0,0,0,1,0,0,0,0,0,0,0,6,6,94,56,6,6,24,16,0,0,36,14,0,0,34,26
+956,5/31/2021,Giaki Sub-District Hospital,yJw7N5gx1HW,84476,Jamii Tekelezi,Kenya,Meru,0,0,8,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,11,1,109,40,9,1,17,4,2,0,92,36,0,0,0,0
+957,5/31/2021,Getrude Dispensary,Yn4wNsOQBFU,84476,Jamii Tekelezi,Kenya,Embu,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+958,5/31/2021,Thanantu Faith Clinic Dispensary,YslGk4Jhs6q,84476,Jamii Tekelezi,Kenya,Tharaka Nithi,0,0,9,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,6,6,62,24,6,6,17,8,0,0,39,11,0,0,6,5
+959,5/31/2021,Mufu Dispensary,z4Kwdy0Rnt8,84476,Jamii Tekelezi,Kenya,Embu,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+960,5/31/2021,Gitoro Dispensary,zF1v5qs0nKg,84476,Jamii Tekelezi,Kenya,Meru,0,0,24,10,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2,99,66,0,1,24,20,0,1,75,46,0,0,0,0
+961,5/31/2021,Miathene District Hospital,zf4jnHpWR16,84476,Jamii Tekelezi,Kenya,Meru,0,0,1,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,12,13,326,163,1,5,34,7,11,8,292,156,0,0,0,0
+962,5/31/2021,Gaciongo Dispensary,zG7VieG5pUR,84476,Jamii Tekelezi,Kenya,Tharaka Nithi,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+963,5/31/2021,Kinoru Dispensary,zHWXo9YeEMy,84476,Jamii Tekelezi,Kenya,Meru,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,4,3,187,68,2,1,45,2,2,2,142,66,0,0,0,0
+964,5/31/2021,Ntemwene Dispensary,ZpdIMKMptdX,84476,Jamii Tekelezi,Kenya,Meru,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+965,5/31/2021,Tuuru Catholic Health Centre,ZR91mGF1tim,84476,Jamii Tekelezi,Kenya,Meru,0,0,9,6,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,6,4,0,1,6,4,0,0,0,0,0,0,0,0

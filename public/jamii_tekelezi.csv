@@ -1,0 +1,769 @@
+index,date,orgunit,orgunituid,mech_code,partner,operatingunit,psnu,hts_tst.u15.f,hts_tst.u15.m,hts_tst.o15.f,hts_tst.o15.m,hts_tst_pos.u15.f,hts_tst_pos.u15.m,hts_tst_pos.o15.f,hts_tst_pos.o15.m,tx_new.u15.f,tx_new.u15.m,tx_new.o15.f,tx_new.o15.m,vmmc_circ.u15.m,vmmc_circ.o15.m,prep_new.u15.f,prep_new.u15.m,prep_new.o15.f,prep_new.o15.m,tx_curr.u15.f,tx_curr.u15.m,tx_curr.o15.f,tx_curr.o15.m,tx_mmd.u15.f.u3mo,tx_mmd.u15.m.u3mo,tx_mmd.o15.f.u3mo,tx_mmd.o15.m.u3mo,tx_mmd.u15.f.35mo,tx_mmd.u15.m.35mo,tx_mmd.o15.f.35mo,tx_mmd.o15.m.35mo,tx_mmd.u15.f.o6mo,tx_mmd.u15.m.o6mo,tx_mmd.o15.f.o6mo,tx_mmd.o15.m.o6mo
+1,7/5/2021,Acef Ena Health Centre,VUv3MNGbLMe,84476,USAID Jamii Tekelezi,Kenya,Embu,0,0,14,4,0,0,0,1,,,,1,,,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+2,7/12/2021,Acef Ena Health Centre,VUv3MNGbLMe,84476,USAID Jamii Tekelezi,Kenya,Embu,0,0,15,7,0,0,0,1,,,,1,,,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+3,7/19/2021,Acef Ena Health Centre,VUv3MNGbLMe,84476,USAID Jamii Tekelezi,Kenya,Embu,0,0,11,2,0,0,0,0,,,,,,,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+4,7/26/2021,Acef Ena Health Centre,VUv3MNGbLMe,84476,USAID Jamii Tekelezi,Kenya,Embu,0,0,6,4,0,0,1,0,,,1,,,,,,,,3,5,213,101,2,5,55,19,1,0,158,82,0,0,0,0
+5,7/5/2021,CCS Kiritiri Clinic,fe5HPFmdgu6,84476,USAID Jamii Tekelezi,Kenya,Embu,0,0,5,1,0,0,0,0,,,,,,,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+6,7/12/2021,CCS Kiritiri Clinic,fe5HPFmdgu6,84476,USAID Jamii Tekelezi,Kenya,Embu,0,0,4,2,0,0,0,0,,,,,,,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+7,7/19/2021,CCS Kiritiri Clinic,fe5HPFmdgu6,84476,USAID Jamii Tekelezi,Kenya,Embu,0,0,3,2,0,0,0,0,,,,,,,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+8,7/26/2021,CCS Kiritiri Clinic,fe5HPFmdgu6,84476,USAID Jamii Tekelezi,Kenya,Embu,0,0,5,0,0,0,0,0,,,,,,,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+9,7/5/2021,Dallas Dispensary,sRdAeQShDlw,84476,USAID Jamii Tekelezi,Kenya,Embu,1,0,24,5,0,0,0,0,,,,,,,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+10,7/12/2021,Dallas Dispensary,sRdAeQShDlw,84476,USAID Jamii Tekelezi,Kenya,Embu,0,0,31,9,0,0,1,0,,,1,,,,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+11,7/19/2021,Dallas Dispensary,sRdAeQShDlw,84476,USAID Jamii Tekelezi,Kenya,Embu,0,2,45,11,0,0,0,0,,,,,,,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+12,7/26/2021,Dallas Dispensary,sRdAeQShDlw,84476,USAID Jamii Tekelezi,Kenya,Embu,1,0,24,2,0,0,2,0,,,2,,,,,,,,6,5,160,64,6,5,114,49,0,0,46,15,0,0,0,0
+13,7/5/2021,Embu Children Clinic,qk04xUaN0fK,84476,USAID Jamii Tekelezi,Kenya,Embu,0,0,4,1,0,0,0,0,,,,,,,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+14,7/12/2021,Embu Children Clinic,qk04xUaN0fK,84476,USAID Jamii Tekelezi,Kenya,Embu,0,0,6,0,0,0,0,0,,,,,,,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+15,7/19/2021,Embu Children Clinic,qk04xUaN0fK,84476,USAID Jamii Tekelezi,Kenya,Embu,1,0,2,1,0,0,0,0,,,,,,,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+16,7/26/2021,Embu Children Clinic,qk04xUaN0fK,84476,USAID Jamii Tekelezi,Kenya,Embu,0,0,0,2,0,0,0,0,,,,,,,,,,,3,3,136,55,3,3,136,55,0,0,0,0,0,0,0,0
+17,7/5/2021,Embu Provincial General Hospital,IROLxe1CWyV,84476,USAID Jamii Tekelezi,Kenya,Embu,2,1,104,15,0,0,5,3,,,5,3,,,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+18,7/12/2021,Embu Provincial General Hospital,IROLxe1CWyV,84476,USAID Jamii Tekelezi,Kenya,Embu,0,2,157,23,0,0,1,0,,,1,,,,,,,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+19,7/19/2021,Embu Provincial General Hospital,IROLxe1CWyV,84476,USAID Jamii Tekelezi,Kenya,Embu,0,2,171,20,0,0,2,1,,,2,1,,,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+20,7/26/2021,Embu Provincial General Hospital,IROLxe1CWyV,84476,USAID Jamii Tekelezi,Kenya,Embu,1,3,140,23,0,0,0,3,,,,3,,,,,,,39,41,1637,721,29,27,468,161,10,14,1166,557,0,0,3,3
+21,7/5/2021,Emmanuel Kigari (ACK) Dispensary,Ii5P8lU4YJs,84476,USAID Jamii Tekelezi,Kenya,Embu,0,0,0,0,0,0,0,0,,,,,,,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+22,7/12/2021,Emmanuel Kigari (ACK) Dispensary,Ii5P8lU4YJs,84476,USAID Jamii Tekelezi,Kenya,Embu,0,0,0,0,0,0,0,0,,,,,,,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+23,7/19/2021,Emmanuel Kigari (ACK) Dispensary,Ii5P8lU4YJs,84476,USAID Jamii Tekelezi,Kenya,Embu,0,0,0,0,0,0,0,0,,,,,,,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+24,7/26/2021,Emmanuel Kigari (ACK) Dispensary,Ii5P8lU4YJs,84476,USAID Jamii Tekelezi,Kenya,Embu,0,0,0,0,0,0,0,0,,,,,,,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+25,7/5/2021,Gachuriri Dispensary,ulvOUkZPOys,84476,USAID Jamii Tekelezi,Kenya,Embu,0,0,0,0,0,0,0,0,0,0,0,0,,,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+26,7/12/2021,Gachuriri Dispensary,ulvOUkZPOys,84476,USAID Jamii Tekelezi,Kenya,Embu,0,0,1,1,0,0,1,1,0,0,1,1,,,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+27,7/19/2021,Gachuriri Dispensary,ulvOUkZPOys,84476,USAID Jamii Tekelezi,Kenya,Embu,0,0,4,13,0,0,0,1,0,0,0,1,,,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+28,7/26/2021,Gachuriri Dispensary,ulvOUkZPOys,84476,USAID Jamii Tekelezi,Kenya,Embu,0,0,4,12,0,0,0,0,0,0,0,0,,,,,,,0,0,26,14,0,0,26,14,0,0,0,0,0,0,0,0
+29,7/5/2021,Gategi Health Centre,lmtezswxrLy,84476,USAID Jamii Tekelezi,Kenya,Embu,0,0,10,3,0,0,0,0,,,,,,,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+30,7/12/2021,Gategi Health Centre,lmtezswxrLy,84476,USAID Jamii Tekelezi,Kenya,Embu,3,1,13,6,0,0,0,0,,,,,,,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+31,7/19/2021,Gategi Health Centre,lmtezswxrLy,84476,USAID Jamii Tekelezi,Kenya,Embu,1,2,11,10,0,0,0,1,,,,1,,,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+32,7/26/2021,Gategi Health Centre,lmtezswxrLy,84476,USAID Jamii Tekelezi,Kenya,Embu,1,0,8,3,0,0,0,0,,,,,,,,,,,9,9,139,66,9,9,72,27,0,0,67,39,0,0,0,0
+33,7/5/2021,Gatunduri Dispensary,gQEY28Ondgf,84476,USAID Jamii Tekelezi,Kenya,Embu,0,0,0,1,0,0,0,0,,,,,,,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+34,7/12/2021,Gatunduri Dispensary,gQEY28Ondgf,84476,USAID Jamii Tekelezi,Kenya,Embu,0,0,1,2,0,0,0,0,,,,,,,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+35,7/19/2021,Gatunduri Dispensary,gQEY28Ondgf,84476,USAID Jamii Tekelezi,Kenya,Embu,0,0,0,5,0,0,0,0,,,,,,,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+36,7/26/2021,Gatunduri Dispensary,gQEY28Ondgf,84476,USAID Jamii Tekelezi,Kenya,Embu,0,0,1,7,0,0,0,0,,,,,,,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+37,7/5/2021,Getrude Dispensary,Yn4wNsOQBFU,84476,USAID Jamii Tekelezi,Kenya,Embu,0,0,0,1,0,0,0,0,,,,,,,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+38,7/12/2021,Getrude Dispensary,Yn4wNsOQBFU,84476,USAID Jamii Tekelezi,Kenya,Embu,0,0,2,0,0,0,0,0,,,,,,,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+39,7/19/2021,Getrude Dispensary,Yn4wNsOQBFU,84476,USAID Jamii Tekelezi,Kenya,Embu,0,0,0,0,0,0,0,0,,,,,,,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+40,7/26/2021,Getrude Dispensary,Yn4wNsOQBFU,84476,USAID Jamii Tekelezi,Kenya,Embu,0,0,4,0,0,0,1,0,,,,,,,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+41,7/5/2021,Gichiche Dispensary,qO7hARsKOb6,84476,USAID Jamii Tekelezi,Kenya,Embu,0,0,1,0,0,0,0,0,,,,,,,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+42,7/12/2021,Gichiche Dispensary,qO7hARsKOb6,84476,USAID Jamii Tekelezi,Kenya,Embu,0,0,2,0,0,0,0,0,,,,,,,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+43,7/19/2021,Gichiche Dispensary,qO7hARsKOb6,84476,USAID Jamii Tekelezi,Kenya,Embu,0,0,3,2,0,0,0,0,,,,,,,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+44,7/26/2021,Gichiche Dispensary,qO7hARsKOb6,84476,USAID Jamii Tekelezi,Kenya,Embu,0,0,3,2,0,0,0,0,,,,,,,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+45,7/5/2021,Ishiara Sub-District Hospital,gwZuDfkIEkI,84476,USAID Jamii Tekelezi,Kenya,Embu,0,0,22,8,0,0,0,1,0,0,0,1,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+46,7/12/2021,Ishiara Sub-District Hospital,gwZuDfkIEkI,84476,USAID Jamii Tekelezi,Kenya,Embu,0,0,20,4,0,0,2,0,0,0,2,,,,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+47,7/19/2021,Ishiara Sub-District Hospital,gwZuDfkIEkI,84476,USAID Jamii Tekelezi,Kenya,Embu,1,0,21,0,0,0,0,0,0,0,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+48,7/26/2021,Ishiara Sub-District Hospital,gwZuDfkIEkI,84476,USAID Jamii Tekelezi,Kenya,Embu,3,0,7,23,0,0,1,0,0,0,1,0,,,0,0,0,0,25,12,343,169,25,12,343,169,0,0,0,0,0,0,0,0
+49,7/5/2021,Kairuri Health Centre,vZt0Soe1AsL,84476,USAID Jamii Tekelezi,Kenya,Embu,0,0,10,1,0,0,0,0,0,0,,0,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+50,7/12/2021,Kairuri Health Centre,vZt0Soe1AsL,84476,USAID Jamii Tekelezi,Kenya,Embu,0,0,11,0,0,0,0,0,,,,,,,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+51,7/19/2021,Kairuri Health Centre,vZt0Soe1AsL,84476,USAID Jamii Tekelezi,Kenya,Embu,0,0,10,2,0,0,0,0,,,,,,,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+52,7/26/2021,Kairuri Health Centre,vZt0Soe1AsL,84476,USAID Jamii Tekelezi,Kenya,Embu,0,0,12,1,0,0,0,0,,,,,,,,,,,0,3,34,15,0,3,30,12,0,0,4,3,0,0,0,0
+53,7/5/2021,Kamumu Dispensary,sYuN2zJiBKb,84476,USAID Jamii Tekelezi,Kenya,Embu,0,0,11,0,0,0,0,0,0,0,0,0,,,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+54,7/12/2021,Kamumu Dispensary,sYuN2zJiBKb,84476,USAID Jamii Tekelezi,Kenya,Embu,0,1,6,2,0,0,0,0,0,0,0,0,,,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+55,7/19/2021,Kamumu Dispensary,sYuN2zJiBKb,84476,USAID Jamii Tekelezi,Kenya,Embu,0,0,7,2,0,0,0,0,0,0,0,0,,,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+56,7/26/2021,Kamumu Dispensary,sYuN2zJiBKb,84476,USAID Jamii Tekelezi,Kenya,Embu,0,0,3,0,0,0,0,0,0,0,0,0,,,,,,,4,4,20,9,4,4,20,9,0,0,0,0,0,0,0,0
+57,7/5/2021,Kanja Health Centre,uzOAQslSgmN,84476,USAID Jamii Tekelezi,Kenya,Embu,0,0,1,0,0,0,0,0,0,0,0,0,,,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+58,7/12/2021,Kanja Health Centre,uzOAQslSgmN,84476,USAID Jamii Tekelezi,Kenya,Embu,0,0,6,3,0,0,1,0,0,0,1,0,,,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+59,7/19/2021,Kanja Health Centre,uzOAQslSgmN,84476,USAID Jamii Tekelezi,Kenya,Embu,0,0,3,1,0,0,0,1,0,0,0,1,,,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+60,7/26/2021,Kanja Health Centre,uzOAQslSgmN,84476,USAID Jamii Tekelezi,Kenya,Embu,0,0,2,1,0,0,1,0,0,0,1,0,,,,,,,0,6,55,37,0,5,6,1,0,1,49,36,0,0,0,0
+61,7/5/2021,Kanyuambora Dispensary,qSjEGB1yUKs,84476,USAID Jamii Tekelezi,Kenya,Embu,0,0,3,0,0,0,0,0,0,0,0,0,0,,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+62,7/12/2021,Kanyuambora Dispensary,qSjEGB1yUKs,84476,USAID Jamii Tekelezi,Kenya,Embu,0,0,2,0,0,0,0,0,0,0,0,,,,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+63,7/19/2021,Kanyuambora Dispensary,qSjEGB1yUKs,84476,USAID Jamii Tekelezi,Kenya,Embu,1,0,1,0,0,0,0,0,,0,0,,,,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+64,7/26/2021,Kanyuambora Dispensary,qSjEGB1yUKs,84476,USAID Jamii Tekelezi,Kenya,Embu,0,0,1,1,0,0,0,0,0,0,0,0,0,,,,,,4,1,26,7,4,1,26,7,0,0,0,0,0,0,0,0
+65,7/5/2021,Karaba Wango Dispensary,eTbcGObCPQB,84476,USAID Jamii Tekelezi,Kenya,Embu,0,0,3,1,0,0,0,0,,0,0,0,0,,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+66,7/12/2021,Karaba Wango Dispensary,eTbcGObCPQB,84476,USAID Jamii Tekelezi,Kenya,Embu,0,0,5,1,0,0,1,0,,,,,,,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+67,7/19/2021,Karaba Wango Dispensary,eTbcGObCPQB,84476,USAID Jamii Tekelezi,Kenya,Embu,0,0,9,2,0,0,0,0,,,,,,,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+68,7/26/2021,Karaba Wango Dispensary,eTbcGObCPQB,84476,USAID Jamii Tekelezi,Kenya,Embu,0,0,4,1,0,0,0,0,,,,,,,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+69,7/5/2021,Karau Health Centre,Bdb91tBzdzh,84476,USAID Jamii Tekelezi,Kenya,Embu,0,0,8,0,0,0,0,0,0,0,0,0,,,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+70,7/12/2021,Karau Health Centre,Bdb91tBzdzh,84476,USAID Jamii Tekelezi,Kenya,Embu,0,1,14,2,0,0,0,0,0,0,0,0,,,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+71,7/19/2021,Karau Health Centre,Bdb91tBzdzh,84476,USAID Jamii Tekelezi,Kenya,Embu,0,1,7,1,0,0,0,0,0,0,0,0,,,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+72,7/26/2021,Karau Health Centre,Bdb91tBzdzh,84476,USAID Jamii Tekelezi,Kenya,Embu,0,0,15,5,0,0,0,0,0,0,0,0,,,,,,,4,4,58,36,4,4,49,27,0,0,9,9,0,0,0,0
+73,7/5/2021,Karurumo Rhtc,NUo3VBnrx47,84476,USAID Jamii Tekelezi,Kenya,Embu,0,0,30,11,0,0,1,0,,,1,,,,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+74,7/12/2021,Karurumo Rhtc,NUo3VBnrx47,84476,USAID Jamii Tekelezi,Kenya,Embu,0,1,33,11,0,0,1,1,,,1,1,,,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+75,7/19/2021,Karurumo Rhtc,NUo3VBnrx47,84476,USAID Jamii Tekelezi,Kenya,Embu,2,0,37,7,0,0,0,0,,,,,,,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+76,7/26/2021,Karurumo Rhtc,NUo3VBnrx47,84476,USAID Jamii Tekelezi,Kenya,Embu,3,2,23,3,0,0,1,0,,,1,,,,,,,,8,13,231,95,8,13,227,86,0,0,4,9,0,0,0,0
+77,7/5/2021,Kathanje Dispensary,BmbfMDSuhgW,84476,USAID Jamii Tekelezi,Kenya,Embu,0,0,4,0,0,0,0,0,,,,,,,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+78,7/12/2021,Kathanje Dispensary,BmbfMDSuhgW,84476,USAID Jamii Tekelezi,Kenya,Embu,0,0,6,0,0,0,0,0,,,,,,,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+79,7/19/2021,Kathanje Dispensary,BmbfMDSuhgW,84476,USAID Jamii Tekelezi,Kenya,Embu,0,0,4,0,0,0,0,0,,,,,,,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+80,7/26/2021,Kathanje Dispensary,BmbfMDSuhgW,84476,USAID Jamii Tekelezi,Kenya,Embu,0,0,3,2,0,0,0,0,,,,,,,,,,,1,1,18,6,1,1,18,6,0,0,0,0,0,0,0,0
+81,7/5/2021,Kathunguri Dispensary,QMWuh8GY4FP,84476,USAID Jamii Tekelezi,Kenya,Embu,0,0,1,0,0,0,0,0,,,,,,,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+82,7/12/2021,Kathunguri Dispensary,QMWuh8GY4FP,84476,USAID Jamii Tekelezi,Kenya,Embu,0,0,7,0,0,0,0,0,,,,,,,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+83,7/19/2021,Kathunguri Dispensary,QMWuh8GY4FP,84476,USAID Jamii Tekelezi,Kenya,Embu,0,0,4,1,0,0,0,0,,,,,,,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+84,7/26/2021,Kathunguri Dispensary,QMWuh8GY4FP,84476,USAID Jamii Tekelezi,Kenya,Embu,0,0,6,0,0,0,0,0,,,,,,,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+85,7/5/2021,Kiambere Dam Dispensary,JVPTCgh6LRT,84476,USAID Jamii Tekelezi,Kenya,Embu,0,1,9,4,0,0,0,0,,,,,,,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+86,7/12/2021,Kiambere Dam Dispensary,JVPTCgh6LRT,84476,USAID Jamii Tekelezi,Kenya,Embu,0,0,0,2,0,0,0,0,,,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+87,7/19/2021,Kiambere Dam Dispensary,JVPTCgh6LRT,84476,USAID Jamii Tekelezi,Kenya,Embu,0,0,1,1,0,0,0,0,,,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+88,7/26/2021,Kiambere Dam Dispensary,JVPTCgh6LRT,84476,USAID Jamii Tekelezi,Kenya,Embu,0,0,0,0,0,0,0,0,,,,,,,0,0,0,0,8,8,134,38,8,8,134,38,0,0,0,0,0,0,0,0
+89,7/5/2021,Kiambere Health Centre,ksk4ITPDqt0,84476,USAID Jamii Tekelezi,Kenya,Embu,0,0,8,2,0,0,0,0,,,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+90,7/12/2021,Kiambere Health Centre,ksk4ITPDqt0,84476,USAID Jamii Tekelezi,Kenya,Embu,0,0,12,3,0,0,0,0,,,,,,,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+91,7/19/2021,Kiambere Health Centre,ksk4ITPDqt0,84476,USAID Jamii Tekelezi,Kenya,Embu,0,0,10,1,0,0,0,0,,,,,,,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+92,7/26/2021,Kiambere Health Centre,ksk4ITPDqt0,84476,USAID Jamii Tekelezi,Kenya,Embu,0,0,8,1,0,0,0,0,,,,,,,,,,,0,3,46,18,0,3,24,11,0,0,22,7,0,0,0,0
+93,7/5/2021,Kiamuringa Dispensary,s9UiGKh0HKW,84476,USAID Jamii Tekelezi,Kenya,Embu,1,0,4,2,0,0,0,0,0,0,0,0,,,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+94,7/12/2021,Kiamuringa Dispensary,s9UiGKh0HKW,84476,USAID Jamii Tekelezi,Kenya,Embu,1,1,9,2,0,0,0,0,0,0,0,0,,,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+95,7/19/2021,Kiamuringa Dispensary,s9UiGKh0HKW,84476,USAID Jamii Tekelezi,Kenya,Embu,0,1,13,3,0,0,1,0,0,0,1,0,,,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+96,7/26/2021,Kiamuringa Dispensary,s9UiGKh0HKW,84476,USAID Jamii Tekelezi,Kenya,Embu,0,1,8,2,0,0,0,0,0,0,0,0,,,,,,,1,3,58,23,1,0,7,3,0,3,51,20,0,0,0,0
+97,7/5/2021,Kianjokoma Sub-District Hospital,a2brqsdATIc,84476,USAID Jamii Tekelezi,Kenya,Embu,0,0,26,4,0,0,0,0,0,0,0,0,0,,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+98,7/12/2021,Kianjokoma Sub-District Hospital,a2brqsdATIc,84476,USAID Jamii Tekelezi,Kenya,Embu,0,0,29,9,0,0,1,0,0,0,1,0,0,,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+99,7/19/2021,Kianjokoma Sub-District Hospital,a2brqsdATIc,84476,USAID Jamii Tekelezi,Kenya,Embu,0,1,18,7,0,0,1,0,0,0,1,0,0,,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+100,7/26/2021,Kianjokoma Sub-District Hospital,a2brqsdATIc,84476,USAID Jamii Tekelezi,Kenya,Embu,0,0,17,9,0,0,0,0,0,0,0,0,0,,,,,,15,10,265,125,7,4,65,21,8,6,200,104,0,0,0,0
+101,7/5/2021,Kibugu Health Centre,Amjvsr9TKus,84476,USAID Jamii Tekelezi,Kenya,Embu,0,0,4,0,0,0,0,0,0,0,0,0,0,,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+102,7/12/2021,Kibugu Health Centre,Amjvsr9TKus,84476,USAID Jamii Tekelezi,Kenya,Embu,0,0,12,5,0,0,0,0,0,0,0,0,,,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+103,7/19/2021,Kibugu Health Centre,Amjvsr9TKus,84476,USAID Jamii Tekelezi,Kenya,Embu,0,0,9,1,0,0,0,1,0,0,0,1,,,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+104,7/26/2021,Kibugu Health Centre,Amjvsr9TKus,84476,USAID Jamii Tekelezi,Kenya,Embu,0,0,15,2,0,0,0,0,0,0,0,0,,,,,,,9,2,164,67,4,1,16,5,5,1,148,62,0,0,0,0
+105,7/5/2021,Kigaa Dispensary,lOVj53te4fi,84476,USAID Jamii Tekelezi,Kenya,Embu,0,0,3,2,0,0,0,0,0,0,0,0,,,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+106,7/12/2021,Kigaa Dispensary,lOVj53te4fi,84476,USAID Jamii Tekelezi,Kenya,Embu,0,0,2,4,0,0,0,0,,,,,,,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+107,7/19/2021,Kigaa Dispensary,lOVj53te4fi,84476,USAID Jamii Tekelezi,Kenya,Embu,0,0,0,0,0,0,0,0,,,,,,,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+108,7/26/2021,Kigaa Dispensary,lOVj53te4fi,84476,USAID Jamii Tekelezi,Kenya,Embu,0,0,1,0,0,0,0,0,,,,,,,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+109,7/5/2021,Kigumo Dispensary,d8O7IEVmHMb,84476,USAID Jamii Tekelezi,Kenya,Embu,0,0,6,2,0,0,0,0,,,,,,,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+110,7/12/2021,Kigumo Dispensary,d8O7IEVmHMb,84476,USAID Jamii Tekelezi,Kenya,Embu,2,0,15,0,0,0,1,0,,,1,,,,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+111,7/19/2021,Kigumo Dispensary,d8O7IEVmHMb,84476,USAID Jamii Tekelezi,Kenya,Embu,0,0,7,2,0,0,0,1,,,,1,,,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+112,7/26/2021,Kigumo Dispensary,d8O7IEVmHMb,84476,USAID Jamii Tekelezi,Kenya,Embu,0,0,10,3,0,0,0,0,,,,,,,,,,,3,1,42,18,3,1,42,18,0,0,0,0,0,0,0,0
+113,7/5/2021,Kirie Dispensary,Sar9tmOr36x,84476,USAID Jamii Tekelezi,Kenya,Embu,0,0,7,0,0,0,0,0,,,,,,,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+114,7/12/2021,Kirie Dispensary,Sar9tmOr36x,84476,USAID Jamii Tekelezi,Kenya,Embu,0,0,0,0,0,0,0,0,,,,,,,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+115,7/19/2021,Kirie Dispensary,Sar9tmOr36x,84476,USAID Jamii Tekelezi,Kenya,Embu,0,0,3,1,0,0,0,0,,,,,,,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+116,7/26/2021,Kirie Dispensary,Sar9tmOr36x,84476,USAID Jamii Tekelezi,Kenya,Embu,0,0,5,1,0,0,0,0,,,,,,,,,,,2,3,34,10,2,3,34,10,0,0,0,0,0,0,0,0
+117,7/5/2021,Kiritiri Health Centre,CtyUwxd2Su2,84476,USAID Jamii Tekelezi,Kenya,Embu,0,2,17,4,0,0,0,0,,,,,,,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+118,7/12/2021,Kiritiri Health Centre,CtyUwxd2Su2,84476,USAID Jamii Tekelezi,Kenya,Embu,2,2,19,5,0,0,1,0,,,1,,,,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+119,7/19/2021,Kiritiri Health Centre,CtyUwxd2Su2,84476,USAID Jamii Tekelezi,Kenya,Embu,1,1,23,3,0,0,0,0,,,,,,,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+120,7/26/2021,Kiritiri Health Centre,CtyUwxd2Su2,84476,USAID Jamii Tekelezi,Kenya,Embu,1,3,16,3,0,0,0,1,,,,1,,,,,,,21,23,437,198,13,8,125,53,8,15,312,145,0,0,0,0
+121,7/5/2021,Kithegi Dispensary,bwsY8Ome3im,84476,USAID Jamii Tekelezi,Kenya,Embu,0,0,9,2,0,0,0,0,0,0,0,0,,,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+122,7/12/2021,Kithegi Dispensary,bwsY8Ome3im,84476,USAID Jamii Tekelezi,Kenya,Embu,0,0,6,1,0,0,0,0,0,0,0,0,,,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+123,7/19/2021,Kithegi Dispensary,bwsY8Ome3im,84476,USAID Jamii Tekelezi,Kenya,Embu,0,0,3,1,0,0,0,0,0,0,0,0,,,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+124,7/26/2021,Kithegi Dispensary,bwsY8Ome3im,84476,USAID Jamii Tekelezi,Kenya,Embu,0,0,7,3,0,0,0,0,0,0,0,0,,,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+125,7/5/2021,Kithimu Dispensary,F4EQ1FCnous,84476,USAID Jamii Tekelezi,Kenya,Embu,0,0,9,4,0,0,0,0,0,0,0,0,,,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+126,7/12/2021,Kithimu Dispensary,F4EQ1FCnous,84476,USAID Jamii Tekelezi,Kenya,Embu,0,0,11,1,0,0,0,0,0,0,0,0,,,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+127,7/19/2021,Kithimu Dispensary,F4EQ1FCnous,84476,USAID Jamii Tekelezi,Kenya,Embu,0,0,12,5,0,0,1,0,0,0,1,0,,,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+128,7/26/2021,Kithimu Dispensary,F4EQ1FCnous,84476,USAID Jamii Tekelezi,Kenya,Embu,0,1,7,2,0,0,0,1,0,0,0,1,,,,,,,5,8,86,34,5,5,19,5,0,3,67,29,0,0,0,0
+129,7/5/2021,Liviero Dispensary,lpVF7ECK6je,84476,USAID Jamii Tekelezi,Kenya,Embu,0,0,0,0,0,0,0,0,0,0,0,0,,,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+130,7/12/2021,Liviero Dispensary,lpVF7ECK6je,84476,USAID Jamii Tekelezi,Kenya,Embu,0,0,3,2,0,0,0,0,0,0,0,0,,,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+131,7/19/2021,Liviero Dispensary,lpVF7ECK6je,84476,USAID Jamii Tekelezi,Kenya,Embu,0,0,4,1,0,0,0,0,0,0,0,0,,,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+132,7/26/2021,Liviero Dispensary,lpVF7ECK6je,84476,USAID Jamii Tekelezi,Kenya,Embu,0,0,0,0,0,0,0,0,0,0,0,0,,,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+133,7/5/2021,Machang'a Dispensary,cVfLPUZdBNq,84476,USAID Jamii Tekelezi,Kenya,Embu,1,0,2,0,0,0,0,0,0,0,0,0,,,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+134,7/12/2021,Machang'a Dispensary,cVfLPUZdBNq,84476,USAID Jamii Tekelezi,Kenya,Embu,0,0,2,1,0,0,0,0,,,,,,,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+135,7/19/2021,Machang'a Dispensary,cVfLPUZdBNq,84476,USAID Jamii Tekelezi,Kenya,Embu,0,0,4,1,0,0,0,0,,,,,,,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+136,7/26/2021,Machang'a Dispensary,cVfLPUZdBNq,84476,USAID Jamii Tekelezi,Kenya,Embu,0,0,2,0,0,0,0,0,,,,,,,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+137,7/5/2021,Makengi Dispensary (Embu),niYZBDA5gbc,84476,USAID Jamii Tekelezi,Kenya,Embu,0,0,13,1,0,0,0,0,0,0,0,0,,,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+138,7/12/2021,Makengi Dispensary (Embu),niYZBDA5gbc,84476,USAID Jamii Tekelezi,Kenya,Embu,0,0,9,0,0,0,0,0,0,0,0,0,,,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+139,7/19/2021,Makengi Dispensary (Embu),niYZBDA5gbc,84476,USAID Jamii Tekelezi,Kenya,Embu,0,0,11,4,0,0,0,0,0,0,0,0,,,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+140,7/26/2021,Makengi Dispensary (Embu),niYZBDA5gbc,84476,USAID Jamii Tekelezi,Kenya,Embu,0,0,10,3,0,0,0,0,0,0,0,0,,,,,,,4,3,37,15,4,2,15,1,0,1,22,14,0,0,0,0
+141,7/5/2021,Makima Dispensary,nylUU33ouME,84476,USAID Jamii Tekelezi,Kenya,Embu,0,0,5,3,0,0,0,0,,,,,,,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+142,7/12/2021,Makima Dispensary,nylUU33ouME,84476,USAID Jamii Tekelezi,Kenya,Embu,0,0,1,3,0,0,0,0,,,,,,,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+143,7/19/2021,Makima Dispensary,nylUU33ouME,84476,USAID Jamii Tekelezi,Kenya,Embu,0,0,3,0,0,0,0,0,,,,,,,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+144,7/26/2021,Makima Dispensary,nylUU33ouME,84476,USAID Jamii Tekelezi,Kenya,Embu,0,0,8,2,0,0,0,0,,,,,,,,,,,4,3,47,7,4,3,35,1,0,0,12,6,0,0,0,0
+145,7/5/2021,Mbeere District Hospital,Ckvm0JOmwe4,84476,USAID Jamii Tekelezi,Kenya,Embu,3,2,26,3,0,0,0,0,0,0,0,0,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+146,7/12/2021,Mbeere District Hospital,Ckvm0JOmwe4,84476,USAID Jamii Tekelezi,Kenya,Embu,4,0,36,8,0,0,0,1,0,0,0,0,,,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+147,7/19/2021,Mbeere District Hospital,Ckvm0JOmwe4,84476,USAID Jamii Tekelezi,Kenya,Embu,4,0,49,2,0,0,1,0,0,0,1,0,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+148,7/26/2021,Mbeere District Hospital,Ckvm0JOmwe4,84476,USAID Jamii Tekelezi,Kenya,Embu,1,0,32,2,0,0,1,1,0,0,1,1,,,0,0,0,1,19,11,371,121,16,11,93,26,3,0,278,95,0,0,0,0
+149,7/5/2021,Mbonzuki Dispensary,bmxJ6oH93l7,84476,USAID Jamii Tekelezi,Kenya,Embu,0,0,0,0,0,0,0,0,,0,,0,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+150,7/12/2021,Mbonzuki Dispensary,bmxJ6oH93l7,84476,USAID Jamii Tekelezi,Kenya,Embu,0,0,1,0,0,0,0,0,,,,,,,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+151,7/19/2021,Mbonzuki Dispensary,bmxJ6oH93l7,84476,USAID Jamii Tekelezi,Kenya,Embu,0,0,0,0,0,0,0,0,,,,,,,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+152,7/26/2021,Mbonzuki Dispensary,bmxJ6oH93l7,84476,USAID Jamii Tekelezi,Kenya,Embu,0,0,1,0,0,0,0,0,,,,,,,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+153,7/5/2021,Mufu Dispensary,z4Kwdy0Rnt8,84476,USAID Jamii Tekelezi,Kenya,Embu,0,0,4,0,0,0,0,0,,,,,,,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+154,7/12/2021,Mufu Dispensary,z4Kwdy0Rnt8,84476,USAID Jamii Tekelezi,Kenya,Embu,0,0,1,0,0,0,0,0,,,,,,,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+155,7/19/2021,Mufu Dispensary,z4Kwdy0Rnt8,84476,USAID Jamii Tekelezi,Kenya,Embu,0,0,5,0,0,0,0,0,,,,,,,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+156,7/26/2021,Mufu Dispensary,z4Kwdy0Rnt8,84476,USAID Jamii Tekelezi,Kenya,Embu,0,0,3,4,0,0,0,0,,,,,,,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+157,7/5/2021,Nembure Health Centre,I8ZnWhClkyq,84476,USAID Jamii Tekelezi,Kenya,Embu,1,2,18,1,0,0,0,0,,,,,,,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+158,7/12/2021,Nembure Health Centre,I8ZnWhClkyq,84476,USAID Jamii Tekelezi,Kenya,Embu,0,1,19,2,0,0,1,0,,,1,,,,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+159,7/19/2021,Nembure Health Centre,I8ZnWhClkyq,84476,USAID Jamii Tekelezi,Kenya,Embu,0,0,15,4,0,0,0,1,,,,2,,,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+160,7/26/2021,Nembure Health Centre,I8ZnWhClkyq,84476,USAID Jamii Tekelezi,Kenya,Embu,0,0,26,1,0,0,0,0,,,,,,,,,,,7,8,215,104,7,8,52,20,0,0,163,84,0,0,0,0
+161,7/5/2021,Nganduri Dispensary,xwVOvXuJvpL,84476,USAID Jamii Tekelezi,Kenya,Embu,0,0,0,0,0,0,0,0,,,,,,,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+162,7/12/2021,Nganduri Dispensary,xwVOvXuJvpL,84476,USAID Jamii Tekelezi,Kenya,Embu,0,0,0,0,0,0,0,0,,,,,,,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+163,7/19/2021,Nganduri Dispensary,xwVOvXuJvpL,84476,USAID Jamii Tekelezi,Kenya,Embu,0,0,0,0,0,0,0,0,,,,,,,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+164,7/26/2021,Nganduri Dispensary,xwVOvXuJvpL,84476,USAID Jamii Tekelezi,Kenya,Embu,0,0,0,0,0,0,0,0,,,,,,,,,,,0,0,21,8,0,0,6,3,0,0,15,5,0,0,0,0
+165,7/5/2021,Nthagaiya Catholic Dispensary,gKIlbKz2QQv,84476,USAID Jamii Tekelezi,Kenya,Embu,1,0,5,1,0,0,0,0,,,,,,,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+166,7/12/2021,Nthagaiya Catholic Dispensary,gKIlbKz2QQv,84476,USAID Jamii Tekelezi,Kenya,Embu,0,0,7,3,0,0,0,0,,,,,,,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+167,7/19/2021,Nthagaiya Catholic Dispensary,gKIlbKz2QQv,84476,USAID Jamii Tekelezi,Kenya,Embu,0,0,9,4,0,0,0,0,,,,,,,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+168,7/26/2021,Nthagaiya Catholic Dispensary,gKIlbKz2QQv,84476,USAID Jamii Tekelezi,Kenya,Embu,0,0,5,1,0,0,0,0,,,,,,,,,,,2,1,29,8,2,1,29,8,0,0,0,0,0,0,0,0
+169,7/5/2021,Riachina Dispensary,mkYbzTcCgwb,84476,USAID Jamii Tekelezi,Kenya,Embu,0,0,3,1,0,0,0,0,,,,,,,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+170,7/12/2021,Riachina Dispensary,mkYbzTcCgwb,84476,USAID Jamii Tekelezi,Kenya,Embu,0,0,2,0,0,0,0,0,,,,,,,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+171,7/19/2021,Riachina Dispensary,mkYbzTcCgwb,84476,USAID Jamii Tekelezi,Kenya,Embu,0,0,3,1,0,0,0,0,,,,,,,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+172,7/26/2021,Riachina Dispensary,mkYbzTcCgwb,84476,USAID Jamii Tekelezi,Kenya,Embu,0,0,2,0,0,0,0,0,,,,,,,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+173,7/5/2021,Rukira Dispensary,saKQjMNz8Ik,84476,USAID Jamii Tekelezi,Kenya,Embu,0,0,7,1,0,0,0,0,0,0,0,0,,,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+174,7/12/2021,Rukira Dispensary,saKQjMNz8Ik,84476,USAID Jamii Tekelezi,Kenya,Embu,0,0,8,3,0,0,0,0,0,0,0,0,,,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+175,7/19/2021,Rukira Dispensary,saKQjMNz8Ik,84476,USAID Jamii Tekelezi,Kenya,Embu,0,0,9,1,0,0,0,1,0,0,0,0,,,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+176,7/26/2021,Rukira Dispensary,saKQjMNz8Ik,84476,USAID Jamii Tekelezi,Kenya,Embu,0,0,4,0,0,0,0,0,0,0,0,0,,,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+177,7/5/2021,Runyenjes District Hospital,NqPH5CKYgUU,84476,USAID Jamii Tekelezi,Kenya,Embu,0,1,19,6,0,0,1,0,,,1,,,,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+178,7/12/2021,Runyenjes District Hospital,NqPH5CKYgUU,84476,USAID Jamii Tekelezi,Kenya,Embu,1,0,8,8,0,0,0,0,,,,,,,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+179,7/19/2021,Runyenjes District Hospital,NqPH5CKYgUU,84476,USAID Jamii Tekelezi,Kenya,Embu,2,0,14,4,0,0,1,1,,,1,1,,,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+180,7/26/2021,Runyenjes District Hospital,NqPH5CKYgUU,84476,USAID Jamii Tekelezi,Kenya,Embu,1,1,9,2,0,0,0,2,,,,2,,,,,,,17,13,581,248,13,7,149,44,4,6,432,204,0,0,0,0
+181,7/5/2021,Rwika Dispensary,ULzIuKZw7pX,84476,USAID Jamii Tekelezi,Kenya,Embu,0,0,1,1,0,0,0,0,,,,,,,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+182,7/12/2021,Rwika Dispensary,ULzIuKZw7pX,84476,USAID Jamii Tekelezi,Kenya,Embu,0,0,2,3,0,0,0,0,,,,,,,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+183,7/19/2021,Rwika Dispensary,ULzIuKZw7pX,84476,USAID Jamii Tekelezi,Kenya,Embu,0,0,2,4,0,0,0,0,,,,,,,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+184,7/26/2021,Rwika Dispensary,ULzIuKZw7pX,84476,USAID Jamii Tekelezi,Kenya,Embu,0,0,1,3,0,0,0,0,,,,,,,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+185,7/5/2021,St Michael Nursing Home,rtPtlYR3NII,84476,USAID Jamii Tekelezi,Kenya,Embu,0,0,5,1,0,0,0,0,,,,,,,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+186,7/12/2021,St Michael Nursing Home,rtPtlYR3NII,84476,USAID Jamii Tekelezi,Kenya,Embu,0,0,7,1,0,0,0,0,,,,,,,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+187,7/19/2021,St Michael Nursing Home,rtPtlYR3NII,84476,USAID Jamii Tekelezi,Kenya,Embu,1,0,4,2,0,0,0,0,,,,,,,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+188,7/26/2021,St Michael Nursing Home,rtPtlYR3NII,84476,USAID Jamii Tekelezi,Kenya,Embu,0,0,1,3,0,0,0,0,,,,,,,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+189,7/5/2021,Ugweri Disp,PlKbNw6G3Wv,84476,USAID Jamii Tekelezi,Kenya,Embu,0,0,12,2,0,0,0,0,,,,,,,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+190,7/12/2021,Ugweri Disp,PlKbNw6G3Wv,84476,USAID Jamii Tekelezi,Kenya,Embu,0,0,20,1,0,0,2,0,,,,,,,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+191,7/19/2021,Ugweri Disp,PlKbNw6G3Wv,84476,USAID Jamii Tekelezi,Kenya,Embu,0,0,17,0,0,0,0,0,,,,,,,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+192,7/26/2021,Ugweri Disp,PlKbNw6G3Wv,84476,USAID Jamii Tekelezi,Kenya,Embu,0,0,8,6,0,0,0,0,,,,,,,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+193,7/5/2021,Wachoro Dispensary,hbfqeZrD6Xy,84476,USAID Jamii Tekelezi,Kenya,Embu,0,0,5,2,0,0,0,0,,,,,,,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+194,7/12/2021,Wachoro Dispensary,hbfqeZrD6Xy,84476,USAID Jamii Tekelezi,Kenya,Embu,0,0,9,2,0,0,0,0,,,,,,,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+195,7/19/2021,Wachoro Dispensary,hbfqeZrD6Xy,84476,USAID Jamii Tekelezi,Kenya,Embu,0,0,9,1,0,0,0,0,,,,,,,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+196,7/26/2021,Wachoro Dispensary,hbfqeZrD6Xy,84476,USAID Jamii Tekelezi,Kenya,Embu,0,0,5,3,0,0,0,0,,,,,,,,,,,0,1,22,6,0,0,0,0,0,1,22,6,0,0,0,0
+197,7/5/2021,Baari Health Centre,mJzeKiO6YML,84476,USAID Jamii Tekelezi,Kenya,Nyandarua,0,0,0,0,0,0,0,0,0,0,0,0,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+198,7/12/2021,Baari Health Centre,mJzeKiO6YML,84476,USAID Jamii Tekelezi,Kenya,Nyandarua,0,0,0,0,0,0,0,0,0,0,0,0,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+199,7/19/2021,Baari Health Centre,mJzeKiO6YML,84476,USAID Jamii Tekelezi,Kenya,Nyandarua,1,1,15,6,0,0,1,0,0,0,1,0,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+200,7/26/2021,Baari Health Centre,mJzeKiO6YML,84476,USAID Jamii Tekelezi,Kenya,Nyandarua,1,0,12,7,0,0,0,0,0,0,0,0,,,0,0,0,0,12,4,125,48,12,4,44,9,0,0,81,39,0,0,0,0
+201,7/5/2021,Bamboo Health Centre,LTOr1pNejds,84476,USAID Jamii Tekelezi,Kenya,Nyandarua,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+202,7/12/2021,Bamboo Health Centre,LTOr1pNejds,84476,USAID Jamii Tekelezi,Kenya,Nyandarua,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+203,7/19/2021,Bamboo Health Centre,LTOr1pNejds,84476,USAID Jamii Tekelezi,Kenya,Nyandarua,0,0,3,4,0,0,1,2,0,0,1,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+204,7/26/2021,Bamboo Health Centre,LTOr1pNejds,84476,USAID Jamii Tekelezi,Kenya,Nyandarua,1,1,68,8,0,0,3,0,0,0,3,0,0,0,0,0,1,0,7,19,240,115,7,19,200,90,0,0,40,25,0,0,0,0
+205,7/5/2021,Chamuka (CDF) Dispensary,Q30hhBbLqPC,84476,USAID Jamii Tekelezi,Kenya,Nyandarua,0,0,0,0,0,0,0,0,0,0,0,0,,,0,0,0,0,,,,,,,,,,,,,,,,
+206,7/12/2021,Chamuka (CDF) Dispensary,Q30hhBbLqPC,84476,USAID Jamii Tekelezi,Kenya,Nyandarua,0,0,0,0,0,0,0,0,0,0,0,0,,,0,0,0,0,,,,,,,,,,,,,,,,
+207,7/19/2021,Chamuka (CDF) Dispensary,Q30hhBbLqPC,84476,USAID Jamii Tekelezi,Kenya,Nyandarua,0,0,0,0,0,0,0,0,0,0,0,0,,,0,0,0,0,,,,,,,,,,,,,,,,
+208,7/26/2021,Chamuka (CDF) Dispensary,Q30hhBbLqPC,84476,USAID Jamii Tekelezi,Kenya,Nyandarua,0,0,20,9,0,0,0,0,0,0,0,0,,,0,0,0,0,4,2,73,31,4,2,40,12,0,0,32,19,0,0,1,0
+209,7/5/2021,Gatimu Health Centre,yDVD7PQVNW3,84476,USAID Jamii Tekelezi,Kenya,Nyandarua,0,0,0,1,0,0,0,0,0,0,0,0,,,0,0,0,0,,,,,,,,,,,,,,,,
+210,7/12/2021,Gatimu Health Centre,yDVD7PQVNW3,84476,USAID Jamii Tekelezi,Kenya,Nyandarua,0,0,1,2,0,0,0,0,0,0,0,0,,,0,0,0,0,,,,,,,,,,,,,,,,
+211,7/19/2021,Gatimu Health Centre,yDVD7PQVNW3,84476,USAID Jamii Tekelezi,Kenya,Nyandarua,0,0,17,3,0,0,0,0,0,0,0,0,,,0,0,2,0,,,,,,,,,,,,,,,,
+212,7/26/2021,Gatimu Health Centre,yDVD7PQVNW3,84476,USAID Jamii Tekelezi,Kenya,Nyandarua,0,0,21,6,0,0,1,0,0,0,1,0,,,0,0,0,0,2,1,48,17,2,1,19,4,0,0,29,13,0,0,0,0
+213,7/5/2021,Geta Bush Health Centre,VdWKAir7fEv,84476,USAID Jamii Tekelezi,Kenya,Nyandarua,0,0,0,0,0,0,0,0,0,0,0,0,,,0,0,0,0,,,,,,,,,,,,,,,,
+214,7/12/2021,Geta Bush Health Centre,VdWKAir7fEv,84476,USAID Jamii Tekelezi,Kenya,Nyandarua,0,0,0,0,0,0,0,0,0,0,0,0,,,0,0,0,0,,,,,,,,,,,,,,,,
+215,7/19/2021,Geta Bush Health Centre,VdWKAir7fEv,84476,USAID Jamii Tekelezi,Kenya,Nyandarua,0,0,0,0,0,0,0,0,0,0,0,0,,,0,0,0,0,,,,,,,,,,,,,,,,
+216,7/26/2021,Geta Bush Health Centre,VdWKAir7fEv,84476,USAID Jamii Tekelezi,Kenya,Nyandarua,0,0,19,2,0,0,2,0,0,0,2,0,,,0,0,0,0,5,3,110,42,1,1,51,14,4,2,58,27,0,0,1,1
+217,7/5/2021,Huhoini Dispensary,CpuonBKIJba,84476,USAID Jamii Tekelezi,Kenya,Nyandarua,0,0,0,0,0,0,0,0,0,0,0,0,,,0,0,0,0,,,,,,,,,,,,,,,,
+218,7/12/2021,Huhoini Dispensary,CpuonBKIJba,84476,USAID Jamii Tekelezi,Kenya,Nyandarua,0,0,0,0,0,0,0,0,0,0,0,0,,,0,0,0,0,,,,,,,,,,,,,,,,
+219,7/19/2021,Huhoini Dispensary,CpuonBKIJba,84476,USAID Jamii Tekelezi,Kenya,Nyandarua,0,0,0,0,0,0,0,0,0,0,0,0,,,0,0,0,0,,,,,,,,,,,,,,,,
+220,7/26/2021,Huhoini Dispensary,CpuonBKIJba,84476,USAID Jamii Tekelezi,Kenya,Nyandarua,0,0,0,0,0,0,0,0,0,0,0,0,,,0,0,0,0,,,,,,,,,,,,,,,,
+221,7/5/2021,Kahembe Health Centre,oBIUaatujZR,84476,USAID Jamii Tekelezi,Kenya,Nyandarua,0,0,0,0,0,0,0,0,0,0,0,0,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+222,7/12/2021,Kahembe Health Centre,oBIUaatujZR,84476,USAID Jamii Tekelezi,Kenya,Nyandarua,0,0,0,0,0,0,0,0,0,0,0,0,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+223,7/19/2021,Kahembe Health Centre,oBIUaatujZR,84476,USAID Jamii Tekelezi,Kenya,Nyandarua,0,0,0,0,0,0,0,0,0,0,0,0,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+224,7/26/2021,Kahembe Health Centre,oBIUaatujZR,84476,USAID Jamii Tekelezi,Kenya,Nyandarua,0,0,10,5,0,0,0,0,0,0,0,0,,,0,0,0,0,7,9,164,87,7,9,132,67,0,0,32,20,0,0,0,0
+225,7/5/2021,Kaimbaga Dispensary,hWQU2KIoWxo,84476,USAID Jamii Tekelezi,Kenya,Nyandarua,0,0,0,0,0,0,0,0,0,0,0,0,,,0,0,0,0,,,,,,,,,,,,,,,,
+226,7/12/2021,Kaimbaga Dispensary,hWQU2KIoWxo,84476,USAID Jamii Tekelezi,Kenya,Nyandarua,0,0,0,0,0,0,0,0,0,0,0,0,,,0,0,0,0,,,,,,,,,,,,,,,,
+227,7/19/2021,Kaimbaga Dispensary,hWQU2KIoWxo,84476,USAID Jamii Tekelezi,Kenya,Nyandarua,0,0,0,0,0,0,0,0,0,0,0,0,,,0,0,0,0,,,,,,,,,,,,,,,,
+228,7/26/2021,Kaimbaga Dispensary,hWQU2KIoWxo,84476,USAID Jamii Tekelezi,Kenya,Nyandarua,0,0,0,0,0,0,0,0,0,0,0,0,,,0,0,0,0,0,0,16,7,0,0,9,3,0,0,7,4,0,0,0,0
+229,7/5/2021,Karangatha Health Centre,wy1SFAUIGpo,84476,USAID Jamii Tekelezi,Kenya,Nyandarua,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+230,7/12/2021,Karangatha Health Centre,wy1SFAUIGpo,84476,USAID Jamii Tekelezi,Kenya,Nyandarua,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+231,7/19/2021,Karangatha Health Centre,wy1SFAUIGpo,84476,USAID Jamii Tekelezi,Kenya,Nyandarua,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+232,7/26/2021,Karangatha Health Centre,wy1SFAUIGpo,84476,USAID Jamii Tekelezi,Kenya,Nyandarua,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,4,2,62,40,4,2,62,40,0,0,0,0,0,0,0,0
+233,7/5/2021,Kirima Dispensary,g490Mk9Eaqn,84476,USAID Jamii Tekelezi,Kenya,Nyandarua,0,0,0,0,0,0,0,0,0,0,0,0,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+234,7/12/2021,Kirima Dispensary,g490Mk9Eaqn,84476,USAID Jamii Tekelezi,Kenya,Nyandarua,0,0,0,0,0,0,0,0,0,0,0,0,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+235,7/19/2021,Kirima Dispensary,g490Mk9Eaqn,84476,USAID Jamii Tekelezi,Kenya,Nyandarua,0,0,0,0,0,0,0,0,0,0,0,0,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+236,7/26/2021,Kirima Dispensary,g490Mk9Eaqn,84476,USAID Jamii Tekelezi,Kenya,Nyandarua,0,0,5,5,0,0,0,S,0,0,0,0,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+237,7/5/2021,Kiriogo Dispensary,iUa6FxxfB0g,84476,USAID Jamii Tekelezi,Kenya,Nyandarua,0,0,0,0,0,0,0,0,0,0,0,0,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+238,7/12/2021,Kiriogo Dispensary,iUa6FxxfB0g,84476,USAID Jamii Tekelezi,Kenya,Nyandarua,0,0,0,0,0,0,0,0,0,0,0,0,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+239,7/19/2021,Kiriogo Dispensary,iUa6FxxfB0g,84476,USAID Jamii Tekelezi,Kenya,Nyandarua,0,0,0,0,0,0,0,0,0,0,0,0,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+240,7/26/2021,Kiriogo Dispensary,iUa6FxxfB0g,84476,USAID Jamii Tekelezi,Kenya,Nyandarua,0,0,5,1,0,0,0,0,0,0,0,0,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+241,7/5/2021,Lereshwa Dispensary,USUCFkjtjj8,84476,USAID Jamii Tekelezi,Kenya,Nyandarua,0,0,0,0,0,0,0,0,0,0,0,0,,,0,0,0,0,,,,,,,,,,,,,,,,
+242,7/12/2021,Lereshwa Dispensary,USUCFkjtjj8,84476,USAID Jamii Tekelezi,Kenya,Nyandarua,0,0,0,0,0,0,0,0,0,0,0,0,,,0,0,0,0,,,,,,,,,,,,,,,,
+243,7/19/2021,Lereshwa Dispensary,USUCFkjtjj8,84476,USAID Jamii Tekelezi,Kenya,Nyandarua,0,0,3,0,0,0,0,0,0,0,0,0,,,0,0,0,0,,,,,,,,,,,,,,,,
+244,7/26/2021,Lereshwa Dispensary,USUCFkjtjj8,84476,USAID Jamii Tekelezi,Kenya,Nyandarua,0,0,4,0,0,0,0,0,0,0,0,0,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+245,7/5/2021,Manunga Health Centre,odx2EmmP8IM,84476,USAID Jamii Tekelezi,Kenya,Nyandarua,0,0,0,0,0,0,0,0,0,0,0,0,,,0,0,0,0,,,,,,,,,,,,,,,,
+246,7/12/2021,Manunga Health Centre,odx2EmmP8IM,84476,USAID Jamii Tekelezi,Kenya,Nyandarua,0,0,0,0,0,0,0,0,0,0,0,0,,,0,0,0,0,,,,,,,,,,,,,,,,
+247,7/19/2021,Manunga Health Centre,odx2EmmP8IM,84476,USAID Jamii Tekelezi,Kenya,Nyandarua,0,0,21,7,0,0,0,0,0,0,0,0,,,0,0,0,0,,,,,,,,,,,,,,,,
+248,7/26/2021,Manunga Health Centre,odx2EmmP8IM,84476,USAID Jamii Tekelezi,Kenya,Nyandarua,0,0,23,11,0,0,0,1,0,0,0,1,,,0,0,1,0,5,5,179,73,5,5,103,46,0,0,76,27,0,0,0,0
+249,7/5/2021,Mastoo Dispensary,pHP1u0HE6qc,84476,USAID Jamii Tekelezi,Kenya,Nyandarua,0,0,0,0,0,0,0,0,0,0,0,0,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+250,7/12/2021,Mastoo Dispensary,pHP1u0HE6qc,84476,USAID Jamii Tekelezi,Kenya,Nyandarua,0,0,0,0,0,0,0,0,0,0,0,0,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+251,7/19/2021,Mastoo Dispensary,pHP1u0HE6qc,84476,USAID Jamii Tekelezi,Kenya,Nyandarua,0,0,0,0,0,0,0,0,0,0,0,0,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+252,7/26/2021,Mastoo Dispensary,pHP1u0HE6qc,84476,USAID Jamii Tekelezi,Kenya,Nyandarua,0,0,0,0,0,0,0,0,0,0,0,0,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+253,7/5/2021,Mbuyu Dispensary,jlAJXVHPvhs,84476,USAID Jamii Tekelezi,Kenya,Nyandarua,0,0,0,0,0,0,0,0,0,0,0,0,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+254,7/12/2021,Mbuyu Dispensary,jlAJXVHPvhs,84476,USAID Jamii Tekelezi,Kenya,Nyandarua,0,0,0,0,0,0,0,0,0,0,0,0,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+255,7/19/2021,Mbuyu Dispensary,jlAJXVHPvhs,84476,USAID Jamii Tekelezi,Kenya,Nyandarua,0,0,0,0,0,0,0,0,0,0,0,0,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+256,7/26/2021,Mbuyu Dispensary,jlAJXVHPvhs,84476,USAID Jamii Tekelezi,Kenya,Nyandarua,0,0,13,7,0,0,0,0,0,0,0,0,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+257,7/5/2021,Mirangine Health Centre,NrmTe0EXHbJ,84476,USAID Jamii Tekelezi,Kenya,Nyandarua,0,0,0,0,0,0,0,0,0,0,0,0,,,0,0,0,0,  ,,,,,,,,,,,,,,,
+258,7/12/2021,Mirangine Health Centre,NrmTe0EXHbJ,84476,USAID Jamii Tekelezi,Kenya,Nyandarua,0,0,1,1,0,0,0,0,0,0,0,0,,,0,0,0,0,,,,,,,,,,,,,,,,
+259,7/19/2021,Mirangine Health Centre,NrmTe0EXHbJ,84476,USAID Jamii Tekelezi,Kenya,Nyandarua,3,0,8,9,0,0,0,0,0,0,0,0,,,0,0,0,0,,,,,,,,,,,,,,,,
+260,7/26/2021,Mirangine Health Centre,NrmTe0EXHbJ,84476,USAID Jamii Tekelezi,Kenya,Nyandarua,0,0,9,12,0,0,0,0,0,0,0,0,,,0,0,0,0,7,3,128,85,7,3,101,65,0,0,27,20,0,0,0,0
+261,7/5/2021,Mukungi Dispensary,MMJfiTABVdg,84476,USAID Jamii Tekelezi,Kenya,Nyandarua,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+262,7/12/2021,Mukungi Dispensary,MMJfiTABVdg,84476,USAID Jamii Tekelezi,Kenya,Nyandarua,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+263,7/19/2021,Mukungi Dispensary,MMJfiTABVdg,84476,USAID Jamii Tekelezi,Kenya,Nyandarua,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+264,7/26/2021,Mukungi Dispensary,MMJfiTABVdg,84476,USAID Jamii Tekelezi,Kenya,Nyandarua,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+265,7/5/2021,Murungaru Health Centre,VHkUOWg7v3c,84476,USAID Jamii Tekelezi,Kenya,Nyandarua,0,0,2,5,0,0,0,2,0,0,0,2,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+266,7/12/2021,Murungaru Health Centre,VHkUOWg7v3c,84476,USAID Jamii Tekelezi,Kenya,Nyandarua,0,0,3,1,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+267,7/19/2021,Murungaru Health Centre,VHkUOWg7v3c,84476,USAID Jamii Tekelezi,Kenya,Nyandarua,0,0,3,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+268,7/26/2021,Murungaru Health Centre,VHkUOWg7v3c,84476,USAID Jamii Tekelezi,Kenya,Nyandarua,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,4,7,115,60,3,7,115,60,1,0,0,0,0,0,0,0
+269,7/5/2021,Ndaragwa Health Centre,LqyOkuzfVuX,84476,USAID Jamii Tekelezi,Kenya,Nyandarua,0,0,1,0,0,0,0,0,0,0,0,0,,,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+270,7/12/2021,Ndaragwa Health Centre,LqyOkuzfVuX,84476,USAID Jamii Tekelezi,Kenya,Nyandarua,0,0,4,2,0,0,1,0,0,0,1,0,,,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+271,7/19/2021,Ndaragwa Health Centre,LqyOkuzfVuX,84476,USAID Jamii Tekelezi,Kenya,Nyandarua,0,1,22,8,0,1,1,0,0,1,1,0,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+272,7/26/2021,Ndaragwa Health Centre,LqyOkuzfVuX,84476,USAID Jamii Tekelezi,Kenya,Nyandarua,0,0,27,15,0,0,1,0,0,0,1,0,,,0,0,0,0,14,11,380,160,3,4,109,37,11,7,271,123,0,0,0,0
+273,7/5/2021,Ndemi Health Centre,w6NbIpYTDAc,84476,USAID Jamii Tekelezi,Kenya,Nyandarua,1,0,14,2,0,0,0,0,0,0,0,0,,,0,0,0,0,,,,,,,,,,,,,,,,
+274,7/12/2021,Ndemi Health Centre,w6NbIpYTDAc,84476,USAID Jamii Tekelezi,Kenya,Nyandarua,0,0,20,3,0,0,0,0,0,0,0,0,,,0,0,0,0,,,,,,,,,,,,,,,,
+275,7/19/2021,Ndemi Health Centre,w6NbIpYTDAc,84476,USAID Jamii Tekelezi,Kenya,Nyandarua,0,0,18,2,0,0,0,0,0,0,0,0,,,0,0,0,0,,,,,,,,,,,,,,,,
+276,7/26/2021,Ndemi Health Centre,w6NbIpYTDAc,84476,USAID Jamii Tekelezi,Kenya,Nyandarua,0,0,22,2,0,0,0,0,0,0,0,0,,,0,0,0,0,2,4,33,19,2,4,14,9,0,0,15,8,0,0,4,2
+277,7/5/2021,Ndunyu Njeru Dispensary,iBgKjn8OYnx,84476,USAID Jamii Tekelezi,Kenya,Nyandarua,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+278,7/12/2021,Ndunyu Njeru Dispensary,iBgKjn8OYnx,84476,USAID Jamii Tekelezi,Kenya,Nyandarua,0,0,3,1,0,0,2,0,0,0,2,0,0,0,0,0,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+279,7/19/2021,Ndunyu Njeru Dispensary,iBgKjn8OYnx,84476,USAID Jamii Tekelezi,Kenya,Nyandarua,0,0,3,0,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+280,7/26/2021,Ndunyu Njeru Dispensary,iBgKjn8OYnx,84476,USAID Jamii Tekelezi,Kenya,Nyandarua,0,0,14,8,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,20,7,0,0,20,7,0,0,0,0,0,0,0,0
+281,7/5/2021,New Mawingu Health Centre,TCHLeOkYYsn,84476,USAID Jamii Tekelezi,Kenya,Nyandarua,0,0,0,0,0,0,0,0,0,0,0,0,,,0,0,0,0,,,,,,,,,,,,,,,,
+282,7/12/2021,New Mawingu Health Centre,TCHLeOkYYsn,84476,USAID Jamii Tekelezi,Kenya,Nyandarua,0,0,0,0,0,0,0,0,0,0,0,0,,,0,0,0,0,,,,,,,,,,,,,,,,
+283,7/19/2021,New Mawingu Health Centre,TCHLeOkYYsn,84476,USAID Jamii Tekelezi,Kenya,Nyandarua,0,0,0,0,0,0,0,0,0,0,0,0,,,0,0,0,0,,,,,,,,,,,,,,,,
+284,7/26/2021,New Mawingu Health Centre,TCHLeOkYYsn,84476,USAID Jamii Tekelezi,Kenya,Nyandarua,0,0,0,0,0,0,0,0,0,0,0,0,,,0,0,0,0,2,2,41,24,2,2,30,16,0,0,11,8,0,0,0,0
+285,7/5/2021,Ngano Health Centre,Gj8bqGWwvwC,84476,USAID Jamii Tekelezi,Kenya,Nyandarua,0,0,0,0,0,0,0,0,0,0,0,0,,,0,0,0,0,,,,,,,,,,,,,,,,
+286,7/12/2021,Ngano Health Centre,Gj8bqGWwvwC,84476,USAID Jamii Tekelezi,Kenya,Nyandarua,0,0,0,0,0,0,0,0,0,0,0,0,,,0,0,0,0,,,,,,,,,,,,,,,,
+287,7/19/2021,Ngano Health Centre,Gj8bqGWwvwC,84476,USAID Jamii Tekelezi,Kenya,Nyandarua,0,0,0,0,0,0,0,0,0,0,0,0,,,0,0,0,0,,,,,,,,,,,,,,,,
+288,7/26/2021,Ngano Health Centre,Gj8bqGWwvwC,84476,USAID Jamii Tekelezi,Kenya,Nyandarua,0,0,4,1,0,0,0,0,0,0,0,0,,,0,0,0,0,2,3,48,19,1,2,10,6,1,1,37,13,0,0,1,0
+289,7/5/2021,Ngorika Dispensary,PAwJ0bAl42A,84476,USAID Jamii Tekelezi,Kenya,Nyandarua,0,0,7,0,0,0,0,0,0,0,0,0,,,0,0,0,0,,,,,,,,,,,,,,,,
+290,7/12/2021,Ngorika Dispensary,PAwJ0bAl42A,84476,USAID Jamii Tekelezi,Kenya,Nyandarua,0,0,1,2,0,0,0,0,0,0,0,0,,,0,0,0,0,,,,,,,,,,,,,,,,
+291,7/19/2021,Ngorika Dispensary,PAwJ0bAl42A,84476,USAID Jamii Tekelezi,Kenya,Nyandarua,0,0,7,2,0,0,0,0,0,0,0,0,,,0,0,0,0,,,,,,,,,,,,,,,,
+292,7/26/2021,Ngorika Dispensary,PAwJ0bAl42A,84476,USAID Jamii Tekelezi,Kenya,Nyandarua,1,2,6,6,0,0,0,0,0,0,0,0,,,0,0,0,0,3,7,66,35,3,7,42,22,0,0,24,13,0,0,0,0
+293,7/5/2021,Olborosat Dispensary,oR12Qi7Kaw0,84476,USAID Jamii Tekelezi,Kenya,Nyandarua,0,0,5,4,0,0,0,0,0,0,0,0,,,0,0,0,0,,,,,,,,,,,,,,,,
+294,7/12/2021,Olborosat Dispensary,oR12Qi7Kaw0,84476,USAID Jamii Tekelezi,Kenya,Nyandarua,0,0,5,0,0,0,0,0,0,0,0,0,,,0,0,0,0,,,,,,,,,,,,,,,,
+295,7/19/2021,Olborosat Dispensary,oR12Qi7Kaw0,84476,USAID Jamii Tekelezi,Kenya,Nyandarua,0,0,5,6,0,0,1,0,0,0,1,0,,,0,0,0,0,,,,,,,,,,,,,,,,
+296,7/26/2021,Olborosat Dispensary,oR12Qi7Kaw0,84476,USAID Jamii Tekelezi,Kenya,Nyandarua,0,0,6,14,0,0,0,0,0,0,0,0,,,0,0,0,0,2,1,54,20,2,1,38,19,0,0,16,1,0,0,0,0
+297,7/5/2021,Oljororok Catholic Dispensary,Sjn4QAov5aQ,84476,USAID Jamii Tekelezi,Kenya,Nyandarua,0,0,0,0,0,0,0,0,0,0,0,0,,,0,0,0,0,,,,,,,,,,,,,,,,
+298,7/12/2021,Oljororok Catholic Dispensary,Sjn4QAov5aQ,84476,USAID Jamii Tekelezi,Kenya,Nyandarua,0,0,0,0,0,0,0,0,0,0,0,0,,,0,0,0,0,,,,,,,,,,,,,,,,
+299,7/19/2021,Oljororok Catholic Dispensary,Sjn4QAov5aQ,84476,USAID Jamii Tekelezi,Kenya,Nyandarua,0,0,0,0,0,0,0,0,0,0,0,0,,,0,0,0,0,,,,,,,,,,,,,,,,
+300,7/26/2021,Oljororok Catholic Dispensary,Sjn4QAov5aQ,84476,USAID Jamii Tekelezi,Kenya,Nyandarua,0,0,2,0,0,0,0,0,0,0,0,0,,,0,0,0,0,,,,,,,,,,,,,,,,
+301,7/5/2021,Our Lady of Mercy (Magumu),bhxzvBtlT1z,84476,USAID Jamii Tekelezi,Kenya,Nyandarua,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+302,7/12/2021,Our Lady of Mercy (Magumu),bhxzvBtlT1z,84476,USAID Jamii Tekelezi,Kenya,Nyandarua,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+303,7/19/2021,Our Lady of Mercy (Magumu),bhxzvBtlT1z,84476,USAID Jamii Tekelezi,Kenya,Nyandarua,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+304,7/26/2021,Our Lady of Mercy (Magumu),bhxzvBtlT1z,84476,USAID Jamii Tekelezi,Kenya,Nyandarua,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+305,7/5/2021,Pesi Dispensary,pVdxoyR7T6I,84476,USAID Jamii Tekelezi,Kenya,Nyandarua,0,0,0,0,0,0,0,0,0,0,0,0,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+306,7/12/2021,Pesi Dispensary,pVdxoyR7T6I,84476,USAID Jamii Tekelezi,Kenya,Nyandarua,0,0,0,0,0,0,0,0,0,0,0,0,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+307,7/19/2021,Pesi Dispensary,pVdxoyR7T6I,84476,USAID Jamii Tekelezi,Kenya,Nyandarua,0,0,0,0,0,0,0,0,0,0,0,0,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+308,7/26/2021,Pesi Dispensary,pVdxoyR7T6I,84476,USAID Jamii Tekelezi,Kenya,Nyandarua,0,1,16,7,0,0,1,0,0,0,0,0,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+309,7/5/2021,Shamata Health Centre,psTyb7YzhF5,84476,USAID Jamii Tekelezi,Kenya,Nyandarua,0,0,0,0,0,0,0,0,0,0,0,0,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+310,7/12/2021,Shamata Health Centre,psTyb7YzhF5,84476,USAID Jamii Tekelezi,Kenya,Nyandarua,0,0,0,0,0,0,0,0,0,0,0,0,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+311,7/19/2021,Shamata Health Centre,psTyb7YzhF5,84476,USAID Jamii Tekelezi,Kenya,Nyandarua,0,0,0,0,0,0,0,0,0,0,0,0,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+312,7/26/2021,Shamata Health Centre,psTyb7YzhF5,84476,USAID Jamii Tekelezi,Kenya,Nyandarua,0,0,0,0,0,0,0,0,0,0,0,0,,,0,0,0,0,4,4,102,63,4,4,54,28,0,0,48,35,0,0,0,0
+313,7/5/2021,Silibwet Health Centre (Nyandaruawest),TtSspBiYzHq,84476,USAID Jamii Tekelezi,Kenya,Nyandarua,0,0,0,0,0,0,0,0,0,0,0,0,,,0,0,0,0,,,,,,,,,,,,,,,,
+314,7/12/2021,Silibwet Health Centre (Nyandaruawest),TtSspBiYzHq,84476,USAID Jamii Tekelezi,Kenya,Nyandarua,0,0,0,0,0,0,0,0,0,0,0,0,,,0,0,0,0,,,,,,,,,,,,,,,,
+315,7/19/2021,Silibwet Health Centre (Nyandaruawest),TtSspBiYzHq,84476,USAID Jamii Tekelezi,Kenya,Nyandarua,0,0,7,5,0,0,0,0,0,0,0,0,,,0,0,0,0,,,,,,,,,,,,,,,,
+316,7/26/2021,Silibwet Health Centre (Nyandaruawest),TtSspBiYzHq,84476,USAID Jamii Tekelezi,Kenya,Nyandarua,0,0,21,7,0,0,1,0,0,0,2,0,,,0,0,0,0,6,4,109,37,0,0,23,4,6,4,70,30,0,0,16,3
+317,7/5/2021,St Mathews and Sarah Dispensary,wdkjDZUc0Vd,84476,USAID Jamii Tekelezi,Kenya,Nyandarua,0,0,2,4,0,0,0,0,0,0,0,0,,,0,0,0,0,,,,,,,,,,,,,,,,
+318,7/12/2021,St Mathews and Sarah Dispensary,wdkjDZUc0Vd,84476,USAID Jamii Tekelezi,Kenya,Nyandarua,0,0,4,1,0,0,0,0,0,0,0,0,,,0,0,0,0,,,,,,,,,,,,,,,,
+319,7/19/2021,St Mathews and Sarah Dispensary,wdkjDZUc0Vd,84476,USAID Jamii Tekelezi,Kenya,Nyandarua,0,0,0,0,0,0,0,0,0,0,0,0,,,0,0,0,0,,,,,,,,,,,,,,,,
+320,7/26/2021,St Mathews and Sarah Dispensary,wdkjDZUc0Vd,84476,USAID Jamii Tekelezi,Kenya,Nyandarua,0,0,5,4,0,0,0,0,0,0,0,0,,,0,0,0,0,2,0,39,11,2,0,16,6,0,0,23,5,0,0,0,0
+321,7/5/2021,Subuku Dispensary (Nyandarua North),M0VxTclDHJv,84476,USAID Jamii Tekelezi,Kenya,Nyandarua,0,0,0,0,0,0,0,0,0,0,0,0,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+322,7/12/2021,Subuku Dispensary (Nyandarua North),M0VxTclDHJv,84476,USAID Jamii Tekelezi,Kenya,Nyandarua,0,0,0,0,0,0,0,0,0,0,0,0,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+323,7/19/2021,Subuku Dispensary (Nyandarua North),M0VxTclDHJv,84476,USAID Jamii Tekelezi,Kenya,Nyandarua,0,0,0,0,0,0,0,0,0,0,0,0,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+324,7/26/2021,Subuku Dispensary (Nyandarua North),M0VxTclDHJv,84476,USAID Jamii Tekelezi,Kenya,Nyandarua,0,0,40,1,0,0,0,0,0,0,0,0,,,0,0,0,0,2,2,36,18,2,2,20,8,0,0,16,10,0,0,0,0
+325,7/5/2021,Turasha Dispensary,DbtqAZaFp7Z,84476,USAID Jamii Tekelezi,Kenya,Nyandarua,0,0,0,0,0,0,0,0,0,0,0,0,,,0,0,0,0,,,,,,,,,,,,,,,,
+326,7/12/2021,Turasha Dispensary,DbtqAZaFp7Z,84476,USAID Jamii Tekelezi,Kenya,Nyandarua,0,0,0,0,0,0,0,0,0,0,0,0,,,0,0,0,0,,,,,,,,,,,,,,,,
+327,7/19/2021,Turasha Dispensary,DbtqAZaFp7Z,84476,USAID Jamii Tekelezi,Kenya,Nyandarua,0,0,0,0,0,0,0,0,0,0,0,0,,,0,0,0,0,,,,,,,,,,,,,,,,
+328,7/26/2021,Turasha Dispensary,DbtqAZaFp7Z,84476,USAID Jamii Tekelezi,Kenya,Nyandarua,0,0,4,0,0,0,0,0,0,0,0,0,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+329,7/5/2021,Uruku Dispensary,tXVR1t0rqFM,84476,USAID Jamii Tekelezi,Kenya,Nyandarua,0,0,0,0,0,0,0,0,0,0,0,0,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+330,7/12/2021,Uruku Dispensary,tXVR1t0rqFM,84476,USAID Jamii Tekelezi,Kenya,Nyandarua,0,0,0,0,0,0,0,0,0,0,0,0,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+331,7/19/2021,Uruku Dispensary,tXVR1t0rqFM,84476,USAID Jamii Tekelezi,Kenya,Nyandarua,0,0,0,0,0,0,0,0,0,0,0,0,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+332,7/26/2021,Uruku Dispensary,tXVR1t0rqFM,84476,USAID Jamii Tekelezi,Kenya,Nyandarua,0,0,5,3,0,0,0,0,0,0,0,0,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+333,7/5/2021,Wanjohi Health Centre,RTlbXR77IWU,84476,USAID Jamii Tekelezi,Kenya,Nyandarua,0,0,0,0,0,0,0,0,0,0,0,0,,,0,0,0,0,,,,,,,,,,,,,,,,
+334,7/12/2021,Wanjohi Health Centre,RTlbXR77IWU,84476,USAID Jamii Tekelezi,Kenya,Nyandarua,0,0,0,0,0,0,0,0,0,0,0,0,,,0,0,0,0,,,,,,,,,,,,,,,,
+335,7/19/2021,Wanjohi Health Centre,RTlbXR77IWU,84476,USAID Jamii Tekelezi,Kenya,Nyandarua,0,1,16,3,0,0,0,0,0,0,0,0,,,0,0,0,0,,,,,,,,,,,,,,,,
+336,7/26/2021,Wanjohi Health Centre,RTlbXR77IWU,84476,USAID Jamii Tekelezi,Kenya,Nyandarua,0,0,22,4,0,1,1,0,0,1,1,0,,,0,0,2,0,8,9,166,60,6,8,58,10,2,1,105,46,0,0,3,4
+337,7/5/2021,Weru Health Center,lIrbYqhuPsJ,84476,USAID Jamii Tekelezi,Kenya,Nyandarua,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+338,7/12/2021,Weru Health Center,lIrbYqhuPsJ,84476,USAID Jamii Tekelezi,Kenya,Nyandarua,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+339,7/19/2021,Weru Health Center,lIrbYqhuPsJ,84476,USAID Jamii Tekelezi,Kenya,Nyandarua,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+340,7/26/2021,Weru Health Center,lIrbYqhuPsJ,84476,USAID Jamii Tekelezi,Kenya,Nyandarua,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,2,36,16,1,2,36,16,0,0,0,0,0,0,0,0
+341,7/5/2021,Baragu Health Centre,tb2ANtsOua0,84476,USAID Jamii Tekelezi,Kenya,Tharaka Nithi,0,0,4,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,,,,,,,,,,0,0,0,0,0,0,0
+342,7/12/2021,Baragu Health Centre,tb2ANtsOua0,84476,USAID Jamii Tekelezi,Kenya,Tharaka Nithi,0,0,10,8,0,0,0,0,0,0,0,0,0,0,0,0,1,1,,,,,,,,,,,,,,,,
+343,7/19/2021,Baragu Health Centre,tb2ANtsOua0,84476,USAID Jamii Tekelezi,Kenya,Tharaka Nithi,0,0,7,9,0,0,0,0,0,0,0,0,0,0,0,0,0,0,,,,,,,,,,,,,,,,
+344,7/26/2021,Baragu Health Centre,tb2ANtsOua0,84476,USAID Jamii Tekelezi,Kenya,Tharaka Nithi,0,1,9,3,0,0,0,0,0,0,0,0,0,0,0,0,0,1,4,4,75,40,4,2,37,13,0,2,38,27,0,0,0,0
+345,7/5/2021,Chiakariga H/C,vEeFkE72jt7,84476,USAID Jamii Tekelezi,Kenya,Tharaka Nithi,0,0,6,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,,,,,,,,,,,,,,,,
+346,7/12/2021,Chiakariga H/C,vEeFkE72jt7,84476,USAID Jamii Tekelezi,Kenya,Tharaka Nithi,1,0,31,4,1,0,1,0,1,0,1,0,0,0,0,0,0,0,,,,,,,,,,,,,,,,
+347,7/19/2021,Chiakariga H/C,vEeFkE72jt7,84476,USAID Jamii Tekelezi,Kenya,Tharaka Nithi,0,0,2,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,,,,,,,,,,,,,,,,
+348,7/26/2021,Chiakariga H/C,vEeFkE72jt7,84476,USAID Jamii Tekelezi,Kenya,Tharaka Nithi,0,0,3,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,,,,,,,,,,,,,,,,
+349,7/5/2021,Chuka Cottage Hospital,psHTPguSW3j,84476,USAID Jamii Tekelezi,Kenya,Tharaka Nithi,0,0,12,5,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+350,7/12/2021,Chuka Cottage Hospital,psHTPguSW3j,84476,USAID Jamii Tekelezi,Kenya,Tharaka Nithi,0,0,10,7,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+351,7/19/2021,Chuka Cottage Hospital,psHTPguSW3j,84476,USAID Jamii Tekelezi,Kenya,Tharaka Nithi,1,0,17,3,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+352,7/26/2021,Chuka Cottage Hospital,psHTPguSW3j,84476,USAID Jamii Tekelezi,Kenya,Tharaka Nithi,0,0,10,4,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+353,7/5/2021,Chuka District Hospital,EWTRe1nWQoJ,84476,USAID Jamii Tekelezi,Kenya,Tharaka Nithi,1,1,38,23,0,0,1,2,0,0,1,2,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+354,7/12/2021,Chuka District Hospital,EWTRe1nWQoJ,84476,USAID Jamii Tekelezi,Kenya,Tharaka Nithi,1,1,38,34,0,0,2,0,0,0,2,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+355,7/19/2021,Chuka District Hospital,EWTRe1nWQoJ,84476,USAID Jamii Tekelezi,Kenya,Tharaka Nithi,0,0,38,29,0,0,2,1,0,0,2,1,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+356,7/26/2021,Chuka District Hospital,EWTRe1nWQoJ,84476,USAID Jamii Tekelezi,Kenya,Tharaka Nithi,1,0,34,26,0,0,0,1,0,0,0,0,0,0,0,0,1,3,35,19,840,412,8,3,100,27,27,16,735,382,0,0,5,3
+357,7/5/2021,Gaciongo Dispensary,zG7VieG5pUR,84476,USAID Jamii Tekelezi,Kenya,Tharaka Nithi,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+358,7/12/2021,Gaciongo Dispensary,zG7VieG5pUR,84476,USAID Jamii Tekelezi,Kenya,Tharaka Nithi,0,0,4,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+359,7/19/2021,Gaciongo Dispensary,zG7VieG5pUR,84476,USAID Jamii Tekelezi,Kenya,Tharaka Nithi,0,0,3,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+360,7/26/2021,Gaciongo Dispensary,zG7VieG5pUR,84476,USAID Jamii Tekelezi,Kenya,Tharaka Nithi,0,0,3,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+361,7/5/2021,Gatunga Health Centre,UVqXkWGPMha,84476,USAID Jamii Tekelezi,Kenya,Tharaka Nithi,0,0,8,2,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+362,7/12/2021,Gatunga Health Centre,UVqXkWGPMha,84476,USAID Jamii Tekelezi,Kenya,Tharaka Nithi,0,0,5,6,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+363,7/19/2021,Gatunga Health Centre,UVqXkWGPMha,84476,USAID Jamii Tekelezi,Kenya,Tharaka Nithi,0,1,12,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+364,7/26/2021,Gatunga Health Centre,UVqXkWGPMha,84476,USAID Jamii Tekelezi,Kenya,Tharaka Nithi,0,0,10,5,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,4,30,10,0,3,12,6,0,1,18,4,0,0,0,0
+365,7/5/2021,Gatunga Model Health Centre,vDavi1lTko3,84476,USAID Jamii Tekelezi,Kenya,Tharaka Nithi,0,0,20,5,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+366,7/12/2021,Gatunga Model Health Centre,vDavi1lTko3,84476,USAID Jamii Tekelezi,Kenya,Tharaka Nithi,2,0,14,3,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+367,7/19/2021,Gatunga Model Health Centre,vDavi1lTko3,84476,USAID Jamii Tekelezi,Kenya,Tharaka Nithi,0,0,22,6,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+368,7/26/2021,Gatunga Model Health Centre,vDavi1lTko3,84476,USAID Jamii Tekelezi,Kenya,Tharaka Nithi,0,0,19,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+369,7/5/2021,Ikuu Dispensary,hdruOpsxv36,84476,USAID Jamii Tekelezi,Kenya,Tharaka Nithi,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+370,7/12/2021,Ikuu Dispensary,hdruOpsxv36,84476,USAID Jamii Tekelezi,Kenya,Tharaka Nithi,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+371,7/19/2021,Ikuu Dispensary,hdruOpsxv36,84476,USAID Jamii Tekelezi,Kenya,Tharaka Nithi,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+372,7/26/2021,Ikuu Dispensary,hdruOpsxv36,84476,USAID Jamii Tekelezi,Kenya,Tharaka Nithi,0,0,3,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+373,7/5/2021,Kaanwa Dispensary,bpQjQEeuAzO,84476,USAID Jamii Tekelezi,Kenya,Tharaka Nithi,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+374,7/12/2021,Kaanwa Dispensary,bpQjQEeuAzO,84476,USAID Jamii Tekelezi,Kenya,Tharaka Nithi,0,0,27,5,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+375,7/19/2021,Kaanwa Dispensary,bpQjQEeuAzO,84476,USAID Jamii Tekelezi,Kenya,Tharaka Nithi,0,1,22,3,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+376,7/26/2021,Kaanwa Dispensary,bpQjQEeuAzO,84476,USAID Jamii Tekelezi,Kenya,Tharaka Nithi,0,0,13,10,0,0,0,1,0,0,0,1,0,0,0,0,0,1,4,3,78,23,3,2,51,15,1,1,27,8,0,0,0,0
+377,7/5/2021,Kajuki Health Centre,bZBzAIFg2YN,84476,USAID Jamii Tekelezi,Kenya,Tharaka Nithi,0,0,6,4,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+378,7/12/2021,Kajuki Health Centre,bZBzAIFg2YN,84476,USAID Jamii Tekelezi,Kenya,Tharaka Nithi,0,1,34,3,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+379,7/19/2021,Kajuki Health Centre,bZBzAIFg2YN,84476,USAID Jamii Tekelezi,Kenya,Tharaka Nithi,2,0,21,4,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+380,7/26/2021,Kajuki Health Centre,bZBzAIFg2YN,84476,USAID Jamii Tekelezi,Kenya,Tharaka Nithi,1,0,18,9,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,74,39,0,0,22,14,0,0,52,25,0,0,0,0
+381,7/5/2021,Kamaindi Dispensary,JkTPYDJBimp,84476,USAID Jamii Tekelezi,Kenya,Tharaka Nithi,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+382,7/12/2021,Kamaindi Dispensary,JkTPYDJBimp,84476,USAID Jamii Tekelezi,Kenya,Tharaka Nithi,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+383,7/19/2021,Kamaindi Dispensary,JkTPYDJBimp,84476,USAID Jamii Tekelezi,Kenya,Tharaka Nithi,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+384,7/26/2021,Kamaindi Dispensary,JkTPYDJBimp,84476,USAID Jamii Tekelezi,Kenya,Tharaka Nithi,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+385,7/5/2021,Kambandi Dispensary,RDvymjyauVd,84476,USAID Jamii Tekelezi,Kenya,Tharaka Nithi,0,0,10,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+386,7/12/2021,Kambandi Dispensary,RDvymjyauVd,84476,USAID Jamii Tekelezi,Kenya,Tharaka Nithi,0,1,10,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+387,7/19/2021,Kambandi Dispensary,RDvymjyauVd,84476,USAID Jamii Tekelezi,Kenya,Tharaka Nithi,0,0,11,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+388,7/26/2021,Kambandi Dispensary,RDvymjyauVd,84476,USAID Jamii Tekelezi,Kenya,Tharaka Nithi,0,0,11,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,5,36,9,1,5,6,5,0,0,30,4,0,0,0,0
+389,7/5/2021,Kamwathu Dispensary,JIeuKUhcULm,84476,USAID Jamii Tekelezi,Kenya,Tharaka Nithi,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+390,7/12/2021,Kamwathu Dispensary,JIeuKUhcULm,84476,USAID Jamii Tekelezi,Kenya,Tharaka Nithi,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+391,7/19/2021,Kamwathu Dispensary,JIeuKUhcULm,84476,USAID Jamii Tekelezi,Kenya,Tharaka Nithi,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+392,7/26/2021,Kamwathu Dispensary,JIeuKUhcULm,84476,USAID Jamii Tekelezi,Kenya,Tharaka Nithi,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+393,7/5/2021,Kathangacini Dispensary,But0KGtpN8L,84476,USAID Jamii Tekelezi,Kenya,Tharaka Nithi,0,0,13,4,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+394,7/12/2021,Kathangacini Dispensary,But0KGtpN8L,84476,USAID Jamii Tekelezi,Kenya,Tharaka Nithi,0,0,9,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+395,7/19/2021,Kathangacini Dispensary,But0KGtpN8L,84476,USAID Jamii Tekelezi,Kenya,Tharaka Nithi,0,0,8,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+396,7/26/2021,Kathangacini Dispensary,But0KGtpN8L,84476,USAID Jamii Tekelezi,Kenya,Tharaka Nithi,0,0,16,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+397,7/5/2021,Kiamuchairu Health Centre,aQN1xlOQVLL,84476,USAID Jamii Tekelezi,Kenya,Tharaka Nithi,1,0,4,3,0,0,0,0,0,0,0,0,0,0,0,0,0,0,,,,,,,,,,,,,,,,
+398,7/12/2021,Kiamuchairu Health Centre,aQN1xlOQVLL,84476,USAID Jamii Tekelezi,Kenya,Tharaka Nithi,0,0,14,5,0,0,0,1,0,0,0,1,0,0,0,0,0,0,,,,,,,,,,,,,,,,
+399,7/19/2021,Kiamuchairu Health Centre,aQN1xlOQVLL,84476,USAID Jamii Tekelezi,Kenya,Tharaka Nithi,1,0,10,3,0,0,1,0,0,0,1,0,0,0,0,0,0,0,,,,,,,,,,,,,,,,
+400,7/26/2021,Kiamuchairu Health Centre,aQN1xlOQVLL,84476,USAID Jamii Tekelezi,Kenya,Tharaka Nithi,0,0,11,5,0,0,1,0,0,0,1,0,0,0,0,0,1,0,2,1,29,14,1,0,5,1,1,1,24,13,0,0,0,0
+401,7/5/2021,Kibugua Health Centre,GWGU5sLBMGH,84476,USAID Jamii Tekelezi,Kenya,Tharaka Nithi,0,1,23,7,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+402,7/12/2021,Kibugua Health Centre,GWGU5sLBMGH,84476,USAID Jamii Tekelezi,Kenya,Tharaka Nithi,0,0,22,6,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+403,7/19/2021,Kibugua Health Centre,GWGU5sLBMGH,84476,USAID Jamii Tekelezi,Kenya,Tharaka Nithi,0,0,15,7,0,0,1,0,0,0,1,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+404,7/26/2021,Kibugua Health Centre,GWGU5sLBMGH,84476,USAID Jamii Tekelezi,Kenya,Tharaka Nithi,0,0,17,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,14,8,174,77,7,5,91,33,7,3,83,44,0,0,0,0
+405,7/5/2021,Kibunga Sub-District Hospital,MnVkYrRhRwA,84476,USAID Jamii Tekelezi,Kenya,Tharaka Nithi,0,0,10,1,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+406,7/12/2021,Kibunga Sub-District Hospital,MnVkYrRhRwA,84476,USAID Jamii Tekelezi,Kenya,Tharaka Nithi,0,0,15,4,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+407,7/19/2021,Kibunga Sub-District Hospital,MnVkYrRhRwA,84476,USAID Jamii Tekelezi,Kenya,Tharaka Nithi,0,0,14,3,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+408,7/26/2021,Kibunga Sub-District Hospital,MnVkYrRhRwA,84476,USAID Jamii Tekelezi,Kenya,Tharaka Nithi,0,0,17,3,0,0,0,0,0,0,0,0,0,0,0,0,0,0,4,1,52,30,4,1,23,15,0,0,28,14,0,0,1,1
+409,7/5/2021,Kiereni Dispensary,G3EbXsPHdL0,84476,USAID Jamii Tekelezi,Kenya,Tharaka Nithi,0,0,11,5,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+410,7/12/2021,Kiereni Dispensary,G3EbXsPHdL0,84476,USAID Jamii Tekelezi,Kenya,Tharaka Nithi,0,0,7,1,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+411,7/19/2021,Kiereni Dispensary,G3EbXsPHdL0,84476,USAID Jamii Tekelezi,Kenya,Tharaka Nithi,0,0,8,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+412,7/26/2021,Kiereni Dispensary,G3EbXsPHdL0,84476,USAID Jamii Tekelezi,Kenya,Tharaka Nithi,0,0,10,6,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+413,7/5/2021,Magutuni District Hospital,jXqVorDP9fd,84476,USAID Jamii Tekelezi,Kenya,Tharaka Nithi,0,0,12,4,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,,,,,,,,,,,,
+414,7/12/2021,Magutuni District Hospital,jXqVorDP9fd,84476,USAID Jamii Tekelezi,Kenya,Tharaka Nithi,0,1,35,13,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,,,,,,,,,,,,
+415,7/19/2021,Magutuni District Hospital,jXqVorDP9fd,84476,USAID Jamii Tekelezi,Kenya,Tharaka Nithi,0,0,30,3,0,0,1,0,0,0,1,0,0,0,0,0,0,0,,,,,,,,,,,,,,,,
+416,7/26/2021,Magutuni District Hospital,jXqVorDP9fd,84476,USAID Jamii Tekelezi,Kenya,Tharaka Nithi,0,0,26,6,0,0,0,0,0,0,0,0,0,0,0,0,0,0,10,8,143,81,3,1,21,4,7,7,122,77,0,0,0,0
+417,7/5/2021,Minugu Dispensary,LoZIj2B6ifU,84476,USAID Jamii Tekelezi,Kenya,Tharaka Nithi,0,0,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+418,7/12/2021,Minugu Dispensary,LoZIj2B6ifU,84476,USAID Jamii Tekelezi,Kenya,Tharaka Nithi,0,0,3,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+419,7/19/2021,Minugu Dispensary,LoZIj2B6ifU,84476,USAID Jamii Tekelezi,Kenya,Tharaka Nithi,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+420,7/26/2021,Minugu Dispensary,LoZIj2B6ifU,84476,USAID Jamii Tekelezi,Kenya,Tharaka Nithi,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+421,7/5/2021,Mpukoni Health Centre,gWZzqLjSXUb,84476,USAID Jamii Tekelezi,Kenya,Tharaka Nithi,2,0,25,9,0,0,1,0,0,0,1,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+422,7/12/2021,Mpukoni Health Centre,gWZzqLjSXUb,84476,USAID Jamii Tekelezi,Kenya,Tharaka Nithi,0,0,13,5,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+423,7/19/2021,Mpukoni Health Centre,gWZzqLjSXUb,84476,USAID Jamii Tekelezi,Kenya,Tharaka Nithi,0,0,13,15,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+424,7/26/2021,Mpukoni Health Centre,gWZzqLjSXUb,84476,USAID Jamii Tekelezi,Kenya,Tharaka Nithi,0,0,19,5,0,0,1,0,0,0,0,0,0,0,0,0,0,0,8,6,97,39,8,6,43,17,0,0,54,22,0,0,0,0
+425,7/5/2021,Mukothima Health Centre,GdX6FEVfztL,84476,USAID Jamii Tekelezi,Kenya,Tharaka Nithi,0,0,11,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+426,7/12/2021,Mukothima Health Centre,GdX6FEVfztL,84476,USAID Jamii Tekelezi,Kenya,Tharaka Nithi,0,0,12,3,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+427,7/19/2021,Mukothima Health Centre,GdX6FEVfztL,84476,USAID Jamii Tekelezi,Kenya,Tharaka Nithi,0,0,14,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+428,7/26/2021,Mukothima Health Centre,GdX6FEVfztL,84476,USAID Jamii Tekelezi,Kenya,Tharaka Nithi,0,0,10,5,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,2,33,25,1,2,1,1,0,0,32,24,0,0,0,0
+429,7/5/2021,Mukui Health Centre,W0NGQJPgGQR,84476,USAID Jamii Tekelezi,Kenya,Tharaka Nithi,0,0,4,3,0,0,0,0,0,0,0,0,0,0,0,0,0,0,,,,,,,,,,,,,,,,
+430,7/12/2021,Mukui Health Centre,W0NGQJPgGQR,84476,USAID Jamii Tekelezi,Kenya,Tharaka Nithi,0,0,6,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,,,,,,,,,,,,,,,,
+431,7/19/2021,Mukui Health Centre,W0NGQJPgGQR,84476,USAID Jamii Tekelezi,Kenya,Tharaka Nithi,0,0,8,5,0,0,0,0,0,0,0,0,0,0,0,0,0,0,,,,,,,,,,,,,,,,
+432,7/26/2021,Mukui Health Centre,W0NGQJPgGQR,84476,USAID Jamii Tekelezi,Kenya,Tharaka Nithi,0,0,3,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2,3,11,10,0,2,2,2,2,1,9,8,0,0,0,0
+433,7/5/2021,Mukuuni Dispensary,XGZslyAbXPS,84476,USAID Jamii Tekelezi,Kenya,Tharaka Nithi,1,1,5,4,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+434,7/12/2021,Mukuuni Dispensary,XGZslyAbXPS,84476,USAID Jamii Tekelezi,Kenya,Tharaka Nithi,0,1,4,9,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+435,7/19/2021,Mukuuni Dispensary,XGZslyAbXPS,84476,USAID Jamii Tekelezi,Kenya,Tharaka Nithi,0,0,3,5,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+436,7/26/2021,Mukuuni Dispensary,XGZslyAbXPS,84476,USAID Jamii Tekelezi,Kenya,Tharaka Nithi,1,0,13,9,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1,37,23,0,1,11,6,0,0,26,17,0,0,0,0
+437,7/5/2021,Muthambi Health Centre,DcTeh7tKU1m,84476,USAID Jamii Tekelezi,Kenya,Tharaka Nithi,1,0,31,4,1,0,1,0,1,0,1,0,0,0,0,0,0,0,,,,,,,,,,,,,,,,
+438,7/12/2021,Muthambi Health Centre,DcTeh7tKU1m,84476,USAID Jamii Tekelezi,Kenya,Tharaka Nithi,1,0,31,4,1,0,1,0,1,0,1,0,0,0,0,0,0,0,,,,,,,,,,,,,,,,
+439,7/19/2021,Muthambi Health Centre,DcTeh7tKU1m,84476,USAID Jamii Tekelezi,Kenya,Tharaka Nithi,2,2,26,11,0,0,0,0,0,0,0,,0,0,0,0,0,0,,,,,,,,,,,,,,,,
+440,7/26/2021,Muthambi Health Centre,DcTeh7tKU1m,84476,USAID Jamii Tekelezi,Kenya,Tharaka Nithi,0,2,31,4,0,0,0,0,0,0,0,0,0,0,0,0,0,0,18,11,234,113,4,2,45,8,14,9,189,105,0,0,0,0
+441,7/5/2021,Mutindwa Dispensary,U2bOmE6Iyxy,84476,USAID Jamii Tekelezi,Kenya,Tharaka Nithi,0,0,6,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,,,,,,,,,,,,,,,,
+442,7/12/2021,Mutindwa Dispensary,U2bOmE6Iyxy,84476,USAID Jamii Tekelezi,Kenya,Tharaka Nithi,0,0,2,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,,,,,,,,,,,,,,,,
+443,7/19/2021,Mutindwa Dispensary,U2bOmE6Iyxy,84476,USAID Jamii Tekelezi,Kenya,Tharaka Nithi,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,,,,,,,,,,,,,,,,
+444,7/26/2021,Mutindwa Dispensary,U2bOmE6Iyxy,84476,USAID Jamii Tekelezi,Kenya,Tharaka Nithi,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+445,7/5/2021,Nguruki-Iruma Dispensary,qh6MKLclI6s,84476,USAID Jamii Tekelezi,Kenya,Tharaka Nithi,0,0,6,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,,,,,,,,,,,,,,,,
+446,7/12/2021,Nguruki-Iruma Dispensary,qh6MKLclI6s,84476,USAID Jamii Tekelezi,Kenya,Tharaka Nithi,0,0,3,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,,,,,,,,,,,,,,,,
+447,7/19/2021,Nguruki-Iruma Dispensary,qh6MKLclI6s,84476,USAID Jamii Tekelezi,Kenya,Tharaka Nithi,0,0,2,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,,,,,,,,,,,,,,,,
+448,7/26/2021,Nguruki-Iruma Dispensary,qh6MKLclI6s,84476,USAID Jamii Tekelezi,Kenya,Tharaka Nithi,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+449,7/5/2021,Presbyterian Ttc Rubate Health Centre,Mi0j9FIX3es,84476,USAID Jamii Tekelezi,Kenya,Tharaka Nithi,0,0,5,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+450,7/12/2021,Presbyterian Ttc Rubate Health Centre,Mi0j9FIX3es,84476,USAID Jamii Tekelezi,Kenya,Tharaka Nithi,0,0,3,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+451,7/19/2021,Presbyterian Ttc Rubate Health Centre,Mi0j9FIX3es,84476,USAID Jamii Tekelezi,Kenya,Tharaka Nithi,0,0,2,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+452,7/26/2021,Presbyterian Ttc Rubate Health Centre,Mi0j9FIX3es,84476,USAID Jamii Tekelezi,Kenya,Tharaka Nithi,0,0,2,3,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+453,7/5/2021,Thanantu Faith Clinic Dispensary,YslGk4Jhs6q,84476,USAID Jamii Tekelezi,Kenya,Tharaka Nithi,0,0,4,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+454,7/12/2021,Thanantu Faith Clinic Dispensary,YslGk4Jhs6q,84476,USAID Jamii Tekelezi,Kenya,Tharaka Nithi,0,0,12,4,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+455,7/19/2021,Thanantu Faith Clinic Dispensary,YslGk4Jhs6q,84476,USAID Jamii Tekelezi,Kenya,Tharaka Nithi,0,0,11,3,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+456,7/26/2021,Thanantu Faith Clinic Dispensary,YslGk4Jhs6q,84476,USAID Jamii Tekelezi,Kenya,Tharaka Nithi,1,1,11,3,0,0,0,1,0,0,0,1,0,0,0,0,0,0,6,6,62,25,6,6,18,7,0,0,44,18,0,0,0,0
+457,7/5/2021,Tharaka District Hospital,xce9AFrapR9,84476,USAID Jamii Tekelezi,Kenya,Tharaka Nithi,0,1,17,6,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+458,7/12/2021,Tharaka District Hospital,xce9AFrapR9,84476,USAID Jamii Tekelezi,Kenya,Tharaka Nithi,0,0,21,7,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+459,7/19/2021,Tharaka District Hospital,xce9AFrapR9,84476,USAID Jamii Tekelezi,Kenya,Tharaka Nithi,1,0,18,3,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+460,7/26/2021,Tharaka District Hospital,xce9AFrapR9,84476,USAID Jamii Tekelezi,Kenya,Tharaka Nithi,0,0,31,8,0,0,0,0,0,0,0,0,0,0,0,0,0,0,14,7,180,97,3,2,17,7,11,5,163,90,0,0,0,0
+461,7/5/2021,Akachiu Health Centre,YGtY9QtkwrW,84476,USAID Jamii Tekelezi,Kenya,Meru,0,0,3,4,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+462,7/12/2021,Akachiu Health Centre,YGtY9QtkwrW,84476,USAID Jamii Tekelezi,Kenya,Meru,0,0,12,4,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+463,7/19/2021,Akachiu Health Centre,YGtY9QtkwrW,84476,USAID Jamii Tekelezi,Kenya,Meru,2,0,23,1,0,0,1,1,0,0,1,1,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+464,7/26/2021,Akachiu Health Centre,YGtY9QtkwrW,84476,USAID Jamii Tekelezi,Kenya,Meru,0,0,5,5,0,0,0,0,0,0,0,0,0,0,0,0,0,0,7,8,114,63,7,8,45,33,0,0,69,30,0,0,0,0
+465,7/5/2021,Amugaa Health Centre,U1CwLZE4Sya,84476,USAID Jamii Tekelezi,Kenya,Meru,0,0,4,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+466,7/12/2021,Amugaa Health Centre,U1CwLZE4Sya,84476,USAID Jamii Tekelezi,Kenya,Meru,0,0,6,5,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+467,7/19/2021,Amugaa Health Centre,U1CwLZE4Sya,84476,USAID Jamii Tekelezi,Kenya,Meru,0,0,3,4,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+468,7/26/2021,Amugaa Health Centre,U1CwLZE4Sya,84476,USAID Jamii Tekelezi,Kenya,Meru,0,0,1,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,6,1,0,0,2,1,0,1,4,0,0,0,0,0
+469,7/5/2021,CCS (ACK) Dispensary,fVnyy1GiNRb,84476,USAID Jamii Tekelezi,Kenya,Meru,0,0,6,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+470,7/12/2021,CCS (ACK) Dispensary,fVnyy1GiNRb,84476,USAID Jamii Tekelezi,Kenya,Meru,1,0,5,5,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+471,7/19/2021,CCS (ACK) Dispensary,fVnyy1GiNRb,84476,USAID Jamii Tekelezi,Kenya,Meru,0,0,4,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+472,7/26/2021,CCS (ACK) Dispensary,fVnyy1GiNRb,84476,USAID Jamii Tekelezi,Kenya,Meru,0,0,5,5,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+473,7/5/2021,Charuru Dispensary,PTh0sEHCAxa,84476,USAID Jamii Tekelezi,Kenya,Meru,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+474,7/12/2021,Charuru Dispensary,PTh0sEHCAxa,84476,USAID Jamii Tekelezi,Kenya,Meru,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+475,7/19/2021,Charuru Dispensary,PTh0sEHCAxa,84476,USAID Jamii Tekelezi,Kenya,Meru,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+476,7/26/2021,Charuru Dispensary,PTh0sEHCAxa,84476,USAID Jamii Tekelezi,Kenya,Meru,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+477,7/5/2021,Chugu Dispensary,cZXK5fUWJWb,84476,USAID Jamii Tekelezi,Kenya,Meru,0,0,16,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+478,7/12/2021,Chugu Dispensary,cZXK5fUWJWb,84476,USAID Jamii Tekelezi,Kenya,Meru,0,0,3,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+479,7/19/2021,Chugu Dispensary,cZXK5fUWJWb,84476,USAID Jamii Tekelezi,Kenya,Meru,0,0,2,4,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+480,7/26/2021,Chugu Dispensary,cZXK5fUWJWb,84476,USAID Jamii Tekelezi,Kenya,Meru,0,0,7,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,23,10,0,0,8,3,0,0,15,7,0,0,0,0
+481,7/5/2021,Cottolengo Mission Hospital,DbgpdrN6q4J,84476,USAID Jamii Tekelezi,Kenya,Meru,3,0,34,26,0,0,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+482,7/12/2021,Cottolengo Mission Hospital,DbgpdrN6q4J,84476,USAID Jamii Tekelezi,Kenya,Meru,3,5,45,30,0,1,1,1,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+483,7/19/2021,Cottolengo Mission Hospital,DbgpdrN6q4J,84476,USAID Jamii Tekelezi,Kenya,Meru,4,7,29,29,1,0,1,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+484,7/26/2021,Cottolengo Mission Hospital,DbgpdrN6q4J,84476,USAID Jamii Tekelezi,Kenya,Meru,4,1,36,25,0,0,2,2,0,0,2,2,0,0,0,0,0,0,109,98,656,328,79,76,69,46,30,22,587,282,0,0,0,0
+485,7/5/2021,Family Care Medical Centre (Meru),iPcFQjFTxPm,84476,USAID Jamii Tekelezi,Kenya,Meru,0,0,9,3,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+486,7/12/2021,Family Care Medical Centre (Meru),iPcFQjFTxPm,84476,USAID Jamii Tekelezi,Kenya,Meru,0,0,7,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+487,7/19/2021,Family Care Medical Centre (Meru),iPcFQjFTxPm,84476,USAID Jamii Tekelezi,Kenya,Meru,0,0,10,5,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+488,7/26/2021,Family Care Medical Centre (Meru),iPcFQjFTxPm,84476,USAID Jamii Tekelezi,Kenya,Meru,0,0,9,4,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,65,18,0,1,3,3,0,0,62,15,0,0,0,0
+489,7/5/2021,Gakoromone Dispensary,TA3vuXzobuL,84476,USAID Jamii Tekelezi,Kenya,Meru,0,0,2,2,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+490,7/12/2021,Gakoromone Dispensary,TA3vuXzobuL,84476,USAID Jamii Tekelezi,Kenya,Meru,0,0,13,6,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+491,7/19/2021,Gakoromone Dispensary,TA3vuXzobuL,84476,USAID Jamii Tekelezi,Kenya,Meru,0,1,9,3,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+492,7/26/2021,Gakoromone Dispensary,TA3vuXzobuL,84476,USAID Jamii Tekelezi,Kenya,Meru,0,0,10,3,0,0,1,0,0,0,1,0,0,0,0,0,0,0,1,3,78,25,1,3,36,8,0,0,42,16,0,0,0,1
+493,7/5/2021,Gatimbi Health Centre,Acz9X8qvbtP,84476,USAID Jamii Tekelezi,Kenya,Meru,3,0,18,3,0,0,1,1,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+494,7/12/2021,Gatimbi Health Centre,Acz9X8qvbtP,84476,USAID Jamii Tekelezi,Kenya,Meru,0,1,12,5,0,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+495,7/19/2021,Gatimbi Health Centre,Acz9X8qvbtP,84476,USAID Jamii Tekelezi,Kenya,Meru,0,0,23,7,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+496,7/26/2021,Gatimbi Health Centre,Acz9X8qvbtP,84476,USAID Jamii Tekelezi,Kenya,Meru,0,0,22,3,0,0,2,0,0,0,2,0,0,0,0,0,0,0,4,10,123,52,4,10,15,4,0,0,108,48,0,0,0,0
+497,7/5/2021,Giaki Sub-District Hospital,yJw7N5gx1HW,84476,USAID Jamii Tekelezi,Kenya,Meru,0,0,30,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+498,7/12/2021,Giaki Sub-District Hospital,yJw7N5gx1HW,84476,USAID Jamii Tekelezi,Kenya,Meru,0,0,12,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+499,7/19/2021,Giaki Sub-District Hospital,yJw7N5gx1HW,84476,USAID Jamii Tekelezi,Kenya,Meru,0,0,15,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+500,7/26/2021,Giaki Sub-District Hospital,yJw7N5gx1HW,84476,USAID Jamii Tekelezi,Kenya,Meru,0,0,14,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,11,1,111,37,9,1,31,5,2,0,80,32,0,0,0,0
+501,7/5/2021,Githongo District Hospital,kovi3AADCml,84476,USAID Jamii Tekelezi,Kenya,Meru,1,1,17,3,0,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+502,7/12/2021,Githongo District Hospital,kovi3AADCml,84476,USAID Jamii Tekelezi,Kenya,Meru,0,0,20,6,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+503,7/19/2021,Githongo District Hospital,kovi3AADCml,84476,USAID Jamii Tekelezi,Kenya,Meru,0,0,12,4,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+504,7/26/2021,Githongo District Hospital,kovi3AADCml,84476,USAID Jamii Tekelezi,Kenya,Meru,0,0,17,3,0,0,1,0,0,0,1,0,0,0,0,0,0,0,11,5,260,95,9,4,96,20,2,1,163,75,0,0,1,0
+505,7/5/2021,Gitoro Dispensary,zF1v5qs0nKg,84476,USAID Jamii Tekelezi,Kenya,Meru,0,0,3,4,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+506,7/12/2021,Gitoro Dispensary,zF1v5qs0nKg,84476,USAID Jamii Tekelezi,Kenya,Meru,0,0,7,4,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+507,7/19/2021,Gitoro Dispensary,zF1v5qs0nKg,84476,USAID Jamii Tekelezi,Kenya,Meru,0,2,12,7,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+508,7/26/2021,Gitoro Dispensary,zF1v5qs0nKg,84476,USAID Jamii Tekelezi,Kenya,Meru,1,1,7,6,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2,107,69,0,1,30,23,0,1,77,46,0,0,0,0
+509,7/5/2021,HWWK Maua Dice,C8zA97wze40,84476,USAID Jamii Tekelezi,Kenya,Meru,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+510,7/12/2021,HWWK Maua Dice,C8zA97wze40,84476,USAID Jamii Tekelezi,Kenya,Meru,0,0,3,4,0,0,0,0,0,0,0,0,0,0,0,0,0,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+511,7/19/2021,HWWK Maua Dice,C8zA97wze40,84476,USAID Jamii Tekelezi,Kenya,Meru,0,0,6,3,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+512,7/26/2021,HWWK Maua Dice,C8zA97wze40,84476,USAID Jamii Tekelezi,Kenya,Meru,0,0,10,6,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,7,3,0,0,3,2,0,0,2,0,0,0,2,1
+513,7/5/2021,Ichomba Clinic,WbOSQm83adC,84476,USAID Jamii Tekelezi,Kenya,Meru,0,0,2,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+514,7/12/2021,Ichomba Clinic,WbOSQm83adC,84476,USAID Jamii Tekelezi,Kenya,Meru,0,0,2,3,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+515,7/19/2021,Ichomba Clinic,WbOSQm83adC,84476,USAID Jamii Tekelezi,Kenya,Meru,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+516,7/26/2021,Ichomba Clinic,WbOSQm83adC,84476,USAID Jamii Tekelezi,Kenya,Meru,0,0,1,4,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+517,7/5/2021,Igoki Dispensary,URINYkRF6cu,84476,USAID Jamii Tekelezi,Kenya,Meru,0,0,6,1,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+518,7/12/2021,Igoki Dispensary,URINYkRF6cu,84476,USAID Jamii Tekelezi,Kenya,Meru,0,0,7,3,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+519,7/19/2021,Igoki Dispensary,URINYkRF6cu,84476,USAID Jamii Tekelezi,Kenya,Meru,0,0,2,0,0,0,2,0,0,0,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+520,7/26/2021,Igoki Dispensary,URINYkRF6cu,84476,USAID Jamii Tekelezi,Kenya,Meru,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,46,21,0,1,20,10,1,0,22,9,0,0,4,2
+521,7/5/2021,Ithimbari Dispensary,uttUWo9CbSm,84476,USAID Jamii Tekelezi,Kenya,Meru,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+522,7/12/2021,Ithimbari Dispensary,uttUWo9CbSm,84476,USAID Jamii Tekelezi,Kenya,Meru,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+523,7/19/2021,Ithimbari Dispensary,uttUWo9CbSm,84476,USAID Jamii Tekelezi,Kenya,Meru,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+524,7/26/2021,Ithimbari Dispensary,uttUWo9CbSm,84476,USAID Jamii Tekelezi,Kenya,Meru,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,5,3,0,0,0,0,0,0,5,3,0,0,0,0
+525,7/5/2021,Kaelo Dispensary,cIcY0ELoWC2,84476,USAID Jamii Tekelezi,Kenya,Meru,0,0,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+526,7/12/2021,Kaelo Dispensary,cIcY0ELoWC2,84476,USAID Jamii Tekelezi,Kenya,Meru,0,0,10,4,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+527,7/19/2021,Kaelo Dispensary,cIcY0ELoWC2,84476,USAID Jamii Tekelezi,Kenya,Meru,1,2,9,1,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+528,7/26/2021,Kaelo Dispensary,cIcY0ELoWC2,84476,USAID Jamii Tekelezi,Kenya,Meru,0,0,8,4,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,17,3,0,0,13,3,0,0,4,0,0,0,0,0
+529,7/5/2021,Kangeta Health Centre,sNlRanexgey,84476,USAID Jamii Tekelezi,Kenya,Meru,0,0,1,4,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+530,7/12/2021,Kangeta Health Centre,sNlRanexgey,84476,USAID Jamii Tekelezi,Kenya,Meru,0,0,2,4,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+531,7/19/2021,Kangeta Health Centre,sNlRanexgey,84476,USAID Jamii Tekelezi,Kenya,Meru,0,0,1,4,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+532,7/26/2021,Kangeta Health Centre,sNlRanexgey,84476,USAID Jamii Tekelezi,Kenya,Meru,0,0,3,1,0,0,1,0,0,0,1,0,0,0,0,0,0,0,14,12,217,96,14,12,50,38,0,0,164,57,0,0,3,1
+533,7/5/2021,Kanyakine District Hospital,XGw1fCwVLc6,84476,USAID Jamii Tekelezi,Kenya,Meru,0,0,21,7,0,0,1,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+534,7/12/2021,Kanyakine District Hospital,XGw1fCwVLc6,84476,USAID Jamii Tekelezi,Kenya,Meru,3,0,23,14,0,0,2,1,0,0,2,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+535,7/19/2021,Kanyakine District Hospital,XGw1fCwVLc6,84476,USAID Jamii Tekelezi,Kenya,Meru,0,0,28,7,0,0,1,1,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+536,7/26/2021,Kanyakine District Hospital,XGw1fCwVLc6,84476,USAID Jamii Tekelezi,Kenya,Meru,0,0,33,14,0,0,1,1,0,0,1,1,0,0,0,0,0,0,16,11,407,223,5,4,83,27,11,7,324,196,0,0,0,0
+537,7/5/2021,Kaongo Health Centre,UW4LuVnAN23,84476,USAID Jamii Tekelezi,Kenya,Meru,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+538,7/12/2021,Kaongo Health Centre,UW4LuVnAN23,84476,USAID Jamii Tekelezi,Kenya,Meru,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+539,7/19/2021,Kaongo Health Centre,UW4LuVnAN23,84476,USAID Jamii Tekelezi,Kenya,Meru,0,0,2,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+540,7/26/2021,Kaongo Health Centre,UW4LuVnAN23,84476,USAID Jamii Tekelezi,Kenya,Meru,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,5,6,48,26,3,6,9,3,2,0,39,23,0,0,0,0
+541,7/5/2021,Karama Dispensary,UFJmL1fAqoW,84476,USAID Jamii Tekelezi,Kenya,Meru,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+542,7/12/2021,Karama Dispensary,UFJmL1fAqoW,84476,USAID Jamii Tekelezi,Kenya,Meru,0,0,11,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+543,7/19/2021,Karama Dispensary,UFJmL1fAqoW,84476,USAID Jamii Tekelezi,Kenya,Meru,2,0,17,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+544,7/26/2021,Karama Dispensary,UFJmL1fAqoW,84476,USAID Jamii Tekelezi,Kenya,Meru,0,0,17,3,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,8,7,1,1,5,7,0,0,3,0,0,0,0,0
+545,7/5/2021,Kathigu Health Center ,OnAjLmJXtED,84476,USAID Jamii Tekelezi,Kenya,Meru,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+546,7/12/2021,Kathigu Health Center ,OnAjLmJXtED,84476,USAID Jamii Tekelezi,Kenya,Meru,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+547,7/19/2021,Kathigu Health Center ,OnAjLmJXtED,84476,USAID Jamii Tekelezi,Kenya,Meru,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+548,7/26/2021,Kathigu Health Center ,OnAjLmJXtED,84476,USAID Jamii Tekelezi,Kenya,Meru,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,5,8,0,0,1,1,0,0,4,7,0,0,0,0
+549,7/5/2021,Kathithi Dispensary,BlseYmiMH5L,84476,USAID Jamii Tekelezi,Kenya,Meru,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+550,7/12/2021,Kathithi Dispensary,BlseYmiMH5L,84476,USAID Jamii Tekelezi,Kenya,Meru,0,0,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+551,7/19/2021,Kathithi Dispensary,BlseYmiMH5L,84476,USAID Jamii Tekelezi,Kenya,Meru,0,0,6,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+552,7/26/2021,Kathithi Dispensary,BlseYmiMH5L,84476,USAID Jamii Tekelezi,Kenya,Meru,0,0,2,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,46,29,0,1,30,15,0,0,16,14,0,0,0,0
+553,7/5/2021,Kawiria Maternity and Nursing Home,aTqjTEXhhwG,84476,USAID Jamii Tekelezi,Kenya,Meru,0,0,8,6,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+554,7/12/2021,Kawiria Maternity and Nursing Home,aTqjTEXhhwG,84476,USAID Jamii Tekelezi,Kenya,Meru,0,0,3,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+555,7/19/2021,Kawiria Maternity and Nursing Home,aTqjTEXhhwG,84476,USAID Jamii Tekelezi,Kenya,Meru,0,0,8,5,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+556,7/26/2021,Kawiria Maternity and Nursing Home,aTqjTEXhhwG,84476,USAID Jamii Tekelezi,Kenya,Meru,0,0,3,3,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+557,7/5/2021,Kawiru Dispensary,B0XtOtRHzXp,84476,USAID Jamii Tekelezi,Kenya,Meru,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+558,7/12/2021,Kawiru Dispensary,B0XtOtRHzXp,84476,USAID Jamii Tekelezi,Kenya,Meru,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+559,7/19/2021,Kawiru Dispensary,B0XtOtRHzXp,84476,USAID Jamii Tekelezi,Kenya,Meru,0,0,7,4,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+560,7/26/2021,Kawiru Dispensary,B0XtOtRHzXp,84476,USAID Jamii Tekelezi,Kenya,Meru,0,1,5,2,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,1,24,14,0,1,24,14,0,0,0,0,0,0,0,0
+561,7/5/2021,Kiamiriru MCK Dispensary,nbrFJNJFkxJ,84476,USAID Jamii Tekelezi,Kenya,Meru,0,0,0,3,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+562,7/12/2021,Kiamiriru MCK Dispensary,nbrFJNJFkxJ,84476,USAID Jamii Tekelezi,Kenya,Meru,0,0,2,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+563,7/19/2021,Kiamiriru MCK Dispensary,nbrFJNJFkxJ,84476,USAID Jamii Tekelezi,Kenya,Meru,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+564,7/26/2021,Kiamiriru MCK Dispensary,nbrFJNJFkxJ,84476,USAID Jamii Tekelezi,Kenya,Meru,0,0,2,5,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+565,7/5/2021,Kiarago Health Centre (Imenti South),RGFmjPF38II,84476,USAID Jamii Tekelezi,Kenya,Meru,0,0,2,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+566,7/12/2021,Kiarago Health Centre (Imenti South),RGFmjPF38II,84476,USAID Jamii Tekelezi,Kenya,Meru,0,0,3,4,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+567,7/19/2021,Kiarago Health Centre (Imenti South),RGFmjPF38II,84476,USAID Jamii Tekelezi,Kenya,Meru,0,0,6,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+568,7/26/2021,Kiarago Health Centre (Imenti South),RGFmjPF38II,84476,USAID Jamii Tekelezi,Kenya,Meru,0,0,4,3,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+569,7/5/2021,Kibirichia Sub-District Hospital,PLkZf0geGoy,84476,USAID Jamii Tekelezi,Kenya,Meru,0,0,15,3,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+570,7/12/2021,Kibirichia Sub-District Hospital,PLkZf0geGoy,84476,USAID Jamii Tekelezi,Kenya,Meru,0,0,11,1,0,0,1,1,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+571,7/19/2021,Kibirichia Sub-District Hospital,PLkZf0geGoy,84476,USAID Jamii Tekelezi,Kenya,Meru,0,0,23,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+572,7/26/2021,Kibirichia Sub-District Hospital,PLkZf0geGoy,84476,USAID Jamii Tekelezi,Kenya,Meru,0,0,16,3,0,0,0,0,0,0,0,0,0,0,0,0,0,0,11,3,115,60,11,3,35,23,0,0,80,37,0,0,0,0
+573,7/5/2021,Kiburine Dispensary,Kg0zTVtAxUm,84476,USAID Jamii Tekelezi,Kenya,Meru,0,0,4,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+574,7/12/2021,Kiburine Dispensary,Kg0zTVtAxUm,84476,USAID Jamii Tekelezi,Kenya,Meru,0,0,5,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+575,7/19/2021,Kiburine Dispensary,Kg0zTVtAxUm,84476,USAID Jamii Tekelezi,Kenya,Meru,0,0,3,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+576,7/26/2021,Kiburine Dispensary,Kg0zTVtAxUm,84476,USAID Jamii Tekelezi,Kenya,Meru,0,0,3,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2,1,29,14,2,1,16,6,0,0,13,8,0,0,0,0
+577,7/5/2021,Kieni Kia Ndege Dispensary,WL692GiqMHm,84476,USAID Jamii Tekelezi,Kenya,Meru,0,0,0,3,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+578,7/12/2021,Kieni Kia Ndege Dispensary,WL692GiqMHm,84476,USAID Jamii Tekelezi,Kenya,Meru,0,1,1,2,0,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+579,7/19/2021,Kieni Kia Ndege Dispensary,WL692GiqMHm,84476,USAID Jamii Tekelezi,Kenya,Meru,0,0,2,2,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+580,7/26/2021,Kieni Kia Ndege Dispensary,WL692GiqMHm,84476,USAID Jamii Tekelezi,Kenya,Meru,0,0,1,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2,2,37,17,2,2,9,4,0,0,28,13,0,0,0,0
+581,7/5/2021,Kiguchwa Health Center ,SZgqoLCOoCv,84476,USAID Jamii Tekelezi,Kenya,Meru,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+582,7/12/2021,Kiguchwa Health Center ,SZgqoLCOoCv,84476,USAID Jamii Tekelezi,Kenya,Meru,0,0,4,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+583,7/19/2021,Kiguchwa Health Center ,SZgqoLCOoCv,84476,USAID Jamii Tekelezi,Kenya,Meru,0,0,4,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+584,7/26/2021,Kiguchwa Health Center ,SZgqoLCOoCv,84476,USAID Jamii Tekelezi,Kenya,Meru,0,0,3,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,3,10,4,0,3,9,3,0,0,1,1,0,0,0,0
+585,7/5/2021,Kiirua Dispensary,m2fVjr2GTIa,84476,USAID Jamii Tekelezi,Kenya,Meru,1,0,15,3,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+586,7/12/2021,Kiirua Dispensary,m2fVjr2GTIa,84476,USAID Jamii Tekelezi,Kenya,Meru,1,1,12,5,0,0,1,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+587,7/19/2021,Kiirua Dispensary,m2fVjr2GTIa,84476,USAID Jamii Tekelezi,Kenya,Meru,0,0,19,4,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+588,7/26/2021,Kiirua Dispensary,m2fVjr2GTIa,84476,USAID Jamii Tekelezi,Kenya,Meru,0,0,10,4,0,0,1,0,0,0,0,0,0,0,0,0,0,0,7,5,97,35,7,5,32,10,0,0,65,25,0,0,0,0
+589,7/5/2021,Kimachia Dispensary,NwZT5hzUkjB,84476,USAID Jamii Tekelezi,Kenya,Meru,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+590,7/12/2021,Kimachia Dispensary,NwZT5hzUkjB,84476,USAID Jamii Tekelezi,Kenya,Meru,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+591,7/19/2021,Kimachia Dispensary,NwZT5hzUkjB,84476,USAID Jamii Tekelezi,Kenya,Meru,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+592,7/26/2021,Kimachia Dispensary,NwZT5hzUkjB,84476,USAID Jamii Tekelezi,Kenya,Meru,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+593,7/5/2021,Kina Murera Dispensary,aFY6mSEf2lr,84476,USAID Jamii Tekelezi,Kenya,Meru,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+594,7/12/2021,Kina Murera Dispensary,aFY6mSEf2lr,84476,USAID Jamii Tekelezi,Kenya,Meru,2,1,9,4,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+595,7/19/2021,Kina Murera Dispensary,aFY6mSEf2lr,84476,USAID Jamii Tekelezi,Kenya,Meru,2,1,9,4,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+596,7/26/2021,Kina Murera Dispensary,aFY6mSEf2lr,84476,USAID Jamii Tekelezi,Kenya,Meru,0,1,13,4,0,0,0,0,0,0,0,0,0,0,0,0,0,0,11,2,119,52,11,2,28,11,0,0,91,41,0,0,0,0
+597,7/5/2021,Kinoro Sub-District Hospital,UvYZDCyPJBu,84476,USAID Jamii Tekelezi,Kenya,Meru,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+598,7/12/2021,Kinoro Sub-District Hospital,UvYZDCyPJBu,84476,USAID Jamii Tekelezi,Kenya,Meru,0,0,2,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+599,7/19/2021,Kinoro Sub-District Hospital,UvYZDCyPJBu,84476,USAID Jamii Tekelezi,Kenya,Meru,0,2,12,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+600,7/26/2021,Kinoro Sub-District Hospital,UvYZDCyPJBu,84476,USAID Jamii Tekelezi,Kenya,Meru,0,0,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,94,27,0,0,19,7,1,0,75,20,0,0,0,0
+601,7/5/2021,Kinoru Dispensary,zHWXo9YeEMy,84476,USAID Jamii Tekelezi,Kenya,Meru,0,1,31,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+602,7/12/2021,Kinoru Dispensary,zHWXo9YeEMy,84476,USAID Jamii Tekelezi,Kenya,Meru,1,0,17,11,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+603,7/19/2021,Kinoru Dispensary,zHWXo9YeEMy,84476,USAID Jamii Tekelezi,Kenya,Meru,1,0,39,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+604,7/26/2021,Kinoru Dispensary,zHWXo9YeEMy,84476,USAID Jamii Tekelezi,Kenya,Meru,1,1,37,3,0,0,1,0,0,0,1,0,0,0,0,0,0,0,4,2,185,63,3,1,37,1,1,1,148,62,0,0,0,0
+605,7/5/2021,Kionyo Dispensary (Imenti South),NoErV4BxNA7,84476,USAID Jamii Tekelezi,Kenya,Meru,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+606,7/12/2021,Kionyo Dispensary (Imenti South),NoErV4BxNA7,84476,USAID Jamii Tekelezi,Kenya,Meru,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+607,7/19/2021,Kionyo Dispensary (Imenti South),NoErV4BxNA7,84476,USAID Jamii Tekelezi,Kenya,Meru,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+608,7/26/2021,Kionyo Dispensary (Imenti South),NoErV4BxNA7,84476,USAID Jamii Tekelezi,Kenya,Meru,0,0,2,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,3,1,31,18,3,1,24,13,0,0,7,5,0,0,0,0
+609,7/5/2021,Kiraone Dispensary,F1NBPDgGqeM,84476,USAID Jamii Tekelezi,Kenya,Meru,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+610,7/12/2021,Kiraone Dispensary,F1NBPDgGqeM,84476,USAID Jamii Tekelezi,Kenya,Meru,0,0,5,4,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+611,7/19/2021,Kiraone Dispensary,F1NBPDgGqeM,84476,USAID Jamii Tekelezi,Kenya,Meru,0,0,6,5,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+612,7/26/2021,Kiraone Dispensary,F1NBPDgGqeM,84476,USAID Jamii Tekelezi,Kenya,Meru,0,1,5,4,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2,2,18,9,2,2,18,9,0,0,0,0,0,0,0,0
+613,7/5/2021,Kirogine Dispensary,sQCei5jPh44,84476,USAID Jamii Tekelezi,Kenya,Meru,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+614,7/12/2021,Kirogine Dispensary,sQCei5jPh44,84476,USAID Jamii Tekelezi,Kenya,Meru,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+615,7/19/2021,Kirogine Dispensary,sQCei5jPh44,84476,USAID Jamii Tekelezi,Kenya,Meru,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+616,7/26/2021,Kirogine Dispensary,sQCei5jPh44,84476,USAID Jamii Tekelezi,Kenya,Meru,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,13,12,0,0,2,4,0,1,11,8,0,0,0,0
+617,7/5/2021,Kunati Health Centre,Tk9hMTW6YlM,84476,USAID Jamii Tekelezi,Kenya,Meru,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+618,7/12/2021,Kunati Health Centre,Tk9hMTW6YlM,84476,USAID Jamii Tekelezi,Kenya,Meru,1,0,23,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+619,7/19/2021,Kunati Health Centre,Tk9hMTW6YlM,84476,USAID Jamii Tekelezi,Kenya,Meru,0,0,11,4,0,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+620,7/26/2021,Kunati Health Centre,Tk9hMTW6YlM,84476,USAID Jamii Tekelezi,Kenya,Meru,0,0,9,0,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0,1,24,5,0,0,9,2,0,1,15,3,0,0,0,0
+621,7/5/2021,Kunene Dispensary,GdKb08lTvH0,84476,USAID Jamii Tekelezi,Kenya,Meru,0,0,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+622,7/12/2021,Kunene Dispensary,GdKb08lTvH0,84476,USAID Jamii Tekelezi,Kenya,Meru,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+623,7/19/2021,Kunene Dispensary,GdKb08lTvH0,84476,USAID Jamii Tekelezi,Kenya,Meru,0,0,10,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+624,7/26/2021,Kunene Dispensary,GdKb08lTvH0,84476,USAID Jamii Tekelezi,Kenya,Meru,0,0,6,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+625,7/5/2021,Lewa Downs Dispensary,QHlmwA4FD1n,84476,USAID Jamii Tekelezi,Kenya,Meru,0,0,5,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+626,7/12/2021,Lewa Downs Dispensary,QHlmwA4FD1n,84476,USAID Jamii Tekelezi,Kenya,Meru,1,0,6,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+627,7/19/2021,Lewa Downs Dispensary,QHlmwA4FD1n,84476,USAID Jamii Tekelezi,Kenya,Meru,0,0,3,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+628,7/26/2021,Lewa Downs Dispensary,QHlmwA4FD1n,84476,USAID Jamii Tekelezi,Kenya,Meru,0,0,8,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2,3,38,21,2,3,10,6,0,0,28,15,0,0,0,0
+629,7/5/2021,Mbeu Sub-District Hospital,iVfmG7129mb,84476,USAID Jamii Tekelezi,Kenya,Meru,0,0,16,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+630,7/12/2021,Mbeu Sub-District Hospital,iVfmG7129mb,84476,USAID Jamii Tekelezi,Kenya,Meru,1,0,14,5,0,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+631,7/19/2021,Mbeu Sub-District Hospital,iVfmG7129mb,84476,USAID Jamii Tekelezi,Kenya,Meru,2,1,20,8,0,1,1,1,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+632,7/26/2021,Mbeu Sub-District Hospital,iVfmG7129mb,84476,USAID Jamii Tekelezi,Kenya,Meru,2,1,45,5,1,0,0,0,0,0,0,0,0,0,0,0,0,0,7,9,107,50,7,8,43,22,0,1,64,27,0,0,0,1
+633,7/5/2021,Mboroga Dispensary,L6IeW8vTHa6,84476,USAID Jamii Tekelezi,Kenya,Meru,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+634,7/12/2021,Mboroga Dispensary,L6IeW8vTHa6,84476,USAID Jamii Tekelezi,Kenya,Meru,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+635,7/19/2021,Mboroga Dispensary,L6IeW8vTHa6,84476,USAID Jamii Tekelezi,Kenya,Meru,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+636,7/26/2021,Mboroga Dispensary,L6IeW8vTHa6,84476,USAID Jamii Tekelezi,Kenya,Meru,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,2,45,15,1,2,0,0,0,0,45,15,0,0,0,0
+637,7/5/2021,Meru District Hospital,sCRnmH3motj,84476,USAID Jamii Tekelezi,Kenya,Meru,0,0,80,6,0,0,5,0,0,0,2,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+638,7/12/2021,Meru District Hospital,sCRnmH3motj,84476,USAID Jamii Tekelezi,Kenya,Meru,2,5,115,49,1,0,7,3,0,1,7,1,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+639,7/19/2021,Meru District Hospital,sCRnmH3motj,84476,USAID Jamii Tekelezi,Kenya,Meru,1,1,106,43,0,0,7,2,0,0,5,2,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+640,7/26/2021,Meru District Hospital,sCRnmH3motj,84476,USAID Jamii Tekelezi,Kenya,Meru,4,5,123,45,0,1,5,1,0,0,3,1,0,0,0,0,0,1,63,62,2148,982,35,26,649,115,28,36,1307,779,0,0,192,88
+641,7/5/2021,Meru Drop In Center,balbxgLRzp2,84476,USAID Jamii Tekelezi,Kenya,Meru,0,0,3,3,0,0,1,0,0,0,1,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+642,7/12/2021,Meru Drop In Center,balbxgLRzp2,84476,USAID Jamii Tekelezi,Kenya,Meru,0,0,4,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+643,7/19/2021,Meru Drop In Center,balbxgLRzp2,84476,USAID Jamii Tekelezi,Kenya,Meru,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+644,7/26/2021,Meru Drop In Center,balbxgLRzp2,84476,USAID Jamii Tekelezi,Kenya,Meru,0,0,6,1,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,60,19,0,0,60,17,0,0,0,1,0,0,0,1
+645,7/5/2021,Miathene District Hospital,zf4jnHpWR16,84476,USAID Jamii Tekelezi,Kenya,Meru,0,0,19,6,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+646,7/12/2021,Miathene District Hospital,zf4jnHpWR16,84476,USAID Jamii Tekelezi,Kenya,Meru,0,0,19,5,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+647,7/19/2021,Miathene District Hospital,zf4jnHpWR16,84476,USAID Jamii Tekelezi,Kenya,Meru,3,0,18,5,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+648,7/26/2021,Miathene District Hospital,zf4jnHpWR16,84476,USAID Jamii Tekelezi,Kenya,Meru,0,0,17,7,0,0,0,0,0,0,0,0,0,0,0,0,0,0,13,11,323,160,4,3,26,9,9,8,297,151,0,0,0,0
+649,7/5/2021,Mikinduri Sub-District Hospial,a6ONbsUpAdf,84476,USAID Jamii Tekelezi,Kenya,Meru,0,1,63,5,0,0,1,1,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+650,7/12/2021,Mikinduri Sub-District Hospial,a6ONbsUpAdf,84476,USAID Jamii Tekelezi,Kenya,Meru,0,0,48,6,0,0,3,1,0,0,3,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+651,7/19/2021,Mikinduri Sub-District Hospial,a6ONbsUpAdf,84476,USAID Jamii Tekelezi,Kenya,Meru,0,0,57,8,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+652,7/26/2021,Mikinduri Sub-District Hospial,a6ONbsUpAdf,84476,USAID Jamii Tekelezi,Kenya,Meru,0,1,40,7,0,0,0,0,0,0,0,0,0,0,0,0,0,0,13,14,213,91,13,14,147,66,0,0,66,25,0,0,0,0
+653,7/5/2021,Mikumbune Sub-District Hospital,fmiRLDy0iye,84476,USAID Jamii Tekelezi,Kenya,Meru,2,1,13,4,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+654,7/12/2021,Mikumbune Sub-District Hospital,fmiRLDy0iye,84476,USAID Jamii Tekelezi,Kenya,Meru,0,0,14,5,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+655,7/19/2021,Mikumbune Sub-District Hospital,fmiRLDy0iye,84476,USAID Jamii Tekelezi,Kenya,Meru,0,0,17,3,0,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+656,7/26/2021,Mikumbune Sub-District Hospital,fmiRLDy0iye,84476,USAID Jamii Tekelezi,Kenya,Meru,0,0,15,6,0,0,0,0,0,0,0,0,0,0,0,0,0,0,8,3,173,73,8,3,30,8,0,0,143,65,0,0,0,0
+657,7/5/2021,Mitunguu Ccs Dispensary,R1co9eO3q12,84476,USAID Jamii Tekelezi,Kenya,Meru,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+658,7/12/2021,Mitunguu Ccs Dispensary,R1co9eO3q12,84476,USAID Jamii Tekelezi,Kenya,Meru,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+659,7/19/2021,Mitunguu Ccs Dispensary,R1co9eO3q12,84476,USAID Jamii Tekelezi,Kenya,Meru,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+660,7/26/2021,Mitunguu Ccs Dispensary,R1co9eO3q12,84476,USAID Jamii Tekelezi,Kenya,Meru,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+661,7/5/2021,Mitunguu Dispensary,WsH1zEK3sGP,84476,USAID Jamii Tekelezi,Kenya,Meru,0,0,7,0,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+662,7/12/2021,Mitunguu Dispensary,WsH1zEK3sGP,84476,USAID Jamii Tekelezi,Kenya,Meru,2,0,23,10,0,0,0,1,0,0,0,1,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+663,7/19/2021,Mitunguu Dispensary,WsH1zEK3sGP,84476,USAID Jamii Tekelezi,Kenya,Meru,1,0,21,13,0,0,0,1,0,0,0,1,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+664,7/26/2021,Mitunguu Dispensary,WsH1zEK3sGP,84476,USAID Jamii Tekelezi,Kenya,Meru,1,0,15,6,0,0,1,1,0,0,1,1,0,0,0,0,0,0,9,10,161,68,8,10,97,30,1,0,64,38,0,0,0,0
+665,7/5/2021,Muthara Sub-District Hospital,M2ryogi5lVN,84476,USAID Jamii Tekelezi,Kenya,Meru,0,0,104,7,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+666,7/12/2021,Muthara Sub-District Hospital,M2ryogi5lVN,84476,USAID Jamii Tekelezi,Kenya,Meru,0,2,95,11,0,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+667,7/19/2021,Muthara Sub-District Hospital,M2ryogi5lVN,84476,USAID Jamii Tekelezi,Kenya,Meru,0,0,83,2,0,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+668,7/26/2021,Muthara Sub-District Hospital,M2ryogi5lVN,84476,USAID Jamii Tekelezi,Kenya,Meru,0,0,74,3,0,0,1,0,0,0,1,0,0,0,0,0,0,0,14,24,356,133,11,18,252,87,3,5,70,38,0,1,34,8
+669,7/5/2021,Mutiokiama Health Centre,JRDGFC6UgdQ,84476,USAID Jamii Tekelezi,Kenya,Meru,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+670,7/12/2021,Mutiokiama Health Centre,JRDGFC6UgdQ,84476,USAID Jamii Tekelezi,Kenya,Meru,0,0,2,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+671,7/19/2021,Mutiokiama Health Centre,JRDGFC6UgdQ,84476,USAID Jamii Tekelezi,Kenya,Meru,0,0,3,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+672,7/26/2021,Mutiokiama Health Centre,JRDGFC6UgdQ,84476,USAID Jamii Tekelezi,Kenya,Meru,0,0,2,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,3,1,13,12,3,1,13,12,0,0,0,0,0,0,0,0
+673,7/5/2021,Mutionjuri Health Centre,K9QlnCr7QUT,84476,USAID Jamii Tekelezi,Kenya,Meru,0,0,6,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+674,7/12/2021,Mutionjuri Health Centre,K9QlnCr7QUT,84476,USAID Jamii Tekelezi,Kenya,Meru,0,0,12,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+675,7/19/2021,Mutionjuri Health Centre,K9QlnCr7QUT,84476,USAID Jamii Tekelezi,Kenya,Meru,0,0,9,3,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+676,7/26/2021,Mutionjuri Health Centre,K9QlnCr7QUT,84476,USAID Jamii Tekelezi,Kenya,Meru,0,0,8,4,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2,2,15,7,2,2,11,5,0,0,4,2,0,0,0,0
+677,7/5/2021,Mutuati Sub-District Hospital,hbjcWVatbIY,84476,USAID Jamii Tekelezi,Kenya,Meru,0,0,57,5,0,0,1,0,0,0,1,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+678,7/12/2021,Mutuati Sub-District Hospital,hbjcWVatbIY,84476,USAID Jamii Tekelezi,Kenya,Meru,1,2,49,8,0,0,1,1,0,0,1,1,0,0,0,0,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+679,7/19/2021,Mutuati Sub-District Hospital,hbjcWVatbIY,84476,USAID Jamii Tekelezi,Kenya,Meru,0,0,79,4,0,0,2,1,0,0,2,1,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+680,7/26/2021,Mutuati Sub-District Hospital,hbjcWVatbIY,84476,USAID Jamii Tekelezi,Kenya,Meru,0,0,42,5,0,0,0,1,0,0,0,1,0,0,0,0,0,1,19,12,385,170,19,12,187,98,0,0,198,72,0,0,0,0
+681,7/5/2021,Muutine Med Clinic,L5iL25uaP3R,84476,USAID Jamii Tekelezi,Kenya,Meru,0,1,1,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+682,7/12/2021,Muutine Med Clinic,L5iL25uaP3R,84476,USAID Jamii Tekelezi,Kenya,Meru,0,0,2,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+683,7/19/2021,Muutine Med Clinic,L5iL25uaP3R,84476,USAID Jamii Tekelezi,Kenya,Meru,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+684,7/26/2021,Muutine Med Clinic,L5iL25uaP3R,84476,USAID Jamii Tekelezi,Kenya,Meru,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+685,7/5/2021,Mwerokanga Dispensary,V9Hf7cG0JDf,84476,USAID Jamii Tekelezi,Kenya,Meru,0,0,4,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+686,7/12/2021,Mwerokanga Dispensary,V9Hf7cG0JDf,84476,USAID Jamii Tekelezi,Kenya,Meru,0,0,6,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+687,7/19/2021,Mwerokanga Dispensary,V9Hf7cG0JDf,84476,USAID Jamii Tekelezi,Kenya,Meru,0,0,9,3,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+688,7/26/2021,Mwerokanga Dispensary,V9Hf7cG0JDf,84476,USAID Jamii Tekelezi,Kenya,Meru,0,0,3,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,5,5,0,0,1,1,0,0,4,4,0,0,0,0
+689,7/5/2021,Mweru Dispensary (Imenti South),XACCCky77Qb,84476,USAID Jamii Tekelezi,Kenya,Meru,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+690,7/12/2021,Mweru Dispensary (Imenti South),XACCCky77Qb,84476,USAID Jamii Tekelezi,Kenya,Meru,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+691,7/19/2021,Mweru Dispensary (Imenti South),XACCCky77Qb,84476,USAID Jamii Tekelezi,Kenya,Meru,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+692,7/26/2021,Mweru Dispensary (Imenti South),XACCCky77Qb,84476,USAID Jamii Tekelezi,Kenya,Meru,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+693,7/5/2021,Naari Health Centre,mrOnRf9alIA,84476,USAID Jamii Tekelezi,Kenya,Meru,0,0,8,5,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+694,7/12/2021,Naari Health Centre,mrOnRf9alIA,84476,USAID Jamii Tekelezi,Kenya,Meru,2,0,5,3,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+695,7/19/2021,Naari Health Centre,mrOnRf9alIA,84476,USAID Jamii Tekelezi,Kenya,Meru,0,0,9,11,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+696,7/26/2021,Naari Health Centre,mrOnRf9alIA,84476,USAID Jamii Tekelezi,Kenya,Meru,0,0,7,6,0,0,0,0,0,0,0,0,0,0,0,0,0,0,9,3,29,7,9,3,12,0,0,0,17,7,0,0,0,0
+697,7/5/2021,Nkubu Dispensary,pHBSxLgQYtC,84476,USAID Jamii Tekelezi,Kenya,Meru,0,0,0,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+698,7/12/2021,Nkubu Dispensary,pHBSxLgQYtC,84476,USAID Jamii Tekelezi,Kenya,Meru,0,0,10,5,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+699,7/19/2021,Nkubu Dispensary,pHBSxLgQYtC,84476,USAID Jamii Tekelezi,Kenya,Meru,0,0,13,9,0,0,2,0,0,0,2,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+700,7/26/2021,Nkubu Dispensary,pHBSxLgQYtC,84476,USAID Jamii Tekelezi,Kenya,Meru,0,0,8,10,0,0,1,1,0,0,1,1,0,0,0,0,0,0,1,5,85,36,1,5,23,7,0,0,62,29,0,0,0,0
+701,7/5/2021,Ntemwene Dispensary,ZpdIMKMptdX,84476,USAID Jamii Tekelezi,Kenya,Meru,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+702,7/12/2021,Ntemwene Dispensary,ZpdIMKMptdX,84476,USAID Jamii Tekelezi,Kenya,Meru,0,0,0,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+703,7/19/2021,Ntemwene Dispensary,ZpdIMKMptdX,84476,USAID Jamii Tekelezi,Kenya,Meru,0,0,1,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+704,7/26/2021,Ntemwene Dispensary,ZpdIMKMptdX,84476,USAID Jamii Tekelezi,Kenya,Meru,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+705,7/5/2021,Nthambiro Dispensary,gsprlCwOVIO,84476,USAID Jamii Tekelezi,Kenya,Meru,0,0,16,4,0,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+706,7/12/2021,Nthambiro Dispensary,gsprlCwOVIO,84476,USAID Jamii Tekelezi,Kenya,Meru,0,0,10,5,0,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+707,7/19/2021,Nthambiro Dispensary,gsprlCwOVIO,84476,USAID Jamii Tekelezi,Kenya,Meru,0,0,13,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+708,7/26/2021,Nthambiro Dispensary,gsprlCwOVIO,84476,USAID Jamii Tekelezi,Kenya,Meru,0,0,15,3,0,0,0,0,0,0,0,0,0,0,0,0,0,0,15,11,151,82,15,11,81,54,0,0,70,28,0,0,0,0
+709,7/5/2021,Nyambene District Hospital,fKYvOdsKk6J,84476,USAID Jamii Tekelezi,Kenya,Meru,2,4,73,40,0,1,2,1,0,1,2,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+710,7/12/2021,Nyambene District Hospital,fKYvOdsKk6J,84476,USAID Jamii Tekelezi,Kenya,Meru,1,5,46,25,0,0,1,1,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+711,7/19/2021,Nyambene District Hospital,fKYvOdsKk6J,84476,USAID Jamii Tekelezi,Kenya,Meru,2,2,39,21,0,0,2,1,0,0,2,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+712,7/26/2021,Nyambene District Hospital,fKYvOdsKk6J,84476,USAID Jamii Tekelezi,Kenya,Meru,1,3,35,30,0,0,1,1,0,0,1,1,0,0,0,0,1,0,40,41,1009,435,17,19,266,60,23,22,743,375,0,0,0,0
+713,7/5/2021,Ontulili Dispensary,wu7982abqS7,84476,USAID Jamii Tekelezi,Kenya,Meru,0,0,3,10,0,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+714,7/12/2021,Ontulili Dispensary,wu7982abqS7,84476,USAID Jamii Tekelezi,Kenya,Meru,0,0,1,8,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+715,7/19/2021,Ontulili Dispensary,wu7982abqS7,84476,USAID Jamii Tekelezi,Kenya,Meru,0,0,2,13,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+716,7/26/2021,Ontulili Dispensary,wu7982abqS7,84476,USAID Jamii Tekelezi,Kenya,Meru,0,0,2,7,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,26,10,0,0,5,1,0,0,21,9,0,0,0,0
+717,7/5/2021,PCEA Kiengu Disp/Mat,Rzk2ARMziZP,84476,USAID Jamii Tekelezi,Kenya,Meru,0,0,8,9,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+718,7/12/2021,PCEA Kiengu Disp/Mat,Rzk2ARMziZP,84476,USAID Jamii Tekelezi,Kenya,Meru,0,0,8,8,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+719,7/19/2021,PCEA Kiengu Disp/Mat,Rzk2ARMziZP,84476,USAID Jamii Tekelezi,Kenya,Meru,0,0,5,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+720,7/26/2021,PCEA Kiengu Disp/Mat,Rzk2ARMziZP,84476,USAID Jamii Tekelezi,Kenya,Meru,0,0,2,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+721,7/5/2021,Ruiri Rural Health Demonstration Centre,eFFxRLL36i9,84476,USAID Jamii Tekelezi,Kenya,Meru,0,0,6,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+722,7/12/2021,Ruiri Rural Health Demonstration Centre,eFFxRLL36i9,84476,USAID Jamii Tekelezi,Kenya,Meru,1,1,8,2,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+723,7/19/2021,Ruiri Rural Health Demonstration Centre,eFFxRLL36i9,84476,USAID Jamii Tekelezi,Kenya,Meru,1,0,7,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+724,7/26/2021,Ruiri Rural Health Demonstration Centre,eFFxRLL36i9,84476,USAID Jamii Tekelezi,Kenya,Meru,0,0,6,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,3,4,113,49,3,4,42,16,0,0,71,33,0,0,0,0
+725,7/5/2021,St Joseph Catholic Dispensary (Igembe),t1GTMOrAsOa,84476,USAID Jamii Tekelezi,Kenya,Meru,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+726,7/12/2021,St Joseph Catholic Dispensary (Igembe),t1GTMOrAsOa,84476,USAID Jamii Tekelezi,Kenya,Meru,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+727,7/19/2021,St Joseph Catholic Dispensary (Igembe),t1GTMOrAsOa,84476,USAID Jamii Tekelezi,Kenya,Meru,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+728,7/26/2021,St Joseph Catholic Dispensary (Igembe),t1GTMOrAsOa,84476,USAID Jamii Tekelezi,Kenya,Meru,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+729,7/5/2021,St Lukes Cottage Hospital,h4bWnNCptHy,84476,USAID Jamii Tekelezi,Kenya,Meru,0,0,3,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+730,7/12/2021,St Lukes Cottage Hospital,h4bWnNCptHy,84476,USAID Jamii Tekelezi,Kenya,Meru,0,0,6,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+731,7/19/2021,St Lukes Cottage Hospital,h4bWnNCptHy,84476,USAID Jamii Tekelezi,Kenya,Meru,0,0,2,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+732,7/26/2021,St Lukes Cottage Hospital,h4bWnNCptHy,84476,USAID Jamii Tekelezi,Kenya,Meru,0,0,4,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+733,7/5/2021,St Theresa Kiirua Hospital (Kiirua),jHV9gJpWFRA,84476,USAID Jamii Tekelezi,Kenya,Meru,1,1,51,17,0,0,1,1,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+734,7/12/2021,St Theresa Kiirua Hospital (Kiirua),jHV9gJpWFRA,84476,USAID Jamii Tekelezi,Kenya,Meru,1,2,69,23,0,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+735,7/19/2021,St Theresa Kiirua Hospital (Kiirua),jHV9gJpWFRA,84476,USAID Jamii Tekelezi,Kenya,Meru,1,1,32,11,0,0,1,1,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+736,7/26/2021,St Theresa Kiirua Hospital (Kiirua),jHV9gJpWFRA,84476,USAID Jamii Tekelezi,Kenya,Meru,2,1,41,19,0,0,0,1,0,0,0,1,0,0,0,0,0,0,13,10,451,177,13,10,198,74,0,0,253,103,0,0,0,0
+737,7/5/2021,Theere Health Centre,x4H4rQ3T7F6,84476,USAID Jamii Tekelezi,Kenya,Meru,0,0,0,3,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+738,7/12/2021,Theere Health Centre,x4H4rQ3T7F6,84476,USAID Jamii Tekelezi,Kenya,Meru,0,1,9,8,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+739,7/19/2021,Theere Health Centre,x4H4rQ3T7F6,84476,USAID Jamii Tekelezi,Kenya,Meru,0,0,3,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+740,7/26/2021,Theere Health Centre,x4H4rQ3T7F6,84476,USAID Jamii Tekelezi,Kenya,Meru,0,3,10,4,0,0,1,0,0,0,1,0,0,0,0,0,0,0,5,7,103,39,5,7,58,26,0,0,45,13,0,0,0,0
+741,7/5/2021,Tigania Hospital,hmsQbHsXkMV,84476,USAID Jamii Tekelezi,Kenya,Meru,0,0,5,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+742,7/12/2021,Tigania Hospital,hmsQbHsXkMV,84476,USAID Jamii Tekelezi,Kenya,Meru,1,0,12,7,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+743,7/19/2021,Tigania Hospital,hmsQbHsXkMV,84476,USAID Jamii Tekelezi,Kenya,Meru,0,0,7,6,0,0,2,1,0,0,2,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+744,7/26/2021,Tigania Hospital,hmsQbHsXkMV,84476,USAID Jamii Tekelezi,Kenya,Meru,0,0,6,2,0,0,0,1,0,0,0,1,0,0,0,0,0,0,11,7,221,98,11,5,74,22,0,2,147,76,0,0,0,0
+745,7/5/2021,Timau Catholic Dispensary,huiBrr0Ox0D,84476,USAID Jamii Tekelezi,Kenya,Meru,0,0,14,4,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+746,7/12/2021,Timau Catholic Dispensary,huiBrr0Ox0D,84476,USAID Jamii Tekelezi,Kenya,Meru,0,0,19,8,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+747,7/19/2021,Timau Catholic Dispensary,huiBrr0Ox0D,84476,USAID Jamii Tekelezi,Kenya,Meru,0,0,11,6,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+748,7/26/2021,Timau Catholic Dispensary,huiBrr0Ox0D,84476,USAID Jamii Tekelezi,Kenya,Meru,0,0,15,9,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+749,7/5/2021,Timau Sub-District Hospital,NV96Kj0anjZ,84476,USAID Jamii Tekelezi,Kenya,Meru,1,1,30,7,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+750,7/12/2021,Timau Sub-District Hospital,NV96Kj0anjZ,84476,USAID Jamii Tekelezi,Kenya,Meru,1,1,28,5,0,0,1,1,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+751,7/19/2021,Timau Sub-District Hospital,NV96Kj0anjZ,84476,USAID Jamii Tekelezi,Kenya,Meru,1,1,19,8,0,0,1,1,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+752,7/26/2021,Timau Sub-District Hospital,NV96Kj0anjZ,84476,USAID Jamii Tekelezi,Kenya,Meru,0,1,38,7,0,0,0,0,0,0,0,0,0,0,0,0,0,0,11,14,351,142,11,14,98,41,0,0,253,101,0,0,0,0
+753,7/5/2021,Tuuru Catholic Health Centre,ZR91mGF1tim,84476,USAID Jamii Tekelezi,Kenya,Meru,0,0,11,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+754,7/12/2021,Tuuru Catholic Health Centre,ZR91mGF1tim,84476,USAID Jamii Tekelezi,Kenya,Meru,0,0,21,3,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+755,7/19/2021,Tuuru Catholic Health Centre,ZR91mGF1tim,84476,USAID Jamii Tekelezi,Kenya,Meru,1,0,21,4,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+756,7/26/2021,Tuuru Catholic Health Centre,ZR91mGF1tim,84476,USAID Jamii Tekelezi,Kenya,Meru,0,0,9,7,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,7,3,0,1,4,3,0,0,3,0,0,0,0,0
+757,7/5/2021,Uringu Health Centre,PyOitpr2WOx,84476,USAID Jamii Tekelezi,Kenya,Meru,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+758,7/12/2021,Uringu Health Centre,PyOitpr2WOx,84476,USAID Jamii Tekelezi,Kenya,Meru,0,0,6,3,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+759,7/19/2021,Uringu Health Centre,PyOitpr2WOx,84476,USAID Jamii Tekelezi,Kenya,Meru,0,0,3,2,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+760,7/26/2021,Uringu Health Centre,PyOitpr2WOx,84476,USAID Jamii Tekelezi,Kenya,Meru,0,0,1,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+761,7/5/2021,Uruku Health Centre,BbkpG6t5uy0,84476,USAID Jamii Tekelezi,Kenya,Meru,0,0,3,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+762,7/12/2021,Uruku Health Centre,BbkpG6t5uy0,84476,USAID Jamii Tekelezi,Kenya,Meru,0,0,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+763,7/19/2021,Uruku Health Centre,BbkpG6t5uy0,84476,USAID Jamii Tekelezi,Kenya,Meru,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+764,7/26/2021,Uruku Health Centre,BbkpG6t5uy0,84476,USAID Jamii Tekelezi,Kenya,Meru,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,27,4,0,0,7,1,0,0,20,3,0,0,0,0
+765,7/5/2021,Woodlands Hospital,bqtQXIJE7j4,84476,USAID Jamii Tekelezi,Kenya,Meru,0,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+766,7/12/2021,Woodlands Hospital,bqtQXIJE7j4,84476,USAID Jamii Tekelezi,Kenya,Meru,0,0,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+767,7/19/2021,Woodlands Hospital,bqtQXIJE7j4,84476,USAID Jamii Tekelezi,Kenya,Meru,0,0,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+768,7/26/2021,Woodlands Hospital,bqtQXIJE7j4,84476,USAID Jamii Tekelezi,Kenya,Meru,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
