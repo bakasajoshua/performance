@@ -7,10 +7,6 @@
 		width: 130px;
 		display: inline;
 	}
-	.display_date {
-		width: 130px;
-		display: inline;
-	}
 </style>
 
 
@@ -46,7 +42,7 @@
 	<div class="col-md-12 col-sm-12 col-xs-12">
 		<div class="panel panel-default">
 		    <div class="panel-heading">
-			    Yield By Modality <div class="display_date"></div>
+			    Positives By Modality <div class="display_date"></div>
 		    </div>
 			<div class="panel-body" id="modality_yield">
 				<center><div class="loader"></div></center>
@@ -74,9 +70,61 @@
 	<div class="col-md-12 col-sm-12 col-xs-12">
 		<div class="panel panel-default">
 		    <div class="panel-heading">
-			    Yield By Age <div class="display_date"></div>
+			    Positives By Age <div class="display_date"></div>
 		    </div>
 			<div class="panel-body" id="age_yield">
+				<center><div class="loader"></div></center>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="row">
+	<div class="col-md-12 col-sm-12 col-xs-12">
+		<div class="panel panel-default">
+		    <div class="panel-heading">
+			    PNS Cascade <div class="display_date"></div>
+		    </div>
+			<div class="panel-body" id="pns">
+				<center><div class="loader"></div></center>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="row">
+	<div class="col-md-12 col-sm-12 col-xs-12">
+		<div class="panel panel-default">
+		    <div class="panel-heading">
+			    TX New Second Visit <div class="display_date"></div>
+		    </div>
+			<div class="panel-body" id="tx_sv">
+				<center><div class="loader"></div></center>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="row">
+	<div class="col-md-12 col-sm-12 col-xs-12">
+		<div class="panel panel-default">
+		    <div class="panel-heading">
+			    LTFU Restored to Treatment <div class="display_date"></div>
+		    </div>
+			<div class="panel-body" id="tx_btc">
+				<center><div class="loader"></div></center>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="row">
+	<div class="col-md-12 col-sm-12 col-xs-12">
+		<div class="panel panel-default">
+		    <div class="panel-heading">
+			    Target Achievement <div class="display_date"></div>
+		    </div>
+			<div class="panel-body" id="targets">
 				<center><div class="loader"></div></center>
 			</div>
 		</div>
@@ -97,12 +145,20 @@
 		$("#modality_yield").html("<center><div class='loader'></div></center>");
 		$("#gender_yield").html("<center><div class='loader'></div></center>");
 		$("#age_yield").html("<center><div class='loader'></div></center>");
+		$("#pns").html("<center><div class='loader'></div></center>");
+		$("#tx_sv").html("<center><div class='loader'></div></center>");
+		$("#tx_btc").html("<center><div class='loader'></div></center>");
+		$("#targets").html("<center><div class='loader'></div></center>");
 
 		$("#testing").load("{{ url('surge/testing') }}");
 		$("#linkage").load("{{ url('surge/linkage') }}");
 		$("#modality_yield").load("{{ url('surge/modality_yield') }}");
 		$("#gender_yield").load("{{ url('surge/gender_yield') }}");
 		$("#age_yield").load("{{ url('surge/age_yield') }}");
+		$("#pns").load("{{ url('surge/pns') }}");
+		$("#tx_sv").load("{{ url('surge/tx_sv') }}");
+		$("#tx_btc").load("{{ url('surge/tx_btc') }}");
+		$("#targets").load("{{ url('surge/targets') }}");
 	}
 
 

@@ -1,14 +1,14 @@
 <?php
 
-namespace App\Functional\Api\V1\Controllers;
+namespace Tests\Functional\Api\V1\Controllers;
 
 use Config;
-use App\TestCase;
+use Tests\TestCase;
 use Illuminate\Foundation\Testing\DatabaseMigrations;
 
 class SignUpControllerTest extends TestCase
 {
-    use DatabaseMigrations;
+    // use DatabaseMigrations;
 
     public function testSignUpSuccessfully()
     {

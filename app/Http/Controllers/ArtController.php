@@ -8,15 +8,16 @@ use App\Lookup;
 
 class ArtController extends Controller
 {
+	private $my_table = 'm_art';
 
 	public function treatment()
 	{
 		$date_query = Lookup::date_query();
 		$divisions_query = Lookup::divisions_query();	
 
-		$newtx = DB::table('m_art')
-			->join('view_facilitys', 'view_facilitys.id', '=', 'm_art.facility')
-			->selectRaw(" SUM(`new_total`) AS `new_art`, COUNT(DISTINCT view_facilitys.id) as reported ")
+		$newtx = DB::table($this->my_table)
+			->when(true, $this->get_joins_callback($this->my_table))
+			->selectRaw(" SUM(`new_total`) AS `new_art`, COUNT(DISTINCT view_facilities.id) as reported ")
 			->where('new_total', '>', 0)
 			->whereRaw($date_query)
 			->whereRaw($divisions_query)
@@ -25,9 +26,9 @@ class ArtController extends Controller
 		$date_query = Lookup::year_month_query(1);	
 		$data['recent_name'] = Lookup::year_month_name();	
 
-		$cutx = DB::table('m_art')
-			->join('view_facilitys', 'view_facilitys.id', '=', 'm_art.facility')
-			->selectRaw(" SUM(`current_total`) AS `current_art`, COUNT(DISTINCT view_facilitys.id) as reported ")
+		$cutx = DB::table($this->my_table)
+			->when(true, $this->get_joins_callback($this->my_table))
+			->selectRaw(" SUM(`current_total`) AS `current_art`, COUNT(DISTINCT view_facilities.id) as reported ")
 			->where('current_total', '>', 0)
 			->whereRaw($date_query)
 			->whereRaw($divisions_query)
@@ -36,9 +37,9 @@ class ArtController extends Controller
 		$date_query = Lookup::year_month_query(2);	
 		$data['current_name'] = Lookup::year_month_name();	
 
-		$cutx_old = DB::table('m_art')
-			->join('view_facilitys', 'view_facilitys.id', '=', 'm_art.facility')
-			->selectRaw(" SUM(`current_total`) AS `current_art`, COUNT(DISTINCT view_facilitys.id) as reported ")
+		$cutx_old = DB::table($this->my_table)
+			->when(true, $this->get_joins_callback($this->my_table))
+			->selectRaw(" SUM(`current_total`) AS `current_art`, COUNT(DISTINCT view_facilities.id) as reported ")
 			->where('current_total', '>', 0)
 			->whereRaw($date_query)
 			->whereRaw($divisions_query)
@@ -46,11 +47,12 @@ class ArtController extends Controller
 
 		$date_query = Lookup::date_query(true);
 		$target = DB::table('t_hiv_and_tb_treatment')
-			->join('view_facilitys', 'view_facilitys.id', '=', 't_hiv_and_tb_treatment.facility')
+			->join('view_facilities', 'view_facilities.id', '=', 't_hiv_and_tb_treatment.facility')
 			->selectRaw("SUM(`on_art_total_(sum_hv03-034_to_hv03-043)_hv03-038`) AS `current`, 
 							SUM(`start_art_total_(sum_hv03-018_to_hv03-029)_hv03-026`) AS `new_art`")
 			->whereRaw($date_query)
 			->whereRaw($divisions_query)
+			->whereRaw(Lookup::active_partner_query())
 			->first();
 
 		$data['target'] = $target;
@@ -82,60 +84,42 @@ class ArtController extends Controller
 		$divisions_query = Lookup::divisions_query();
 
 		$rows = DB::table('d_hiv_and_tb_treatment')
-			->join('view_facilitys', 'view_facilitys.id', '=', 'd_hiv_and_tb_treatment.facility')
-			->selectRaw("COUNT(facility) as total")
+			->when(true, $this->get_joins_callback('d_hiv_and_tb_treatment'))
+			->selectRaw("COUNT(DISTINCT facility) as total")
 			->when(true, $this->get_callback('total'))
-			->whereRaw($date_query)
 			->get();
 
 		$start_art_new = DB::table('d_hiv_and_tb_treatment')
-			->join('view_facilitys', 'view_facilitys.id', '=', 'd_hiv_and_tb_treatment.facility')
-			->selectRaw("COUNT(facility) as total")
+			->when(true, $this->get_joins_callback('d_hiv_and_tb_treatment'))
+			->selectRaw("COUNT(DISTINCT facility) as total")
 			->whereRaw("`start_art_total_(sum_hv03-018_to_hv03-029)_hv03-026` > 0")
 			->when(true, $this->get_callback('total'))
-			->whereRaw($date_query)
 			->get();
 
 		$start_art_old = DB::table('d_care_and_treatment')
-			->join('view_facilitys', 'view_facilitys.id', '=', 'd_care_and_treatment.facility')
-			->selectRaw("COUNT(facility) as total")
+			->when(true, $this->get_joins_callback('d_care_and_treatment'))
+			->selectRaw("COUNT(DISTINCT facility) as total")
 			->whereRaw("`total_starting_on_art` > 0")
 			->when(true, $this->get_callback('total'))
-			->whereRaw($date_query)
 			->get();
 
 		$current_art_new = DB::table('d_hiv_and_tb_treatment')
-			->join('view_facilitys', 'view_facilitys.id', '=', 'd_hiv_and_tb_treatment.facility')
-			->selectRaw("COUNT(facility) as total")
+			->when(true, $this->get_joins_callback('d_hiv_and_tb_treatment'))
+			->selectRaw("COUNT(DISTINCT facility) as total")
 			->whereRaw("`on_art_total_(sum_hv03-034_to_hv03-043)_hv03-038` > 0")
 			->when(true, $this->get_callback('total'))
-			->whereRaw($date_query)
 			->get();
 
 		$current_art_old = DB::table('d_care_and_treatment')
-			->join('view_facilitys', 'view_facilitys.id', '=', 'd_care_and_treatment.facility')
-			->selectRaw("COUNT(facility) as total")
+			->when(true, $this->get_joins_callback('d_care_and_treatment'))
+			->selectRaw("COUNT(DISTINCT facility) as total")
 			->whereRaw("`total_currently_on_art` > 0")
 			->when(true, $this->get_callback('total'))
-			->whereRaw($date_query)
 			->get();
 
 		$data['div'] = str_random(15);
 
-		$data['outcomes'][0]['name'] = "New tx old form";
-		$data['outcomes'][1]['name'] = "New tx new form";
-		$data['outcomes'][2]['name'] = "Current tx old form";
-		$data['outcomes'][3]['name'] = "Current tx new form";
-
-		$data['outcomes'][4]['name'] = "Reporting New tx twice";
-		$data['outcomes'][5]['name'] = "Reporting Current tx twice";
-
-		$data['outcomes'][0]['type'] = "spline";
-		$data['outcomes'][1]['type'] = "spline";
-		$data['outcomes'][2]['type'] = "spline";
-		$data['outcomes'][3]['type'] = "spline";
-		$data['outcomes'][4]['type'] = "spline";
-		$data['outcomes'][5]['type'] = "spline";
+		Lookup::bars($data, ["New tx old form", "New tx new form", "Current tx old form", "Current tx new form", "Reporting New tx twice", "Reporting Current tx twice"], "spline");
 
 		$old_table = "`d_care_and_treatment`";
 		$new_table = "`d_hiv_and_tb_treatment`";
@@ -146,7 +130,17 @@ class ArtController extends Controller
 		$old_column_cu = "`total_currently_on_art`";
 		$new_column_cu = "`on_art_total_(sum_hv03-034_to_hv03-043)_hv03-038`";
 
-		foreach ($rows as $key => $row) {
+		$key = 0;
+
+		foreach ($rows as $row) {
+
+			$a = (int) Lookup::get_val($row, $start_art_old, 'total');
+			$b = (int) Lookup::get_val($row, $start_art_new, 'total');
+			$c = (int) Lookup::get_val($row, $current_art_old, 'total');
+			$d = (int) Lookup::get_val($row, $current_art_new, 'total');
+
+			if(!$a && !$b && !$c && !$d) continue;
+
 			$data['categories'][$key] = Lookup::get_category($row);
 
 			$data["outcomes"][0]["data"][$key] = (int) Lookup::get_val($row, $start_art_old, 'total');
@@ -154,7 +148,9 @@ class ArtController extends Controller
 			$data["outcomes"][2]["data"][$key] = (int) Lookup::get_val($row, $current_art_old, 'total');
 			$data["outcomes"][3]["data"][$key] = (int) Lookup::get_val($row, $current_art_new, 'total');
 
-			$params = Lookup::duplicate_parameters($row);			
+			$params = Lookup::duplicate_parameters($row);	
+
+			$params[0] = str_replace('view_facilities.id', 'f.id', $params[0]);		
 
 			$duplicate_new = DB::select(
 				DB::raw("CALL `proc_get_double_reporting`('{$old_table}', '{$new_table}', '{$old_column}', '{$new_column}', \"{$divisions_query}\", \"{$date_query}\", '{$params[0]}', '{$params[1]}', '{$params[2]}', '{$params[3]}');"));
@@ -164,13 +160,18 @@ class ArtController extends Controller
 
 			$data["outcomes"][4]["data"][$key] = (int) ($duplicate_new[0]->total ?? 0);
 			$data["outcomes"][5]["data"][$key] = (int) ($duplicate_cu[0]->total ?? 0);
+
+			$key++;
 		}
 		return view('charts.bar_graph', $data);
 	}
 
 	public function current_age_breakdown()
 	{
+		$q = Lookup::groupby_query();
 		$date_query = Lookup::date_query();
+		$divisions_query = Lookup::divisions_query();
+        $unshowable = Lookup::get_unshowable();
 		$groupby = session('filter_groupby', 1);
 
 		if($groupby != 12) $date_query = Lookup::year_month_query();
@@ -181,28 +182,47 @@ class ArtController extends Controller
 			(SUM(current_below20_m) + SUM(current_below20_f) + SUM(current_below25_m) + SUM(current_below25_f) + SUM(current_above25_m) + SUM(current_above25_f)) AS above15
 		";	
 
-		$rows = DB::table('m_art')
-			->join('view_facilitys', 'view_facilitys.id', '=', 'm_art.facility')
-			->selectRaw($sql)
-			->when(true, $this->get_callback('above15'))
+		// DB::enableQueryLog();
+
+		$rows = DB::table($this->my_table)
+			->when(true, $this->get_joins_callback($this->my_table))
+			->selectRaw($q['select_query'] . ", " . $sql)
 			->whereRaw($date_query)
+			->whereRaw($divisions_query)
+			->groupby($q['group_array'][0])
+			->when(sizeof($q['group_array']) == 2, function($query) use($q){
+				return $query->groupBy($q['group_array'][1]);
+			})
+			->when(($groupby < 10), function($query) use($groupby) {
+				if($groupby == 5) $query->whereNotIn('view_facilities.id', $unshowable);
+                if($groupby == 1) $query->where('partner', '!=', 69);
+				return $query->orderBy('above15', 'desc');
+			})
 			->get();
 
+		// return DB::getQueryLog();
+
+		// dd($rows);
+
 		$rows3 = DB::table('d_regimen_totals')
-			->join('view_facilitys', 'view_facilitys.id', '=', 'd_regimen_totals.facility')
-			->selectRaw("(SUM(d_regimen_totals.art) + SUM(pmtct)) AS total ")
-			->when(true, $this->get_callback())
+			->when(true, $this->get_joins_callback('d_regimen_totals'))
+			->selectRaw($q['select_query'] . ", " . "(SUM(d_regimen_totals.art) + SUM(pmtct)) AS total ")
 			->whereRaw($date_query)
+			->whereRaw($divisions_query)
+			->groupby($q['group_array'][0])
+			->when(sizeof($q['group_array']) == 2, function($query) use($q){
+				return $query->groupBy($q['group_array'][1]);
+			})
 			->get();
 
 		$date_query = Lookup::date_query(true);
 		$target_obj = DB::table('t_hiv_and_tb_treatment')
-			->join('view_facilitys', 'view_facilitys.id', '=', 't_hiv_and_tb_treatment.facility')
+			->join('view_facilities', 'view_facilities.id', '=', 't_hiv_and_tb_treatment.facility')
 			->selectRaw("SUM(`on_art_total_(sum_hv03-034_to_hv03-043)_hv03-038`) AS `total`")
 			->when(true, $this->target_callback())
+			->whereRaw(Lookup::active_partner_query())
 			->get();
 
-		$groupby = session('filter_groupby', 1);
 		// $divisor = Lookup::get_target_divisor();
 		$divisor = 1;
 
@@ -213,28 +233,14 @@ class ArtController extends Controller
 
 		$data['div'] = str_random(15);
 
-		$data['outcomes'][0]['name'] = "Below 1";
-		$data['outcomes'][1]['name'] = "Below 15";
-		$data['outcomes'][2]['name'] = "Above 15";
-		$data['outcomes'][3]['name'] = "MOH 729 Current tx Total";
-		$data['outcomes'][4]['name'] = "Target";
-
-		$data['outcomes'][0]['type'] = "column";
-		$data['outcomes'][1]['type'] = "column";
-		$data['outcomes'][2]['type'] = "column";
-		$data['outcomes'][3]['type'] = "column";
-		$data['outcomes'][4]['type'] = "spline";
+		Lookup::bars($data, ["Below 1", "Below 15", "Above 15", "MOH 729 Current tx Total", "Target"], "column");
 
 		$data['outcomes'][0]['stack'] = 'current_art';
 		$data['outcomes'][1]['stack'] = 'current_art';
 		$data['outcomes'][2]['stack'] = 'current_art';
 		$data['outcomes'][3]['stack'] = 'moh_729';
 
-		if($groupby < 10){
-			$data['outcomes'][4]['lineWidth'] = 0;
-			$data['outcomes'][4]['marker'] = ['enabled' => true, 'radius' => 4];
-			$data['outcomes'][4]['states'] = ['hover' => ['lineWidthPlus' => 0]];
-		}
+		Lookup::splines($data, [4]);
 
 		foreach ($rows as $key => $row) {
 			$data['categories'][$key] = Lookup::get_category($row);
@@ -264,25 +270,24 @@ class ArtController extends Controller
 			(SUM(new_below20_m) + SUM(new_below20_f) + SUM(new_below25_m) + SUM(new_below25_f) + SUM(new_above25_m) + SUM(new_above25_f)) AS above15
 		";	
 
-		$rows = DB::table('m_art')
-			->join('view_facilitys', 'view_facilitys.id', '=', 'm_art.facility')
+		$rows = DB::table($this->my_table)
+			->when(true, $this->get_joins_callback($this->my_table))
 			->selectRaw($sql)
 			->when(true, $this->get_callback('above15'))
-			->whereRaw($date_query)
 			->get();
 
 		$rows3 = DB::table('m_testing')
-			->join('view_facilitys', 'view_facilitys.id', '=', 'm_testing.facility')
+			->when(true, $this->get_joins_callback('m_testing'))
 			->selectRaw("SUM(positive_total) AS total ")
 			->when(true, $this->get_callback())
-			->whereRaw($date_query)
 			->get();
 
 		$date_query = Lookup::date_query(true);
 		$target_obj = DB::table('t_hiv_and_tb_treatment')
-			->join('view_facilitys', 'view_facilitys.id', '=', 't_hiv_and_tb_treatment.facility')
+			->join('view_facilities', 'view_facilities.id', '=', 't_hiv_and_tb_treatment.facility')
 			->selectRaw("SUM(`start_art_total_(sum_hv03-018_to_hv03-029)_hv03-026`) AS `total`")
 			->when(true, $this->target_callback())
+			->whereRaw(Lookup::active_partner_query())
 			->get();
 
 		$groupby = session('filter_groupby', 1);
@@ -295,28 +300,14 @@ class ArtController extends Controller
 
 		$data['div'] = str_random(15);
 
-		$data['outcomes'][0]['name'] = "Below 1";
-		$data['outcomes'][1]['name'] = "Below 15";
-		$data['outcomes'][2]['name'] = "Above 15";
-		$data['outcomes'][3]['name'] = "Positive Tests";
-		$data['outcomes'][4]['name'] = "Target";
-
-		$data['outcomes'][0]['type'] = "column";
-		$data['outcomes'][1]['type'] = "column";
-		$data['outcomes'][2]['type'] = "column";
-		$data['outcomes'][3]['type'] = "column";
-		$data['outcomes'][4]['type'] = "spline";
+		Lookup::bars($data, ["Below 1", "Below 15", "Above 15", "Positive Tests", "Target"], "column");
 
 		$data['outcomes'][0]['stack'] = 'new_art';
 		$data['outcomes'][1]['stack'] = 'new_art';
 		$data['outcomes'][2]['stack'] = 'new_art';
 		$data['outcomes'][3]['stack'] = 'positives';
 
-		if($groupby < 10){
-			$data['outcomes'][4]['lineWidth'] = 0;
-			$data['outcomes'][4]['marker'] = ['enabled' => true, 'radius' => 4];
-			$data['outcomes'][4]['states'] = ['hover' => ['lineWidthPlus' => 0]];
-		}
+		Lookup::splines($data, [4]);
 
 		foreach ($rows as $key => $row) {
 			$data['categories'][$key] = Lookup::get_category($row);
@@ -346,22 +337,16 @@ class ArtController extends Controller
 			(SUM(enrolled_below20_m) + SUM(enrolled_below20_f) + SUM(enrolled_below25_m) + SUM(enrolled_below25_f) + SUM(enrolled_above25_m) + SUM(enrolled_above25_f)) AS above15
 		";	
 
-		$rows = DB::table('m_art')
-			->join('view_facilitys', 'view_facilitys.id', '=', 'm_art.facility')
+		$rows = DB::table($this->my_table)
+			->when(true, $this->get_joins_callback($this->my_table))
 			->selectRaw($sql)
 			->when(true, $this->get_callback('above15'))
-			->whereRaw($date_query)
 			->get();
 
 		$data['div'] = str_random(15);
 
-		$data['outcomes'][0]['name'] = "Below 1";
-		$data['outcomes'][1]['name'] = "Below 15";
-		$data['outcomes'][2]['name'] = "Above 15";
-
-		$data['outcomes'][0]['type'] = "column";
-		$data['outcomes'][1]['type'] = "column";
-		$data['outcomes'][2]['type'] = "column";
+		Lookup::bars($data, ["Below 1", "Below 15", "Above 15"], "column");
+		
 		foreach ($rows as $key => $row) {
 			$data['categories'][$key] = Lookup::get_category($row);
 
@@ -385,11 +370,10 @@ class ArtController extends Controller
 			(SUM(new_below1) + SUM(new_below10) + SUM(new_below15_m) + SUM(new_below15_f) + SUM(new_below20_m) + SUM(new_below20_f) + SUM(new_below25_m) + SUM(new_below25_f) + SUM(new_above25_m) + SUM(new_above25_f)) AS actual_total
 		";	
 
-		$data['rows'] = DB::table('m_art')
-			->join('view_facilitys', 'view_facilitys.id', '=', 'm_art.facility')
+		$data['rows'] = DB::table($this->my_table)
+			->when(true, $this->get_joins_callback($this->my_table))
 			->selectRaw($sql)
 			->when(true, $this->get_callback('above15'))
-			->whereRaw($date_query)
 			->get();
 
 		return view('tables.art_totals', $data);
@@ -404,7 +388,11 @@ class ArtController extends Controller
 
 		if($groupby != 12) $date_query = Lookup::year_month_query();
 
-		$sql = "
+		$divisions_query = Lookup::divisions_query();
+		$q = Lookup::groupby_query();
+        $unshowable = Lookup::get_unshowable();
+
+		$sql = $q['select_query'] . ", " . "
 			SUM(current_below1) AS below1,
 			(SUM(current_below10) + SUM(current_below15_m) + SUM(current_below15_f)) AS below15,
 			(SUM(current_below20_m) + SUM(current_below20_f) + SUM(current_below25_m) + SUM(current_below25_f) + SUM(current_above25_m) + SUM(current_above25_f)) AS above15,
@@ -412,14 +400,22 @@ class ArtController extends Controller
 			(SUM(current_below1) + SUM(current_below10) + SUM(current_below15_m) + SUM(current_below15_f) + SUM(current_below20_m) + SUM(current_below20_f) + SUM(current_below25_m) + SUM(current_below25_f) + SUM(current_above25_m) + SUM(current_above25_f)) AS actual_total			
 		";	
 
-		$data['rows'] = DB::table('m_art')
-			->join('view_facilitys', 'view_facilitys.id', '=', 'm_art.facility')
+		$data['rows'] = DB::table($this->my_table)
+			->when(true, $this->get_joins_callback($this->my_table))
 			->selectRaw($sql)
-			->when(true, $this->get_callback('above15'))
 			->whereRaw($date_query)
+			->whereRaw($divisions_query)
+			->groupBy($q['group_array'][0])
+			->when(sizeof($q['group_array']) == 2, function($query) use($q){
+				return $query->groupBy($q['group_array'][1]);
+			})
+			->when(($groupby < 10), function($query) use($groupby) {
+				if($groupby == 5) $query->whereNotIn('view_facilities.id', $unshowable);
+                if($groupby == 1) $query->where('partner', '!=', 69);
+				return $query->orderBy('reported_total', 'desc');
+			})
 			->get();
 		$data['period_name'] = Lookup::year_month_name();
-
 
 		return view('tables.art_totals', $data);
 	}
@@ -526,12 +522,15 @@ class ArtController extends Controller
 			(SUM(`total_m_sup`) + SUM(`total_f_sup`) + SUM(`total_u_sup`) + SUM(`total_m_nonsup`) + SUM(`total_f_nonsup`) + SUM(`total_u_nonsup`)) AS total
 		";
 
+		// DB::enableQueryLog();
 
 		$data['rows'] = DB::table('apidb.vl_site_suppression_datim')
 			->join('hcm.view_facilitys', 'view_facilitys.id', '=', 'vl_site_suppression_datim.facility')
 			->selectRaw($sql)
-			->when(true, $this->get_callback('total'))
+			->when(true, $this->get_callback_no_dates('total'))
 			->get();
+
+		// $data['query_log'] = DB::getQueryLog();
 
 		return view('tables.current_suppression', $data);
 	}

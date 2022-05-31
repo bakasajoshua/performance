@@ -37,9 +37,13 @@ Artisan::command('truncate:tables', function () {
 	\App\Synch::truncate_tables();
 })->describe('Truncate tables.');
 
-Artisan::command('insert:rows {year?}', function ($year=null) {
-	\App\Synch::insert_rows($year);
-})->describe('Insert rows for data tables.');
+/*Artisan::command('insert:rows {year?}', function ($year=null) {
+	\App\Insert::insert_rows($year);
+
+	// \App\Synch::insert_rows($year);
+	// \App\Merger::insert_rows($year);
+	// \App\Other::partner_indicators_insert($year);
+})->describe('Insert rows for data tables.');*/
 
 Artisan::command('populate {year?}', function ($year=null) {
 	\App\Synch::populate($year);
@@ -49,13 +53,17 @@ Artisan::command('regimens {year?}', function ($year=null) {
 	\App\Synch::populate_regimen($year);
 })->describe('Populate regimen tables with values.');
 
-Artisan::command('notify', function () {
-	\App\Other::send_pns();
-})->describe('Send emails to all partners.');
+Artisan::command('insert:weekly', function () {
+	\App\Insert::create_weeks();
+})->describe('Add weeks and create rows.');
 
-Artisan::command('surges', function () {
-	\App\Surge::surges();
-})->describe('Surges.');
+Artisan::command('insert:periods', function ($year=null) {
+	\App\Insert::insert_periods($year);
+})->describe('Add periods.');
+
+Artisan::command('insert:period-rows', function ($year=null) {
+	\App\Insert::insert_rows($year);
+})->describe('Add periods and create rows.');
 
 
 
@@ -100,8 +108,42 @@ Artisan::command('resend_link {id}', function ($id) {
 })->describe('');
 
 
+Artisan::command('hfr', function () {
+	\App\HfrSubmission::upload_data();
+})->describe('Upload HFR data from disk.');
+
 Artisan::command('report', function () {
 	\App\Lookup::send_report();
 })->describe('Send Duplicates Report.');
+
+Artisan::command('notify', function () {
+	\App\Other::send_pns();
+})->describe('Send emails to all partners.');
+
+Artisan::command('gbv:full-export', function () {
+	\App\Surge::full_gbv_export();
+})->describe('GBV export full.');
+
+Artisan::command('indicator:full-export', function () {
+	\App\Surge::full_indicator_export();
+})->describe('Indicator export full.');
+
+Artisan::command('surges', function () {
+	\App\Surge::surges();
+})->describe('Surges.');
+
+Artisan::command('surges:export', function () {
+	\App\Surge::surge_export();
+})->describe('Surges export.');
+
+Artisan::command('surges:full-export', function () {
+	\App\Surge::full_surge_export();
+})->describe('Surges export full.');
+
+Artisan::command('surges:data', function () {
+	$s = new \App\Surge;
+	$s->surge_data();
+	// \App\Surge::surge_export();
+})->describe('Surges data.');
 
 

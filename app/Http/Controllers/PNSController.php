@@ -6,15 +6,16 @@ use Illuminate\Http\Request;
 use DB;
 use Excel;
 use App\Lookup;
+use App\Period;
 use App\Facility;
 use App\ViewFacility;
 
 class PNSController extends Controller
 {
+	private $my_table = 'd_pns';
 
 	public function summary_chart()
 	{
-		$date_query = Lookup::date_query();
 		$ages = $this->get_ages();
 		$sql = '';
 
@@ -36,11 +37,10 @@ class PNSController extends Controller
 		}
 		$sql = substr($sql, 0, -2);
 
-		$rows = DB::table('d_pns')
-			->join('view_facilitys', 'view_facilitys.id', '=', 'd_pns.facility')
+		$rows = DB::table($this->my_table)
+			->when(true, $this->get_joins_callback($this->my_table))
 			->selectRaw($sql)
 			->when(true, $this->get_callback('screened'))
-			->whereRaw($date_query)
 			->having('screened', '>', 0)
 			->get();
 
@@ -61,23 +61,20 @@ class PNSController extends Controller
 
 	public function pns_contribution()
 	{
-		$date_query = Lookup::date_query();
     	$groupby = session('filter_groupby', 1);		
 
 		$data['ages_array'] = $this->ages_array;
 
-		$rows = DB::table('d_pns')
-			->join('view_facilitys', 'view_facilitys.id', '=', 'd_pns.facility')
+		$rows = DB::table($this->my_table)
+			->when(true, $this->get_joins_callback($this->my_table))
 			->selectRaw($this->get_table_query('new_pos'))
 			->when(true, $this->get_callback('total'))
-			->whereRaw($date_query)
 			->get();
 
 		$rows2 = DB::table('m_testing')
-			->join('view_facilitys', 'view_facilitys.id', '=', 'm_testing.facility')
+			->when(true, $this->get_joins_callback('m_testing'))
 			->selectRaw("SUM(positive_total) AS `pos` ")
 			->when(true, $this->get_callback())
-			->whereRaw($date_query)
 			->get();
 
 		$data['div'] = str_random(15);
@@ -97,11 +94,7 @@ class PNSController extends Controller
 		$data['outcomes'][0]['yAxis'] = 1;
 		$data['outcomes'][1]['yAxis'] = 1;
 
-		if($groupby < 10){
-			$data['outcomes'][2]['lineWidth'] = 0;
-			$data['outcomes'][2]['marker'] = ['enabled' => true, 'radius' => 4];
-			$data['outcomes'][2]['states'] = ['hover' => ['lineWidthPlus' => 0]];
-		}
+		Lookup::splines($data, [2]);
 
 		$i = 0;
 
@@ -126,15 +119,13 @@ class PNSController extends Controller
 
 	public function get_table($item)
 	{		
-		$date_query = Lookup::date_query();
 		$data = Lookup::table_data();
 		$data['ages_array'] = $this->ages_array;
 
-		$data['rows'] = DB::table('d_pns')
-			->join('view_facilitys', 'view_facilitys.id', '=', 'd_pns.facility')
+		$data['rows'] = DB::table($this->my_table)
+			->when(true, $this->get_joins_callback($this->my_table))
 			->selectRaw($this->get_table_query($item))
 			->when(true, $this->get_callback('total'))
-			->whereRaw($date_query)
 			->get();
 
 		return view('tables.pns', $data);
@@ -142,7 +133,6 @@ class PNSController extends Controller
 
 	public function summary_table()
 	{
-		$date_query = Lookup::date_query();
 		$ages = $this->get_ages();
 		$sql = '';
 
@@ -163,11 +153,10 @@ class PNSController extends Controller
 		}
 		$sql = substr($sql, 0, -2);
 
-		$data['rows'] = DB::table('d_pns')
-			->join('view_facilitys', 'view_facilitys.id', '=', 'd_pns.facility')
+		$data['rows'] = DB::table($this->my_table)
+			->when(true, $this->get_joins_callback($this->my_table))
 			->selectRaw($sql)
 			->when(true, $this->get_callback('contacts_identified'))
-			->whereRaw($date_query)
 			->having('contacts_identified', '>', 0)
 			->get();
 
@@ -266,8 +255,8 @@ class PNSController extends Controller
 
 		$filename = str_replace(' ', '_', strtolower($partner->name)) . '_' . $financial_year . '_pns';
 		
-		$rows = DB::table('d_pns')
-			->join('view_facilitys', 'view_facilitys.id', '=', 'd_pns.facility')
+		$rows = DB::table($this->my_table)
+			->when(true, $this->get_joins_callback($this->my_table))
 			->selectRaw($sql)
 			->when($months, function($query) use ($months){
 				return $query->whereIn('month', $months);
@@ -300,8 +289,7 @@ class PNSController extends Controller
 	{
 		ini_set('memory_limit', '-1');
 		if (!$request->hasFile('upload')){
-	        session(['toast_message' => 'Please select a file before clicking the submit button.']);
-	        session(['toast_error' => 1]);
+	        session(['toast_error' => 1, 'toast_message' => 'Please select a file before clicking the submit button.']);
 			return back();
 		}
 		$file = $request->upload->path();
@@ -360,8 +348,11 @@ class PNSController extends Controller
 				$fac->save();
 			}
 
+			$period = Period::where(['financial_year' => $row->financial_year, 'month' => $row->month])->first();
+			if(!$period) continue;
+
 			DB::connection('mysql_wr')->table('d_pns')
-				->where(['facility' => $fac->id, 'year' => $row->calendar_year, 'month' => $row->month])
+				->where(['facility' => $fac->id, 'period_id' => $period->id, ])
 				->update($update_data);
 
 		}

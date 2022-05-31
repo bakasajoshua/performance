@@ -3,25 +3,25 @@
 <script type="text/javascript">
 	
     $(function () {
+        @isset($dd)
+            var dump_data = {!! $dd !!};
+            console.log(dump_data);
+        @endisset
+
         $('#{{$div}}').highcharts({
-            plotOptions: {
-                column: {
-                    stacking: 'normal'
-                }
-            },
             chart: {
                 zoomType: 'xy'
             },
             title: {
-                text: ''
+                text: "{{ $chart_title ?? '' }}"
             },
             xAxis: [{
-                categories: {!! json_encode($categories) !!}
+                categories: {!! json_encode($categories ?? []) !!}
             }],
             yAxis: [{ // Primary yAxis
                 labels: {
                     formatter: function() {
-                        return this.value +'<?= (isset($tat) ? @"": @"%"); ?>';
+                        return this.value + "{{ $suffix ?? '%' }}";
                     },
                     style: {
                         
@@ -45,7 +45,7 @@
                 },
                 labels: {
                     formatter: function() {
-                        return this.value +'';
+                        return this.value  + "{{ $suffix2 ?? '' }}";
                     },
                     style: {
                         color: '#4572A7'
@@ -65,15 +65,27 @@
                 yDecimals: 0,
                 valueDecimale: 0,
                 headerFormat: '<table class="tip"><caption>{point.key}</caption>'+'<tbody>',
-                pointFormat: '<tr><th style="color:{series.color}">{series.name}:</th>'+'<td style="text-align:right">{point.y}</td></tr>',
-                footerFormat: '<tr><th>Total:</th>'+'<td style="text-align:right"><b>{point.total}</b></td></tr>'+'</tbody></table>'
+                pointFormat: '<tr><th style="color:{series.color}">{series.name}:</th>'+'<td style="text-align:right">{point.y}' 
+                    @if(isset($extra_tooltip))
+                        + '</td><td> {point.z}'
+                    @endif
+                    @if(isset($point_percentage))
+                        + '</td><td> Contribution <b>({point.percentage:.1f}%)</b>'
+                    @endif
+
+                + '</td></tr>',
+                footerFormat: '<tr><th>Total:</th>'+'<td style="text-align:right"><b>{point.total}</b>' 
+                    @if(isset($extra_tooltip) || isset($point_percentage))
+                        + '</td><td>'
+                    @endif
+                +'</td></tr>'+'</tbody></table>'
             },
             legend: {
                 layout: 'horizontal',
                 align: 'left',
-                // x: -100,
+                x: 5,
                 verticalAlign: 'bottom',
-                // y: -25,
+                y: 5,
                 floating: false,
                 width: $(window).width() - 20,
                 backgroundColor: '#FFFFFF'
@@ -84,13 +96,43 @@
                     y: -20
                 }
             },
-            colors: [
+            @if(isset($data_labels))
+                plotOptions: {
+                    column: {
+                        dataLabels: {
+                            enabled: true,
+                            // shape: 'callout'
+                        },
+                        @empty($no_column_label)
+                        dataLabels: {
+                            enabled: true,
+                        },
+                        @endempty
+                        stacking: 'normal'
+                    },
+                    spline: {
+                        @empty($no_spline_label)
+                        dataLabels: {
+                            enabled: true,
+                            format: '{point.y}{{ $suffix ?? "" }}'
+                        },
+                        @endempty
+                    },
+                },
+            @else
+                plotOptions: {
+                    column: {
+                        stacking: 'normal'
+                    }
+                },            
+            @endif
+            /*colors: [
                 '#F2784B',
                 '#1BA39C',
                 '#913D88',
                 '#4d79ff',
                 '#ff1a1a'
-            ],     
+            ],*/ 
             series: {!! json_encode($outcomes) !!}
         });
     });

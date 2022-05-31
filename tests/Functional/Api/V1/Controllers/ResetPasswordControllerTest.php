@@ -1,19 +1,19 @@
 <?php
 
-namespace App\Functional\Api\V1\Controllers;
+namespace Tests\Functional\Api\V1\Controllers;
 
 use DB;
 use Config;
 use App\User;
-use App\TestCase;
+use Tests\TestCase;
 use Carbon\Carbon;
 use Illuminate\Foundation\Testing\DatabaseMigrations;
 
 class ResetPasswordControllerTest extends TestCase
 {
-    use DatabaseMigrations;
+    // use DatabaseMigrations;
 
-    public function setUp()
+    public function setUp(): void
     {
         parent::setUp();
 

@@ -20,26 +20,23 @@
 		    <div class="panel-heading">
 			    {{ $partner->name ?? '' }} 
           <br />
-          Upload PNS Excel
+          Download HFR Submission
 		    </div>
 			<div class="panel-body" id="user_guide">
-				<form action="{{ url('pns/upload') }}" method="post" class="form-horizontal" enctype="multipart/form-data"> 
+        <form action="{{ url('download/hfr') }}" method="post" class="form-horizontal"> 
 					@csrf
 
 
-          <p style="font-size: 16;">
-            If you are getting a <br />
-            <b>413 Request Entity Too Large</b> Error  <br />
-
-            try saving the excel file as a csv and then try again.
-          </p>
-
           <div class="form-group">
-              <label class="col-sm-5 control-label">Upload PNS Data</label>
-              <div class="col-sm-7">
-                  <input class="form-control" name="upload" id="upload" type="file" accept=".xlsx, .xls, .csv" />
-              </div>
+              <label class="col-sm-3 control-label">Week</label>
+              <select class="col-sm-7 select_tag" name="week_id" required>
+                <option></option>
+                @foreach($weeks as $w)
+                  <option value="{{ $w->id }}">{{ $w->name }}</option>
+                @endforeach
+              </select>
           </div>
+
 
           <div class="col-sm-6 col-sm-offset-6">
               <button class="btn btn-success" type="submit" >Submit</button>
@@ -63,7 +60,14 @@
     $(document).ready(function(){
         $(".form-control").attr('autocomplete', 'off');
 
-        $(".form-horizontal select").select2();
+        // $(".select_tag").select2();
+
+        $(".form-horizontal select").select2({
+            placeholder: "Select One",
+            allowClear: true
+        }); 
+
+        // $(".form-horizontal select").select2();
 
         $(".form-horizontal").validate({
             errorPlacement: function (error, element)

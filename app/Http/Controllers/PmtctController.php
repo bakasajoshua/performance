@@ -8,16 +8,14 @@ use App\Lookup;
 
 class PmtctController extends Controller
 {
+	private $my_table = 'm_pmtct';
 
 	public function haart()
 	{
-		$date_query = Lookup::date_query();
-
-		$rows = DB::table('m_pmtct')
-			->join('view_facilitys', 'view_facilitys.id', '=', 'm_pmtct.facility')
+		$rows = DB::table($this->my_table)
+			->when(true, $this->get_joins_callback($this->my_table))
 			->selectRaw("SUM(haart_total) AS total")
 			->when(true, $this->get_callback('total'))
-			->whereRaw($date_query)
 			->get();
 
 		$data['div'] = str_random(15);
@@ -36,14 +34,12 @@ class PmtctController extends Controller
 
 	public function testing()
 	{
-		$date_query = Lookup::date_query();
     	$groupby = session('filter_groupby', 1);
 
-		$rows = DB::table('m_pmtct')
-			->join('view_facilitys', 'view_facilitys.id', '=', 'm_pmtct.facility')
+		$rows = DB::table($this->my_table)
+			->when(true, $this->get_joins_callback($this->my_table))
 			->selectRaw("SUM(tested_pmtct) AS tests, SUM(total_new_positive_pmtct) AS pos")
 			->when(true, $this->get_callback('tests'))
-			->whereRaw($date_query)
 			->get();
 
 		$data['div'] = str_random(15);
@@ -63,11 +59,7 @@ class PmtctController extends Controller
 		$data['outcomes'][0]['yAxis'] = 1;
 		$data['outcomes'][1]['yAxis'] = 1;
 
-		if($groupby < 10){
-			$data['outcomes'][2]['lineWidth'] = 0;
-			$data['outcomes'][2]['marker'] = ['enabled' => true, 'radius' => 4];
-			$data['outcomes'][2]['states'] = ['hover' => ['lineWidthPlus' => 0]];
-		}
+		Lookup::splines($data, [2]);
 
 		foreach ($rows as $key => $row) {
 			$data['categories'][$key] = Lookup::get_category($row);
@@ -81,13 +73,10 @@ class PmtctController extends Controller
 
 	public function starting_point()
 	{
-		$date_query = Lookup::date_query();
-
-		$rows = DB::table('m_pmtct')
-			->join('view_facilitys', 'view_facilitys.id', '=', 'm_pmtct.facility')
+		$rows = DB::table($this->my_table)
+			->when(true, $this->get_joins_callback($this->my_table))
 			->selectRaw("SUM(on_haart_anc) AS on_haart_anc, SUM(start_art_anc) AS anc, SUM(start_art_lnd) AS lnd, SUM(start_art_pnc) AS pnc, SUM(start_art_pnc_6m) AS pnc_6m")
 			->when(true, $this->get_callback('anc'))
-			->whereRaw($date_query)
 			->get();
 
 		$data['div'] = str_random(15);
@@ -119,13 +108,10 @@ class PmtctController extends Controller
 
 	public function discovery_positivity()
 	{
-		$date_query = Lookup::date_query();
-
-		$rows = DB::table('m_pmtct')
-			->join('view_facilitys', 'view_facilitys.id', '=', 'm_pmtct.facility')
+		$rows = DB::table($this->my_table)
+			->when(true, $this->get_joins_callback($this->my_table))
 			->selectRaw("SUM(known_pos_anc) AS known_pos_anc, SUM(positives_anc) AS anc, SUM(positives_lnd) AS lnd, SUM(positives_pnc) AS pnc, SUM(positives_pnc6m) AS pnc_6m")
 			->when(true, $this->get_callback('anc'))
-			->whereRaw($date_query)
 			->get();
 
 		$data['div'] = str_random(15);
@@ -157,13 +143,10 @@ class PmtctController extends Controller
 
 	public function male_testing()
 	{
-		$date_query = Lookup::date_query();
-
-		$rows = DB::table('m_pmtct')
-			->join('view_facilitys', 'view_facilitys.id', '=', 'm_pmtct.facility')
+		$rows = DB::table($this->my_table)
+			->when(true, $this->get_joins_callback($this->my_table))
 			->selectRaw("SUM(known_status_before_male) AS known_status_before_male, SUM(initial_male_test_anc) AS anc, SUM(initial_male_test_lnd) AS lnd, SUM(initial_male_test_pnc) AS pnc")
 			->when(true, $this->get_callback('anc'))
-			->whereRaw($date_query)
 			->get();
 
 		$data['div'] = str_random(15);
@@ -191,21 +174,27 @@ class PmtctController extends Controller
 
 	public function eid()
 	{
-		$date_query = Lookup::date_query();
-
-		$rows = DB::table('m_pmtct')
-			->join('view_facilitys', 'view_facilitys.id', '=', 'm_pmtct.facility')
+		$rows = DB::table($this->my_table)
+			->when(true, $this->get_joins_callback($this->my_table))
 			->selectRaw("SUM(initial_pcr_2m) AS initial_pcr_2m, SUM(initial_pcr_12m) AS initial_pcr_12m")
 			->when(true, $this->get_callback('initial_pcr_2m'))
-			->whereRaw($date_query)
 			->get();
 
-		$date_query = Lookup::apidb_date_query();
+		// $date_query = Lookup::apidb_date_query();
+		// $api_rows = DB::table("apidb.site_summary")
+		// 	->join('hcm.view_facilitys', 'view_facilitys.id', '=', 'site_summary.facility')
+		// 	->join('periods', DB::raw(" periods.year = site_summary.year and periods.month "))
+		// 	->selectRaw("SUM(`infantsless2m`) as `l2m`, SUM(`infantsabove2m`) as `g2m` ")
+		// 	// ->when(true, $this->get_callback_no_dates('l2m'))
+		// 	->whereRaw($date_query)
+		// 	->get();
+
 		$api_rows = DB::table("apidb.site_summary")
 			->join('hcm.view_facilitys', 'view_facilitys.id', '=', 'site_summary.facility')
+			->join('periods', 'periods.year', '=', 'site_summary.year')
 			->selectRaw("SUM(`infantsless2m`) as `l2m`, SUM(`infantsabove2m`) as `g2m` ")
-			->when(true, $this->get_callback('l2m'))
-			->whereRaw($date_query)
+			->when(true, $this->get_callback('l2m', null, 'periods.'))
+			->whereColumn('periods.month', 'site_summary.month')
 			->get();
 
 		$data['div'] = str_random(15);

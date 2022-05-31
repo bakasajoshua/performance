@@ -4,15 +4,18 @@ namespace App;
 
 use DB;
 use App\Synch;
+use App\Period;
 use App\User;
 use Illuminate\Support\Facades\Mail;
 
 use App\Mail\NewUser;
+use App\Mail\TestMail;
 use App\Mail\CustomMail;
 use Carbon\Carbon;
 
 class Other
 {
+
 
 	public static function reset_email($id)
 	{
@@ -21,12 +24,30 @@ class Other
         Mail::to($mail_array)->cc(['joelkith@gmail.com'])->send(new NewUser($user));
 	}
 
+
+    public static function send_test()
+    {
+        Mail::to(['joelkith@gmail.com'])->send(new CustomMail(null));
+    }
+
+    public static function create_other_weeklies()
+    {
+        Dispensing::weeklies_table('d_prep_new');
+        Dispensing::weeklies_table('d_vmmc_circ');
+
+        Dispensing::insert_weekly_rows(2019, 'd_prep_new');
+        Dispensing::insert_weekly_rows(2019, 'd_vmmc_circ');
+
+        Dispensing::insert_weekly_rows(2020, 'd_prep_new');
+        Dispensing::insert_weekly_rows(2020, 'd_vmmc_circ');
+    }
+    
     public static function send_pns()
     {
-        $users = User::where('user_type_id', 2)->get();
+        $users = User::where('user_type_id', 3)->get();
 
         foreach ($users as $user) {
-            Mail::to($user->email)->cc(['jbatuka@usaid.gov', 'vojiambo@usaid.gov', 'joelkith@gmail.com'])->send(new CustomMail($user));
+            Mail::to($user->email)->cc(['joelkith@gmail.com'])->send(new CustomMail($user));
         }
     }
 
@@ -75,7 +96,6 @@ class Other
 		}
 
 		if($data_array) DB::connection('mysql_wr')->table($table_name)->insert($data_array);
-
 	}
 
 	public static function partner_targets()
@@ -119,6 +139,65 @@ class Other
 
 		if($data_array) DB::connection('mysql_wr')->table($table_name)->insert($data_array);
 	}
+
+    public static function facility_targets()
+    {
+        $table_name = 't_facility_target';
+        $sql = "CREATE TABLE `{$table_name}` (
+                    id int(10) UNSIGNED NOT NULL AUTO_INCREMENT,
+                    facility int(10) UNSIGNED DEFAULT 0,
+                    financial_year smallint(4) UNSIGNED DEFAULT 0,
+                    gbv int(10) UNSIGNED DEFAULT NULL,
+                    PRIMARY KEY (`id`),
+                    KEY `identifier`(`facility`, `financial_year`),
+                    KEY `facility` (`facility`)
+                );
+        ";
+        DB::connection('mysql_wr')->statement("DROP TABLE IF EXISTS `{$table_name}`;");
+        DB::connection('mysql_wr')->statement($sql);
+    }
+
+    public static function insert_facility_targets($year)
+    {
+        $table_name = 't_facility_target';
+        $i=0;
+        $data_array = [];
+        
+        $partners = Facility::select('id')->get();
+        foreach ($partners as $k => $val) {
+            $data_array[$i] = array('financial_year' => $year, 'facility' => $val->id);
+            $i++;
+
+            if ($i == 200) {
+                DB::connection('mysql_wr')->table($table_name)->insert($data_array);
+                $data_array=null;
+                $i=0;
+            }
+        }
+
+        if($data_array) DB::connection('mysql_wr')->table($table_name)->insert($data_array);
+    }
+
+    public static function insert_ward_targets($year)
+    {
+        $table_name = 't_ward_target';
+        $i=0;
+        $data_array = [];
+        
+        $partners = Ward::select('id')->get();
+        foreach ($partners as $k => $val) {
+            $data_array[$i] = array('financial_year' => $year, 'ward_id' => $val->id);
+            $i++;
+
+            if ($i == 200) {
+                DB::connection('mysql_wr')->table($table_name)->insert($data_array);
+                $data_array=null;
+                $i=0;
+            }
+        }
+
+        if($data_array) DB::connection('mysql_wr')->table($table_name)->insert($data_array);
+    }
 
 	public static function partner_indicators()
 	{
@@ -183,12 +262,13 @@ class Other
 		$i=0;
 		$data_array = [];
 
-		for ($month=1; $month < 13; $month++) { 
-			$fq = Synch::get_financial_year_quarter($year, $month);
+        $periods = Period::where(['year' => $year])->get();
+
+		foreach ($periods as $period) { 
 			foreach ($partners as $partner) {
 				foreach ($counties as $county) {
-					$data = ['year' => $year, 'month' => $month, 'partner' => $partner->id, 'county' => $county->id];
-					$data = array_merge($data, $fq);
+					$data = ['period_id' => $period->id, 'partner' => $partner->id, 'county' => $county->id];
+					// $data = array_merge($data, $fq);
 
 					$data_array[$i] = $data;
 					$i++;
@@ -348,45 +428,26 @@ class Other
         DB::connection('mysql_wr')->statement($sql);
 	}
 
-	public static function pns_insert($year=null)
-	{
-		if(!$year) $year = date('Y');
-		$table_name = 'd_pns';
-		$facilities = Facility::select('id')->get();
 
-		$i=0;
-		$data_array = [];
+	public static function delete_data($id)
+    {
+		// $tables = DB::table('data_set_elements')->selectRaw('Distinct table_name')->get();
+		// foreach ($tables as $key => $table) {
+		// 	DB::connection('mysql_wr')->table($table->table_name)->where('facility', $id)->delete();
+		// }
+		// $tables = DB::table('data_set_elements')->selectRaw('Distinct targets_table_name')->get();
+		// foreach ($tables as $key => $table) {
+		// 	DB::connection('mysql_wr')->table($table->targets_table_name)->where('facility', $id)->delete();
+		// }
+		// DB::connection('mysql_wr')->table("d_regimen_totals")->where('facility', $id)->delete();
 
-		for ($month=1; $month < 13; $month++) { 
-			foreach ($facilities as $k => $val) {
-				$data = array('year' => $year, 'month' => $month, 'facility' => $val->id);
-				$data = array_merge($data, Synch::get_financial_year_quarter($year, $month) );
-				$data_array[$i] = $data;
-				$i++;
-
-				if ($i == 200) {
-					DB::connection('mysql_wr')->table($table_name)->insert($data_array);
-					$data_array=null;
-			    	$i=0;
-				}
-			}
-		}
-		if($data_array) DB::connection('mysql_wr')->table($table_name)->insert($data_array);
-
-        echo 'Completed entry for ' . $table_name . " \n";
-	}
-
-
-	public static function delete_data($id=55222){
-		$tables = DB::table('data_set_elements')->selectRaw('Distinct table_name')->get();
-		foreach ($tables as $key => $table) {
-			DB::connection('mysql_wr')->table($table->table_name)->where('facility', $id)->delete();
-		}
-		$tables = DB::table('data_set_elements')->selectRaw('Distinct targets_table_name')->get();
-		foreach ($tables as $key => $table) {
-			DB::connection('mysql_wr')->table($table->targets_table_name)->where('facility', $id)->delete();
-		}
-		DB::connection('mysql_wr')->table("d_regimen_totals")->where('facility', $id)->delete();
+        $tables = DB::select("show tables");
+        foreach ($tables as $key => $row) {
+            $t = $row->Tables_in_hcm;
+            if(!\Str::startsWith($row->Tables_in_hcm, ['d_', 'm_']) || in_array($t, ['p_early_indicators', 'd_dispensing'])) continue;
+            DB::connection('mysql_wr')->table($row->Tables_in_hcm)->where('facility', $id)->delete();
+        }
+        DB::connection('mysql_wr')->table('facilitys')->where('id', $id)->delete();
 	}
 
 }

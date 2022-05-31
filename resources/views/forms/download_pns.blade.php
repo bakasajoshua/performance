@@ -23,7 +23,7 @@
           Download PNS Excel
 		    </div>
 			<div class="panel-body" id="user_guide">
-				<form action="{{ url('pns/download') }}" method="post" class="form-horizontal"> 
+				<form action="{{ url('download/pns') }}" method="post" class="form-horizontal"> 
 					@csrf
 
           <p style="font-size: 16;">
@@ -33,14 +33,17 @@
           <div class="form-group">
               <label class="col-sm-3 control-label">Financial Year</label>
               <select class="col-sm-7 select_tag" name="financial_year">
-                <option value="2018" selected>2018</option>
-                <option value="2019">2019</option>
+                <option></option>
+                @foreach($financial_years as $financial_year)
+                  <option value="{{ $financial_year->financial_year }}" @if($loop->last) selected @endif>{{ $financial_year->yr }}</option>
+                @endforeach
               </select>
           </div>
 
           <div class="form-group">
               <label class="col-sm-3 control-label">Months (You can select multiple months)</label>
               <select class="col-sm-7 select_tag" required multiple="multiple" name="months[]">
+                <option></option>
                 <option value="10">Oct</option>
                 <option value="11">Nov</option>
                 <option value="12">Dec</option>

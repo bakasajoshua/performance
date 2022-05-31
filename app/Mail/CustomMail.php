@@ -30,7 +30,7 @@ class CustomMail extends Mailable
      */
     public function build()
     {
-        $this->subject('New Report on Partner Performance');
-        return $this->view('mail.pns');
+        $this->subject('New Reports on Partner Performance');
+        return $this->view('mail.weeklies');
     }
 }

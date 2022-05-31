@@ -8,6 +8,10 @@
 <script type="text/javascript">
 	$().ready(function(){
 
+		@isset($logs)
+			console.log({!! json_encode($logs) !!});
+		@endisset
+
 		$('#{{$div}}').highcharts({
 			chart: {
 				plotBackgroundColor: null,
@@ -16,7 +20,7 @@
 				type: 'pie'
 			},
 			title: {
-			    text: ''
+			    text: "{{ $chart_title ?? '' }}"
 			},
 			tooltip: {
 			    pointFormat: '{series.name}:  <b> {point.y} ({point.percentage:.1f}%)</b>'
@@ -27,6 +31,7 @@
 			        cursor: 'pointer',
 			        dataLabels: {
 			            enabled: true,
+			            distance: -50,
 			            format: '<b>{point.name}</b>: {point.y} ({point.percentage:.1f}%)',
 			            style: {
 			                color: (Highcharts.theme && Highcharts.theme.contrastTextColor) || 'black'

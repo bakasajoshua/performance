@@ -18,6 +18,7 @@ function set_select_facility(div_name, url, minimum_length, placeholder) {
 	$(div_name).select2({
 		minimumInputLength: minimum_length,
 		placeholder: placeholder,
+		allowClear: true,
 		ajax: {
 			delay	: 100,
 			type	: "POST",
@@ -121,11 +122,16 @@ function date_filter(criteria, id, date_url)
 
 		if(typeof obj.display_date !== 'undefined' && criteria != 'date_range'){
 			$(".display_date").html(obj.display_date);
+			$(".detail_date").html(obj.detail_date);
 		}
 		
 		$(".display_range").html("( "+obj.prev_year +" - "+obj.year +" )");
 
 		reload_page();
 		
+	});
+	
+	posting.fail(function( data ) {		
+		location.reload(true);
 	});
 }

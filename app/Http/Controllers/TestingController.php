@@ -8,16 +8,14 @@ use App\Lookup;
 
 class TestingController extends Controller
 {
+	private $my_table = 'm_testing';
 
 	public function testing_outcomes()
 	{
-		$date_query = Lookup::date_query();
-
-		$rows = DB::table('m_testing')
-			->join('view_facilitys', 'view_facilitys.id', '=', 'm_testing.facility')
+		$rows = DB::table($this->my_table)
+			->when(true, $this->get_joins_callback($this->my_table))
 			->selectRaw("SUM(testing_total) AS tests, SUM(positive_total) as pos")
 			->when(true, $this->get_callback('tests'))
-			->whereRaw($date_query)
 			->get();
 
 		$sql2 = "
@@ -26,9 +24,10 @@ class TestingController extends Controller
 		";
 
 		$target_obj = DB::table('t_hiv_testing_and_prevention_services')
-			->join('view_facilitys', 'view_facilitys.id', '=', 't_hiv_testing_and_prevention_services.facility')
+			->join('view_facilities', 'view_facilities.id', '=', 't_hiv_testing_and_prevention_services.facility')
 			->selectRaw($sql2)
 			->when(true, $this->target_callback())
+			->whereRaw(Lookup::active_partner_query())
 			->get();
 
 		$groupby = session('filter_groupby', 1);
@@ -48,11 +47,8 @@ class TestingController extends Controller
 			$t = $target_obj->first()->tests;
 			$target = round(($t / $divisor), 2);
 		}
-		else{
-			$data['outcomes'][2]['lineWidth'] = 0;
-			$data['outcomes'][2]['marker'] = ['enabled' => true, 'radius' => 4];
-			$data['outcomes'][2]['states'] = ['hover' => ['lineWidthPlus' => 0]];			
-		}
+
+		Lookup::splines($data, [2]);
 
 		foreach ($rows as $key => $row){
 			$data['categories'][$key] = Lookup::get_category($row);
@@ -74,7 +70,7 @@ class TestingController extends Controller
 		$divisions_query = Lookup::divisions_query();
 
 		$row = DB::table('d_hiv_testing_and_prevention_services')
-			->join('view_facilitys', 'view_facilitys.id', '=', 'd_hiv_testing_and_prevention_services.facility')
+			->when(true, $this->get_joins_callback('d_hiv_testing_and_prevention_services'))
 			->selectRaw("
 			SUM(`tested_1-9_hv01-01`) as below_10_test,
     		(SUM(`tested_10-14_(m)_hv01-02`) + SUM(`tested_15-19_(m)_hv01-04`) + SUM(`tested_20-24(m)_hv01-06`) + SUM(`tested_25pos_(m)_hv01-08`)) AS male_test,
@@ -119,7 +115,7 @@ class TestingController extends Controller
 		$divisions_query = Lookup::divisions_query();
 
 		$row = DB::table('d_hiv_testing_and_prevention_services')
-			->join('view_facilitys', 'view_facilitys.id', '=', 'd_hiv_testing_and_prevention_services.facility')
+			->when(true, $this->get_joins_callback('d_hiv_testing_and_prevention_services'))
 			->selectRaw( "
     		SUM(`tested_1-9_hv01-01`) as below_10,
 			(SUM(`tested_10-14_(m)_hv01-02`) + SUM(`tested_10-14(f)_hv01-03`)) as below_15,
@@ -167,13 +163,10 @@ class TestingController extends Controller
 
 	public function positivity()
 	{
-		$date_query = Lookup::date_query();
-
-		$rows = DB::table('m_testing')
-			->join('view_facilitys', 'view_facilitys.id', '=', 'm_testing.facility')
+		$rows = DB::table($this->my_table)
+			->when(true, $this->get_joins_callback($this->my_table))
 			->selectRaw("SUM(testing_total) AS tests, SUM(positive_total) as pos")
 			->when(true, $this->get_callback('tests'))
-			->whereRaw($date_query)
 			->get();
 
 		$sql2 = "
@@ -182,9 +175,10 @@ class TestingController extends Controller
 		";
 
 		$target_obj = DB::table('t_hiv_testing_and_prevention_services')
-			->join('view_facilitys', 'view_facilitys.id', '=', 't_hiv_testing_and_prevention_services.facility')
+			->join('view_facilities', 'view_facilities.id', '=', 't_hiv_testing_and_prevention_services.facility')
 			->selectRaw($sql2)
 			->when(true, $this->target_callback())
+			->whereRaw(Lookup::active_partner_query())
 			->get();
 
 		$groupby = session('filter_groupby', 1);
@@ -200,7 +194,7 @@ class TestingController extends Controller
 		}
 
 		$data['div'] = str_random(15);
-		$data['ytitle'] = 'Percentage';
+		$data['yAxis'] = 'Percentage';
 
 		$data['outcomes'][0]['name'] = "Positivity";
 		$data['outcomes'][1]['name'] = "Targeted Positivity";
@@ -212,9 +206,13 @@ class TestingController extends Controller
 			if(isset($target)) $data["outcomes"][1]["data"][$key] = $target;
 			else{
 				$obj = $target_obj->where('div_id', $row->div_id)->first();
-				$target_tests = round(($obj->tests / $divisor), 2);
-				$target_pos = round(($obj->pos / $divisor), 2);
-				$data["outcomes"][1]["data"][$key] = Lookup::get_percentage($target_pos, $target_tests);
+				if($obj){
+					$target_tests = round(($obj->tests / $divisor), 2);
+					$target_pos = round(($obj->pos / $divisor), 2);
+					$data["outcomes"][1]["data"][$key] = Lookup::get_percentage($target_pos, $target_tests);
+				}else{
+					$data["outcomes"][1]["data"][$key] = 0;					
+				}
 			}
 		}	
 		return view('charts.line_graph', $data);
@@ -225,8 +223,8 @@ class TestingController extends Controller
 		$date_query = Lookup::date_query();
 		$divisions_query = Lookup::divisions_query();
 
-		$row = DB::table('m_testing')
-			->join('view_facilitys', 'view_facilitys.id', '=', 'm_testing.facility')
+		$row = DB::table($this->my_table)
+			->when(true, $this->get_joins_callback($this->my_table))
 			->selectRaw("SUM(positive_below10) as below_10,
 					(SUM(positive_below15_m) + SUM(positive_below20_m) + SUM(positive_below25_m) + SUM(positive_above25_m)) AS male_pos,
 					(SUM(positive_below15_f) + SUM(positive_below20_f) + SUM(positive_below25_f) + SUM(positive_above25_f)) AS female_pos
@@ -266,8 +264,8 @@ class TestingController extends Controller
 		$date_query = Lookup::date_query();
 		$divisions_query = Lookup::divisions_query();
 
-		$row = DB::table('m_testing')
-			->join('view_facilitys', 'view_facilitys.id', '=', 'm_testing.facility')
+		$row = DB::table($this->my_table)
+			->when(true, $this->get_joins_callback($this->my_table))
 			->selectRaw("SUM(positive_below10) as below_10,
 				(SUM(positive_below15_m) + SUM(positive_below15_f)) as below_15,
 				(SUM(positive_below20_m) + SUM(positive_below20_f)) as below_20,
@@ -314,14 +312,12 @@ class TestingController extends Controller
 	
 	public function discordancy()
 	{
-		$date_query = Lookup::date_query();
     	$groupby = session('filter_groupby', 1);
 
-		$rows = DB::table('m_testing')
-			->join('view_facilitys', 'view_facilitys.id', '=', 'm_testing.facility')
+		$rows = DB::table($this->my_table)
+			->when(true, $this->get_joins_callback($this->my_table))
 			->selectRaw("SUM(tested_couples) AS tests, SUM(discordant_couples) as pos")
 			->when(true, $this->get_callback('tests'))
-			->whereRaw($date_query)
 			->get();
 
 		$data['div'] = str_random(15);
@@ -341,11 +337,7 @@ class TestingController extends Controller
 		$data['outcomes'][1]['tooltip'] = array("valueSuffix" => ' ');
 		$data['outcomes'][2]['tooltip'] = array("valueSuffix" => ' %');
 
-		if($groupby < 10){
-			$data['outcomes'][2]['lineWidth'] = 0;
-			$data['outcomes'][2]['marker'] = ['enabled' => true, 'radius' => 4];
-			$data['outcomes'][2]['states'] = ['hover' => ['lineWidthPlus' => 0]];
-		}
+		Lookup::splines($data, [2]);
 
 		foreach ($rows as $key => $row){
 			$data['categories'][$key] = Lookup::get_category($row);
@@ -361,7 +353,6 @@ class TestingController extends Controller
 
 	public function testing_summary()
 	{
-		$date_query = Lookup::date_query();
 		$data = Lookup::table_data();
 
 		$sql = "
@@ -373,10 +364,11 @@ class TestingController extends Controller
 			SUM(`tested_total_(sum_hv01-01_to_hv01-10)_hv01-10`) as total";
 
 		$data['rows'] = DB::table('d_hiv_testing_and_prevention_services')
-			->join('view_facilitys', 'view_facilitys.id', '=', 'd_hiv_testing_and_prevention_services.facility')
+			->join('view_facilities', 'view_facilities.id', '=', 'd_hiv_testing_and_prevention_services.facility')
+			->join('periods', 'periods.id', '=', 'd_hiv_testing_and_prevention_services.period_id')
 			->selectRaw($sql)
 			->when(true, $this->get_callback('total'))
-			->whereRaw($date_query)
+			->whereRaw(Lookup::active_partner_query())
 			->get();
 
 		return view('tables.testing_summary', $data);
@@ -384,21 +376,18 @@ class TestingController extends Controller
 
 	public function summary()
 	{
-		$date_query = Lookup::date_query();
 		$data = Lookup::table_data();
 
-		$data['rows'] = DB::table('m_testing')
-			->join('view_facilitys', 'view_facilitys.id', '=', 'm_testing.facility')
+		$data['rows'] = DB::table($this->my_table)
+			->when(true, $this->get_joins_callback($this->my_table))
 			->selectRaw("SUM(testing_total) AS tests, SUM(positive_total) as pos")
 			->when(true, $this->get_callback('tests'))
-			->whereRaw($date_query)
 			->get();
 
 		$data['linked'] = DB::table('m_art')
-			->join('view_facilitys', 'view_facilitys.id', '=', 'm_art.facility')
+			->when(true, $this->get_joins_callback('m_art'))
 			->selectRaw("SUM(new_total) AS newtx")
 			->when(true, $this->get_callback('newtx'))
-			->whereRaw($date_query)
 			->get();
 
 		$sql2 = "
@@ -406,11 +395,11 @@ class TestingController extends Controller
 			SUM(`tested_total_(sum_hv01-01_to_hv01-10)_hv01-10`) AS tests
 		";
 
-		$date_query = Lookup::date_query(true);
 		$data['targets'] = DB::table('t_hiv_testing_and_prevention_services')
-			->join('view_facilitys', 'view_facilitys.id', '=', 't_hiv_testing_and_prevention_services.facility')
+			->join('view_facilities', 'view_facilities.id', '=', 't_hiv_testing_and_prevention_services.facility')
 			->selectRaw($sql2)
 			->when(true, $this->target_callback())
+			->whereRaw(Lookup::active_partner_query())
 			->get();
 
 		// dd($data);

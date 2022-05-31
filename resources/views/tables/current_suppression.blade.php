@@ -1,4 +1,5 @@
 <div class="table-reponsive">
+	<div style="display: none;"> {{ print_r($query_log ?? []) }} </div>
 	<table id="{{ $div }}"  cellspacing="1" cellpadding="3" class="tablehead table table-striped table-bordered">
 		<thead>
 			<tr class="colhead">
@@ -53,6 +54,7 @@
 			@foreach($rows as $key => $row)
 				<tr>
 					<td> {{ $key+1 }} </td>
+
 					@include('partials.rows', ['row' => $row])					
 
 					<td> {{ number_format( $row->total_m_sup ) }} </td>

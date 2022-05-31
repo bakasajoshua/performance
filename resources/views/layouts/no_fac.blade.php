@@ -1,5 +1,5 @@
 
-<div class="row" id="filter">	
+<div class="row" id="filter" data-html2canvas-ignore="true">	
 
 
 	<div class="col-md-4">
@@ -42,7 +42,7 @@
 
 			@foreach($divisions as $division)
 				@continue($division->id > 2 && $division->id < 6)
-				@continue(!str_contains(url()->current(), 'surge') && ($division->id == 14))
+				@continue(!\Str::contains(url()->current(), 'surge') && ($division->id == 14))
 				<option value="{{ $division->id }}"> {{ $division->name }} </option>
 			@endforeach
 		</select>		

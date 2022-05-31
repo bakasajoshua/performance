@@ -20,11 +20,16 @@
 		    <div class="panel-heading">
 			    {{ $partner->name ?? '' }} 
           <br />
-          Upload Surge Excel
+          Upload {{ strtoupper(str_replace('_', ' ', $path)) }} Excel
 		    </div>
 			<div class="panel-body" id="user_guide">
-				<form action="{{ url('surge/upload') }}" method="post" class="form-horizontal" enctype="multipart/form-data"> 
+				<!-- <form action="{{ url($path . '/upload') }}" method="post" class="form-horizontal" enctype="multipart/form-data">  -->
+        <form action="{{ url('upload/' . $path) }}" method="post" class="form-horizontal" enctype="multipart/form-data"> 
 					@csrf
+
+          @if($modality)
+            <input name="modality" type="hidden" value="{{ $modality }} " />
+          @endif
 
 
           <p style="font-size: 16;">
@@ -35,7 +40,11 @@
           </p>
 
           <div class="form-group">
-              <label class="col-sm-5 control-label">Upload Surge Data</label>
+              <label class="col-sm-5 control-label">Upload {{ strtoupper(str_replace('_', ' ', $path)) }} Data
+                @if($path == 'indicators')
+                   (Monthly Data, Not Cumulative)
+                @endif
+              </label>
               <div class="col-sm-7">
                   <input class="form-control" name="upload" id="upload" type="file" accept=".xlsx, .xls, .csv" />
               </div>

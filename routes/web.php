@@ -12,7 +12,7 @@
 */
 
 Route::middleware(['check_live'])->group(function(){
-	Auth::routes();
+	Auth::routes(['verify' => true]);
 });
 
 // Route::get('/home', 'HomeController@index')->name('home');
@@ -79,7 +79,7 @@ Route::prefix('keypop')->name('keypop.')->group(function(){
 	Route::get('summary', 'KeypopController@summary')->name('summary');
 });
 
-Route::prefix('otz')->name('otz.')->group(function(){
+Route::prefix('non_mer')->name('non_mer.')->group(function(){
 	Route::get('facilities_count', 'OtzController@facilities_count')->name('facilities_count');
 	Route::get('clinics', 'OtzController@clinics')->name('clinics');
 	Route::get('achievement', 'OtzController@achievement')->name('achievement');
@@ -115,9 +115,6 @@ Route::prefix('pns')->name('pns.')->group(function(){
 	Route::get('pns_contribution', 'PNSController@pns_contribution')->name('pns_contribution');
 	Route::get('summary_table', 'PNSController@summary_table')->name('summary_table');
 	Route::get('get_table/{item}', 'PNSController@get_table')->name('get_table');
-
-	Route::post('download', 'PNSController@download_excel')->name('download');
-	Route::post('upload', 'PNSController@upload_excel')->name('upload');
 });
 
 Route::prefix('surge')->name('surge.')->group(function(){
@@ -126,14 +123,82 @@ Route::prefix('surge')->name('surge.')->group(function(){
 	Route::get('modality_yield', 'SurgeController@modality_yield')->name('modality_yield');
 	Route::get('gender_yield', 'SurgeController@gender_yield')->name('gender_yield');
 	Route::get('age_yield', 'SurgeController@age_yield')->name('age_yield');
-
-	Route::post('download', 'SurgeController@download_excel')->name('download');
-	Route::post('upload', 'SurgeController@upload_excel')->name('upload');
+	Route::get('pns', 'SurgeController@pns')->name('pns');
+	Route::get('tx_sv', 'SurgeController@tx_sv')->name('tx_sv');
+	Route::get('tx_btc', 'SurgeController@tx_btc')->name('tx_btc');
+	Route::get('targets', 'SurgeController@targets')->name('targets');
 });
 
 
+Route::prefix('dispensing')->name('dispensing.')->group(function(){
+	Route::get('summary', 'DispensingController@summary')->name('summary');
+});
 
-Route::middleware(['clear_session'])->group(function(){
+
+Route::prefix('tx_curr')->name('tx_curr.')->group(function(){
+	Route::get('gender', 'TxCurrentController@gender')->name('gender');
+	Route::get('age', 'TxCurrentController@age')->name('age');
+});
+
+Route::prefix('weekly')->name('weekly.')->group(function(){
+	Route::get('summary', 'WeeklyController@summary')->name('summary');
+});
+
+
+Route::prefix('gbv')->name('gbv.')->group(function(){
+	Route::get('violence', 'GBVController@violence')->name('violence');
+	Route::get('sexual', 'GBVController@sexual')->name('sexual');
+	Route::get('age', 'GBVController@age')->name('age');
+	Route::get('gender', 'GBVController@gender')->name('gender');
+});
+
+Route::prefix('violence')->name('violence.')->group(function(){
+	Route::get('pep_reported', 'ViolenceController@pep_reported')->name('pep_reported');
+	Route::get('reporting', 'ViolenceController@reporting')->name('reporting');
+	Route::get('cumulative_pie', 'ViolenceController@cumulative_pie')->name('cumulative_pie');
+	Route::get('monthly_achievement', 'ViolenceController@monthly_achievement')->name('monthly_achievement');
+	Route::get('performance', 'ViolenceController@performance')->name('performance');
+	Route::get('monthly_cases', 'ViolenceController@monthly_cases')->name('monthly_cases');
+	Route::get('pep', 'ViolenceController@pep')->name('pep');
+	Route::get('age_gender', 'ViolenceController@age_gender')->name('age_gender');
+
+	Route::get('new_reporting', 'ViolenceController@new_reporting')->name('new_reporting');
+	Route::get('modality_reported', 'ViolenceController@modality_reported')->name('modality_reported');
+});
+Route::prefix('cervical_cancer')->name('cervical_cancer')->group(function(){
+	Route::get('/', 'GeneralController@cervical_cancer_dashboard');
+});
+
+Route::prefix('hfr')->name('hfr.')->group(function(){
+	Route::get('testing', 'HfrController@testing')->name('testing');
+	Route::get('linkage', 'HfrController@linkage')->name('linkage');
+	Route::get('tx_curr', 'HfrController@tx_curr')->name('tx_curr');
+	Route::get('tx_mmd', 'HfrController@tx_mmd')->name('tx_mmd');
+	Route::get('prep_new', 'HfrController@prep_new')->name('prep_new');
+	Route::get('vmmc_circ', 'HfrController@vmmc_circ')->name('vmmc_circ');
+	Route::get('net_new', 'HfrController@net_new')->name('net_new');
+	Route::get('net_new_detail', 'HfrController@net_new_detail')->name('net_new_detail');
+	Route::get('tx_crude', 'HfrController@tx_crude')->name('tx_crude');	
+	Route::get('tx_new', 'HfrController@tx_new')->name('tx_new');	
+	
+	Route::get('misassigned_facilities', 'HfrController@misassigned_facilities')->name('misassigned_facilities');
+	Route::get('prep_new_last_rpt_period', 'HfrController@prep_new_last_rpt_period')->name('prep_new_last_rpt_period');
+	Route::get('testing_dis', 'HfrController@testing_dis')->name('testing_dis');
+	Route::get('tx_curr_details', 'HfrController@tx_curr_details')->name('tx_curr_details');
+	Route::get('vmmc_circ_details', 'HfrController@vmmc_circ_details')->name('vmmc_circ_details');
+	Route::get('linkage_dis', 'HfrController@linkage_dis')->name('linkage_dis');
+	Route::get('tx_new_dis', 'HfrController@tx_new_dis')->name('tx_new_dis');
+	
+	Route::get('tx_mmd_detail', 'HfrController@tx_mmd_detail')->name('tx_mmd_detail');
+
+	// Route::get('tx_curr_two', 'HfrController@tx_curr_two')->name('tx_curr_two');
+	// Route::get('tx_mmd_two', 'HfrController@tx_mmd_two')->name('tx_mmd_two');
+
+	Route::get('target_donut/{modality}', 'HfrController@target_donut')->name('target_donut');
+});
+
+
+Route::middleware(['clear_session', 'check_nascop'])->group(function(){
 	Route::get('/', 'GeneralController@dupli_home');
 	Route::get('/config', 'GeneralController@config');
 	Route::get('home', 'GeneralController@home');
@@ -144,10 +209,21 @@ Route::middleware(['clear_session'])->group(function(){
 	Route::get('tb', 'GeneralController@tb');
 	Route::get('keypop', 'GeneralController@keypop');
 	Route::get('regimen', 'GeneralController@regimen');
-	Route::get('otz', 'GeneralController@otz');
+	Route::get('non_mer', 'GeneralController@non_mer');
 	Route::get('pns', 'GeneralController@pns');
 	Route::get('indicators', 'GeneralController@indicators');
 	Route::get('surge', 'GeneralController@surge');
+	Route::get('hfr', 'GeneralController@hfr');
+	Route::get('hfr-test', 'GeneralController@hfr_test');
+
+
+		Route::get('gbv', 'GeneralController@gbv');
+		Route::get('violence', 'GeneralController@violence');
+		Route::get('violence-test', 'GeneralController@violence_test');
+	// Route::get('gbv', 'GeneralController@gbv');
+	
+	Route::get('dispensing', 'GeneralController@dispensing');
+	Route::get('tx_curr', 'GeneralController@tx_curr');
 
 	Route::get('guide', 'GeneralController@guide');
 });
@@ -156,27 +232,95 @@ Route::middleware(['signed'])->group(function(){
 	Route::get('reset/password/{user}', 'GeneralController@change_password')->name('reset.password');
 });
 
+
+
+
+/*
+	Start of routes that require authentication
+*/
 Route::middleware(['clear_session', 'auth', 'check_live'])->group(function(){
+
+	Route::get('download/{path}', 'ImportsExportsController@export_any');
 
 	Route::prefix('target')->name('target')->group(function(){
 		Route::post('get_data', 'OtzController@get_data')->name('get_data');
 		Route::post('set_target', 'OtzController@set_target')->name('set_target');
 
 		Route::get('target', 'GeneralController@targets');
+	});	
+
+	Route::prefix('facilities')->name('facilities')->group(function(){
+		Route::get('upload', 'GeneralController@upload_facilities');
+		Route::post('upload', 'PNSController@upload_facilities');
 	});
+
+	Route::prefix('pns')->name('pns')->group(function(){
+		Route::get('download', 'GeneralController@download_pns');
+
+		Route::post('download', 'PNSController@download_excel')->name('download');
+		Route::post('upload', 'PNSController@upload_excel')->name('upload');
+	});
+
+	Route::prefix('surge')->name('surge')->group(function(){
+		Route::get('download', 'GeneralController@download_surge');
 	
-	Route::get('facilities/upload', 'GeneralController@upload_facilities');
-	Route::post('facilities/upload', 'PNSController@upload_facilities');
-
-	Route::get('pns/download', 'GeneralController@download_pns');
-	Route::get('pns/upload', 'GeneralController@upload_pns');
-
-	Route::get('surge/download', 'GeneralController@download_surge');
-	Route::get('surge/upload', 'GeneralController@upload_surge');
+		Route::get('set_surge_facilities', 'GeneralController@set_surge_facilities');
 
 
-	Route::get('otz/upload', 'GeneralController@upload_nonmer');
-	Route::get('indicators/upload', 'GeneralController@upload_indicators');
+		Route::post('set_surge_facilities', 'SurgeController@set_surge_facilities')->name('set_surge_facilities');
+		Route::post('download', 'SurgeController@download_excel')->name('download');
+		Route::post('upload', 'SurgeController@upload_excel')->name('upload');
+	});
+
+	Route::prefix('dispensing')->name('dispensing')->group(function(){
+		Route::get('download', 'GeneralController@download_dispensing');
+
+		Route::post('download', 'DispensingController@download_excel')->name('download');
+		Route::post('upload', 'DispensingController@upload_excel')->name('upload');
+	});
+
+	Route::prefix('tx_curr')->name('tx_curr')->group(function(){
+		Route::get('download', 'GeneralController@download_tx_curr');
+
+		Route::post('download', 'TxCurrentController@download_excel')->name('download');
+		Route::post('upload', 'TxCurrentController@upload_excel')->name('upload');
+	});
+
+	Route::prefix('weekly')->name('weekly')->group(function(){
+		Route::get('download/{modality}', 'GeneralController@download_weeklies');
+
+		Route::post('download', 'WeeklyController@download_excel')->name('download');
+		Route::post('upload', 'WeeklyController@upload_excel')->name('upload');
+	});
+
+	Route::prefix('gbv')->name('gbv')->group(function(){
+		Route::get('download', 'GeneralController@download_gbv');
+		Route::get('download-report', 'GeneralController@download_gbv_report');
+	});
+
+	Route::prefix('hfr')->name('hfr')->group(function(){
+		Route::get('download', 'GeneralController@download_hfr');
+		Route::get('download-report', 'GeneralController@download_hfr_report');
+	});
+
+	Route::prefix('cervical_cancer')->name('cervical_cancer')->group(function(){
+		Route::get('download', 'GeneralController@download_cervical_cancer');
+	});
+
+
+	// Upload any Data
+	Route::get('upload/facilities', 'GeneralController@upload_facilities');
+	Route::get('upload/{path}/{modality?}', 'GeneralController@upload_any');
+	// The one with a modality will include it in the post params
+	Route::post('upload/{path}', 'ImportsExportsController@upload_any');
+
+	// Download any Template
+	Route::get('download/non_mer/{financial_year}', 'ImportsExportsController@export_non_mer');
+	Route::get('download/indicator/{financial_year}', 'ImportsExportsController@export_indicator');
+	Route::post('download/{path}', 'ImportsExportsController@export_any');
+	// Route::post('download/surge', 'ImportsExportsController@export_surge');
+
+	Route::get('user/change_password', 'UserController@change_password');
 	Route::resource('user', 'UserController');
 });
 

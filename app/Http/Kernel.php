@@ -29,13 +29,19 @@ class Kernel extends HttpKernel
             \Illuminate\Cookie\Middleware\AddQueuedCookiesToResponse::class,
             \Illuminate\Session\Middleware\StartSession::class,
             \Illuminate\View\Middleware\ShareErrorsFromSession::class,
-            \App\Http\Middleware\VerifyCsrfToken::class,
+            // \App\Http\Middleware\VerifyCsrfToken::class,
             \Illuminate\Routing\Middleware\SubstituteBindings::class,
         ],
 
         'api' => [
             'throttle:60,1',
             'bindings',
+        ],
+
+        'edits' => [
+            \Illuminate\Auth\Middleware\Authenticate::class,
+            \App\Http\Middleware\ClearSession::class,
+            \App\Http\Middleware\CheckLive::class,
         ],
     ];
 
@@ -55,9 +61,12 @@ class Kernel extends HttpKernel
         'throttle' => \Illuminate\Routing\Middleware\ThrottleRequests::class,
 
         'signed' => \Illuminate\Routing\Middleware\ValidateSignature::class,
+        'verified' => \Illuminate\Auth\Middleware\EnsureEmailIsVerified::class,
 
         'clear_session' => \App\Http\Middleware\ClearSession::class,
         'check_live' => \App\Http\Middleware\CheckLive::class,
+        'check_nascop' => \App\Http\Middleware\CheckNascop::class,
+        'usaid' => \App\Http\Middleware\Usaid::class,
 
         'jwt.auth' => \Tymon\JWTAuth\Http\Middleware\Authenticate::class,
         'jwt.refresh' => RefreshToken::class

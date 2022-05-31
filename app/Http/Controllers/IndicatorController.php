@@ -6,32 +6,30 @@ use Illuminate\Http\Request;
 use DB;
 use Excel;
 use App\Lookup;
+use App\Period;
 
 class IndicatorController extends Controller
 {
+	private $my_table = 'm_circumcision';
 
 	public function testing()
 	{
-		$date_query = Lookup::date_query();
-
 		$rows = DB::table('p_early_indicators_view')
+			->join('periods', 'periods.id', '=', "p_early_indicators_view.period_id")
 			->selectRaw("SUM(tested) as tests, SUM(positive) as pos")
 			->when(true, $this->get_callback('tests'))
-			->whereRaw($date_query)
 			->get();
 
 		$testing_rows = DB::table('m_testing')
-			->join('view_facilitys', 'view_facilitys.id', '=', 'm_testing.facility')
+			->when(true, $this->get_joins_callback('m_testing'))
 			->selectRaw("SUM(testing_total) AS tests, SUM(positive_total) as pos")
 			->when(true, $this->get_callback('tests'))
-			->whereRaw($date_query)
 			->get();
 
 		$pmtct_rows = DB::table('m_pmtct')
-			->join('view_facilitys', 'view_facilitys.id', '=', 'm_pmtct.facility')
+			->when(true, $this->get_joins_callback('m_pmtct'))
 			->selectRaw("SUM(tested_pmtct) AS tests, SUM(total_new_positive_pmtct) as pos")
 			->when(true, $this->get_callback('tests'))
-			->whereRaw($date_query)
 			->get();
 
 		$sql2 = "
@@ -40,9 +38,10 @@ class IndicatorController extends Controller
 		";
 
 		$target_obj = DB::table('t_hiv_testing_and_prevention_services')
-			->join('view_facilitys', 'view_facilitys.id', '=', 't_hiv_testing_and_prevention_services.facility')
+			->join('view_facilities', 'view_facilities.id', '=', 't_hiv_testing_and_prevention_services.facility')
 			->selectRaw($sql2)
 			->when(true, $this->target_callback())
+			->whereRaw(Lookup::active_partner_query())
 			->get();
 
 		$groupby = session('filter_groupby', 1);
@@ -55,13 +54,7 @@ class IndicatorController extends Controller
 
 		$data['div'] = str_random(15);
 
-		$data['outcomes'][0]['type'] = "column";
-		$data['outcomes'][1]['type'] = "column";
-		$data['outcomes'][2]['type'] = "column";
-		$data['outcomes'][3]['type'] = "column";
-		$data['outcomes'][4]['type'] = "column";
-		$data['outcomes'][5]['type'] = "column";
-		$data['outcomes'][6]['type'] = "spline";
+		Lookup::bars($data, ["Partner Reported Positive Tests", "Partner Reported Negative Tests", "DHIS Positive Tests", "DHIS Negative Tests", "DHIS Positive PMTCT", "DHIS Negative PMTCT", "Target"], "column");
 
 		// $data['outcomes'][0]['color'] = "#F2784B";
 		// $data['outcomes'][1]['color'] = "#1BA39C";
@@ -71,17 +64,6 @@ class IndicatorController extends Controller
 		// $data['outcomes'][5]['color'] = "column";
 		// $data['outcomes'][6]['color'] = "#ff4000";
 
-		$data['outcomes'][0]['name'] = "Partner Reported Positive Tests";
-		$data['outcomes'][1]['name'] = "Partner Reported Negative Tests";
-
-		$data['outcomes'][2]['name'] = "DHIS Positive Tests";
-		$data['outcomes'][3]['name'] = "DHIS Negative Tests";
-
-		$data['outcomes'][4]['name'] = "DHIS Positive PMTCT";
-		$data['outcomes'][5]['name'] = "DHIS Negative PMTCT";
-
-		$data['outcomes'][6]['name'] = "Target";
-
 		$data['outcomes'][0]['stack'] = 'datim';
 		$data['outcomes'][1]['stack'] = 'datim';
 		
@@ -90,11 +72,7 @@ class IndicatorController extends Controller
 		$data['outcomes'][4]['stack'] = 'dhis';
 		$data['outcomes'][5]['stack'] = 'dhis';
 
-		if($groupby < 10){
-			$data['outcomes'][6]['lineWidth'] = 0;
-			$data['outcomes'][6]['marker'] = ['enabled' => true, 'radius' => 4];
-			$data['outcomes'][6]['states'] = ['hover' => ['lineWidthPlus' => 0]];
-		}
+		Lookup::splines($data, [6]);
 
 		foreach ($rows as $key => $row){
 			$data['categories'][$key] = Lookup::get_category($row);
@@ -123,26 +101,22 @@ class IndicatorController extends Controller
 
 	public function positivity()
 	{
-		$date_query = Lookup::date_query();
-
 		$rows = DB::table('p_early_indicators_view')
+			->join('periods', 'periods.id', '=', "p_early_indicators_view.period_id")
 			->selectRaw("SUM(tested) as tests, SUM(positive) as pos, SUM(pmtct_new_pos) as pmtct_new_pos, SUM(pmtct) as pmtct ")
 			->when(true, $this->get_callback('tests'))
-			->whereRaw($date_query)
 			->get();
 
 		$testing_rows = DB::table('m_testing')
-			->join('view_facilitys', 'view_facilitys.id', '=', 'm_testing.facility')
+			->when(true, $this->get_joins_callback('m_testing'))
 			->selectRaw("SUM(testing_total) AS tests, SUM(positive_total) as pos")
 			->when(true, $this->get_callback('tests'))
-			->whereRaw($date_query)
 			->get();
 
 		$pmtct_rows = DB::table('m_pmtct')
-			->join('view_facilitys', 'view_facilitys.id', '=', 'm_pmtct.facility')
+			->when(true, $this->get_joins_callback('m_pmtct'))
 			->selectRaw("SUM(tested_pmtct) AS tests, SUM(total_new_positive_pmtct) as pos")
 			->when(true, $this->get_callback('tests'))
-			->whereRaw($date_query)
 			->get();
 
 		$sql2 = "
@@ -151,9 +125,10 @@ class IndicatorController extends Controller
 		";
 
 		$target_obj = DB::table('t_hiv_testing_and_prevention_services')
-			->join('view_facilitys', 'view_facilitys.id', '=', 't_hiv_testing_and_prevention_services.facility')
+			->join('view_facilities', 'view_facilities.id', '=', 't_hiv_testing_and_prevention_services.facility')
 			->selectRaw($sql2)
 			->when(true, $this->target_callback())
+			->whereRaw(Lookup::active_partner_query())
 			->get();
 
 		$groupby = session('filter_groupby', 1);
@@ -168,7 +143,7 @@ class IndicatorController extends Controller
 
 		$data['div'] = str_random(15);
 
-		$data['ytitle'] = 'Percentage';
+		$data['yAxis'] = 'Percentage';
 
 		$data['paragraph'] = '<p>P.R. - Partner Reported </p>';
 
@@ -206,10 +181,10 @@ class IndicatorController extends Controller
 
 	public function currenttx()
 	{
-		$date_query = Lookup::date_query();
 		$groupby = session('filter_groupby', 1);
 
 		if($groupby != 12) $date_query = Lookup::year_month_query();
+		else if($groupby > 9) return null;
 
 		$sql = "
 			SUM(current_below1) AS below1,
@@ -218,30 +193,28 @@ class IndicatorController extends Controller
 		";
 
 		$rows = DB::table('m_art')
-			->join('view_facilitys', 'view_facilitys.id', '=', 'm_art.facility')
+			->when(true, $this->get_joins_callback('m_art'))
 			->selectRaw($sql)
 			->when(true, $this->get_callback('above15'))
-			->whereRaw($date_query)
 			->get();
 
 		$rows3 = DB::table('d_regimen_totals')
-			->join('view_facilitys', 'view_facilitys.id', '=', 'd_regimen_totals.facility')
+			->when(true, $this->get_joins_callback('d_regimen_totals'))
 			->selectRaw("(SUM(d_regimen_totals.art) + SUM(pmtct)) AS total ")
 			->when(true, $this->get_callback())
-			->whereRaw($date_query)
 			->get();
 
 		$early_rows = DB::table('p_early_indicators_view')
+			->join('periods', 'periods.id', '=', "p_early_indicators_view.period_id")
 			->selectRaw("SUM(current_tx) as total ")
 			->when(true, $this->get_callback())
-			->whereRaw($date_query)
 			->get();
 
-		$date_query = Lookup::date_query(true);
 		$target_obj = DB::table('t_hiv_and_tb_treatment')
-			->join('view_facilitys', 'view_facilitys.id', '=', 't_hiv_and_tb_treatment.facility')
+			->join('view_facilities', 'view_facilities.id', '=', 't_hiv_and_tb_treatment.facility')
 			->selectRaw("SUM(`on_art_total_(sum_hv03-034_to_hv03-043)_hv03-038`) AS `total`")
 			->when(true, $this->target_callback())
+			->whereRaw(Lookup::active_partner_query())
 			->get();
 
 		$groupby = session('filter_groupby', 1);
@@ -275,11 +248,7 @@ class IndicatorController extends Controller
 		$data['outcomes'][3]['stack'] = 'moh_729';
 		$data['outcomes'][4]['stack'] = 'partner_reported';
 
-		if($groupby < 10){
-			$data['outcomes'][5]['lineWidth'] = 0;
-			$data['outcomes'][5]['marker'] = ['enabled' => true, 'radius' => 4];
-			$data['outcomes'][5]['states'] = ['hover' => ['lineWidthPlus' => 0]];
-		}
+		Lookup::splines($data, [5]);
 
 		foreach ($rows as $key => $row) {
 			$data['categories'][$key] = Lookup::get_category($row);
@@ -310,23 +279,22 @@ class IndicatorController extends Controller
 		";
 
 		$rows = DB::table('m_art')
-			->join('view_facilitys', 'view_facilitys.id', '=', 'm_art.facility')
+			->when(true, $this->get_joins_callback('m_art'))
 			->selectRaw($sql)
 			->when(true, $this->get_callback('above15'))
-			->whereRaw($date_query)
 			->get();
 
 		$early_rows = DB::table('p_early_indicators_view')
+			->join('periods', 'periods.id', '=', "p_early_indicators_view.period_id")
 			->selectRaw("SUM(new_art) as total ")
 			->when(true, $this->get_callback())
-			->whereRaw($date_query)
 			->get();
 
-		$date_query = Lookup::date_query(true);
 		$target_obj = DB::table('t_hiv_and_tb_treatment')
-			->join('view_facilitys', 'view_facilitys.id', '=', 't_hiv_and_tb_treatment.facility')
+			->join('view_facilities', 'view_facilities.id', '=', 't_hiv_and_tb_treatment.facility')
 			->selectRaw("SUM(`start_art_total_(sum_hv03-018_to_hv03-029)_hv03-026`) AS `total`")
 			->when(true, $this->target_callback())
+			->whereRaw(Lookup::active_partner_query())
 			->get();
 
 		$groupby = session('filter_groupby', 1);
@@ -356,11 +324,7 @@ class IndicatorController extends Controller
 		$data['outcomes'][2]['stack'] = 'new_art';
 		$data['outcomes'][3]['stack'] = 'partner_reported';
 
-		if($groupby < 10){
-			$data['outcomes'][4]['lineWidth'] = 0;
-			$data['outcomes'][4]['marker'] = ['enabled' => true, 'radius' => 4];
-			$data['outcomes'][4]['states'] = ['hover' => ['lineWidthPlus' => 0]];
-		}
+		Lookup::splines($data, [4]);
 
 		foreach ($rows as $key => $row) {
 			$data['categories'][$key] = Lookup::get_category($row);
@@ -382,13 +346,12 @@ class IndicatorController extends Controller
 
 	public function summary()
 	{
-		$date_query = Lookup::date_query();
 		$data = Lookup::table_data();
 
 		$data['rows'] = DB::table('p_early_indicators_view')
+			->join('periods', 'periods.id', '=', "p_early_indicators_view.period_id")
 			->selectRaw("SUM(tested) AS tests, SUM(positive) AS pos, SUM(new_art) AS new_art, SUM(net_new_tx) AS net_new_tx")
 			->when(true, $this->get_callback('tests'))
-			->whereRaw($date_query)
 			->get();
 
 		$groupby = session('filter_groupby', 1);
@@ -396,9 +359,9 @@ class IndicatorController extends Controller
 		if($groupby != 12) $date_query = Lookup::year_month_query();
 
 		$data['art'] = DB::table('p_early_indicators_view')
+			->join('periods', 'periods.id', '=', "p_early_indicators_view.period_id")
 			->selectRaw("SUM(current_tx) AS current_tx")
 			->when(true, $this->get_callback())
-			->whereRaw($date_query)
 			->get();
 
 		$data['current_tx_date'] =  Lookup::year_month_name();
@@ -439,6 +402,7 @@ class IndicatorController extends Controller
 		
 		$rows = DB::table('p_early_indicators')
 			->join('countys', 'countys.id', '=', 'p_early_indicators.county')
+			->join('periods', 'periods.id', '=', 'p_early_indicators.period_id')
 			->selectRaw($this->raw)
 			->when($financial_year, function($query) use ($financial_year){
 				return $query->where('financial_year', $financial_year);
@@ -555,11 +519,12 @@ class IndicatorController extends Controller
 			$county = DB::table('countys')->where('countymflcode', $value->county_mfl)->first();
 
 			if(!$county) continue;
+			$period = Period::where(['financial_year' => $value->financial_year, 'month' => $value->month])->first();
+			if(!$period) continue;
 
 			DB::connection('mysql_wr')->table('p_early_indicators')
 				->where([
-					'county' => $county->id, 'partner' => auth()->user()->partner_id, 
-					'financial_year' => $value->financial_year, 'month' => $value->month
+					'county' => $county->id, 'partner' => auth()->user()->partner_id, 'period_id' => $period->id,					
 				])
 				->update($update_data);
 		}

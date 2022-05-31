@@ -23,16 +23,16 @@
           Download Surge Excel
 		    </div>
 			<div class="panel-body" id="user_guide">
-				<form action="{{ url('surge/download') }}" method="post" class="form-horizontal"> 
+				<form action="{{ url('download/surge') }}" method="post" class="form-horizontal"> 
 					@csrf
 
           <p style="font-size: 16;">
-            After downloading, do not delete the first 6 columns. They are necessary for the system when you upload the excel. You can delete any of the other columns if you do not wish to upload its data. You can also delete any rows other that the first row that is used as column headers.
+            After downloading, do not delete the first 6 columns. They are necessary for the system when you upload the excel. You can delete any of the other columns if you do not wish to upload its data. You can also delete any row other that the first row that is used as column headers.
           </p>
 
           <div class="form-group">
               <label class="col-sm-3 control-label">Week</label>
-              <select class="col-sm-7 select_tag" name="week">
+              <select class="col-sm-7 select_tag" name="week_id">
                 <option></option>
                 @foreach($weeks as $week)
                   <option value="{{ $week->id }}"> {{ $week->name }} </option>
@@ -52,7 +52,7 @@
 
           <div class="form-group">
               <label class="col-sm-3 control-label">Gender</label>
-              <select class="col-sm-7 select_tag" name="gender">
+              <select class="col-sm-7 select_tag" name="gender_id">
                 <option></option>
                 @foreach($genders as $gender)
                   <option value="{{ $gender->id }}"> {{ $gender->gender }} </option>

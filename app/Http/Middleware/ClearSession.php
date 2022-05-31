@@ -35,12 +35,13 @@ class ClearSession
 
         session()->forget('filter_week');
         session()->forget('filter_age');
+        session()->forget('filter_age_category_id');
         session()->forget('filter_gender');
         session()->forget('filter_modality');
 
         $m = date('m');
 
-        if($m < 10){
+        if($m < 11){
             $f = date('Y');
         }else{
            $f = date('Y')+1; 
