@@ -344,33 +344,35 @@
 		$("#target_donut_prep_new").html("<center><div class='loader'></div></center>");
 		$("#target_donut_tx_curr").html("<center><div class='loader'></div></center>");
 
-		$("#prep_new_last_rpt_period").load("{{ url('hfr/prep_new_last_rpt_period') }}");
-		// ("#tx_new").load("{{ url('hfr/tx_new') }}");
-		$("#vmmc_circ_details").load("{{ url('hfr/vmmc_circ_details') }}");
-		$("#tx_curr_details").load("{{ url('hfr/tx_curr_details') }}");
-		$("#net_new").load("{{ url('hfr/net_new') }}");
-		$("#net_new_detail").load("{{ url('hfr/net_new_detail') }}");
-		$("#tx_crude").load("{{ url('hfr/tx_crude') }}");
+
+		// Ordering the AJAX calls according to the order of the charts in the html view to create peception of faster load
 		$("#testing").load("{{ url('hfr/testing') }}");
+		$("#testing_dis").load("{{ url('hfr/testing_dis') }}");
 		$("#linkage").load("{{ url('hfr/linkage') }}");
 		$("#linkage_dis").load("{{ url('hfr/linkage_dis') }}");
-		$("#tx_curr").load("{{ url('hfr/tx_curr') }}");
-		$("#tx_mmd").load("{{ url('hfr/tx_mmd') }}");
-		$("#tx_mmd_detail").load("{{ url('hfr/tx_mmd_detail') }}");
-		$("#prep_new").load("{{ url('hfr/prep_new') }}");
-		$("#vmmc_circ").load("{{ url('hfr/vmmc_circ') }}");
-		$("#tx_new").load("{{ url('hfr/tx_new') }}");
-		$("#testing_dis").load("{{ url('hfr/testing_dis') }}");
-		$("#tx_new_dis").load("{{ url('hfr/tx_new_dis') }}");
-
-
 
 		$("#target_donut_hts").load("{{ url('hfr/target_donut/hts_tst') }}");
 		$("#target_donut_pos").load("{{ url('hfr/target_donut/hts_tst_pos') }}");
 		$("#target_donut_tx_new").load("{{ url('hfr/target_donut/tx_new') }}");
-		$("#target_donut_vmmc_circ").load("{{ url('hfr/target_donut/vmmc_circ') }}");
-		$("#target_donut_prep_new").load("{{ url('hfr/target_donut/prep_new') }}");
+		$("#tx_new").load("{{ url('hfr/tx_new') }}");
+		$("#tx_new_dis").load("{{ url('hfr/tx_new_dis') }}");
 		$("#target_donut_tx_curr").load("{{ url('hfr/target_donut/tx_curr') }}");
+		$("#tx_curr").load("{{ url('hfr/tx_curr') }}");
+		$("#tx_curr_details").load("{{ url('hfr/tx_curr_details') }}");
+		$("#tx_crude").load("{{ url('hfr/tx_crude') }}");
+		$("#net_new").load("{{ url('hfr/net_new') }}");
+		$("#tx_mmd").load("{{ url('hfr/tx_mmd') }}");
+		$("#tx_mmd_detail").load("{{ url('hfr/tx_mmd_detail') }}");
+		$("#target_donut_prep_new").load("{{ url('hfr/target_donut/prep_new') }}");
+		$("#prep_new").load("{{ url('hfr/prep_new') }}");
+		$("#prep_new_last_rpt_period").load("{{ url('hfr/prep_new_last_rpt_period') }}");
+		$("#target_donut_vmmc_circ").load("{{ url('hfr/target_donut/vmmc_circ') }}");
+		$("#vmmc_circ").load("{{ url('hfr/vmmc_circ') }}");
+		$("#vmmc_circ_details").load("{{ url('hfr/vmmc_circ_details') }}");
+
+		// ("#tx_new").load("{{ url('hfr/tx_new') }}");
+		// $("#net_new_detail").load("{{ url('hfr/net_new_detail') }}");
+		
 	}
 
 
