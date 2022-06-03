@@ -20,7 +20,7 @@
 </div>
 
 <div class="content-body" id="body">
-{{--
+
 <div class="row">
 	<div class="col-md-12 col-sm-12 col-xs-12">
 		<div class="panel panel-default">
@@ -33,6 +33,7 @@
 		</div>
 	</div>
 </div>
+{{--
 <div class="row ">
 	<div class="col-md-12 col-sm-12 col-xs-12 detail_tables">
 		<div class="panel panel-default">
@@ -345,7 +346,7 @@
 
 	function reload_page()
 	{
-		// $("#testing").html("<center><div class='loader'></div></center>");
+		$("#testing").html("<center><div class='loader'></div></center>");
 		// $("#testing_dis").html("<center><div class='loader'></div></center>");
 		// $("#linkage").html("<center><div class='loader'></div></center>");
 		// $("#linkage_dis").html("<center><div class='loader'></div></center>");
@@ -375,7 +376,7 @@
 
 
 		// Ordering the AJAX calls according to the order of the charts in the html view to create peception of faster load
-		// $("#testing").load("{{ url('hfr/testing') }}");
+		$("#testing").load("{{ url('hfr/testing') }}");
 		// $("#testing_dis").load("{{ url('hfr/testing_dis') }}");
 		// $("#linkage").load("{{ url('hfr/linkage') }}");
 		// $("#linkage_dis").load("{{ url('hfr/linkage_dis') }}");

@@ -77,7 +77,7 @@ class HfrController extends Controller
 			->selectRaw($sql)
 			->when(true, $this->get_callback('tests'))
 			->get();
-
+		
 		$data['div'] = str_random(15);
 		$data['yAxis'] = "Total Number Tested";
 		$data['yAxis2'] = "Yield (%)";
@@ -533,19 +533,22 @@ class HfrController extends Controller
 		$data['yAxis'] = 'Numbers';
 		$data['suffix'] = '';
 
-		$tx_curr = HfrSubmission::columns(true, 'tx_curr');
-		$sql = "year, financial_year, month, partnername, ";
-		$sql .= $this->get_hfr_sum($tx_curr, 'tx_curr');
-		
+		$partner_filter = session('filter_partner');
 		$groupby = session('filter_groupby');
-		
+		$ou = 'partnername';
+		if ($groupby == 1 && (isset($partner_filter) || !($partner_filter == 'null' || $partner_filter == null)))
+			$ou = 'countyname';
+
+		$tx_curr = HfrSubmission::columns(true, 'tx_curr');
+		$sql = "year, financial_year, month, {$ou}, ";
+		$sql .= $this->get_hfr_sum($tx_curr, 'tx_curr');
 
 		// Adding the category property in the base data pulled. For this graph the categories are always months of the current filtered year.
 		$base_data = DB::table($this->my_table)
 				->when(true, $this->get_predefined_joins_callback_weeks($this->my_table))
 				->selectRaw($sql)
-				->whereRaw(Lookup::date_query())
-				->groupBy('partnername','year','financial_year','month')
+				->when(true, $this->get_callback())
+				->groupBy($ou,'year','financial_year','month')
 				->orderBy('year', 'asc')
 				->orderBy('month', 'asc')
 				->get()
@@ -562,8 +565,7 @@ class HfrController extends Controller
 		$data['outcomes'] = [];
 
 		// Grouping by partner
-		$base_data = $base_data->groupby('partnername');
-		// dd($base_data);
+		$base_data = $base_data->groupby($ou);
 
 		foreach($base_data as $key => $grouped_data) {
 			$data['outcomes'][] = [
