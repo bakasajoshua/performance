@@ -318,7 +318,7 @@
 				});
 
 				posting.fail(function( data ) {
-					location.reload(true);
+					location.reload();
 					/*console.log(data);
 		            setTimeout(function(){
 		                toastr.options = {

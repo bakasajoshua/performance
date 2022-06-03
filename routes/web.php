@@ -173,6 +173,7 @@ Route::prefix('hfr')->name('hfr.')->group(function(){
 	Route::get('testing', 'HfrController@testing')->name('testing');
 	Route::get('linkage', 'HfrController@linkage')->name('linkage');
 	Route::get('tx_curr', 'HfrController@tx_curr')->name('tx_curr');
+	Route::get('tx_curr_trend', 'HfrController@tx_curr_trend')->name('tx_curr_trend');
 	Route::get('tx_mmd', 'HfrController@tx_mmd')->name('tx_mmd');
 	Route::get('prep_new', 'HfrController@prep_new')->name('prep_new');
 	Route::get('vmmc_circ', 'HfrController@vmmc_circ')->name('vmmc_circ');

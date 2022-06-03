@@ -307,7 +307,7 @@ class HfrController extends Controller
 		Lookup::bars($data, ["TX New", "Target" ], "column", ["#ff7d33", "#3023ea"]);
 		// if(isset($target)){
 		Lookup::splines($data, [1]);
-	// }
+		// }
 
 		$i=0;
 		foreach ($rows as $key => $row){
@@ -527,7 +527,63 @@ class HfrController extends Controller
 		return view('charts.tx_curr', $data);
 	}
 
+	public function tx_curr_trend()
+	{
+		$data['div'] = str_random(15);
+		$data['yAxis'] = 'Numbers';
+		$data['suffix'] = '';
 
+		$tx_curr = HfrSubmission::columns(true, 'tx_curr');
+		$sql = "year, financial_year, month, partnername, ";
+		$sql .= $this->get_hfr_sum($tx_curr, 'tx_curr');
+		
+		$groupby = session('filter_groupby');
+		
+
+		// Adding the category property in the base data pulled. For this graph the categories are always months of the current filtered year.
+		$base_data = DB::table($this->my_table)
+				->when(true, $this->get_predefined_joins_callback_weeks($this->my_table))
+				->selectRaw($sql)
+				->whereRaw(Lookup::date_query())
+				->groupBy('partnername','year','financial_year','month')
+				->orderBy('year', 'asc')
+				->orderBy('month', 'asc')
+				->get()
+				->whereNotIn('tx_curr', [0, '0', 'null', null])
+				->map(function($item, $index) {
+					$item->category = date("F", mktime(0, 0, 0, $item->month, 1)) . ", " . $item->year;
+					return $item;
+				});
+		
+		// Get the categories from the pulled data
+		$categories = $base_data->pluck('category')->unique();
+
+		$data['categories'] = array_values($categories->toArray());
+		$data['outcomes'] = [];
+
+		// Grouping by partner
+		$base_data = $base_data->groupby('partnername');
+		// dd($base_data);
+
+		foreach($base_data as $key => $grouped_data) {
+			$data['outcomes'][] = [
+				'name' => $key,
+				'data' => $this->foramt_tx_curr_trend($categories, $grouped_data)
+			];
+		}
+		
+		return view('charts.line_graph', $data);
+	}
+
+	private function foramt_tx_curr_trend($categories, $data)
+	{
+		$return_data = [];
+		foreach ($categories as $key => $category) {
+			$ou_data = $data->where('category', $category)->first();
+			$return_data[] = (int)($ou_data->tx_curr ?? 0);
+		}
+		return $return_data;
+	}
 
 	public function tx_curr_details()
 	{

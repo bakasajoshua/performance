@@ -376,7 +376,6 @@ class Lookup
 	{
         $week = session('filter_week');
         $financial_year = session('filter_financial_year');
-		//dd($financial_year);
         $quarter = session('filter_quarter');
 
         $year = session('filter_year');
@@ -386,8 +385,6 @@ class Lookup
         $to_month = session('to_month');
 		if($month == null){
 			$month = date('m')-1;
-			// dd($month);
-
 		}
 
 	
