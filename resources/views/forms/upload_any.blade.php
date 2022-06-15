@@ -64,7 +64,12 @@
 	</div>
   --}}
 
+  
   <div class="col-md-12 col-sm-12 col-xs-12">
+    <div class="alert alert-info">
+      <strong>N/B:</strong> Updated records will reflect once the upload is completely processed.
+    </div>
+    <br />
     <div class="panel panel-default">
       <div class="panel-heading">
           {{ $partner->name ?? '' }} 

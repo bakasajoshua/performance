@@ -17,7 +17,7 @@ class CreateTempHfrSubmissionsTable extends Migration
         $columns = HfrSubmission::columns();
         Schema::create('temp_hfr_submissions', function (Blueprint $table) use ($columns) {
             $table->bigIncrements('id');
-            $table->tinyInteger('week_id');
+            $table->bigInteger('week_id');
             $table->integer('facility');
 
             foreach($columns as $column) {
